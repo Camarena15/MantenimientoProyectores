@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D58652F4-22D1-447D-98B9-0581C220F6EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MantenimientoProyectores.My.MyApplication</StartupObject>
+    <RootNamespace>MantenimientoProyectores</RootNamespace>
+    <AssemblyName>MantenimientoProyectores</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MantenimientoProyectores.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MantenimientoProyectores.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\SSAS\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.3.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlBackup.NET.2.3.4\lib\net452\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2020.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\AtencionReportes_Consultar.Designer.vb">
+      <DependentUpon>AtencionReportes_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\AtencionReportes_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\AtencionReportes_Registrar.Designer.vb">
+      <DependentUpon>AtencionReportes_Registrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\AtencionReportes_Registrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\AtencionReportes_Terminar.Designer.vb">
+      <DependentUpon>AtencionReportes_Terminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\AtencionReportes_Terminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\DetalleSupervision.Designer.vb">
+      <DependentUpon>DetalleSupervision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\DetalleSupervision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Preventivo_Consultar.Designer.vb">
+      <DependentUpon>Preventivo_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Preventivo_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Preventivo_Registrar.Designer.vb">
+      <DependentUpon>Preventivo_Registrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Preventivo_Registrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Preventivo_Terminar.Designer.vb">
+      <DependentUpon>Preventivo_Terminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Preventivo_Terminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\RecursoAsignado_Seleccionar.Designer.vb">
+      <DependentUpon>RecursoAsignado_Seleccionar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\RecursoAsignado_Seleccionar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\ReportesInd_Consultar.Designer.vb">
+      <DependentUpon>ReportesInd_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\ReportesInd_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\ReportesInd_Registrar.Designer.vb">
+      <DependentUpon>ReportesInd_Registrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\ReportesInd_Registrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Reportes_Buscar.Designer.vb">
+      <DependentUpon>Reportes_Buscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Reportes_Buscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Reportes_Consultar.Designer.vb">
+      <DependentUpon>Reportes_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Reportes_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Reportes_Registrar.Designer.vb">
+      <DependentUpon>Reportes_Registrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Reportes_Registrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\SpeedFtp.Designer.vb">
+      <DependentUpon>SpeedFtp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\SpeedFtp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Supervision_Consultar.Designer.vb">
+      <DependentUpon>Supervision_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Supervision_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\Supervision_Registrar.Designer.vb">
+      <DependentUpon>Supervision_Registrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Actions\Supervision_Registrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actions\MPTools.vb" />
+    <Compile Include="Forms\bitacora.vb" />
+    <Compile Include="Forms\bitacora_form.Designer.vb">
+      <DependentUpon>bitacora_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\bitacora_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Canones_Consultar.Designer.vb">
+      <DependentUpon>Canones_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Canones_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Categorias_Consultar.Designer.vb">
+      <DependentUpon>Categorias_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Categorias_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Computadoras_Consultar.Designer.vb">
+      <DependentUpon>Computadoras_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Computadoras_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Lugar_Consultar.Designer.vb">
+      <DependentUpon>Lugar_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Lugar_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Pantallas_Consultar.Designer.vb">
+      <DependentUpon>Pantallas_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Pantallas_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Recursos_Consultar.Designer.vb">
+      <DependentUpon>Recursos_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\Recursos_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ftp.vb" />
+    <Compile Include="Forms\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiModulo.vb" />
+    <Compile Include="Forms\Reports\Fechas_Estado_Reporte.Designer.vb">
+      <DependentUpon>Fechas_Estado_Reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Fechas_Estado_Reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Fechas_Estado_Reporte2.Designer.vb">
+      <DependentUpon>Fechas_Estado_Reporte2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Fechas_Estado_Reporte2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Fechas_Reporte.Designer.vb">
+      <DependentUpon>Fechas_Reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Fechas_Reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Menu_Reportes.Designer.vb">
+      <DependentUpon>Menu_Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Menu_Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\Reporte_Form.Designer.vb">
+      <DependentUpon>Reporte_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\Reporte_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Respaldo_Restauracion.Designer.vb">
+      <DependentUpon>Respaldo_Restauracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Respaldo_Restauracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Actions\AtencionReportes_Consultar.resx">
+      <DependentUpon>AtencionReportes_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\AtencionReportes_Registrar.resx">
+      <DependentUpon>AtencionReportes_Registrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\AtencionReportes_Terminar.resx">
+      <DependentUpon>AtencionReportes_Terminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\DetalleSupervision.resx">
+      <DependentUpon>DetalleSupervision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Preventivo_Consultar.resx">
+      <DependentUpon>Preventivo_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Preventivo_Registrar.resx">
+      <DependentUpon>Preventivo_Registrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Preventivo_Terminar.resx">
+      <DependentUpon>Preventivo_Terminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\RecursoAsignado_Seleccionar.resx">
+      <DependentUpon>RecursoAsignado_Seleccionar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\bitacora_form.resx">
+      <DependentUpon>bitacora_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReporteGeneral.rdlc" />
+    <EmbeddedResource Include="Forms\Actions\ReportesInd_Consultar.resx">
+      <DependentUpon>ReportesInd_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\ReportesInd_Registrar.resx">
+      <DependentUpon>ReportesInd_Registrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Reportes_Buscar.resx">
+      <DependentUpon>Reportes_Buscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Reportes_Consultar.resx">
+      <DependentUpon>Reportes_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Reportes_Registrar.resx">
+      <DependentUpon>Reportes_Registrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\SpeedFtp.resx">
+      <DependentUpon>SpeedFtp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Supervision_Consultar.resx">
+      <DependentUpon>Supervision_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Actions\Supervision_Registrar.resx">
+      <DependentUpon>Supervision_Registrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\Canones_Consultar.resx">
+      <DependentUpon>Canones_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\Categorias_Consultar.resx">
+      <DependentUpon>Categorias_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\Computadoras_Consultar.resx">
+      <DependentUpon>Computadoras_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\Lugar_Consultar.resx">
+      <DependentUpon>Lugar_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\Pantallas_Consultar.resx">
+      <DependentUpon>Pantallas_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\Recursos_Consultar.resx">
+      <DependentUpon>Recursos_Consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReporteDocente.rdlc" />
+    <EmbeddedResource Include="Forms\ReporteDocente3.rdlc" />
+    <EmbeddedResource Include="Forms\ReportesPeriodo1.rdlc" />
+    <EmbeddedResource Include="Forms\ReporteTerminado1.rdlc" />
+    <EmbeddedResource Include="Forms\ReporteTerminado2.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\Fechas_Estado_Reporte.resx">
+      <DependentUpon>Fechas_Estado_Reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Fechas_Estado_Reporte2.resx">
+      <DependentUpon>Fechas_Estado_Reporte2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Fechas_Reporte.resx">
+      <DependentUpon>Fechas_Reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Menu_Reportes.resx">
+      <DependentUpon>Menu_Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\Reporte_Form.resx">
+      <DependentUpon>Reporte_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Respaldo_Restauracion.resx">
+      <DependentUpon>Respaldo_Restauracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SupervisionReporte.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Icono cerrar FN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Icono Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Icono Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Icono Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\img Dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Mobile-Menu-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\relo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\VECTOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Sequence.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Uti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Rep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat_Lugares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat_Proyector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat_Equipos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat_Pantalla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat_Categoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Cat_Recursos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Act_AtencionRep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Act_Preventivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Act_Supervision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Uti_Historicos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Uti_Errores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Uti_BackRec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Bckgnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Bckgnd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Bckgnd3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Ultimo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Siguiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Grabar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Registrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Consultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Terminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Anterior - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gui-res\Siguiente - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUPERVISION.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\respaldo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup_35790124_XS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restauracion-de-windows.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

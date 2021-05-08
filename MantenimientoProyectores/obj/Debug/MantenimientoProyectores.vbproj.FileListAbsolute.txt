@@ -1,0 +1,249 @@
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe.config
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbprojAssemblyReference.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Resources.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.GenerateResource.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CoreCompileInputs.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Menu.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Inicio.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Terminar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Terminar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Canones_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Categorias_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Computadoras_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Lugar_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Pantallas_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Recursos_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.RecursoAsignado_Seleccionar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Buscar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe.config
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySql.Data.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Google.Protobuf.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Zstandard.Net.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Renci.SshNet.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Memory.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Buffers.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySql.Data.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CopyComplete
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe.config
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySql.Data.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Google.Protobuf.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Zstandard.Net.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\Renci.SshNet.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Memory.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Buffers.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySql.Data.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbprojAssemblyReference.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe.config
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Terminar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Terminar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.RecursoAsignado_Seleccionar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Buscar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Canones_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Categorias_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Computadoras_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Lugar_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Pantallas_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Recursos_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Inicio.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Menu.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Resources.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.GenerateResource.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CoreCompileInputs.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CopyComplete
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.DetalleSupervision.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.SpeedFtp.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Registrar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbprojAssemblyReference.cache
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Registrar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Terminar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.DetalleSupervision.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Registrar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Terminar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.RecursoAsignado_Seleccionar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Registrar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Buscar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Registrar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.SpeedFtp.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Registrar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Canones_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Categorias_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Computadoras_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Lugar_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Pantallas_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Recursos_Consultar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Inicio.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Menu.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Fechas_Reporte.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Menu_Reportes.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reporte_Form.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Resources.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.GenerateResource.cache
+C:\MantenimientoProyectores\obj\Debug\RdlCompile.cache
+C:\MantenimientoProyectores\obj\Debug\RdlCompile.compiled
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.xml
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.pdb
+C:\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe.config
+C:\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe
+C:\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.pdb
+C:\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.xml
+C:\MantenimientoProyectores\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\MantenimientoProyectores\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\MantenimientoProyectores\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\MantenimientoProyectores\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\MantenimientoProyectores\bin\Debug\Google.Protobuf.dll
+C:\MantenimientoProyectores\bin\Debug\Zstandard.Net.dll
+C:\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\MantenimientoProyectores\bin\Debug\BouncyCastle.Crypto.dll
+C:\MantenimientoProyectores\bin\Debug\Ubiety.Dns.Core.dll
+C:\MantenimientoProyectores\bin\Debug\Renci.SshNet.dll
+C:\MantenimientoProyectores\bin\Debug\System.Memory.dll
+C:\MantenimientoProyectores\bin\Debug\System.Buffers.dll
+C:\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.dll
+C:\MantenimientoProyectores\bin\Debug\K4os.Hash.xxHash.dll
+C:\MantenimientoProyectores\bin\Debug\System.Numerics.Vectors.dll
+C:\MantenimientoProyectores\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\MantenimientoProyectores\bin\Debug\MySql.Data.xml
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CoreCompileInputs.cache
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CopyComplete
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Fechas_Estado_Reporte.resources
+C:\MantenimientoProyectores\bin\Debug\MySql.Data.dll
+C:\MantenimientoProyectores\bin\Debug\MySqlBackup.dll
+C:\MantenimientoProyectores\bin\Debug\Google.Protobuf.pdb
+C:\MantenimientoProyectores\bin\Debug\Google.Protobuf.xml
+C:\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.xml
+C:\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\MantenimientoProyectores\bin\Debug\K4os.Hash.xxHash.xml
+C:\MantenimientoProyectores\bin\Debug\Renci.SshNet.xml
+C:\MantenimientoProyectores\bin\Debug\System.Buffers.xml
+C:\MantenimientoProyectores\bin\Debug\System.Memory.xml
+C:\MantenimientoProyectores\bin\Debug\System.Numerics.Vectors.xml
+C:\MantenimientoProyectores\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\MantenimientoProyectores\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.ResolveComReference.cache
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.bitacora_form.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Respaldo_Restauracion.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Fechas_Estado_Reporte2.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe.config
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.exe
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MantenimientoProyectores.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Google.Protobuf.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySql.Data.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySqlBackup.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Renci.SshNet.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Buffers.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Memory.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Zstandard.Net.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Google.Protobuf.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Google.Protobuf.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\MySql.Data.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\Renci.SshNet.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Buffers.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Memory.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbprojAssemblyReference.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.ResolveComReference.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Terminar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.DetalleSupervision.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Preventivo_Terminar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.RecursoAsignado_Seleccionar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.bitacora_form.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Buscar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reportes_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.SpeedFtp.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Supervision_Registrar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Canones_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Categorias_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Computadoras_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Lugar_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Pantallas_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Recursos_Consultar.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Inicio.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Menu.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Fechas_Estado_Reporte.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Fechas_Estado_Reporte2.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Fechas_Reporte.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Menu_Reportes.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Reporte_Form.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Respaldo_Restauracion.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Resources.resources
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.GenerateResource.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\RdlCompile.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\RdlCompile.compiled
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CoreCompileInputs.cache
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.CopyComplete
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.xml
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\SharedMantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.pdb

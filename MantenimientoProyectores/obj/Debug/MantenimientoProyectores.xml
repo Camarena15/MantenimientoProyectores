@@ -1,0 +1,416 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MantenimientoProyectores
+</name>
+</assembly>
+<members>
+<member name="T:MantenimientoProyectores.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Act">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Act_AtencionRep">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Act_Preventivo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Act_Supervision">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Act1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Anterior">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Anterior___2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.backup_35790124_XS">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Bckgnd">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Bckgnd2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Bckgnd3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat_Categoria">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat_Equipos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat_Lugares">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat_Pantalla">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat_Proyector">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Cat_Recursos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.clientes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.compras">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Consultar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.empleados">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.f">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Grabar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Help">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Home">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Icono_cerrar_FN">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Icono_Maximizar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Icono_Minimizar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Icono_Restaurar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.img_Dash">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Inicio">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.LOGO">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Mobile_Menu_Icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Nuevo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.pagos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.producto">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Registrar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.relo3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Rep">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.reportes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.respaldo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Restauracion_de_windows">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Salir">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Sequence">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Siguiente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Siguiente___2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.SUPERVISION">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Terminar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Ultimo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Uti">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Uti_BackRec">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Uti_Errores">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Uti_Historicos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.VECTOR">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.venta">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.SupervicionReporteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodo1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodo2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportePeriodoGnralDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.PreventivoReporteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.PreventivoReporte2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.SupervicionReporteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodo1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodo2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportePeriodoGnralRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.PreventivoReporteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.PreventivoReporte2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.SupervicionReporteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodo1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportesPeriodo2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.ReportePeriodoGnralRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.PreventivoReporteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MantenimientoProyectores.DataSet1.PreventivoReporte2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>
