@@ -243,19 +243,23 @@ Public Class Menu
 
     'REPORTES
     Private Sub btnRepSup_Click(sender As Object, e As EventArgs) Handles btnRepSup.Click
-
+        opcion = 1
+        Fechas_Reporte.Show()
     End Sub
 
     Private Sub btnRelRep_Click(sender As Object, e As EventArgs) Handles btnRelRep.Click
-
+        opcion = 2
+        Fechas_Estado_Reporte.Show()
     End Sub
 
     Private Sub btnRelAteRep_Click(sender As Object, e As EventArgs) Handles btnRelAteRep.Click
-
+        opcion = 3
+        Fechas_Reporte.Show()
     End Sub
 
     Private Sub btnRelPrev_Click(sender As Object, e As EventArgs) Handles btnRelPrev.Click
-
+        opcion = 4
+        Fechas_Estado_Reporte2.Show()
     End Sub
 
     'UTILERIAS

@@ -184,9 +184,9 @@ Partial Class Menu
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.PanelMenuReportes)
         Me.PanelMenu.Controls.Add(Me.PanelMovimientos)
         Me.PanelMenu.Controls.Add(Me.PanelUtilerias)
-        Me.PanelMenu.Controls.Add(Me.PanelMenuReportes)
         Me.PanelMenu.Controls.Add(Me.PanelCatalogos)
         Me.PanelMenu.Controls.Add(Me.Panel6)
         Me.PanelMenu.Controls.Add(Me.btnAyuda)
@@ -498,7 +498,7 @@ Partial Class Menu
         Me.btnRelPrev.Name = "btnRelPrev"
         Me.btnRelPrev.Size = New System.Drawing.Size(160, 50)
         Me.btnRelPrev.TabIndex = 8
-        Me.btnRelPrev.Text = "   PREVENTIVO"
+        Me.btnRelPrev.Text = "  RELACIÓN PREVENTIVOS POR ESTADO"
         Me.btnRelPrev.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnRelPrev.UseVisualStyleBackColor = True
         '
@@ -1085,8 +1085,8 @@ Partial Class Menu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1280, 720)
-        Me.Controls.Add(Me.pctCargando)
         Me.Controls.Add(Me.PanelSeleccion)
+        Me.Controls.Add(Me.pctCargando)
         Me.Controls.Add(Me.PanelContenedor)
         Me.Controls.Add(Me.PanelMenu)
         Me.Controls.Add(Me.PanelCabecera)
