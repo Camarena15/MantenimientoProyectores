@@ -414,7 +414,7 @@ Partial Class Preventivo_Terminar
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(90, 19)
         Me.Label14.TabIndex = 220
-        Me.Label14.Text = "Categoria"
+        Me.Label14.Text = "Categoría"
         '
         'Label11
         '

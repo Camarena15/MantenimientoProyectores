@@ -133,6 +133,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AcercaDe.Designer.vb">
+      <DependentUpon>AcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Actions\AtencionReportes_Consultar.Designer.vb">
       <DependentUpon>AtencionReportes_Consultar.vb</DependentUpon>
     </Compile>
@@ -342,6 +348,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AcercaDe.resx">
+      <DependentUpon>AcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Actions\AtencionReportes_Consultar.resx">
       <DependentUpon>AtencionReportes_Consultar.vb</DependentUpon>
     </EmbeddedResource>

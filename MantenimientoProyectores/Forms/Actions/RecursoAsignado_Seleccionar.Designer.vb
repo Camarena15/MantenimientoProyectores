@@ -219,7 +219,7 @@ Partial Class RecursoAsignado_Seleccionar
         Me.lblCat.Name = "lblCat"
         Me.lblCat.Size = New System.Drawing.Size(90, 19)
         Me.lblCat.TabIndex = 225
-        Me.lblCat.Text = "Categoria"
+        Me.lblCat.Text = "Categoría"
         Me.lblCat.Visible = False
         '
         'txtCategoria

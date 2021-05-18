@@ -66,7 +66,7 @@ Partial Class Supervision_Registrar
         Me.cmdSeleccionar = New System.Windows.Forms.Button()
         Me.cmdAgregaD = New System.Windows.Forms.Button()
         Me.LV = New System.Windows.Forms.ListView()
-        Me.IdRecursoAsignado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.IdRecurso = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.HorasTrabajadas = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Observaciones = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Imagen = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -129,7 +129,7 @@ Partial Class Supervision_Registrar
         '
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
-        Me.txtAula.Items.AddRange(New Object() {"---", "1", "2", "3", "4", "5", "6", "7", "8", "*"})
+        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08", "*"})
         Me.txtAula.Location = New System.Drawing.Point(218, 75)
         Me.txtAula.Name = "txtAula"
         Me.txtAula.Size = New System.Drawing.Size(62, 27)
@@ -465,7 +465,7 @@ Partial Class Supervision_Registrar
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(207, 19)
         Me.Label12.TabIndex = 4
-        Me.Label12.Text = "Observaciones Lamparas"
+        Me.Label12.Text = "Observaciones Lámparas"
         '
         'Label11
         '
@@ -487,7 +487,7 @@ Partial Class Supervision_Registrar
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(216, 19)
         Me.Label10.TabIndex = 2
-        Me.Label10.Text = "Observaciones Pintarron"
+        Me.Label10.Text = "Observaciones Pintarrón"
         '
         'Label9
         '
@@ -509,7 +509,7 @@ Partial Class Supervision_Registrar
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(252, 19)
         Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Observaciones Caja Conexion"
+        Me.Label8.Text = "Observaciones Caja Conexión"
         '
         'Label3
         '
@@ -606,7 +606,7 @@ Partial Class Supervision_Registrar
         '
         'LV
         '
-        Me.LV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.IdRecursoAsignado, Me.HorasTrabajadas, Me.Observaciones, Me.Imagen})
+        Me.LV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.IdRecurso, Me.HorasTrabajadas, Me.Observaciones, Me.Imagen})
         Me.LV.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LV.GridLines = True
         Me.LV.HideSelection = False
@@ -617,10 +617,10 @@ Partial Class Supervision_Registrar
         Me.LV.UseCompatibleStateImageBehavior = False
         Me.LV.View = System.Windows.Forms.View.Details
         '
-        'IdRecursoAsignado
+        'IdRecurso
         '
-        Me.IdRecursoAsignado.Text = "ID Recurso Asignado"
-        Me.IdRecursoAsignado.Width = 145
+        Me.IdRecurso.Text = "ID Recurso"
+        Me.IdRecurso.Width = 145
         '
         'HorasTrabajadas
         '
@@ -707,12 +707,12 @@ Partial Class Supervision_Registrar
         '
         Me.Label20.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(73, 29)
+        Me.Label20.Location = New System.Drawing.Point(73, 40)
         Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(106, 49)
+        Me.Label20.Size = New System.Drawing.Size(106, 38)
         Me.Label20.TabIndex = 7
-        Me.Label20.Text = "ID Recurso Asignado"
+        Me.Label20.Text = "ID Recurso "
         '
         'cmdSalir
         '
@@ -883,7 +883,7 @@ Partial Class Supervision_Registrar
     Friend WithEvents cmdNuevo As Button
     Friend WithEvents Label25 As Label
     Friend WithEvents LV As ListView
-    Friend WithEvents IdRecursoAsignado As ColumnHeader
+    Friend WithEvents IdRecurso As ColumnHeader
     Friend WithEvents HorasTrabajadas As ColumnHeader
     Friend WithEvents Observaciones As ColumnHeader
     Friend WithEvents Imagen As ColumnHeader

@@ -79,10 +79,10 @@ Public Class AtencionReportes_Terminar
             txtAtiende.Text = lector.GetValue(5)
             txtObservacion.Text = lector.GetValue(6)
             txtIdReporte.Text = lector.GetValue(1)
-            txtidRecurso.Text = lector.GetInt32(2)
+            txtidRecurso.Text = lector.GetValue(2)
             lector.Close()
             Dim nRep As Integer
-            command.CommandText = "SELECT count(*), R.Fecha, R.ObservacionesGrales, R.Estado FROM REPORTEDOCENTES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value
+            command.CommandText = "SELECT count(*), R.Fecha, R.ObservacionesGrales, R.Estado FROM REPORTEDOCENTES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Pendiente'"
             lector = command.ExecuteReader
             lector.Read()
             nRep = lector.GetValue(0)
@@ -93,7 +93,7 @@ Public Class AtencionReportes_Terminar
                 lector.Close()
             Else
                 lector.Close()
-                command.CommandText = "SELECT count(*), R.Fecha, R.Concepto, R.Estado FROM REPORTESRECURSOSINDIVIDUALES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value
+                command.CommandText = "SELECT count(*), R.Fecha, R.Concepto, R.Estado FROM REPORTESRECURSOSINDIVIDUALES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporteRecursos WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Pendiente'"
                 lector = command.ExecuteReader
                 lector.Read()
                 nRep = lector.GetValue(0)

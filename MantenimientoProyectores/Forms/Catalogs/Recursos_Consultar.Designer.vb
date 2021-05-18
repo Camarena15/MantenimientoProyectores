@@ -27,9 +27,6 @@ Partial Class Recursos_Consultar
         Me.g = New System.Windows.Forms.GroupBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.dgv = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmdAnterior = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtId = New System.Windows.Forms.NumericUpDown()
@@ -46,6 +43,9 @@ Partial Class Recursos_Consultar
         Me.cmdSalir = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pctCargando = New System.Windows.Forms.PictureBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.g.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -102,30 +102,6 @@ Partial Class Recursos_Consultar
         Me.dgv.RowTemplate.Height = 24
         Me.dgv.Size = New System.Drawing.Size(688, 175)
         Me.dgv.TabIndex = 238
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID Recurso"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 125
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "ID Categoria"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 125
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Descripción"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 350
         '
         'cmdAnterior
         '
@@ -205,7 +181,7 @@ Partial Class Recursos_Consultar
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(117, 19)
         Me.Label2.TabIndex = 218
-        Me.Label2.Text = "ID Categoria"
+        Me.Label2.Text = "ID Categoría"
         '
         'Label3
         '
@@ -217,7 +193,7 @@ Partial Class Recursos_Consultar
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(108, 19)
         Me.Label3.TabIndex = 219
-        Me.Label3.Text = "Descripcion"
+        Me.Label3.Text = "Descripción"
         '
         'txtDescripcion
         '
@@ -318,6 +294,30 @@ Partial Class Recursos_Consultar
         Me.pctCargando.TabStop = False
         Me.pctCargando.Visible = False
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID Recurso"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 125
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "ID Categoría"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Descripción"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 350
+        '
         'Recursos_Consultar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -368,10 +368,10 @@ Partial Class Recursos_Consultar
     Friend WithEvents Label25 As Label
     Friend WithEvents cmdSalir As Button
     Friend WithEvents Label13 As Label
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents txtId As NumericUpDown
     Friend WithEvents Timer1 As Timer
     Friend WithEvents pctCargando As PictureBox
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
 End Class

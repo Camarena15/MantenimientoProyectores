@@ -24,13 +24,6 @@ Partial Class Pantallas_Consultar
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.dgv = New System.Windows.Forms.DataGridView()
-        Me.IdRecurso = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Invcapece = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dimension = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.cmdSalir = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -58,6 +51,13 @@ Partial Class Pantallas_Consultar
         Me.cmdSiguiente = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pctCargando = New System.Windows.Forms.PictureBox()
+        Me.IdRecurso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Invcapece = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dimension = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -78,55 +78,6 @@ Partial Class Pantallas_Consultar
         Me.dgv.RowTemplate.Height = 24
         Me.dgv.Size = New System.Drawing.Size(722, 194)
         Me.dgv.TabIndex = 256
-        '
-        'IdRecurso
-        '
-        Me.IdRecurso.HeaderText = "ID Recurso"
-        Me.IdRecurso.Name = "IdRecurso"
-        Me.IdRecurso.ReadOnly = True
-        Me.IdRecurso.Width = 80
-        '
-        'Tipo
-        '
-        Me.Tipo.HeaderText = "Tipo"
-        Me.Tipo.Name = "Tipo"
-        Me.Tipo.ReadOnly = True
-        Me.Tipo.Width = 80
-        '
-        'Invcapece
-        '
-        Me.Invcapece.HeaderText = "INVCAPECE"
-        Me.Invcapece.Name = "Invcapece"
-        Me.Invcapece.ReadOnly = True
-        Me.Invcapece.Width = 75
-        '
-        'Marca
-        '
-        Me.Marca.HeaderText = "Marca"
-        Me.Marca.Name = "Marca"
-        Me.Marca.ReadOnly = True
-        Me.Marca.Width = 110
-        '
-        'Modelo
-        '
-        Me.Modelo.HeaderText = "Modelo"
-        Me.Modelo.Name = "Modelo"
-        Me.Modelo.ReadOnly = True
-        Me.Modelo.Width = 110
-        '
-        'Dimension
-        '
-        Me.Dimension.HeaderText = "Dimension"
-        Me.Dimension.Name = "Dimension"
-        Me.Dimension.ReadOnly = True
-        Me.Dimension.Width = 75
-        '
-        'Estado
-        '
-        Me.Estado.HeaderText = "Estado"
-        Me.Estado.Name = "Estado"
-        Me.Estado.ReadOnly = True
-        Me.Estado.Width = 120
         '
         'Label8
         '
@@ -449,6 +400,55 @@ Partial Class Pantallas_Consultar
         Me.pctCargando.TabStop = False
         Me.pctCargando.Visible = False
         '
+        'IdRecurso
+        '
+        Me.IdRecurso.HeaderText = "ID Recurso"
+        Me.IdRecurso.Name = "IdRecurso"
+        Me.IdRecurso.ReadOnly = True
+        Me.IdRecurso.Width = 80
+        '
+        'Tipo
+        '
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        Me.Tipo.ReadOnly = True
+        Me.Tipo.Width = 80
+        '
+        'Invcapece
+        '
+        Me.Invcapece.HeaderText = "INVCAPECE"
+        Me.Invcapece.Name = "Invcapece"
+        Me.Invcapece.ReadOnly = True
+        Me.Invcapece.Width = 75
+        '
+        'Marca
+        '
+        Me.Marca.HeaderText = "Marca"
+        Me.Marca.Name = "Marca"
+        Me.Marca.ReadOnly = True
+        Me.Marca.Width = 110
+        '
+        'Modelo
+        '
+        Me.Modelo.HeaderText = "Modelo"
+        Me.Modelo.Name = "Modelo"
+        Me.Modelo.ReadOnly = True
+        Me.Modelo.Width = 110
+        '
+        'Dimension
+        '
+        Me.Dimension.HeaderText = "Dimensión"
+        Me.Dimension.Name = "Dimension"
+        Me.Dimension.ReadOnly = True
+        Me.Dimension.Width = 75
+        '
+        'Estado
+        '
+        Me.Estado.HeaderText = "Estado"
+        Me.Estado.Name = "Estado"
+        Me.Estado.ReadOnly = True
+        Me.Estado.Width = 120
+        '
         'Pantallas_Consultar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -501,13 +501,6 @@ Partial Class Pantallas_Consultar
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents cmdBuscar As Button
-    Friend WithEvents IdRecurso As DataGridViewTextBoxColumn
-    Friend WithEvents Tipo As DataGridViewTextBoxColumn
-    Friend WithEvents Invcapece As DataGridViewTextBoxColumn
-    Friend WithEvents Marca As DataGridViewTextBoxColumn
-    Friend WithEvents Modelo As DataGridViewTextBoxColumn
-    Friend WithEvents Dimension As DataGridViewTextBoxColumn
-    Friend WithEvents Estado As DataGridViewTextBoxColumn
     Friend WithEvents Label9 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents cmdInicio As Button
@@ -517,4 +510,11 @@ Partial Class Pantallas_Consultar
     Friend WithEvents txtId As NumericUpDown
     Friend WithEvents Timer1 As Timer
     Friend WithEvents pctCargando As PictureBox
+    Friend WithEvents IdRecurso As DataGridViewTextBoxColumn
+    Friend WithEvents Tipo As DataGridViewTextBoxColumn
+    Friend WithEvents Invcapece As DataGridViewTextBoxColumn
+    Friend WithEvents Marca As DataGridViewTextBoxColumn
+    Friend WithEvents Modelo As DataGridViewTextBoxColumn
+    Friend WithEvents Dimension As DataGridViewTextBoxColumn
+    Friend WithEvents Estado As DataGridViewTextBoxColumn
 End Class

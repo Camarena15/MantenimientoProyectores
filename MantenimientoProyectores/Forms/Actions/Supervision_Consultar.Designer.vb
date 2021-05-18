@@ -40,10 +40,6 @@ Partial Class Supervision_Consultar
         Me.cmdSiguiente = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DGVSupervision = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImagenRcs = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtFecha = New System.Windows.Forms.TextBox()
@@ -60,6 +56,10 @@ Partial Class Supervision_Consultar
         Me.lblSecundarios = New System.Windows.Forms.Label()
         Me.lblBtnSecundarios = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ImagenRcs = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -253,36 +253,6 @@ Partial Class Supervision_Consultar
         Me.DGVSupervision.Size = New System.Drawing.Size(689, 126)
         Me.DGVSupervision.TabIndex = 213
         '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ID Recurso Asignado"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 75
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Observaciones"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 300
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Horas Trabajadas (Cañon)"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Width = 80
-        '
-        'ImagenRcs
-        '
-        Me.ImagenRcs.HeaderText = "Imagen"
-        Me.ImagenRcs.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.ImagenRcs.Name = "ImagenRcs"
-        Me.ImagenRcs.ReadOnly = True
-        Me.ImagenRcs.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ImagenRcs.Width = 160
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -461,6 +431,36 @@ Partial Class Supervision_Consultar
         'Timer1
         '
         Me.Timer1.Interval = 1500
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID Recurso"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 75
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Observaciones"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 300
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Horas Trabajadas (Cañon)"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 80
+        '
+        'ImagenRcs
+        '
+        Me.ImagenRcs.HeaderText = "Imagen"
+        Me.ImagenRcs.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.ImagenRcs.Name = "ImagenRcs"
+        Me.ImagenRcs.ReadOnly = True
+        Me.ImagenRcs.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ImagenRcs.Width = 160
         '
         'Supervision_Consultar
         '

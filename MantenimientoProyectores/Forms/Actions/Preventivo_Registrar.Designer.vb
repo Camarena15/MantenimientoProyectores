@@ -500,7 +500,7 @@ Partial Class Preventivo_Registrar
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(90, 19)
         Me.Label18.TabIndex = 219
-        Me.Label18.Text = "Categoria"
+        Me.Label18.Text = "Categoría"
         '
         'Label19
         '

@@ -19,18 +19,6 @@ Public Class Menu
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
-    Private Sub btnMaximizar_Click(sender As Object, e As EventArgs) Handles btnMaximizar.Click
-        btnMaximizar.Visible = False
-        btnRestaurar.Visible = True
-        Me.WindowState = FormWindowState.Maximized
-    End Sub
-
-    Private Sub btnRestaurar_Click(sender As Object, e As EventArgs) Handles btnRestaurar.Click
-        btnRestaurar.Visible = False
-        btnMaximizar.Visible = True
-        Me.WindowState = FormWindowState.Normal
-    End Sub
-
     Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -52,6 +40,10 @@ Public Class Menu
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+        cambiarBarraLateral()
+    End Sub
+
+    Private Sub cambiarBarraLateral()
         If PanelMenu.Width = 220 Then
             tmOcultarMenu.Enabled = True
         ElseIf PanelMenu.Width = 60 Then
@@ -106,7 +98,7 @@ Public Class Menu
     Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
 
     End Sub
-    Private Sub panelmenu_mousemove(sender As Object, e As MouseEventArgs) Handles PanelMenu.MouseMove, PanelContenedor.MouseMove
+    Private Sub panelmenu_mousemove(sender As Object, e As MouseEventArgs) Handles PanelMenu.MouseMove
         PanelCatalogos.Visible = False
         PanelMovimientos.Visible = False
         PanelMenuReportes.Visible = False
@@ -117,6 +109,7 @@ Public Class Menu
         formTarget = System.Reflection.Assembly.GetExecutingAssembly().CreateInstance(ProductName & "." & formTargetName & "Registrar")
         pctCargando.Visible = True
         AbrirFomEnPanel(formTarget)
+        cambiarBarraLateral()
         pctCargando.Visible = False
         PanelSeleccion.Visible = False
     End Sub
@@ -125,6 +118,7 @@ Public Class Menu
         formTarget = System.Reflection.Assembly.GetExecutingAssembly().CreateInstance(ProductName & "." & formTargetName & "Consultar")
         pctCargando.Visible = True
         AbrirFomEnPanel(formTarget)
+        cambiarBarraLateral()
         pctCargando.Visible = False
         PanelSeleccion.Visible = False
     End Sub
@@ -133,6 +127,7 @@ Public Class Menu
         formTarget = System.Reflection.Assembly.GetExecutingAssembly().CreateInstance(ProductName & "." & formTargetName & "Terminar")
         pctCargando.Visible = True
         AbrirFomEnPanel(formTarget)
+        cambiarBarraLateral()
         pctCargando.Visible = False
         PanelSeleccion.Visible = False
     End Sub
@@ -145,6 +140,8 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Recursos_"
+        LineaRegistrar.Visible = True
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnCategorias_MouseMove(sender As Object, e As MouseEventArgs) Handles btnCategorias.MouseMove
@@ -154,6 +151,8 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Categorias_"
+        LineaRegistrar.Visible = True
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnPantallas_MouseMove(sender As Object, e As MouseEventArgs) Handles btnPantallas.MouseMove
@@ -163,6 +162,8 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Pantallas_"
+        LineaRegistrar.Visible = True
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnComputadoras_MouseMove(sender As Object, e As MouseEventArgs) Handles btnComputadoras.MouseMove
@@ -172,6 +173,8 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Computadoras_"
+        LineaRegistrar.Visible = True
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnCanones_MouseMove(sender As Object, e As MouseEventArgs) Handles btnCanones.MouseMove
@@ -181,6 +184,8 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Canones_"
+        LineaRegistrar.Visible = True
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnLugar_MouseMove(sender As Object, e As MouseEventArgs) Handles btnLugar.MouseMove
@@ -190,17 +195,21 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Lugar_"
+        LineaRegistrar.Visible = True
+        LineaTerminar.Visible = True
     End Sub
 
     'MOVIMIENTOS
     Private Sub btnSupervision_MouseMove(sender As Object, e As MouseEventArgs) Handles btnSupervision.MouseMove
-        formSelected = "AtencionReportes"
+        formSelected = "Supervision"
         PanelSeleccion.Location = New Point(PanelSeleccion.Location.X, 320)
         btnRegistrar.Enabled = True
         btnConsultar.Enabled = True
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Supervision_"
+        LineaRegistrar.Visible = False
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnActReportes_MouseMove(sender As Object, e As MouseEventArgs) Handles btnActReportes.MouseMove
@@ -210,6 +219,8 @@ Public Class Menu
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "Reportes_"
+        LineaRegistrar.Visible = False
+        LineaTerminar.Visible = True
     End Sub
 
     Private Sub btnAtencionRep_MouseMove(sender As Object, e As MouseEventArgs) Handles btnAtencionRep.MouseMove
@@ -220,6 +231,8 @@ Public Class Menu
         btnTerminar.Enabled = True
         PanelSeleccion.Visible = True
         formTargetName = "AtencionReportes_"
+        LineaRegistrar.Visible = False
+        LineaTerminar.Visible = False
     End Sub
 
     Private Sub btnPreventivo_MouseMove(sender As Object, e As MouseEventArgs) Handles btnPreventivo.MouseMove
@@ -230,15 +243,18 @@ Public Class Menu
         btnTerminar.Enabled = True
         PanelSeleccion.Visible = True
         formTargetName = "Preventivo_"
+        LineaRegistrar.Visible = False
+        LineaTerminar.Visible = False
     End Sub
     Private Sub btnReportesIndividuales_MouseMove(sender As Object, e As MouseEventArgs) Handles btnReportesIndividuales.MouseMove
-        formSelected = "Preventivo"
         PanelSeleccion.Location = New Point(PanelSeleccion.Location.X, 540)
         btnRegistrar.Enabled = True
         btnConsultar.Enabled = True
         btnTerminar.Enabled = False
         PanelSeleccion.Visible = True
         formTargetName = "ReportesInd_"
+        LineaRegistrar.Visible = False
+        LineaTerminar.Visible = True
     End Sub
 
     'REPORTES
@@ -297,5 +313,9 @@ Public Class Menu
     Public Sub btnPreventivo_Click(sender As Object, e As EventArgs) Handles btnPreventivo.Click
         opcion = 4
         Fechas_Estado_Reporte2.Show()
+    End Sub
+
+    Private Sub btnAcercaDe_Click(sender As Object, e As EventArgs) Handles btnAcercaDe.Click
+        AcercaDe.ShowDialog()
     End Sub
 End Class

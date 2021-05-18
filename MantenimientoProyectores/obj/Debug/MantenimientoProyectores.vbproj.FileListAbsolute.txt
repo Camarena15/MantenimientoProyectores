@@ -322,3 +322,4 @@ C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\Manten
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.exe
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.xml
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.pdb
+C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AcercaDe.resources

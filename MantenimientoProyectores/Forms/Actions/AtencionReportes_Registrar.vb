@@ -195,7 +195,7 @@ Public Class AtencionReportes_Registrar
                     txtinvcapece.Text = lector.GetValue(0)
                     txtModelo.Text = lector.GetValue(1)
                     txtMarca.Text = lector.GetValue(2)
-                    txtEstado.Text = lector.GetValue(3)
+                    txtEstadoRecurso.Text = lector.GetValue(3)
                     lector.Close()
                     GBAtencion.Enabled = True
                     cmdGrabar.Enabled = True

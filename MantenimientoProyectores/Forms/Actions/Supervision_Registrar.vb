@@ -8,6 +8,19 @@ Public Class Supervision_Registrar
     Dim lector As MySqlDataReader
     Dim ftppath As String = "ftp://ftp-sistemamediosav.alwaysdata.net:21"
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
+        If chkDatosSecundarios.Checked = False Then
+            grabarTodo()
+        Else
+            If validaImagenes() = True Then
+                grabarTodo()
+            Else
+                MsgBox("No se encontro una ruta en una de las imagenes secundarias!", MsgBoxStyle.Critical, "ERROR")
+            End If
+        End If
+
+    End Sub
+
+    Public Sub grabarTodo()
         Dim transaction As MySqlTransaction
         transaction = connection.BeginTransaction()
         command.Connection = connection
@@ -112,15 +125,11 @@ Public Class Supervision_Registrar
                 ftp.subirFichero(LV.Items(i).SubItems.Item(3).Text, ftppath & "/ITCG/" & getNameFile(LV.Items(i).SubItems.Item(3).Text), ftppath & "/ITCG")
             Next
             If chkDatosSecundarios.Checked = True Then
-                If validaImagenes() = True Then
-                    ftp.subirFichero(txtImgConexiones.Text, ftppath & "/ITCG/" & getNameFile(txtImgConexiones.Text), ftppath & "/ITCG")
-                    ftp.subirFichero(txtImgElect.Text, ftppath & "/ITCG/" & getNameFile(txtImgElect.Text), ftppath & "/ITCG")
-                    ftp.subirFichero(txtImgElectri.Text, ftppath & "/ITCG/" & getNameFile(txtImgElectri.Text), ftppath & "/ITCG")
-                    ftp.subirFichero(txtImgLamparas.Text, ftppath & "/ITCG/" & getNameFile(txtImgLamparas.Text), ftppath & "/ITCG")
-                    ftp.subirFichero(txtImgPintarron.Text, ftppath & "/ITCG/" & getNameFile(txtImgPintarron.Text), ftppath & "/ITCG")
-                Else
-                    MsgBox("No se encontro una ruta en una de las imagenes secundarias!", MsgBoxStyle.Critical, "ERROR")
-                End If
+                ftp.subirFichero(txtImgConexiones.Text, ftppath & "/ITCG/" & getNameFile(txtImgConexiones.Text), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgElect.Text, ftppath & "/ITCG/" & getNameFile(txtImgElect.Text), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgElectri.Text, ftppath & "/ITCG/" & getNameFile(txtImgElectri.Text), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgLamparas.Text, ftppath & "/ITCG/" & getNameFile(txtImgLamparas.Text), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgPintarron.Text, ftppath & "/ITCG/" & getNameFile(txtImgPintarron.Text), ftppath & "/ITCG")
             End If
             LV.Items.Clear()
         Catch ex As Exception

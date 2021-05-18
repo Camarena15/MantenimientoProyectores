@@ -25,11 +25,18 @@ Partial Class Menu
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         Me.PanelCabecera = New System.Windows.Forms.Panel()
-        Me.btnRestaurar = New System.Windows.Forms.Button()
         Me.btnMinimizar = New System.Windows.Forms.Button()
-        Me.btnMaximizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.PanelMenuReportes = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.btnRelPrev = New System.Windows.Forms.Button()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.btnRelAteRep = New System.Windows.Forms.Button()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.btnRelRep = New System.Windows.Forms.Button()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.btnRepSup = New System.Windows.Forms.Button()
         Me.PanelMovimientos = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.btnReportesIndividuales = New System.Windows.Forms.Button()
@@ -48,15 +55,6 @@ Partial Class Menu
         Me.btnInformeErrores = New System.Windows.Forms.Button()
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.btnRecovery = New System.Windows.Forms.Button()
-        Me.PanelMenuReportes = New System.Windows.Forms.Panel()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.btnRelPrev = New System.Windows.Forms.Button()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.btnRelAteRep = New System.Windows.Forms.Button()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.btnRelRep = New System.Windows.Forms.Button()
-        Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.btnRepSup = New System.Windows.Forms.Button()
         Me.PanelCatalogos = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.btnLugar = New System.Windows.Forms.Button()
@@ -71,6 +69,7 @@ Partial Class Menu
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.btnRecursos = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel28 = New System.Windows.Forms.Panel()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.btnUtilerias = New System.Windows.Forms.Button()
@@ -88,6 +87,8 @@ Partial Class Menu
         Me.tmMostrarMenu = New System.Windows.Forms.Timer(Me.components)
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelSeleccion = New System.Windows.Forms.Panel()
+        Me.LineaRegistrar = New System.Windows.Forms.Button()
+        Me.LineaTerminar = New System.Windows.Forms.Button()
         Me.Panel22 = New System.Windows.Forms.Panel()
         Me.btnTerminar = New System.Windows.Forms.Button()
         Me.Panel26 = New System.Windows.Forms.Panel()
@@ -95,12 +96,15 @@ Partial Class Menu
         Me.Panel27 = New System.Windows.Forms.Panel()
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.pctCargando = New System.Windows.Forms.PictureBox()
+        Me.btnAcercaDe = New System.Windows.Forms.Button()
+        Me.Panel29 = New System.Windows.Forms.Panel()
         Me.PanelCabecera.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
+        Me.PanelMenuReportes.SuspendLayout()
         Me.PanelMovimientos.SuspendLayout()
         Me.PanelUtilerias.SuspendLayout()
-        Me.PanelMenuReportes.SuspendLayout()
         Me.PanelCatalogos.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSeleccion.SuspendLayout()
@@ -110,31 +114,13 @@ Partial Class Menu
         'PanelCabecera
         '
         Me.PanelCabecera.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PanelCabecera.Controls.Add(Me.btnRestaurar)
         Me.PanelCabecera.Controls.Add(Me.btnMinimizar)
-        Me.PanelCabecera.Controls.Add(Me.btnMaximizar)
         Me.PanelCabecera.Controls.Add(Me.btnCerrar)
         Me.PanelCabecera.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelCabecera.Location = New System.Drawing.Point(0, 0)
         Me.PanelCabecera.Name = "PanelCabecera"
         Me.PanelCabecera.Size = New System.Drawing.Size(1280, 40)
         Me.PanelCabecera.TabIndex = 0
-        '
-        'btnRestaurar
-        '
-        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRestaurar.FlatAppearance.BorderSize = 0
-        Me.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue
-        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRestaurar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Icono_Restaurar
-        Me.btnRestaurar.Location = New System.Drawing.Point(1194, 0)
-        Me.btnRestaurar.Name = "btnRestaurar"
-        Me.btnRestaurar.Size = New System.Drawing.Size(40, 40)
-        Me.btnRestaurar.TabIndex = 3
-        Me.btnRestaurar.UseVisualStyleBackColor = True
-        Me.btnRestaurar.Visible = False
         '
         'btnMinimizar
         '
@@ -145,26 +131,11 @@ Partial Class Menu
         Me.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimizar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.Location = New System.Drawing.Point(1148, 0)
+        Me.btnMinimizar.Location = New System.Drawing.Point(1194, 0)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(40, 40)
         Me.btnMinimizar.TabIndex = 2
         Me.btnMinimizar.UseVisualStyleBackColor = True
-        '
-        'btnMaximizar
-        '
-        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMaximizar.FlatAppearance.BorderSize = 0
-        Me.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue
-        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximizar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Icono_Maximizar
-        Me.btnMaximizar.Location = New System.Drawing.Point(1194, 0)
-        Me.btnMaximizar.Name = "btnMaximizar"
-        Me.btnMaximizar.Size = New System.Drawing.Size(40, 40)
-        Me.btnMaximizar.TabIndex = 1
-        Me.btnMaximizar.UseVisualStyleBackColor = True
         '
         'btnCerrar
         '
@@ -207,6 +178,131 @@ Partial Class Menu
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(220, 680)
         Me.PanelMenu.TabIndex = 1
+        '
+        'PanelMenuReportes
+        '
+        Me.PanelMenuReportes.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.PanelMenuReportes.Controls.Add(Me.Panel14)
+        Me.PanelMenuReportes.Controls.Add(Me.btnRelPrev)
+        Me.PanelMenuReportes.Controls.Add(Me.Panel15)
+        Me.PanelMenuReportes.Controls.Add(Me.btnRelAteRep)
+        Me.PanelMenuReportes.Controls.Add(Me.Panel20)
+        Me.PanelMenuReportes.Controls.Add(Me.btnRelRep)
+        Me.PanelMenuReportes.Controls.Add(Me.Panel21)
+        Me.PanelMenuReportes.Controls.Add(Me.btnRepSup)
+        Me.PanelMenuReportes.Location = New System.Drawing.Point(60, 340)
+        Me.PanelMenuReportes.Name = "PanelMenuReportes"
+        Me.PanelMenuReportes.Size = New System.Drawing.Size(160, 227)
+        Me.PanelMenuReportes.TabIndex = 16
+        Me.PanelMenuReportes.Visible = False
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.Navy
+        Me.Panel14.Location = New System.Drawing.Point(0, 171)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(5, 50)
+        Me.Panel14.TabIndex = 9
+        '
+        'btnRelPrev
+        '
+        Me.btnRelPrev.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRelPrev.FlatAppearance.BorderSize = 0
+        Me.btnRelPrev.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnRelPrev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnRelPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRelPrev.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnRelPrev.ForeColor = System.Drawing.Color.White
+        Me.btnRelPrev.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
+        Me.btnRelPrev.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRelPrev.Location = New System.Drawing.Point(0, 171)
+        Me.btnRelPrev.Name = "btnRelPrev"
+        Me.btnRelPrev.Size = New System.Drawing.Size(160, 50)
+        Me.btnRelPrev.TabIndex = 8
+        Me.btnRelPrev.Text = "  RELACIÓN PREVENTIVOS POR ESTADO"
+        Me.btnRelPrev.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRelPrev.UseVisualStyleBackColor = True
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.Navy
+        Me.Panel15.Location = New System.Drawing.Point(0, 112)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(5, 56)
+        Me.Panel15.TabIndex = 7
+        '
+        'btnRelAteRep
+        '
+        Me.btnRelAteRep.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRelAteRep.FlatAppearance.BorderSize = 0
+        Me.btnRelAteRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnRelAteRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnRelAteRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRelAteRep.Font = New System.Drawing.Font("Venus Rising", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRelAteRep.ForeColor = System.Drawing.Color.White
+        Me.btnRelAteRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
+        Me.btnRelAteRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRelAteRep.Location = New System.Drawing.Point(1, 112)
+        Me.btnRelAteRep.Name = "btnRelAteRep"
+        Me.btnRelAteRep.Size = New System.Drawing.Size(160, 56)
+        Me.btnRelAteRep.TabIndex = 6
+        Me.btnRelAteRep.Text = "  RELACIÓN ATENCIÓN A REPORTES POR PERIODO"
+        Me.btnRelAteRep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRelAteRep.UseVisualStyleBackColor = True
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.Navy
+        Me.Panel20.Location = New System.Drawing.Point(0, 56)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(5, 50)
+        Me.Panel20.TabIndex = 5
+        '
+        'btnRelRep
+        '
+        Me.btnRelRep.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRelRep.FlatAppearance.BorderSize = 0
+        Me.btnRelRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnRelRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnRelRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRelRep.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnRelRep.ForeColor = System.Drawing.Color.White
+        Me.btnRelRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
+        Me.btnRelRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRelRep.Location = New System.Drawing.Point(0, 56)
+        Me.btnRelRep.Name = "btnRelRep"
+        Me.btnRelRep.Size = New System.Drawing.Size(160, 50)
+        Me.btnRelRep.TabIndex = 4
+        Me.btnRelRep.Text = "REPORTES EN PERIODO POR ESTADO"
+        Me.btnRelRep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRelRep.UseVisualStyleBackColor = True
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.Navy
+        Me.Panel21.Location = New System.Drawing.Point(0, 0)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(5, 50)
+        Me.Panel21.TabIndex = 3
+        '
+        'btnRepSup
+        '
+        Me.btnRepSup.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRepSup.FlatAppearance.BorderSize = 0
+        Me.btnRepSup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
+        Me.btnRepSup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnRepSup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRepSup.Font = New System.Drawing.Font("Venus Rising", 6.0!)
+        Me.btnRepSup.ForeColor = System.Drawing.Color.White
+        Me.btnRepSup.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
+        Me.btnRepSup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRepSup.Location = New System.Drawing.Point(0, 0)
+        Me.btnRepSup.Name = "btnRepSup"
+        Me.btnRepSup.Size = New System.Drawing.Size(160, 50)
+        Me.btnRepSup.TabIndex = 2
+        Me.btnRepSup.Text = "  REPORTE DE    SUPERVISIÓN EN UN PERIODO"
+        Me.btnRepSup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRepSup.UseVisualStyleBackColor = True
         '
         'PanelMovimientos
         '
@@ -458,131 +554,6 @@ Partial Class Menu
         Me.btnRecovery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnRecovery.UseVisualStyleBackColor = True
         '
-        'PanelMenuReportes
-        '
-        Me.PanelMenuReportes.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.PanelMenuReportes.Controls.Add(Me.Panel14)
-        Me.PanelMenuReportes.Controls.Add(Me.btnRelPrev)
-        Me.PanelMenuReportes.Controls.Add(Me.Panel15)
-        Me.PanelMenuReportes.Controls.Add(Me.btnRelAteRep)
-        Me.PanelMenuReportes.Controls.Add(Me.Panel20)
-        Me.PanelMenuReportes.Controls.Add(Me.btnRelRep)
-        Me.PanelMenuReportes.Controls.Add(Me.Panel21)
-        Me.PanelMenuReportes.Controls.Add(Me.btnRepSup)
-        Me.PanelMenuReportes.Location = New System.Drawing.Point(60, 340)
-        Me.PanelMenuReportes.Name = "PanelMenuReportes"
-        Me.PanelMenuReportes.Size = New System.Drawing.Size(160, 227)
-        Me.PanelMenuReportes.TabIndex = 16
-        Me.PanelMenuReportes.Visible = False
-        '
-        'Panel14
-        '
-        Me.Panel14.BackColor = System.Drawing.Color.Navy
-        Me.Panel14.Location = New System.Drawing.Point(0, 171)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(5, 50)
-        Me.Panel14.TabIndex = 9
-        '
-        'btnRelPrev
-        '
-        Me.btnRelPrev.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRelPrev.FlatAppearance.BorderSize = 0
-        Me.btnRelPrev.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.btnRelPrev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnRelPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRelPrev.Font = New System.Drawing.Font("Venus Rising", 7.5!)
-        Me.btnRelPrev.ForeColor = System.Drawing.Color.White
-        Me.btnRelPrev.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
-        Me.btnRelPrev.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRelPrev.Location = New System.Drawing.Point(0, 171)
-        Me.btnRelPrev.Name = "btnRelPrev"
-        Me.btnRelPrev.Size = New System.Drawing.Size(160, 50)
-        Me.btnRelPrev.TabIndex = 8
-        Me.btnRelPrev.Text = "  RELACIÓN PREVENTIVOS POR ESTADO"
-        Me.btnRelPrev.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnRelPrev.UseVisualStyleBackColor = True
-        '
-        'Panel15
-        '
-        Me.Panel15.BackColor = System.Drawing.Color.Navy
-        Me.Panel15.Location = New System.Drawing.Point(0, 112)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(5, 56)
-        Me.Panel15.TabIndex = 7
-        '
-        'btnRelAteRep
-        '
-        Me.btnRelAteRep.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRelAteRep.FlatAppearance.BorderSize = 0
-        Me.btnRelAteRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.btnRelAteRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnRelAteRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRelAteRep.Font = New System.Drawing.Font("Venus Rising", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRelAteRep.ForeColor = System.Drawing.Color.White
-        Me.btnRelAteRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
-        Me.btnRelAteRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRelAteRep.Location = New System.Drawing.Point(1, 112)
-        Me.btnRelAteRep.Name = "btnRelAteRep"
-        Me.btnRelAteRep.Size = New System.Drawing.Size(160, 56)
-        Me.btnRelAteRep.TabIndex = 6
-        Me.btnRelAteRep.Text = "  RELACIÓN ATENCIÓN A REPORTES POR PERIODO"
-        Me.btnRelAteRep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnRelAteRep.UseVisualStyleBackColor = True
-        '
-        'Panel20
-        '
-        Me.Panel20.BackColor = System.Drawing.Color.Navy
-        Me.Panel20.Location = New System.Drawing.Point(0, 56)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(5, 50)
-        Me.Panel20.TabIndex = 5
-        '
-        'btnRelRep
-        '
-        Me.btnRelRep.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRelRep.FlatAppearance.BorderSize = 0
-        Me.btnRelRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.btnRelRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnRelRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRelRep.Font = New System.Drawing.Font("Venus Rising", 7.5!)
-        Me.btnRelRep.ForeColor = System.Drawing.Color.White
-        Me.btnRelRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
-        Me.btnRelRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRelRep.Location = New System.Drawing.Point(0, 56)
-        Me.btnRelRep.Name = "btnRelRep"
-        Me.btnRelRep.Size = New System.Drawing.Size(160, 50)
-        Me.btnRelRep.TabIndex = 4
-        Me.btnRelRep.Text = "REPORTES EN PERIODO POR ESTADO"
-        Me.btnRelRep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnRelRep.UseVisualStyleBackColor = True
-        '
-        'Panel21
-        '
-        Me.Panel21.BackColor = System.Drawing.Color.Navy
-        Me.Panel21.Location = New System.Drawing.Point(0, 0)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(5, 50)
-        Me.Panel21.TabIndex = 3
-        '
-        'btnRepSup
-        '
-        Me.btnRepSup.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRepSup.FlatAppearance.BorderSize = 0
-        Me.btnRepSup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
-        Me.btnRepSup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnRepSup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRepSup.Font = New System.Drawing.Font("Venus Rising", 6.0!)
-        Me.btnRepSup.ForeColor = System.Drawing.Color.White
-        Me.btnRepSup.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
-        Me.btnRepSup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRepSup.Location = New System.Drawing.Point(0, 0)
-        Me.btnRepSup.Name = "btnRepSup"
-        Me.btnRepSup.Size = New System.Drawing.Size(160, 50)
-        Me.btnRepSup.TabIndex = 2
-        Me.btnRepSup.Text = "  REPORTE DE    SUPERVISIÓN EN UN PERIODO"
-        Me.btnRepSup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnRepSup.UseVisualStyleBackColor = True
-        '
         'PanelCatalogos
         '
         Me.PanelCatalogos.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
@@ -769,10 +740,19 @@ Partial Class Menu
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Navy
+        Me.Panel6.Controls.Add(Me.Panel28)
         Me.Panel6.Location = New System.Drawing.Point(0, 402)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(5, 50)
         Me.Panel6.TabIndex = 13
+        '
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.Navy
+        Me.Panel28.Location = New System.Drawing.Point(0, 9)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(5, 50)
+        Me.Panel28.TabIndex = 14
         '
         'btnAyuda
         '
@@ -952,11 +932,11 @@ Partial Class Menu
         '
         'tmOcultarMenu
         '
-        Me.tmOcultarMenu.Interval = 50
+        Me.tmOcultarMenu.Interval = 1
         '
         'tmMostrarMenu
         '
-        Me.tmMostrarMenu.Interval = 50
+        Me.tmMostrarMenu.Interval = 1
         '
         'PanelContenedor
         '
@@ -972,6 +952,8 @@ Partial Class Menu
         'PanelSeleccion
         '
         Me.PanelSeleccion.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.PanelSeleccion.Controls.Add(Me.LineaRegistrar)
+        Me.PanelSeleccion.Controls.Add(Me.LineaTerminar)
         Me.PanelSeleccion.Controls.Add(Me.Panel22)
         Me.PanelSeleccion.Controls.Add(Me.btnTerminar)
         Me.PanelSeleccion.Controls.Add(Me.Panel26)
@@ -983,6 +965,42 @@ Partial Class Menu
         Me.PanelSeleccion.Size = New System.Drawing.Size(160, 171)
         Me.PanelSeleccion.TabIndex = 19
         Me.PanelSeleccion.Visible = False
+        '
+        'LineaRegistrar
+        '
+        Me.LineaRegistrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LineaRegistrar.BackColor = System.Drawing.Color.Transparent
+        Me.LineaRegistrar.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Icono_cerrar_FN
+        Me.LineaRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LineaRegistrar.Cursor = System.Windows.Forms.Cursors.Default
+        Me.LineaRegistrar.FlatAppearance.BorderSize = 0
+        Me.LineaRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.LineaRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.LineaRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LineaRegistrar.Location = New System.Drawing.Point(5, 5)
+        Me.LineaRegistrar.Name = "LineaRegistrar"
+        Me.LineaRegistrar.Size = New System.Drawing.Size(151, 40)
+        Me.LineaRegistrar.TabIndex = 9
+        Me.LineaRegistrar.UseVisualStyleBackColor = False
+        Me.LineaRegistrar.Visible = False
+        '
+        'LineaTerminar
+        '
+        Me.LineaTerminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LineaTerminar.BackColor = System.Drawing.Color.Transparent
+        Me.LineaTerminar.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Icono_cerrar_FN
+        Me.LineaTerminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LineaTerminar.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.LineaTerminar.FlatAppearance.BorderSize = 0
+        Me.LineaTerminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.LineaTerminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.LineaTerminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LineaTerminar.Location = New System.Drawing.Point(6, 120)
+        Me.LineaTerminar.Name = "LineaTerminar"
+        Me.LineaTerminar.Size = New System.Drawing.Size(151, 40)
+        Me.LineaTerminar.TabIndex = 8
+        Me.LineaTerminar.UseVisualStyleBackColor = False
+        Me.LineaTerminar.Visible = False
         '
         'Panel22
         '
@@ -1080,11 +1098,37 @@ Partial Class Menu
         Me.pctCargando.TabStop = False
         Me.pctCargando.Visible = False
         '
+        'btnAcercaDe
+        '
+        Me.btnAcercaDe.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAcercaDe.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnAcercaDe.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAcercaDe.FlatAppearance.BorderSize = 0
+        Me.btnAcercaDe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.btnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue
+        Me.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAcercaDe.Image = Global.MantenimientoProyectores.My.Resources.Resources.Icono_Maximizar
+        Me.btnAcercaDe.Location = New System.Drawing.Point(6, 675)
+        Me.btnAcercaDe.Name = "btnAcercaDe"
+        Me.btnAcercaDe.Size = New System.Drawing.Size(40, 40)
+        Me.btnAcercaDe.TabIndex = 21
+        Me.btnAcercaDe.UseVisualStyleBackColor = False
+        '
+        'Panel29
+        '
+        Me.Panel29.BackColor = System.Drawing.Color.Navy
+        Me.Panel29.Location = New System.Drawing.Point(0, 670)
+        Me.Panel29.Name = "Panel29"
+        Me.Panel29.Size = New System.Drawing.Size(5, 50)
+        Me.Panel29.TabIndex = 22
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.Controls.Add(Me.Panel29)
+        Me.Controls.Add(Me.btnAcercaDe)
         Me.Controls.Add(Me.PanelSeleccion)
         Me.Controls.Add(Me.pctCargando)
         Me.Controls.Add(Me.PanelContenedor)
@@ -1096,10 +1140,11 @@ Partial Class Menu
         Me.Text = "SISTEMA DE CONTROL DE MANTENIMIENTO DE MEDIOS AUDIOVISUALES"
         Me.PanelCabecera.ResumeLayout(False)
         Me.PanelMenu.ResumeLayout(False)
+        Me.PanelMenuReportes.ResumeLayout(False)
         Me.PanelMovimientos.ResumeLayout(False)
         Me.PanelUtilerias.ResumeLayout(False)
-        Me.PanelMenuReportes.ResumeLayout(False)
         Me.PanelCatalogos.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSeleccion.ResumeLayout(False)
@@ -1112,8 +1157,6 @@ Partial Class Menu
     Friend WithEvents btnCerrar As Button
     Friend WithEvents PanelMenu As Panel
     Friend WithEvents PanelContenedor As Panel
-    Friend WithEvents btnMaximizar As Button
-    Friend WithEvents btnRestaurar As Button
     Friend WithEvents btnMinimizar As Button
     Friend WithEvents btnMenu As PictureBox
     Friend WithEvents tmOcultarMenu As Timer
@@ -1179,4 +1222,9 @@ Partial Class Menu
     Friend WithEvents pctCargando As PictureBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents btnReportesIndividuales As Button
+    Friend WithEvents btnAcercaDe As Button
+    Friend WithEvents Panel28 As Panel
+    Friend WithEvents Panel29 As Panel
+    Friend WithEvents LineaTerminar As Button
+    Friend WithEvents LineaRegistrar As Button
 End Class

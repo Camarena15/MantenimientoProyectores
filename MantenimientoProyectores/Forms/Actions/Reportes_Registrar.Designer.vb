@@ -112,7 +112,7 @@ Partial Class Reportes_Registrar
         '
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
-        Me.txtAula.Items.AddRange(New Object() {"---", "1", "2", "3", "4", "5", "6", "7", "8", "*"})
+        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08", "*"})
         Me.txtAula.Location = New System.Drawing.Point(195, 132)
         Me.txtAula.Name = "txtAula"
         Me.txtAula.Size = New System.Drawing.Size(62, 27)

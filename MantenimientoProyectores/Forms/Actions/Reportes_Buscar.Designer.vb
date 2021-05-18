@@ -28,6 +28,13 @@ Partial Class Reportes_Buscar
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DGV = New System.Windows.Forms.DataGridView()
+        Me.IdReporte = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ObservacionesGrales = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.E = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.A = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -42,13 +49,6 @@ Partial Class Reportes_Buscar
         Me.lblAula = New System.Windows.Forms.Label()
         Me.lblEdificio = New System.Windows.Forms.Label()
         Me.cmdFiltrar = New System.Windows.Forms.Button()
-        Me.IdReporte = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ObservacionesGrales = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.E = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.A = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -99,6 +99,51 @@ Partial Class Reportes_Buscar
         Me.DGV.Name = "DGV"
         Me.DGV.Size = New System.Drawing.Size(568, 135)
         Me.DGV.TabIndex = 8
+        '
+        'IdReporte
+        '
+        Me.IdReporte.HeaderText = "ID Reporte"
+        Me.IdReporte.Name = "IdReporte"
+        Me.IdReporte.ReadOnly = True
+        Me.IdReporte.Width = 60
+        '
+        'Tipo
+        '
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        '
+        'Fecha
+        '
+        Me.Fecha.HeaderText = "Fecha"
+        Me.Fecha.Name = "Fecha"
+        Me.Fecha.ReadOnly = True
+        Me.Fecha.Width = 80
+        '
+        'ObservacionesGrales
+        '
+        Me.ObservacionesGrales.HeaderText = "Concepto"
+        Me.ObservacionesGrales.Name = "ObservacionesGrales"
+        Me.ObservacionesGrales.ReadOnly = True
+        '
+        'Estado
+        '
+        Me.Estado.HeaderText = "Estado"
+        Me.Estado.Name = "Estado"
+        Me.Estado.ReadOnly = True
+        '
+        'E
+        '
+        Me.E.HeaderText = "E"
+        Me.E.Name = "E"
+        Me.E.Visible = False
+        Me.E.Width = 30
+        '
+        'A
+        '
+        Me.A.HeaderText = "A"
+        Me.A.Name = "A"
+        Me.A.Visible = False
+        Me.A.Width = 30
         '
         'Label3
         '
@@ -202,7 +247,7 @@ Partial Class Reportes_Buscar
         '
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
-        Me.txtAula.Items.AddRange(New Object() {"---", "1", "2", "3", "4", "5", "6", "7", "8", "*"})
+        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08", "*"})
         Me.txtAula.Location = New System.Drawing.Point(253, 153)
         Me.txtAula.Name = "txtAula"
         Me.txtAula.Size = New System.Drawing.Size(62, 27)
@@ -262,51 +307,6 @@ Partial Class Reportes_Buscar
         Me.cmdFiltrar.Text = "Filtrar"
         Me.cmdFiltrar.UseVisualStyleBackColor = False
         Me.cmdFiltrar.Visible = False
-        '
-        'IdReporte
-        '
-        Me.IdReporte.HeaderText = "ID Reporte"
-        Me.IdReporte.Name = "IdReporte"
-        Me.IdReporte.ReadOnly = True
-        Me.IdReporte.Width = 60
-        '
-        'Tipo
-        '
-        Me.Tipo.HeaderText = "Tipo"
-        Me.Tipo.Name = "Tipo"
-        '
-        'Fecha
-        '
-        Me.Fecha.HeaderText = "Fecha"
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.ReadOnly = True
-        Me.Fecha.Width = 80
-        '
-        'ObservacionesGrales
-        '
-        Me.ObservacionesGrales.HeaderText = "Concepto"
-        Me.ObservacionesGrales.Name = "ObservacionesGrales"
-        Me.ObservacionesGrales.ReadOnly = True
-        '
-        'Estado
-        '
-        Me.Estado.HeaderText = "Estado"
-        Me.Estado.Name = "Estado"
-        Me.Estado.ReadOnly = True
-        '
-        'E
-        '
-        Me.E.HeaderText = "E"
-        Me.E.Name = "E"
-        Me.E.Visible = False
-        Me.E.Width = 30
-        '
-        'A
-        '
-        Me.A.HeaderText = "A"
-        Me.A.Name = "A"
-        Me.A.Visible = False
-        Me.A.Width = 30
         '
         'Reportes_Buscar
         '

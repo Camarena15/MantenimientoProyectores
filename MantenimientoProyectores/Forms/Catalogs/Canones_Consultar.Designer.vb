@@ -29,16 +29,6 @@ Partial Class Canones_Consultar
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.DGV = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmdAnterior = New System.Windows.Forms.Button()
         Me.cmdUltimo = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -68,6 +58,16 @@ Partial Class Canones_Consultar
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pctCargando = New System.Windows.Forms.PictureBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -148,86 +148,6 @@ Partial Class Canones_Consultar
         Me.DGV.RowTemplate.Height = 24
         Me.DGV.Size = New System.Drawing.Size(864, 166)
         Me.DGV.TabIndex = 264
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "idRecurso"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 65
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "INVCAPECE"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 65
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Fecha de adquisicion"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 80
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Fecha del ultimo mantenimiento"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 80
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Modelo"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 80
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Marca"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.Width = 80
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "NO. Serie"
-        Me.Column7.MinimumWidth = 6
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        Me.Column7.Width = 80
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Horas lampara"
-        Me.Column8.MinimumWidth = 6
-        Me.Column8.Name = "Column8"
-        Me.Column8.ReadOnly = True
-        Me.Column8.Width = 50
-        '
-        'Column10
-        '
-        Me.Column10.HeaderText = "Estado"
-        Me.Column10.MinimumWidth = 6
-        Me.Column10.Name = "Column10"
-        Me.Column10.ReadOnly = True
-        Me.Column10.Width = 80
-        '
-        'Column9
-        '
-        Me.Column9.HeaderText = "Observaciones"
-        Me.Column9.MinimumWidth = 6
-        Me.Column9.Name = "Column9"
-        Me.Column9.ReadOnly = True
-        Me.Column9.Width = 125
         '
         'cmdAnterior
         '
@@ -466,7 +386,7 @@ Partial Class Canones_Consultar
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(126, 19)
         Me.Label10.TabIndex = 270
-        Me.Label10.Text = "Horas lampara"
+        Me.Label10.Text = "Horas lámpara"
         '
         'Label9
         '
@@ -525,7 +445,7 @@ Partial Class Canones_Consultar
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(164, 38)
         Me.Label2.TabIndex = 262
-        Me.Label2.Text = "Fecha de ultimo mantenimiento"
+        Me.Label2.Text = "Fecha de último mantenimiento"
         '
         'cmdSiguiente
         '
@@ -579,6 +499,86 @@ Partial Class Canones_Consultar
         Me.pctCargando.TabIndex = 302
         Me.pctCargando.TabStop = False
         Me.pctCargando.Visible = False
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "idRecurso"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 65
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "INVCAPECE"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 65
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Fecha de adquisición"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 80
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Fecha del último mantenimiento"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 80
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Modelo"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        Me.Column5.Width = 80
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Marca"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        Me.Column6.Width = 80
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "NO. Serie"
+        Me.Column7.MinimumWidth = 6
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        Me.Column7.Width = 80
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Horas lámpara"
+        Me.Column8.MinimumWidth = 6
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        Me.Column8.Width = 50
+        '
+        'Column10
+        '
+        Me.Column10.HeaderText = "Estado"
+        Me.Column10.MinimumWidth = 6
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        Me.Column10.Width = 80
+        '
+        'Column9
+        '
+        Me.Column9.HeaderText = "Observaciones"
+        Me.Column9.MinimumWidth = 6
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        Me.Column9.Width = 125
         '
         'Canones_Consultar
         '
@@ -639,16 +639,6 @@ Partial Class Canones_Consultar
     Friend WithEvents Label12 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column10 As DataGridViewTextBoxColumn
-    Friend WithEvents Column9 As DataGridViewTextBoxColumn
     Friend WithEvents txtHorasL As TextBox
     Friend WithEvents txtModelo As TextBox
     Friend WithEvents txtMarca As TextBox
@@ -659,4 +649,14 @@ Partial Class Canones_Consultar
     Friend WithEvents txtId As NumericUpDown
     Friend WithEvents Timer1 As Timer
     Friend WithEvents pctCargando As PictureBox
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
 End Class
