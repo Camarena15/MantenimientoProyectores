@@ -112,7 +112,7 @@ Partial Class Reportes_Registrar
         '
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
-        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08", "*"})
+        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08"})
         Me.txtAula.Location = New System.Drawing.Point(195, 132)
         Me.txtAula.Name = "txtAula"
         Me.txtAula.Size = New System.Drawing.Size(62, 27)
@@ -122,7 +122,7 @@ Partial Class Reportes_Registrar
         '
         Me.txtEdificio.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtEdificio.FormattingEnabled = True
-        Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "M.V.O.", "INGLES", "LAB"})
+        Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"})
         Me.txtEdificio.Location = New System.Drawing.Point(86, 132)
         Me.txtEdificio.Name = "txtEdificio"
         Me.txtEdificio.Size = New System.Drawing.Size(62, 27)
@@ -141,7 +141,7 @@ Partial Class Reportes_Registrar
         'cboMMF
         '
         Me.cboMMF.FormattingEnabled = True
-        Me.cboMMF.Items.AddRange(New Object() {"--", "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
+        Me.cboMMF.Items.AddRange(New Object() {"--", "00", "30"})
         Me.cboMMF.Location = New System.Drawing.Point(410, 91)
         Me.cboMMF.Name = "cboMMF"
         Me.cboMMF.Size = New System.Drawing.Size(44, 27)
@@ -159,7 +159,7 @@ Partial Class Reportes_Registrar
         'cboMMI
         '
         Me.cboMMI.FormattingEnabled = True
-        Me.cboMMI.Items.AddRange(New Object() {"--", "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
+        Me.cboMMI.Items.AddRange(New Object() {"--", "00", "30"})
         Me.cboMMI.Location = New System.Drawing.Point(188, 91)
         Me.cboMMI.Name = "cboMMI"
         Me.cboMMI.Size = New System.Drawing.Size(44, 27)
@@ -177,7 +177,7 @@ Partial Class Reportes_Registrar
         'cboHHF
         '
         Me.cboHHF.FormattingEnabled = True
-        Me.cboHHF.Items.AddRange(New Object() {"--", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
+        Me.cboHHF.Items.AddRange(New Object() {"--", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
         Me.cboHHF.Location = New System.Drawing.Point(349, 91)
         Me.cboHHF.Name = "cboHHF"
         Me.cboHHF.Size = New System.Drawing.Size(44, 27)
@@ -186,7 +186,7 @@ Partial Class Reportes_Registrar
         'cboHHI
         '
         Me.cboHHI.FormattingEnabled = True
-        Me.cboHHI.Items.AddRange(New Object() {"--", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
+        Me.cboHHI.Items.AddRange(New Object() {"--", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
         Me.cboHHI.Location = New System.Drawing.Point(127, 91)
         Me.cboHHI.Name = "cboHHI"
         Me.cboHHI.Size = New System.Drawing.Size(44, 27)

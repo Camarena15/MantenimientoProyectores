@@ -15,7 +15,7 @@ Public Class Preventivo_Terminar
             command.Connection = connection
             command.Transaction = transaction
             Try
-                command.CommandText = "UPDATE `PREVENTIVO` SET `Estado`= 'Terminado', `FechaFin`='" & txtFechaFinal.Value.ToString("yyyy-MM-dd") & "' WHERE IdPreventivo= " & txtId.Value
+                command.CommandText = "UPDATE `PREVENTIVO` SET `Estado`= 'Terminado', `FechaFin`='" & txtFechaFinal.Value.ToString("yyyy-MM-dd") & "',`Observacion`='" & txtObservaciones.Text & "'  WHERE IdPreventivo= " & txtId.Value
                 command.ExecuteNonQuery()
                 If (MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1) Then
                     command.CommandText = "UPDATE `CAÑONES` SET `Estado`= '" & cboEstadoRecurso.SelectedItem & "' WHERE IdRecurso= " & txtIdRecurso.Text
@@ -59,6 +59,7 @@ Public Class Preventivo_Terminar
         txtConcepto.Text = ""
         txtCategoria.Text = ""
         txtObservaciones.Text = ""
+        txtObservaciones.Enabled = False
         txtTipoServicio.Text = ""
         txtFechaInicial.Text = ""
         txtFechaFinal.Value = Date.Today
@@ -108,6 +109,7 @@ Public Class Preventivo_Terminar
             txtMarca.Text = lector.GetValue(2)
             lector.Close()
             cmdGrabar.Enabled = True
+            txtObservaciones.Enabled = True
             cboEstadoRecurso.Items.Clear()
             cboEstadoRecurso.Items.Add("---")
             command.CommandText = "SELECT count(*) FROM RECURSOSASIGNADOS WHERE Estado = 'Vigente' AND IdRecurso=" & txtIdRecurso.Text

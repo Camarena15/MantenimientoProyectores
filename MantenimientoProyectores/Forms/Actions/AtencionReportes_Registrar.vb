@@ -15,7 +15,12 @@ Public Class AtencionReportes_Registrar
                 Observacion, Estado) VALUES (" & txtIdReporte.Text & "," & txtidRecurso.Text & ",'" & cboTipo.Text & "','" &
                 DTP.Value.ToString("yyyy-MM-dd") & "','" & txtAtiende.Text & "','" & txtObservacion.Text & "','" & txtEstado.Text & "')"
             command.ExecuteNonQuery()
-            command.CommandText = "UPDATE `REPORTEDOCENTES` SET `Estado`= 'Atendido' WHERE IdReporte=" & txtIdReporte.Text
+            If cboTipoReporte.SelectedItem.Equals("DOCENTE") Then
+                command.CommandText = "UPDATE `REPORTEDOCENTES` SET `Estado`= 'Atendido' WHERE IdReporte=" & txtIdReporte.Text
+
+            Else
+                command.CommandText = "UPDATE `REPORTESRECURSOSINDIVIDUALES` SET `Estado`= 'Atendido' WHERE IdReporteRecursos=" & txtIdReporte.Text
+            End If
             command.ExecuteNonQuery()
             If (MP.busquedaIdRecurso("CAÑONES", txtidRecurso.Text) = 1) Then
                 If RBSI.Checked = True Then
@@ -144,14 +149,18 @@ Public Class AtencionReportes_Registrar
                     txtEdificio.Visible = True
                     txtAula.Visible = True
                     Reportes_Buscar.ShowDialog()
-                    GBRecurso.Enabled = True
-                    GBReporte.Enabled = True
-                    txtEdificio.Text = recursoasignadoEdificio
-                    txtAula.Text = recursoasignadoAula
-                    txtIdReporte.Text = idReporte_1
-                    txtFecha.Text = fecha_1
-                    txtObservacionesRep.Text = observaciones_1
-                    txtEstadoReporte.Text = estadoreporte_1
+                    If obtainedInfoRep = True Then
+                        obtainedInfoRep = False
+                        GBRecurso.Enabled = True
+                        GBReporte.Enabled = True
+                        txtEdificio.Text = recursoasignadoEdificio
+                        txtAula.Text = recursoasignadoAula
+                        txtIdReporte.Text = idReporte_1
+                        txtFecha.Text = fecha_1
+                        txtObservacionesRep.Text = observaciones_1
+                        txtEstadoReporte.Text = estadoreporte_1
+                    End If
+
                 End If
                 lector.Close()
             ElseIf cboTipoReporte.SelectedIndex = 2 Then
@@ -170,35 +179,38 @@ Public Class AtencionReportes_Registrar
                     txtAula.Visible = False
                     GBRecurso.Enabled = False
                     Reportes_Buscar.ShowDialog()
-                    txtIdReporte.Text = idReporte_1
-                    txtFecha.Text = fecha_1
-                    txtObservacionesRep.Text = observaciones_1
-                    txtEstadoReporte.Text = estadoreporte_1
-                    command.CommandText = "SELECT IdRecurso FROM REPORTESRECURSOSINDIVIDUALES WHERE IdReporteRecursos = " & idReporte_1
-                    lector = command.ExecuteReader
-                    lector.Read()
-                    txtidRecurso.Text = lector.GetValue(0)
-                    lector.Close()
-                    If MP.busquedaIdRecurso("CAÑONES", txtidRecurso.Text) = 1 Then
-                        cboCategoria.SelectedIndex = 1
-                        lblCambioLampara.Visible = True
-                        RBNO.Visible = True
-                        RBSI.Visible = True
-                    ElseIf MP.busquedaIdRecurso("COMPUTADORAS", txtidRecurso.Text) = 1 Then
-                        cboCategoria.SelectedIndex = 2
-                    ElseIf MP.busquedaIdRecurso("PANTALLAS", txtidRecurso.Text) = 1 Then
-                        cboCategoria.SelectedIndex = 3
+                    If obtainedInfoRep = True Then
+                        obtainedInfoRep = False
+                        txtIdReporte.Text = idReporte_1
+                        txtFecha.Text = fecha_1
+                        txtObservacionesRep.Text = observaciones_1
+                        txtEstadoReporte.Text = estadoreporte_1
+                        command.CommandText = "SELECT IdRecurso FROM REPORTESRECURSOSINDIVIDUALES WHERE IdReporteRecursos = " & idReporte_1
+                        lector = command.ExecuteReader
+                        lector.Read()
+                        txtidRecurso.Text = lector.GetValue(0)
+                        lector.Close()
+                        If MP.busquedaIdRecurso("CAÑONES", txtidRecurso.Text) = 1 Then
+                            cboCategoria.SelectedIndex = 1
+                            lblCambioLampara.Visible = True
+                            RBNO.Visible = True
+                            RBSI.Visible = True
+                        ElseIf MP.busquedaIdRecurso("COMPUTADORAS", txtidRecurso.Text) = 1 Then
+                            cboCategoria.SelectedIndex = 2
+                        ElseIf MP.busquedaIdRecurso("PANTALLAS", txtidRecurso.Text) = 1 Then
+                            cboCategoria.SelectedIndex = 3
+                        End If
+                        command.CommandText = "SELECT INVCAPECE, Modelo, Marca, Estado FROM " & cboCategoria.SelectedItem & " WHERE IdRecurso=" & txtidRecurso.Text
+                        lector = command.ExecuteReader
+                        lector.Read()
+                        txtinvcapece.Text = lector.GetValue(0)
+                        txtModelo.Text = lector.GetValue(1)
+                        txtMarca.Text = lector.GetValue(2)
+                        txtEstadoRecurso.Text = lector.GetValue(3)
+                        lector.Close()
+                        GBAtencion.Enabled = True
+                        cmdGrabar.Enabled = True
                     End If
-                    command.CommandText = "SELECT INVCAPECE, Modelo, Marca, Estado FROM " & cboCategoria.SelectedItem & " WHERE IdRecurso=" & txtidRecurso.Text
-                    lector = command.ExecuteReader
-                    lector.Read()
-                    txtinvcapece.Text = lector.GetValue(0)
-                    txtModelo.Text = lector.GetValue(1)
-                    txtMarca.Text = lector.GetValue(2)
-                    txtEstadoRecurso.Text = lector.GetValue(3)
-                    lector.Close()
-                    GBAtencion.Enabled = True
-                    cmdGrabar.Enabled = True
                 End If
             End If
         End If
@@ -224,15 +236,18 @@ Public Class AtencionReportes_Registrar
                 End If
                 recursoasignadoEdificio = txtEdificio.Text
                 recursoasignadoAula = txtAula.Text
-                recursoAsignadoCat = cboCategoria.SelectedItem
+                recursoCat = cboCategoria.SelectedItem
                 RecursoAsignado_Seleccionar.ShowDialog()
-                txtinvcapece.Text = invcapece_1
-                txtModelo.Text = modelo_1
-                txtMarca.Text = marca_1
-                txtEstadoRecurso.Text = estado_1
-                txtidRecurso.Text = idRecurso_1
-                GBAtencion.Enabled = True
-                cmdGrabar.Enabled = True
+                If obtainedInfoRec = True Then
+                    obtainedInfoRec = False
+                    txtinvcapece.Text = invcapece_1
+                    txtModelo.Text = modelo_1
+                    txtMarca.Text = marca_1
+                    txtEstadoRecurso.Text = estado_1
+                    txtidRecurso.Text = idRecurso_1
+                    GBAtencion.Enabled = True
+                    cmdGrabar.Enabled = True
+                End If
             End If
         End If
     End Sub

@@ -16,10 +16,11 @@
     Public estadoreporte_1 As String
     Public fecha_1 As String
     Public observaciones_1 As String
+    Public obtainedInfoRep As Boolean
     'Variables Usadas para extraer informacion de un Recurso
     Public recursoasignadoEdificio As String
     Public recursoasignadoAula As String
-    Public recursoAsignadoCat As String
+    Public recursoCat As String
     Public idRecurso_1 As String
     Public concepto_1 As String
     Public idcat_1 As String = ""
@@ -27,6 +28,7 @@
     Public invcapece_1 As String
     Public modelo_1 As String
     Public marca_1 As String
+    Public obtainedInfoRec As Boolean
     'Variables Usadas para controlar el monitoreo de carga de imagenes por FTP
     Public offset As Single
     Public BufferLength As Single

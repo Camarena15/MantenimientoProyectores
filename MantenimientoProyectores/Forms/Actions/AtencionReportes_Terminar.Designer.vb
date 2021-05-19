@@ -193,12 +193,12 @@ Partial Class AtencionReportes_Terminar
         '
         'txtObservacion
         '
+        Me.txtObservacion.Enabled = False
         Me.txtObservacion.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtObservacion.Location = New System.Drawing.Point(456, 56)
         Me.txtObservacion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtObservacion.Multiline = True
         Me.txtObservacion.Name = "txtObservacion"
-        Me.txtObservacion.ReadOnly = True
         Me.txtObservacion.Size = New System.Drawing.Size(290, 111)
         Me.txtObservacion.TabIndex = 228
         '

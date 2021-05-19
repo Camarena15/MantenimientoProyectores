@@ -33,8 +33,8 @@ Public Class RecursoAsignado_Seleccionar
         If formSelected.Equals("AtencionReportes") Then
             lblCat.Visible = True
             txtCategoria.Visible = True
-            txtCategoria.Text = recursoAsignadoCat
-            obtieneRecursosAsignados(recursoAsignadoCat)
+            txtCategoria.Text = recursoCat
+            obtieneRecursosAsignados(recursoCat)
             If DGV.Rows.Count - 2 < 0 Then
                 MsgBox("No hay registros Asociados a la busqueda", MsgBoxStyle.Critical, "ERROR")
                 conexion.Close()
@@ -75,6 +75,7 @@ Public Class RecursoAsignado_Seleccionar
             idRecurso_1 = DGV(0, DGV.CurrentCell.RowIndex).Value
             idcat_1 = DGV(2, DGV.CurrentCell.RowIndex).Value
         End If
+        obtainedInfoRec = True
         conexion.Close()
         Me.Close()
     End Sub

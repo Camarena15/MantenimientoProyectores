@@ -51,7 +51,6 @@ Partial Class Preventivo_Registrar
         Me.cmdNuevo = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.GBRecurso = New System.Windows.Forms.GroupBox()
-        Me.txtidRecurso = New System.Windows.Forms.NumericUpDown()
         Me.txtMarca = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtModelo = New System.Windows.Forms.TextBox()
@@ -65,9 +64,9 @@ Partial Class Preventivo_Registrar
         Me.cmdBuscarRecurso = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.txtIdRecurso = New System.Windows.Forms.TextBox()
         Me.GBPreventivo.SuspendLayout()
         Me.GBRecurso.SuspendLayout()
-        CType(Me.txtidRecurso, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -228,6 +227,7 @@ Partial Class Preventivo_Registrar
         Me.txtObservaciones.Name = "txtObservaciones"
         Me.txtObservaciones.Size = New System.Drawing.Size(334, 69)
         Me.txtObservaciones.TabIndex = 68
+        Me.txtObservaciones.Visible = False
         '
         'Label10
         '
@@ -294,6 +294,7 @@ Partial Class Preventivo_Registrar
         Me.Label5.Size = New System.Drawing.Size(126, 19)
         Me.Label5.TabIndex = 61
         Me.Label5.Text = "Observaciones"
+        Me.Label5.Visible = False
         '
         'Label4
         '
@@ -381,7 +382,7 @@ Partial Class Preventivo_Registrar
         '
         'GBRecurso
         '
-        Me.GBRecurso.Controls.Add(Me.txtidRecurso)
+        Me.GBRecurso.Controls.Add(Me.txtIdRecurso)
         Me.GBRecurso.Controls.Add(Me.txtMarca)
         Me.GBRecurso.Controls.Add(Me.Label2)
         Me.GBRecurso.Controls.Add(Me.txtModelo)
@@ -403,15 +404,6 @@ Partial Class Preventivo_Registrar
         Me.GBRecurso.TabIndex = 226
         Me.GBRecurso.TabStop = False
         Me.GBRecurso.Text = "INFORMACIÓN DEL RECURSO:"
-        '
-        'txtidRecurso
-        '
-        Me.txtidRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidRecurso.Location = New System.Drawing.Point(127, 29)
-        Me.txtidRecurso.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.txtidRecurso.Name = "txtidRecurso"
-        Me.txtidRecurso.Size = New System.Drawing.Size(76, 26)
-        Me.txtidRecurso.TabIndex = 232
         '
         'txtMarca
         '
@@ -544,6 +536,14 @@ Partial Class Preventivo_Registrar
         '
         Me.Timer1.Interval = 1500
         '
+        'txtIdRecurso
+        '
+        Me.txtIdRecurso.Location = New System.Drawing.Point(103, 29)
+        Me.txtIdRecurso.Name = "txtIdRecurso"
+        Me.txtIdRecurso.ReadOnly = True
+        Me.txtIdRecurso.Size = New System.Drawing.Size(100, 26)
+        Me.txtIdRecurso.TabIndex = 229
+        '
         'Preventivo_Registrar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -572,7 +572,6 @@ Partial Class Preventivo_Registrar
         Me.GBPreventivo.PerformLayout()
         Me.GBRecurso.ResumeLayout(False)
         Me.GBRecurso.PerformLayout()
-        CType(Me.txtidRecurso, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -617,6 +616,6 @@ Partial Class Preventivo_Registrar
     Friend WithEvents Label19 As Label
     Friend WithEvents cmdBuscarRecurso As Button
     Friend WithEvents Label20 As Label
-    Friend WithEvents txtidRecurso As NumericUpDown
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents txtIdRecurso As TextBox
 End Class

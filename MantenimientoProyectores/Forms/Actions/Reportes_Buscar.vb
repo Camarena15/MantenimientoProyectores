@@ -72,6 +72,7 @@ Public Class Reportes_Buscar
             recursoasignadoEdificio = DGV(5, DGV.CurrentCell.RowIndex).Value
             recursoasignadoAula = DGV(6, DGV.CurrentCell.RowIndex).Value
         End If
+        obtainedInfoRep = True
         conexion.Close()
         Me.Close()
     End Sub

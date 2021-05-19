@@ -96,13 +96,29 @@ Public Class AtencionReportes_Consultar
         lector.Read()
         txtidcat.Text = lector.GetValue(0)
         lector.Close()
-        command.CommandText = "SELECT Edificio, Aula, Fecha FROM REPORTEDOCENTES WHERE IdReporte=" & txtIdReporte.Text
+        command.CommandText = "SELECT count(*), R.Fecha, R.Estado FROM REPORTEDOCENTES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Atendido'"
         lector = command.ExecuteReader
         lector.Read()
-        txtEdificio.Text = lector.GetValue(0)
-        txtAula.Text = lector.GetValue(1)
-        txtFecha.Text = lector.GetValue(2)
-        lector.Close()
+        Dim nRep As Integer
+        nRep = lector.GetValue(0)
+        If nRep <> 0 Then
+            txtFecha.Text = lector.GetValue(1)
+            txtEstadoReporte.Text = lector.GetValue(2)
+            lector.Close()
+        Else
+            lector.Close()
+            command.CommandText = "SELECT count(*), R.Fecha, R.Estado FROM REPORTESRECURSOSINDIVIDUALES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporteRecursos WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Atendido'"
+            lector = command.ExecuteReader
+            lector.Read()
+            nRep = lector.GetValue(0)
+            If nRep <> 0 Then
+                txtFecha.Text = lector.GetValue(1)
+                txtEstadoReporte.Text = lector.GetValue(2)
+            Else
+                MsgBox("Ocurrio un error durante la carga de Informacion del reporte", MsgBoxStyle.Critical, "ERROR")
+            End If
+            lector.Close()
+        End If
     End Sub
     Private Sub cmdSalir_Click(sender As Object, e As EventArgs) Handles cmdSalir.Click
         connection.Close()

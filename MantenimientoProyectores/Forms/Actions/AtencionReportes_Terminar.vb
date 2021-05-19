@@ -15,7 +15,7 @@ Public Class AtencionReportes_Terminar
             command.Connection = connection
             command.Transaction = transaction
             Try
-                command.CommandText = "UPDATE `ATENCIONFALLAS` SET `Estado`='Terminado' WHERE `IdAtencion`=" & txtId.Value
+                command.CommandText = "UPDATE `ATENCIONFALLAS` SET `Estado`='Terminado',`Observacion`='" & txtObservacion.Text & "' WHERE `IdAtencion`=" & txtId.Value
                 command.ExecuteNonQuery()
                 If (MP.busquedaIdRecurso("CAÑONES", txtidRecurso.Text) = 1) Then
                     command.CommandText = "UPDATE `CAÑONES` SET `Estado`= '" & cboEstadoRecurso.SelectedItem & "' WHERE IdRecurso= " & txtidRecurso.Text
@@ -51,6 +51,7 @@ Public Class AtencionReportes_Terminar
         txtFechaS.Text = ""
         txtAtiende.Text = ""
         txtObservacion.Text = ""
+        txtObservacion.Enabled = False
         txtIdReporte.Text = ""
         txtFecha.Text = ""
         txtObservacionesRep.Text = ""
@@ -71,6 +72,7 @@ Public Class AtencionReportes_Terminar
         If n <> 0 Then
             cmdGrabar.Enabled = True
             lblGraba.Visible = True
+            txtObservacion.Enabled = True
             command.CommandText = "SELECT * FROM `ATENCIONFALLAS` WHERE IdAtencion=" & txtId.Value
             lector = command.ExecuteReader
             lector.Read()
@@ -82,7 +84,7 @@ Public Class AtencionReportes_Terminar
             txtidRecurso.Text = lector.GetValue(2)
             lector.Close()
             Dim nRep As Integer
-            command.CommandText = "SELECT count(*), R.Fecha, R.ObservacionesGrales, R.Estado FROM REPORTEDOCENTES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Pendiente'"
+            command.CommandText = "SELECT count(*), R.Fecha, R.ObservacionesGrales, R.Estado FROM REPORTEDOCENTES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Atendido'"
             lector = command.ExecuteReader
             lector.Read()
             nRep = lector.GetValue(0)
@@ -93,7 +95,7 @@ Public Class AtencionReportes_Terminar
                 lector.Close()
             Else
                 lector.Close()
-                command.CommandText = "SELECT count(*), R.Fecha, R.Concepto, R.Estado FROM REPORTESRECURSOSINDIVIDUALES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporteRecursos WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Pendiente'"
+                command.CommandText = "SELECT count(*), R.Fecha, R.Concepto, R.Estado FROM REPORTESRECURSOSINDIVIDUALES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporteRecursos WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Atendido'"
                 lector = command.ExecuteReader
                 lector.Read()
                 nRep = lector.GetValue(0)

@@ -81,7 +81,7 @@ Public Class Preventivo_Registrar
 
     Private Sub Limpiartxt()
         txtId.Text = ""
-        txtidRecurso.Value = 0
+        txtIdRecurso.Text = ""
         cboCategoria.SelectedIndex = 0
         txtinvcapece.Text = ""
         txtEstadoRecurso.Text = ""
@@ -122,29 +122,31 @@ Public Class Preventivo_Registrar
             MsgBox("No se ha seleccionado la categoría del recurso!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim n As Integer
-            command.CommandText = "SELECT count(*) FROM " & cboCategoria.SelectedItem & " WHERE IdRecurso=" & txtidRecurso.Value & " AND Estado='Disponible' OR Estado='Asignado'"
+            command.CommandText = "SELECT count(*) FROM " & cboCategoria.SelectedItem & " WHERE Estado='Disponible' OR Estado='Asignado'"
             lector = command.ExecuteReader
             lector.Read()
             n = lector.GetInt32(0)
             lector.Close()
             If n = 0 Then
-                MsgBox("No se encontro un Registro DISPONIBLE o ASIGNADO en la categoría " & cboCategoria.SelectedItem & " con esa ID!", MsgBoxStyle.Critical, "ERROR")
+                MsgBox("No se encontro un Registro DISPONIBLE o ASIGNADO en la categoría " & cboCategoria.SelectedItem, MsgBoxStyle.Critical, "ERROR")
             Else
-                command.CommandText = "SELECT INVCAPECE, Modelo, Marca, Estado FROM " & cboCategoria.SelectedItem & " WHERE IdRecurso=" & txtidRecurso.Value
-                lector = command.ExecuteReader
-                lector.Read()
-                txtinvcapece.Text = lector.GetValue(0)
-                txtModelo.Text = lector.GetValue(1)
-                txtMarca.Text = lector.GetValue(2)
-                txtEstadoRecurso.Text = lector.GetValue(3)
-                lector.Close()
-                If cboCategoria.SelectedIndex = 1 Then
-                    lblCambioLampara.Visible = True
-                    RBNO.Visible = True
-                    RBSI.Visible = True
+                recursoCat = cboCategoria.SelectedItem
+                RecursoIndividual_Seleccionar.ShowDialog()
+                If obtainedInfoRec = True Then
+                    obtainedInfoRec = False
+                    txtIdRecurso.Text = idRecurso_1
+                    txtinvcapece.Text = invcapece_1
+                    txtModelo.Text = modelo_1
+                    txtMarca.Text = marca_1
+                    txtEstadoRecurso.Text = estado_1
+                    If cboCategoria.SelectedIndex = 1 Then
+                        lblCambioLampara.Visible = True
+                        RBNO.Visible = True
+                        RBSI.Visible = True
+                    End If
+                    GBPreventivo.Enabled = True
+                    cmdGrabar.Enabled = True
                 End If
-                GBPreventivo.Enabled = True
-                cmdGrabar.Enabled = True
             End If
         End If
     End Sub

@@ -228,18 +228,21 @@ Public Class Supervision_Registrar
             lector.Close()
             If n <> 0 Then
                 RecursoAsignado_Seleccionar.ShowDialog()
-                txtIdRecurso.Text = idRecurso_1
-                If idcat_1.Equals("1") Then
-                    command.CommandText = "SELECT HorasLampara FROM `CAÑONES` WHERE IdRecurso=" & idRecurso_1
-                    lector = command.ExecuteReader
-                    lector.Read()
-                    NupHorasT.Value = lector.GetInt32(0)
-                    NupHorasT.Minimum = NupHorasT.Value
-                    NupHorasT.Enabled = True
-                    lector.Close()
+                If obtainedInfoRec = True Then
+                    obtainedInfoRec = False
+                    txtIdRecurso.Text = idRecurso_1
+                    If idcat_1.Equals("1") Then
+                        command.CommandText = "SELECT HorasLampara FROM `CAÑONES` WHERE IdRecurso=" & idRecurso_1
+                        lector = command.ExecuteReader
+                        lector.Read()
+                        NupHorasT.Value = lector.GetInt32(0)
+                        NupHorasT.Minimum = NupHorasT.Value
+                        NupHorasT.Enabled = True
+                        lector.Close()
+                    End If
+                    GroupBox2.Enabled = True
+                    cmdGrabar.Enabled = True
                 End If
-                GroupBox2.Enabled = True
-                cmdGrabar.Enabled = True
             Else
                 MsgBox("No Existen Recursos Asignados al Edificio y Aula seleccionadas!", MsgBoxStyle.Critical)
             End If
@@ -331,23 +334,23 @@ Public Class Supervision_Registrar
         txtImgLamparas.Text = name
     End Sub
 
-    Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
-        If txtEdificio.SelectedIndex >= 27 Then
-            txtAula.SelectedIndex = 9
-            txtAula.Enabled = False
-        Else
-            txtAula.Enabled = True
-            txtAula.SelectedIndex = 0
-        End If
-    End Sub
+    'Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
+    '    If txtEdificio.SelectedIndex >= 27 Then
+    '        txtAula.SelectedIndex = 9
+    '        txtAula.Enabled = False
+    '    Else
+    '        txtAula.Enabled = True
+    '        txtAula.SelectedIndex = 0
+    '    End If
+    'End Sub
 
-    Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
-        If txtEdificio.SelectedIndex < 27 Then
+    'Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
+    '    If txtEdificio.SelectedIndex < 27 Then
 
-            If txtAula.SelectedIndex = 9 Then
-                MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
-                txtAula.SelectedIndex = 0
-            End If
-        End If
-    End Sub
+    '        If txtAula.SelectedIndex = 9 Then
+    '            MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
+    '            txtAula.SelectedIndex = 0
+    '        End If
+    '    End If
+    'End Sub
 End Class

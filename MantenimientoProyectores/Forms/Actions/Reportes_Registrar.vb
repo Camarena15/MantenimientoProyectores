@@ -93,22 +93,32 @@ Public Class Reportes_Registrar
         command = connection.CreateCommand
         Timer1.Stop()
     End Sub
-    Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
-        If txtEdificio.SelectedIndex >= 27 Then
-            txtAula.SelectedIndex = 9
-            txtAula.Enabled = False
-        Else
-            txtAula.Enabled = True
-            txtAula.SelectedIndex = 0
-        End If
-    End Sub
 
-    Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
-        If txtEdificio.SelectedIndex < 27 Then
-            If txtAula.SelectedIndex = 9 Then
-                MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
-                txtAula.SelectedIndex = 0
-            End If
-        End If
-    End Sub
+    'Private Sub cboHHI_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboHHI.SelectedIndexChanged
+    '    cboHHF.Items.Clear()
+    '    For i = 0 To cboHHF.Items.Count - 1
+    '        cboHHF.Items.Add(cboHHI.Items.Item(i))
+    '    Next
+    '    For i = cboHHI.SelectedIndex To 0 Step -1
+    '        cboHHF.Items.Remove(0)
+    '    Next
+    'End Sub
+    'Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
+    '    If txtEdificio.SelectedIndex >= 27 Then
+    '        txtAula.SelectedIndex = 9
+    '        txtAula.Enabled = False
+    '    Else
+    '        txtAula.Enabled = True
+    '        txtAula.SelectedIndex = 0
+    '    End If
+    'End Sub
+
+    'Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
+    '    If txtEdificio.SelectedIndex < 27 Then
+    '        If txtAula.SelectedIndex = 9 Then
+    '            MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
+    '            txtAula.SelectedIndex = 0
+    '        End If
+    '    End If
+    'End Sub
 End Class

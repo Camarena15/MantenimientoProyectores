@@ -40,7 +40,6 @@ Partial Class ReportesInd_Registrar
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GBRecurso = New System.Windows.Forms.GroupBox()
-        Me.txtidRecurso = New System.Windows.Forms.NumericUpDown()
         Me.txtMarca = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtModelo = New System.Windows.Forms.TextBox()
@@ -54,9 +53,9 @@ Partial Class ReportesInd_Registrar
         Me.cmdBuscarRecurso = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.txtIdRecurso = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GBRecurso.SuspendLayout()
-        CType(Me.txtidRecurso, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -227,11 +226,11 @@ Partial Class ReportesInd_Registrar
         '
         'txtId
         '
-        Me.txtId.Enabled = False
         Me.txtId.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtId.Location = New System.Drawing.Point(191, 74)
         Me.txtId.Margin = New System.Windows.Forms.Padding(2)
         Me.txtId.Name = "txtId"
+        Me.txtId.ReadOnly = True
         Me.txtId.Size = New System.Drawing.Size(76, 26)
         Me.txtId.TabIndex = 221
         '
@@ -248,7 +247,7 @@ Partial Class ReportesInd_Registrar
         '
         'GBRecurso
         '
-        Me.GBRecurso.Controls.Add(Me.txtidRecurso)
+        Me.GBRecurso.Controls.Add(Me.txtIdRecurso)
         Me.GBRecurso.Controls.Add(Me.txtMarca)
         Me.GBRecurso.Controls.Add(Me.Label2)
         Me.GBRecurso.Controls.Add(Me.txtModelo)
@@ -270,15 +269,6 @@ Partial Class ReportesInd_Registrar
         Me.GBRecurso.TabIndex = 230
         Me.GBRecurso.TabStop = False
         Me.GBRecurso.Text = "INFORMACIÓN DEL RECURSO:"
-        '
-        'txtidRecurso
-        '
-        Me.txtidRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidRecurso.Location = New System.Drawing.Point(127, 31)
-        Me.txtidRecurso.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.txtidRecurso.Name = "txtidRecurso"
-        Me.txtidRecurso.Size = New System.Drawing.Size(76, 26)
-        Me.txtidRecurso.TabIndex = 231
         '
         'txtMarca
         '
@@ -346,6 +336,7 @@ Partial Class ReportesInd_Registrar
         Me.txtEstadoRecurso.ReadOnly = True
         Me.txtEstadoRecurso.Size = New System.Drawing.Size(101, 26)
         Me.txtEstadoRecurso.TabIndex = 222
+        Me.txtEstadoRecurso.Text = "Disponible"
         '
         'Label17
         '
@@ -367,7 +358,7 @@ Partial Class ReportesInd_Registrar
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(90, 19)
         Me.Label18.TabIndex = 219
-        Me.Label18.Text = "Categoria"
+        Me.Label18.Text = "Categoría"
         '
         'Label19
         '
@@ -411,6 +402,14 @@ Partial Class ReportesInd_Registrar
         '
         Me.Timer1.Interval = 1500
         '
+        'txtIdRecurso
+        '
+        Me.txtIdRecurso.Location = New System.Drawing.Point(107, 30)
+        Me.txtIdRecurso.Name = "txtIdRecurso"
+        Me.txtIdRecurso.ReadOnly = True
+        Me.txtIdRecurso.Size = New System.Drawing.Size(100, 26)
+        Me.txtIdRecurso.TabIndex = 0
+        '
         'ReportesInd_Registrar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -437,7 +436,6 @@ Partial Class ReportesInd_Registrar
         Me.GroupBox1.PerformLayout()
         Me.GBRecurso.ResumeLayout(False)
         Me.GBRecurso.PerformLayout()
-        CType(Me.txtidRecurso, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -472,6 +470,6 @@ Partial Class ReportesInd_Registrar
     Friend WithEvents Label19 As Label
     Friend WithEvents cmdBuscarRecurso As Button
     Friend WithEvents Label20 As Label
-    Friend WithEvents txtidRecurso As NumericUpDown
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents txtIdRecurso As TextBox
 End Class

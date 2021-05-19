@@ -206,11 +206,11 @@ Partial Class Preventivo_Terminar
         '
         'txtObservaciones
         '
+        Me.txtObservaciones.Enabled = False
         Me.txtObservaciones.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtObservaciones.Location = New System.Drawing.Point(413, 97)
         Me.txtObservaciones.Multiline = True
         Me.txtObservaciones.Name = "txtObservaciones"
-        Me.txtObservaciones.ReadOnly = True
         Me.txtObservaciones.Size = New System.Drawing.Size(334, 143)
         Me.txtObservaciones.TabIndex = 68
         '

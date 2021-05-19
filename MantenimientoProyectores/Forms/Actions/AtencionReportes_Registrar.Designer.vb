@@ -261,6 +261,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtObservacion.Name = "txtObservacion"
         Me.txtObservacion.Size = New System.Drawing.Size(290, 57)
         Me.txtObservacion.TabIndex = 228
+        Me.txtObservacion.Visible = False
         '
         'DTP
         '
@@ -318,6 +319,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label6.Size = New System.Drawing.Size(126, 19)
         Me.Label6.TabIndex = 223
         Me.Label6.Text = "Observaciones"
+        Me.Label6.Visible = False
         '
         'Label9
         '

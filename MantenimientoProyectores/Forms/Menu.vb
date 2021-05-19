@@ -248,6 +248,7 @@ Public Class Menu
     End Sub
     Private Sub btnReportesIndividuales_MouseMove(sender As Object, e As MouseEventArgs) Handles btnReportesIndividuales.MouseMove
         PanelSeleccion.Location = New Point(PanelSeleccion.Location.X, 540)
+        formSelected = "RepRecInd"
         btnRegistrar.Enabled = True
         btnConsultar.Enabled = True
         btnTerminar.Enabled = False

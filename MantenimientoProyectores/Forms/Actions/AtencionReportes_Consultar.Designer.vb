@@ -48,10 +48,8 @@ Partial Class AtencionReportes_Consultar
         Me.txtFecha = New System.Windows.Forms.TextBox()
         Me.txtIdReporte = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtAula = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtEdificio = New System.Windows.Forms.TextBox()
+        Me.txtEstadoReporte = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtEdoRecurso = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -305,10 +303,8 @@ Partial Class AtencionReportes_Consultar
         Me.Panel2.Controls.Add(Me.txtFecha)
         Me.Panel2.Controls.Add(Me.txtIdReporte)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.txtAula)
         Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.txtEdificio)
+        Me.Panel2.Controls.Add(Me.txtEstadoReporte)
         Me.Panel2.Location = New System.Drawing.Point(478, 160)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(262, 118)
@@ -351,27 +347,15 @@ Partial Class AtencionReportes_Consultar
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(5, 48)
+        Me.Label4.Location = New System.Drawing.Point(6, 39)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 19)
+        Me.Label4.Size = New System.Drawing.Size(99, 45)
         Me.Label4.TabIndex = 301
-        Me.Label4.Text = "Edificio"
-        '
-        'txtAula
-        '
-        Me.txtAula.Enabled = False
-        Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAula.Location = New System.Drawing.Point(215, 45)
-        Me.txtAula.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtAula.Name = "txtAula"
-        Me.txtAula.ReadOnly = True
-        Me.txtAula.Size = New System.Drawing.Size(35, 26)
-        Me.txtAula.TabIndex = 304
+        Me.Label4.Text = "Estado de Reporte"
         '
         'Label10
         '
@@ -386,29 +370,16 @@ Partial Class AtencionReportes_Consultar
         Me.Label10.TabIndex = 299
         Me.Label10.Text = "Fecha"
         '
-        'Label7
+        'txtEstadoReporte
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(144, 48)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 19)
-        Me.Label7.TabIndex = 302
-        Me.Label7.Text = "Aula"
-        '
-        'txtEdificio
-        '
-        Me.txtEdificio.Enabled = False
-        Me.txtEdificio.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEdificio.Location = New System.Drawing.Point(99, 45)
-        Me.txtEdificio.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtEdificio.Name = "txtEdificio"
-        Me.txtEdificio.ReadOnly = True
-        Me.txtEdificio.Size = New System.Drawing.Size(35, 26)
-        Me.txtEdificio.TabIndex = 303
+        Me.txtEstadoReporte.Enabled = False
+        Me.txtEstadoReporte.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEstadoReporte.Location = New System.Drawing.Point(128, 44)
+        Me.txtEstadoReporte.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEstadoReporte.Name = "txtEstadoReporte"
+        Me.txtEstadoReporte.ReadOnly = True
+        Me.txtEstadoReporte.Size = New System.Drawing.Size(122, 26)
+        Me.txtEstadoReporte.TabIndex = 303
         '
         'Panel1
         '
@@ -714,10 +685,8 @@ Partial Class AtencionReportes_Consultar
     Friend WithEvents txtFecha As TextBox
     Friend WithEvents txtIdReporte As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtAula As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents txtEdificio As TextBox
+    Friend WithEvents txtEstadoReporte As TextBox
     Friend WithEvents txtId As NumericUpDown
     Friend WithEvents Timer1 As Timer
 End Class

@@ -129,7 +129,7 @@ Partial Class Supervision_Registrar
         '
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
-        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08", "*"})
+        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08"})
         Me.txtAula.Location = New System.Drawing.Point(218, 75)
         Me.txtAula.Name = "txtAula"
         Me.txtAula.Size = New System.Drawing.Size(62, 27)
@@ -139,7 +139,7 @@ Partial Class Supervision_Registrar
         '
         Me.txtEdificio.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtEdificio.FormattingEnabled = True
-        Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "M.V.O.", "INGLES", "LAB"})
+        Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"})
         Me.txtEdificio.Location = New System.Drawing.Point(101, 75)
         Me.txtEdificio.Name = "txtEdificio"
         Me.txtEdificio.Size = New System.Drawing.Size(62, 27)
