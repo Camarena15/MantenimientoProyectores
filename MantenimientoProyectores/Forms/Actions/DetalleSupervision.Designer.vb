@@ -138,6 +138,7 @@ Partial Class DetalleSupervision
         Me.pctVent.Location = New System.Drawing.Point(413, 480)
         Me.pctVent.Name = "pctVent"
         Me.pctVent.Size = New System.Drawing.Size(128, 72)
+        Me.pctVent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctVent.TabIndex = 23
         Me.pctVent.TabStop = False
         '
@@ -146,6 +147,7 @@ Partial Class DetalleSupervision
         Me.pctLamp.Location = New System.Drawing.Point(413, 394)
         Me.pctLamp.Name = "pctLamp"
         Me.pctLamp.Size = New System.Drawing.Size(128, 72)
+        Me.pctLamp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctLamp.TabIndex = 22
         Me.pctLamp.TabStop = False
         '
@@ -154,6 +156,7 @@ Partial Class DetalleSupervision
         Me.pctElect.Location = New System.Drawing.Point(413, 308)
         Me.pctElect.Name = "pctElect"
         Me.pctElect.Size = New System.Drawing.Size(128, 72)
+        Me.pctElect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctElect.TabIndex = 21
         Me.pctElect.TabStop = False
         '
@@ -162,6 +165,7 @@ Partial Class DetalleSupervision
         Me.pctPinta.Location = New System.Drawing.Point(413, 222)
         Me.pctPinta.Name = "pctPinta"
         Me.pctPinta.Size = New System.Drawing.Size(128, 72)
+        Me.pctPinta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctPinta.TabIndex = 20
         Me.pctPinta.TabStop = False
         '
@@ -170,6 +174,7 @@ Partial Class DetalleSupervision
         Me.pctConElect.Location = New System.Drawing.Point(413, 136)
         Me.pctConElect.Name = "pctConElect"
         Me.pctConElect.Size = New System.Drawing.Size(128, 72)
+        Me.pctConElect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctConElect.TabIndex = 19
         Me.pctConElect.TabStop = False
         '
@@ -178,6 +183,7 @@ Partial Class DetalleSupervision
         Me.pctCajaCon.Location = New System.Drawing.Point(413, 49)
         Me.pctCajaCon.Name = "pctCajaCon"
         Me.pctCajaCon.Size = New System.Drawing.Size(128, 72)
+        Me.pctCajaCon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctCajaCon.TabIndex = 18
         Me.pctCajaCon.TabStop = False
         '

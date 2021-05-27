@@ -7,14 +7,20 @@ Public Class Supervision_Registrar
     Dim command As New MySqlCommand
     Dim lector As MySqlDataReader
     Dim ftppath As String = "ftp://ftp-sistemamediosav.alwaysdata.net:21"
+    Dim imageNames As New ArrayList
+    Dim xtraImageNames As New ArrayList
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If chkDatosSecundarios.Checked = False Then
             grabarTodo()
         Else
-            If validaImagenes() = True Then
-                grabarTodo()
+            If txtEdificio.SelectedIndex <> 0 Or txtAula.SelectedIndex <> 0 Then
+                If validaImagenes() = True Then
+                    grabarTodo()
+                Else
+                    MsgBox("No se encontro una ruta en una de las imagenes secundarias!", MsgBoxStyle.Critical, "ERROR")
+                End If
             Else
-                MsgBox("No se encontro una ruta en una de las imagenes secundarias!", MsgBoxStyle.Critical, "ERROR")
+                MsgBox("Asegurese de seleccionar un Edificio y un Aula!", MsgBoxStyle.Critical, "ERROR")
             End If
         End If
 
@@ -36,9 +42,16 @@ Public Class Supervision_Registrar
             r += ") VALUES ('" & DTP.Value.ToString("yyyy-MM-dd") & "','" & txtResponsable.Text & "','" & txtEdificio.Text & "','" &
                 txtAula.Text & "'"
             If chkDatosSecundarios.Checked = True Then
-                r += ",'" & txtObsconex.Text & "','" & txtImgConexiones.Text & "','" & txtObsElect.Text & "','" & txtImgElect.Text & "','" &
-                    txtObsPintarron.Text & "','" & txtImgPintarron.Text & "','" & txtObsElectri.Text & "','" & txtImgElectri.Text & "','" &
-                    txtObsLamparas.Text & "','" & txtImgLamparas.Text & "','" & txtObsVentanas.Text & "','" & txtImgVentanas.Text & "'"
+                xtraImageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second & "-" & Date.Now.Millisecond & "-" & 1)
+                xtraImageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second & "-" & Date.Now.Millisecond & "-" & 2)
+                xtraImageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second & "-" & Date.Now.Millisecond & "-" & 3)
+                xtraImageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second & "-" & Date.Now.Millisecond & "-" & 4)
+                xtraImageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second & "-" & Date.Now.Millisecond & "-" & 5)
+                xtraImageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second & "-" & Date.Now.Millisecond & "-" & 6)
+
+                r += ",'" & txtObsconex.Text & "','" & ftppath & "/ITCG/" & xtraImageNames(0) & "','" & txtObsElect.Text & "','" & ftppath & "/ITCG/" & xtraImageNames(1) & "','" &
+                    txtObsPintarron.Text & "','" & ftppath & "/ITCG/" & xtraImageNames(2) & "','" & txtObsElectri.Text & "','" & ftppath & "/ITCG/" & xtraImageNames(3) & "','" &
+                    txtObsLamparas.Text & "','" & ftppath & "/ITCG/" & xtraImageNames(4) & "','" & txtObsVentanas.Text & "','" & ftppath & "/ITCG/" & xtraImageNames(5) & "'"
             End If
             r += ")"
             command.CommandText = r
@@ -57,11 +70,14 @@ Public Class Supervision_Registrar
             End If
             '********************************************************************************************************************
             For i = 0 To LV.Items.Count - 1
+                imageNames.Add(Date.Now.Day & "-" & Date.Now.Month & "-" &
+                                 Date.Now.Year & "-" & Date.Now.Hour & "-" & Date.Now.Minute & "-" & Date.Now.Second &
+                                 "-" & Date.Now.Millisecond & "-" & i)
                 If idsCat(i) = "1" Then
                     r = "INSERT INTO `DETALLE-SUP-RECURSO` (`IdSupervision`, `IdRecursoAsignado`, `ObservaRecurso`, 
                     `HorasTrabajadas`, `ImagenRecurso`) VALUES (" & idc & "," & LV.Items.Item(i).SubItems.Item(0).Text &
                 ",'" & LV.Items.Item(i).SubItems.Item(2).Text & "','" & LV.Items.Item(i).SubItems.Item(1).Text &
-                "','" & ftppath & "/ITCG/" & getNameFile(LV.Items(i).SubItems.Item(3).Text) & "')"
+                "','" & ftppath & "/ITCG/" & imageNames(i) & "')"
                     command.CommandText = r
                     command.ExecuteNonQuery()
                     r = "UPDATE `CAÑONES` SET `HorasLampara` = " & LV.Items(i).SubItems.Item(1).Text & " WHERE `IdRecurso`=" &
@@ -71,7 +87,7 @@ Public Class Supervision_Registrar
                 Else
                     r = "INSERT INTO `DETALLE-SUP-RECURSO`(`IdSupervision`, `IdRecursoAsignado`, `ObservaRecurso`, 
                      `ImagenRecurso`) VALUES (" & idc & "," & LV.Items.Item(i).SubItems.Item(0).Text &
-                ",'" & LV.Items.Item(i).SubItems.Item(2).Text & "','" & ftppath & "/ITCG/" & getNameFile(LV.Items(i).SubItems.Item(3).Text) & "')"
+                ",'" & LV.Items.Item(i).SubItems.Item(2).Text & "','" & ftppath & "/ITCG/" & imageNames(i) & "')"
                     command.CommandText = r
                     command.ExecuteNonQuery()
                 End If
@@ -92,9 +108,7 @@ Public Class Supervision_Registrar
         SpeedFtp.Show()
         GroupBox1.Enabled = False
         GroupBox2.Enabled = False
-        chkDatosSecundarios.Checked = False
         cmdGrabar.Enabled = False
-        cmdNuevo.Enabled = True
         Limpiartxt()
     End Sub
 
@@ -113,29 +127,43 @@ Public Class Supervision_Registrar
                 BufferLength += file.Length
             Next
             If chkDatosSecundarios.Checked = True Then
+                filecount += 6
                 Dim f1 As New FileInfo(txtImgConexiones.Text)
                 Dim f2 As New FileInfo(txtImgElect.Text)
-                Dim f3 As New FileInfo(txtImgElectri.Text)
-                Dim f4 As New FileInfo(txtImgLamparas.Text)
-                Dim f5 As New FileInfo(txtImgPintarron.Text)
-                BufferLength += (f1.Length + f2.Length + f3.Length + f4.Length + f5.Length)
+                Dim f3 As New FileInfo(txtImgPintarron.Text)
+                Dim f4 As New FileInfo(txtImgElectri.Text)
+                Dim f5 As New FileInfo(txtImgLamparas.Text)
+                Dim f6 As New FileInfo(txtImgVentanas.Text)
+                BufferLength += (f1.Length + f2.Length + f3.Length + f4.Length + f5.Length + f6.Length)
             End If
             trigger = True
             For i = 0 To LV.Items.Count - 1
-                ftp.subirFichero(LV.Items(i).SubItems.Item(3).Text, ftppath & "/ITCG/" & getNameFile(LV.Items(i).SubItems.Item(3).Text), ftppath & "/ITCG")
+                ftp.subirFichero(LV.Items(i).SubItems.Item(3).Text, ftppath & "/ITCG/" & imageNames(i), ftppath & "/ITCG")
             Next
             If chkDatosSecundarios.Checked = True Then
-                ftp.subirFichero(txtImgConexiones.Text, ftppath & "/ITCG/" & getNameFile(txtImgConexiones.Text), ftppath & "/ITCG")
-                ftp.subirFichero(txtImgElect.Text, ftppath & "/ITCG/" & getNameFile(txtImgElect.Text), ftppath & "/ITCG")
-                ftp.subirFichero(txtImgElectri.Text, ftppath & "/ITCG/" & getNameFile(txtImgElectri.Text), ftppath & "/ITCG")
-                ftp.subirFichero(txtImgLamparas.Text, ftppath & "/ITCG/" & getNameFile(txtImgLamparas.Text), ftppath & "/ITCG")
-                ftp.subirFichero(txtImgPintarron.Text, ftppath & "/ITCG/" & getNameFile(txtImgPintarron.Text), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgConexiones.Text, ftppath & "/ITCG/" & xtraImageNames(0), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgElect.Text, ftppath & "/ITCG/" & xtraImageNames(1), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgPintarron.Text, ftppath & "/ITCG/" & xtraImageNames(2), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgElectri.Text, ftppath & "/ITCG/" & xtraImageNames(3), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgLamparas.Text, ftppath & "/ITCG/" & xtraImageNames(4), ftppath & "/ITCG")
+                ftp.subirFichero(txtImgVentanas.Text, ftppath & "/ITCG/" & xtraImageNames(5), ftppath & "/ITCG")
             End If
-            LV.Items.Clear()
         Catch ex As Exception
             MsgBox(ex.ToString)
-            LV.Items.Clear()
         End Try
+        LV.Items.Clear()
+        txtImgConexiones.Text = "Haz clic para Seleccionar"
+        txtImgElect.Text = "Haz clic para Seleccionar"
+        txtImgElectri.Text = "Haz clic para Seleccionar"
+        txtImgPintarron.Text = "Haz clic para Seleccionar"
+        txtImgVentanas.Text = "Haz clic para Seleccionar"
+        txtImgLamparas.Text = "Haz clic para Seleccionar"
+        chkDatosSecundarios.Checked = False
+        imageNames.Clear()
+        xtraImageNames.Clear()
+        cmdNuevo.Enabled = True
+        BufferLength = 0
+        offset = 0
     End Sub
     Private Function validaImagenes() As Boolean
         If txtImgConexiones.Text.Equals("Haz clic para Seleccionar") Or txtImgElect.Text.Equals("Haz clic para Seleccionar") Or
@@ -186,12 +214,6 @@ Public Class Supervision_Registrar
         txtObsPintarron.Text = ""
         txtObsVentanas.Text = ""
         txtObsLamparas.Text = ""
-        txtImgConexiones.Text = "Haz clic para Seleccionar"
-        txtImgElect.Text = "Haz clic para Seleccionar"
-        txtImgElectri.Text = "Haz clic para Seleccionar"
-        txtImgPintarron.Text = "Haz clic para Seleccionar"
-        txtImgVentanas.Text = "Haz clic para Seleccionar"
-        txtImgLamparas.Text = "Haz clic para Seleccionar"
     End Sub
 
     Private Sub Reportes_Registrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -209,8 +231,10 @@ Public Class Supervision_Registrar
     Private Sub chkDatosSecundarios_CheckedChanged(sender As Object, e As EventArgs) Handles chkDatosSecundarios.CheckedChanged
         If chkDatosSecundarios.Checked = True Then
             GroupBox3.Enabled = True
+            cmdGrabar.Enabled = True
         Else
             GroupBox3.Enabled = False
+            cmdGrabar.Enabled = False
         End If
     End Sub
 
@@ -239,9 +263,12 @@ Public Class Supervision_Registrar
                         NupHorasT.Minimum = NupHorasT.Value
                         NupHorasT.Enabled = True
                         lector.Close()
+                    Else
+                        NupHorasT.Minimum = 0
+                        NupHorasT.Value = 0
+                        NupHorasT.Enabled = False
                     End If
                     GroupBox2.Enabled = True
-                    cmdGrabar.Enabled = True
                 End If
             Else
                 MsgBox("No Existen Recursos Asignados al Edificio y Aula seleccionadas!", MsgBoxStyle.Critical)
@@ -253,45 +280,45 @@ Public Class Supervision_Registrar
     Private Function OpenFile() As String
         OpenFileDialog1.InitialDirectory = "C:\\"
         'filtro de archivos.
-        OpenFileDialog1.Filter = "Archivos de Imagen (*.jpg)|*.jpg"
+        OpenFileDialog1.Filter = "Archivos de Imagen (*.jpg, *.png)|*.jpg;*.png"
         'codigo para abrir el cuadro de dialogo
         Dim Str_RutaArchivo As String
         If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
             Str_RutaArchivo = OpenFileDialog1.FileName
-            If getNameFile(Str_RutaArchivo).Length <= 150 Then
-                Return Str_RutaArchivo
-            Else
-                MsgBox("El nombre de la imagen es demasiado largo!", MsgBoxStyle.Critical, "ERROR")
-                Return "Haz clic para Seleccionar"
-            End If
+            Return Str_RutaArchivo
         Else
-            Return ""
+            Return "Haz clic para Seleccionar"
         End If
     End Function
-    Private Function getNameFile(ByVal Str_RutaArchivo As String) As String
-        Dim name As String = ""
-        For i = Str_RutaArchivo.Length - 1 To 0 Step -1
-            If Str_RutaArchivo.Chars(i) = "\" Then
-                name = Str_RutaArchivo.Substring(i + 1)
-                i = 0
-            End If
-        Next
-        Return name
-    End Function
     Private Sub cmdAgregaD_Click(sender As Object, e As EventArgs) Handles cmdAgregaD.Click
-        NupHorasT.Enabled = False
-        Dim fila As New ListViewItem(txtIdRecurso.Text)
-        fila.SubItems.Add(NupHorasT.Value.ToString)
-        fila.SubItems.Add(txtObservaciones.Text)
-        fila.SubItems.Add(txtImgRuta.Text)
-        LV.Items.Add(fila)
-        idsCat.Add(idcat_1)
-        txtIdRecurso.Text = ""
-        NupHorasT.Minimum = 0
-        NupHorasT.Value = 0
-        txtObservaciones.Text = ""
-        txtImgRuta.Text = "Haz clic para Seleccionar"
-        cmdBack.Enabled = True
+        If txtImgRuta.Text.Equals("Haz clic para Seleccionar") Then
+            MsgBox("No se ha seleccionado ninguna imagen!", MsgBoxStyle.Critical)
+        Else
+            Dim verificaRejillas As Boolean
+            For x As Integer = 0 To LV.Items.Count - 1
+                If txtIdRecurso.Text.Equals(LV.Items.Item(x).SubItems.Item(0).Text) Then
+                    verificaRejillas = True
+                End If
+            Next
+            If verificaRejillas = False Then
+                NupHorasT.Enabled = False
+                Dim fila As New ListViewItem(txtIdRecurso.Text)
+                fila.SubItems.Add(NupHorasT.Value.ToString)
+                fila.SubItems.Add(txtObservaciones.Text)
+                fila.SubItems.Add(txtImgRuta.Text)
+                LV.Items.Add(fila)
+                idsCat.Add(idcat_1)
+                txtIdRecurso.Text = ""
+                NupHorasT.Minimum = 0
+                NupHorasT.Value = 0
+                txtObservaciones.Text = ""
+                txtImgRuta.Text = "Haz clic para Seleccionar"
+                cmdBack.Enabled = True
+                cmdGrabar.Enabled = True
+            Else
+                MsgBox("Este registro ya se ha seleccionado previamente!", MsgBoxStyle.Critical)
+            End If
+        End If
     End Sub
 
     Private Sub cmdBack_Click(sender As Object, e As EventArgs) Handles cmdBack.Click
@@ -301,6 +328,7 @@ Public Class Supervision_Registrar
             idsCat.RemoveAt(ultimo)
             If ultimo = 0 Then
                 cmdBack.Enabled = False
+                cmdGrabar.Enabled = False
             End If
         End If
 
@@ -334,23 +362,8 @@ Public Class Supervision_Registrar
         txtImgLamparas.Text = name
     End Sub
 
-    'Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
-    '    If txtEdificio.SelectedIndex >= 27 Then
-    '        txtAula.SelectedIndex = 9
-    '        txtAula.Enabled = False
-    '    Else
-    '        txtAula.Enabled = True
-    '        txtAula.SelectedIndex = 0
-    '    End If
-    'End Sub
-
-    'Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
-    '    If txtEdificio.SelectedIndex < 27 Then
-
-    '        If txtAula.SelectedIndex = 9 Then
-    '            MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
-    '            txtAula.SelectedIndex = 0
-    '        End If
-    '    End If
-    'End Sub
+    Private Sub txtImgVentanas_Click(sender As Object, e As EventArgs) Handles txtImgVentanas.Click
+        Dim name As String = OpenFile()
+        txtImgVentanas.Text = name
+    End Sub
 End Class

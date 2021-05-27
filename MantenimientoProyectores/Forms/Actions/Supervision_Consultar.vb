@@ -75,8 +75,7 @@ Public Class Supervision_Consultar
         SelectedRowChanged()
     End Sub
     Private Sub SelectedRowChanged()
-        lblBtnSecundarios.Visible = False
-        lblBtnSecundarios.Visible = False
+        btnDatosSecundarios.Visible = False
         txtId.Value = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(0).Value
         txtFecha.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(1).Value
         txtResponsable.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(2).Value
@@ -102,10 +101,11 @@ Public Class Supervision_Consultar
         command.CommandText = "SELECT `ObservaCajaConex` FROM SUPERVISION WHERE `IdSupervision`=" & txtId.Value
         lector = command.ExecuteReader
         lector.Read()
-        If IsDBNull(lector.GetValue(0)) Then
+        If IsDBNull(lector.GetValue(0)) = False Then
             indiceSupervision = txtId.Value()
-            lblSecundarios.Visible = True
-            lblBtnSecundarios.Visible = True
+            btnDatosSecundarios.Visible = True
+        Else
+            btnDatosSecundarios.Visible = False
         End If
         lector.Close()
     End Sub
@@ -115,7 +115,7 @@ Public Class Supervision_Consultar
         Close()
     End Sub
 
-    Private Sub lblBtnSecundarios_Click(sender As Object, e As EventArgs) Handles lblBtnSecundarios.Click
+    Private Sub btnDatosSecundarios_Click(sender As Object, e As EventArgs) Handles btnDatosSecundarios.Click
         DetalleSupervision.ShowDialog()
     End Sub
 End Class

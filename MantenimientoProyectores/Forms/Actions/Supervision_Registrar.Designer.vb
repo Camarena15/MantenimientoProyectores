@@ -266,6 +266,7 @@ Partial Class Supervision_Registrar
         Me.txtImgVentanas.Location = New System.Drawing.Point(575, 210)
         Me.txtImgVentanas.MaxLength = 225
         Me.txtImgVentanas.Name = "txtImgVentanas"
+        Me.txtImgVentanas.ReadOnly = True
         Me.txtImgVentanas.Size = New System.Drawing.Size(158, 20)
         Me.txtImgVentanas.TabIndex = 23
         Me.txtImgVentanas.Text = "Haz clic para Seleccionar"
@@ -277,6 +278,7 @@ Partial Class Supervision_Registrar
         Me.txtImgLamparas.Location = New System.Drawing.Point(575, 175)
         Me.txtImgLamparas.MaxLength = 225
         Me.txtImgLamparas.Name = "txtImgLamparas"
+        Me.txtImgLamparas.ReadOnly = True
         Me.txtImgLamparas.Size = New System.Drawing.Size(158, 20)
         Me.txtImgLamparas.TabIndex = 22
         Me.txtImgLamparas.Text = "Haz clic para Seleccionar"
@@ -288,6 +290,7 @@ Partial Class Supervision_Registrar
         Me.txtImgElectri.Location = New System.Drawing.Point(575, 140)
         Me.txtImgElectri.MaxLength = 225
         Me.txtImgElectri.Name = "txtImgElectri"
+        Me.txtImgElectri.ReadOnly = True
         Me.txtImgElectri.Size = New System.Drawing.Size(158, 20)
         Me.txtImgElectri.TabIndex = 21
         Me.txtImgElectri.Text = "Haz clic para Seleccionar"
@@ -299,6 +302,7 @@ Partial Class Supervision_Registrar
         Me.txtImgPintarron.Location = New System.Drawing.Point(575, 106)
         Me.txtImgPintarron.MaxLength = 225
         Me.txtImgPintarron.Name = "txtImgPintarron"
+        Me.txtImgPintarron.ReadOnly = True
         Me.txtImgPintarron.Size = New System.Drawing.Size(158, 20)
         Me.txtImgPintarron.TabIndex = 20
         Me.txtImgPintarron.Text = "Haz clic para Seleccionar"
@@ -310,6 +314,7 @@ Partial Class Supervision_Registrar
         Me.txtImgElect.Location = New System.Drawing.Point(575, 72)
         Me.txtImgElect.MaxLength = 225
         Me.txtImgElect.Name = "txtImgElect"
+        Me.txtImgElect.ReadOnly = True
         Me.txtImgElect.Size = New System.Drawing.Size(158, 20)
         Me.txtImgElect.TabIndex = 19
         Me.txtImgElect.Text = "Haz clic para Seleccionar"
@@ -321,6 +326,7 @@ Partial Class Supervision_Registrar
         Me.txtImgConexiones.Location = New System.Drawing.Point(575, 38)
         Me.txtImgConexiones.MaxLength = 225
         Me.txtImgConexiones.Name = "txtImgConexiones"
+        Me.txtImgConexiones.ReadOnly = True
         Me.txtImgConexiones.Size = New System.Drawing.Size(158, 20)
         Me.txtImgConexiones.TabIndex = 18
         Me.txtImgConexiones.Text = "Haz clic para Seleccionar"
@@ -644,6 +650,7 @@ Partial Class Supervision_Registrar
         Me.txtImgRuta.Location = New System.Drawing.Point(518, 80)
         Me.txtImgRuta.MaxLength = 225
         Me.txtImgRuta.Name = "txtImgRuta"
+        Me.txtImgRuta.ReadOnly = True
         Me.txtImgRuta.Size = New System.Drawing.Size(158, 20)
         Me.txtImgRuta.TabIndex = 20
         Me.txtImgRuta.Text = "Haz clic para Seleccionar"

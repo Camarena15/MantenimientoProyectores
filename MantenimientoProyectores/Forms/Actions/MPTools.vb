@@ -3,6 +3,8 @@ Imports MySql.Data.MySqlClient
 Imports System.Net
 Imports System.IO
 Public Class MPTools
+    Dim finalPath As String
+    Dim laps As Integer
     Public Sub obtImagen(ByVal path As String)
         Dim ftpuser As String = "sistemamediosav_01"
         Dim ftppass As String = "W*eH0EBY%7oH"
@@ -17,6 +19,7 @@ Public Class MPTools
         image = Image.FromStream(responseStream)
         response.Close()
     End Sub
+
     Public Function busquedaIdRecurso(ByVal tabla As String, ByVal idRecurso As String) As Integer
         Dim connection As New MySqlConnection(s)
         Dim command As New MySqlCommand

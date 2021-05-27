@@ -36,25 +36,37 @@ Public Class DetalleSupervision
         pctCajaCon.Image = image
         txtConElec.Text = lector.GetValue(2)
         MP.obtImagen(lector.GetValue(3))
-        pctCajaCon.Image = image
+        pctConElect.Image = image
         txtPinta.Text = lector.GetValue(4)
         MP.obtImagen(lector.GetValue(5))
-        pctCajaCon.Image = image
+        pctPinta.Image = image
         txtElec.Text = lector.GetValue(6)
         MP.obtImagen(lector.GetValue(7))
-        pctCajaCon.Image = image
+        pctElect.Image = image
         txtLamp.Text = lector.GetValue(8)
         MP.obtImagen(lector.GetValue(9))
-        pctCajaCon.Image = image
+        pctLamp.Image = image
         txtVent.Text = lector.GetValue(10)
         MP.obtImagen(lector.GetValue(11))
-        pctCajaCon.Image = image
+        pctVent.Image = image
         lector.Close()
         connection.Close()
         Timer1.Stop()
     End Sub
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        txtCajaCon.Text = ""
+        txtConElec.Text = ""
+        txtPinta.Text = ""
+        txtElec.Text = ""
+        txtLamp.Text = ""
+        txtVent.Text = ""
+        pctCajaCon.Image = Nothing
+        pctConElect.Image = Nothing
+        pctPinta.Image = Nothing
+        pctElect.Image = Nothing
+        pctLamp.Image = Nothing
+        pctVent.Image = Nothing
         Close()
     End Sub
 End Class

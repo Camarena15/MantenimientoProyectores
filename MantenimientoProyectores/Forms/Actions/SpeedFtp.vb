@@ -8,6 +8,7 @@
             PB.Value = CInt(offset) / 1024
             lblKBMIN.Text = PB.Value + (filecount * 2)
             If (PB.Value + (filecount * 2)) = PB.Maximum Then
+                trigger = False
                 Close()
             End If
         End If

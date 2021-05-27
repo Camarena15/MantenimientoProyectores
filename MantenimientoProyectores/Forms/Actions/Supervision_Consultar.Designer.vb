@@ -40,6 +40,10 @@ Partial Class Supervision_Consultar
         Me.cmdSiguiente = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DGVSupervision = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ImagenRcs = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtFecha = New System.Windows.Forms.TextBox()
@@ -53,13 +57,8 @@ Partial Class Supervision_Consultar
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.NumericUpDown()
-        Me.lblSecundarios = New System.Windows.Forms.Label()
-        Me.lblBtnSecundarios = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImagenRcs = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.btnDatosSecundarios = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -113,7 +112,7 @@ Partial Class Supervision_Consultar
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.DGV)
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 8.0!)
-        Me.GroupBox1.Location = New System.Drawing.Point(57, 396)
+        Me.GroupBox1.Location = New System.Drawing.Point(57, 444)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
@@ -186,7 +185,7 @@ Partial Class Supervision_Consultar
         '
         Me.cmdInicio.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Inicio
         Me.cmdInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdInicio.Location = New System.Drawing.Point(246, 600)
+        Me.cmdInicio.Location = New System.Drawing.Point(246, 650)
         Me.cmdInicio.Name = "cmdInicio"
         Me.cmdInicio.Size = New System.Drawing.Size(75, 23)
         Me.cmdInicio.TabIndex = 292
@@ -197,7 +196,7 @@ Partial Class Supervision_Consultar
         '
         Me.cmdAnterior.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Anterior
         Me.cmdAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdAnterior.Location = New System.Drawing.Point(343, 600)
+        Me.cmdAnterior.Location = New System.Drawing.Point(343, 650)
         Me.cmdAnterior.Name = "cmdAnterior"
         Me.cmdAnterior.Size = New System.Drawing.Size(75, 23)
         Me.cmdAnterior.TabIndex = 293
@@ -208,7 +207,7 @@ Partial Class Supervision_Consultar
         '
         Me.cmdUltimo.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Ultimo
         Me.cmdUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdUltimo.Location = New System.Drawing.Point(540, 600)
+        Me.cmdUltimo.Location = New System.Drawing.Point(540, 650)
         Me.cmdUltimo.Name = "cmdUltimo"
         Me.cmdUltimo.Size = New System.Drawing.Size(75, 23)
         Me.cmdUltimo.TabIndex = 295
@@ -219,7 +218,7 @@ Partial Class Supervision_Consultar
         '
         Me.cmdSiguiente.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Siguiente
         Me.cmdSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdSiguiente.Location = New System.Drawing.Point(440, 600)
+        Me.cmdSiguiente.Location = New System.Drawing.Point(440, 650)
         Me.cmdSiguiente.Name = "cmdSiguiente"
         Me.cmdSiguiente.Size = New System.Drawing.Size(75, 23)
         Me.cmdSiguiente.TabIndex = 294
@@ -232,7 +231,7 @@ Partial Class Supervision_Consultar
         Me.GroupBox3.Font = New System.Drawing.Font("Consolas", 8.0!)
         Me.GroupBox3.Location = New System.Drawing.Point(57, 222)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(750, 169)
+        Me.GroupBox3.Size = New System.Drawing.Size(750, 217)
         Me.GroupBox3.TabIndex = 291
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "DETALLES SUPERVISIÓN"
@@ -250,8 +249,38 @@ Partial Class Supervision_Consultar
         Me.DGVSupervision.RowHeadersWidth = 51
         Me.DGVSupervision.RowTemplate.Height = 24
         Me.DGVSupervision.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.DGVSupervision.Size = New System.Drawing.Size(689, 126)
+        Me.DGVSupervision.Size = New System.Drawing.Size(689, 185)
         Me.DGVSupervision.TabIndex = 213
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID Recurso"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 75
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Observaciones"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 300
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Horas Trabajadas (Cañon)"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 80
+        '
+        'ImagenRcs
+        '
+        Me.ImagenRcs.HeaderText = "Imagen"
+        Me.ImagenRcs.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.ImagenRcs.Name = "ImagenRcs"
+        Me.ImagenRcs.ReadOnly = True
+        Me.ImagenRcs.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ImagenRcs.Width = 160
         '
         'Label3
         '
@@ -404,63 +433,26 @@ Partial Class Supervision_Consultar
         Me.txtId.Size = New System.Drawing.Size(76, 26)
         Me.txtId.TabIndex = 301
         '
-        'lblSecundarios
-        '
-        Me.lblSecundarios.AutoSize = True
-        Me.lblSecundarios.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSecundarios.ForeColor = System.Drawing.Color.Black
-        Me.lblSecundarios.Location = New System.Drawing.Point(233, 642)
-        Me.lblSecundarios.Name = "lblSecundarios"
-        Me.lblSecundarios.Size = New System.Drawing.Size(396, 19)
-        Me.lblSecundarios.TabIndex = 302
-        Me.lblSecundarios.Text = "HAZ CLIC      PARA VER DETALLES SECUNDARIOS"
-        Me.lblSecundarios.Visible = False
-        '
-        'lblBtnSecundarios
-        '
-        Me.lblBtnSecundarios.AutoSize = True
-        Me.lblBtnSecundarios.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBtnSecundarios.ForeColor = System.Drawing.Color.Red
-        Me.lblBtnSecundarios.Location = New System.Drawing.Point(313, 642)
-        Me.lblBtnSecundarios.Name = "lblBtnSecundarios"
-        Me.lblBtnSecundarios.Size = New System.Drawing.Size(45, 19)
-        Me.lblBtnSecundarios.TabIndex = 304
-        Me.lblBtnSecundarios.Text = "AQUI"
-        Me.lblBtnSecundarios.Visible = False
-        '
         'Timer1
         '
         Me.Timer1.Interval = 1500
         '
-        'DataGridViewTextBoxColumn2
+        'btnDatosSecundarios
         '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ID Recurso"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 75
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Observaciones"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 300
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Horas Trabajadas (Cañon)"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Width = 80
-        '
-        'ImagenRcs
-        '
-        Me.ImagenRcs.HeaderText = "Imagen"
-        Me.ImagenRcs.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.ImagenRcs.Name = "ImagenRcs"
-        Me.ImagenRcs.ReadOnly = True
-        Me.ImagenRcs.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ImagenRcs.Width = 160
+        Me.btnDatosSecundarios.BackColor = System.Drawing.Color.Navy
+        Me.btnDatosSecundarios.FlatAppearance.BorderSize = 0
+        Me.btnDatosSecundarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnDatosSecundarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue
+        Me.btnDatosSecundarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDatosSecundarios.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDatosSecundarios.ForeColor = System.Drawing.Color.White
+        Me.btnDatosSecundarios.Location = New System.Drawing.Point(872, 525)
+        Me.btnDatosSecundarios.Name = "btnDatosSecundarios"
+        Me.btnDatosSecundarios.Size = New System.Drawing.Size(139, 50)
+        Me.btnDatosSecundarios.TabIndex = 305
+        Me.btnDatosSecundarios.Text = "Ver Datos Secundarios"
+        Me.btnDatosSecundarios.UseVisualStyleBackColor = False
+        Me.btnDatosSecundarios.Visible = False
         '
         'Supervision_Consultar
         '
@@ -470,8 +462,7 @@ Partial Class Supervision_Consultar
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1060, 680)
-        Me.Controls.Add(Me.lblBtnSecundarios)
-        Me.Controls.Add(Me.lblSecundarios)
+        Me.Controls.Add(Me.btnDatosSecundarios)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label25)
@@ -532,11 +523,10 @@ Partial Class Supervision_Consultar
     Friend WithEvents Edificio As DataGridViewTextBoxColumn
     Friend WithEvents Aula As DataGridViewTextBoxColumn
     Friend WithEvents txtId As NumericUpDown
-    Friend WithEvents lblSecundarios As Label
-    Friend WithEvents lblBtnSecundarios As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
     Friend WithEvents ImagenRcs As DataGridViewImageColumn
+    Friend WithEvents btnDatosSecundarios As Button
 End Class

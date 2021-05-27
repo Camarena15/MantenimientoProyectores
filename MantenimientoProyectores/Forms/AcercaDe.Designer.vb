@@ -72,7 +72,7 @@ Partial Class AcercaDe
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(359, 63)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "UTILIDADES, REPORTES, DOCUMENTADOR: JOEL ALEJANDRO HIDALGO"
+        Me.Label2.Text = "UTILIDADES, REPORTES, DOCUMENTADOR Y TESTER: JOEL ALEJANDRO HIDALGO"
         '
         'PictureBox1
         '
