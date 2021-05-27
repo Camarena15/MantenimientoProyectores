@@ -6,6 +6,11 @@ Public Class Fechas_Reporte
     Dim lector As MySqlDataReader
     Dim f1 As String
     Dim f2, f11, f22 As String
+
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Close()
+    End Sub
+
     Private Sub Fechas_Reporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -23,7 +28,7 @@ Public Class Fechas_Reporte
 
 
         Dim Adaptador As New MySqlDataAdapter
-        If Menu_Reportes.opcion = 1 Then
+        If opcion = 1 Then
             DTP1.CustomFormat = "yyyy-MM-dd"
             ' f11 = String.Format(f1, "yyyy-M-d")
             f22 = String.Format(f2, "yyyy-M-d")
@@ -54,12 +59,13 @@ Public Class Fechas_Reporte
 
             Reporte_Form.ReportViewer1.LocalReport.DataSources.Clear()
             Reporte_Form.ReportViewer1.LocalReport.DataSources.Add(Datasource)
-            Reporte_Form.ReportViewer1.LocalReport.ReportPath = "C:\MantenimientoProyectores\Forms\SupervisionReporte.rdlc"
+            MsgBox(defAppPath.Replace("\bin\Debug", "\Forms\SupervisionReporte.rdlc"))
+            Reporte_Form.ReportViewer1.LocalReport.ReportPath = defAppPath.Replace("\bin\Debug\", "\Forms\SupervisionReporte.rdlc")
             Reporte_Form.ReportViewer1.LocalReport.SetParameters(New ReportParameter() {p1, p2})
             Reporte_Form.ReportViewer1.RefreshReport()
             Reporte_Form.Show()
             con.Close()
-        ElseIf Menu_Reportes.opcion = 3 Then
+        ElseIf opcion = 3 Then
             DTP1.CustomFormat = "yyyy-MM-dd"
             ' f11 = String.Format(f1, "yyyy-M-d")
             f22 = String.Format(f2, "yyyy-M-d")

@@ -14,7 +14,7 @@ Public Class Fechas_Estado_Reporte2
         'MsgBox(cboEstado.Text)
         f1 = DTP1.Value.Year & "-" & DTP1.Value.Month & "-" & DTP1.Value.Day
         f2 = DTP2.Value.Year & "-" & DTP2.Value.Month & "-" & DTP2.Value.Day
-        If Menu_Reportes.opcion = 4 Then
+        If opcion = 4 Then
 
 
             If cboEstado.Text = "Terminado" Then
@@ -104,13 +104,17 @@ Public Class Fechas_Estado_Reporte2
 
                 Reporte_Form.ReportViewer1.LocalReport.DataSources.Add(Datasource)
 
-                Reporte_Form.ReportViewer1.LocalReport.ReportPath = "C:\MantenimientoProyectores\Forms\ReporteTerminado2.rdlc"
+                Reporte_Form.ReportViewer1.LocalReport.ReportPath = defAppPath.Replace("\bin\Debug\", "\Forms\ReporteTerminado2.rdlc")
                 Reporte_Form.ReportViewer1.LocalReport.SetParameters(New ReportParameter() {p1, p2, ee})
                 Reporte_Form.ReportViewer1.RefreshReport()
                 Reporte_Form.ShowDialog()
                 con.Close()
             End If
         End If
+    End Sub
+
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Close()
     End Sub
 
     Dim Adaptador As New MySqlDataAdapter

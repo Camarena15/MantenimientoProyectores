@@ -6,6 +6,10 @@ Public Class Fechas_Estado_Reporte
     Dim f2, f22, f11 As String
     Dim edo As String
     Dim Adaptador As New MySqlDataAdapter
+
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Close()
+    End Sub
     ' Dim cbo As String
     Private Sub Fechas_Estado_Reporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cboEstado.Items.Add("Atendido")
@@ -21,7 +25,7 @@ Public Class Fechas_Estado_Reporte
         'MsgBox(cboEstado.Text)
         f1 = DTP1.Value.Year & "-" & DTP1.Value.Month & "-" & DTP1.Value.Day
         f2 = DTP2.Value.Year & "-" & DTP2.Value.Month & "-" & DTP2.Value.Day
-        If Menu_Reportes.opcion = 2 Then
+        If opcion = 2 Then
 
 
             If cboEstado.Text = "Atendido" Then
@@ -65,7 +69,7 @@ Public Class Fechas_Estado_Reporte
 
                 Reporte_Form.ReportViewer1.LocalReport.DataSources.Add(Datasource)
 
-                Reporte_Form.ReportViewer1.LocalReport.ReportPath = "C:\MantenimientoProyectores\Forms\ReporteDocente.rdlc"
+                Reporte_Form.ReportViewer1.LocalReport.ReportPath = defAppPath.Replace("\bin\Debug\", "\Forms\ReporteDocente.rdlc")
                 Reporte_Form.ReportViewer1.LocalReport.SetParameters(New ReportParameter() {p1, p2, ee})
                 Reporte_Form.ReportViewer1.RefreshReport()
                 Reporte_Form.ShowDialog()

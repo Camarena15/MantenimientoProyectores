@@ -1,7 +1,6 @@
 ﻿Imports System.Runtime.InteropServices
 Public Class Menu
     ' CODIFICACION PARA LA INTERFAZ DEL SISTEMA
-    Public opcion As Integer
     Dim triggerPaneles As Boolean = False
     Dim formTargetName As String
     Dim formTarget As Windows.Forms.Form
