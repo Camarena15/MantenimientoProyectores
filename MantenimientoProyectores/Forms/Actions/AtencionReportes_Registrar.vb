@@ -10,11 +10,37 @@ Public Class AtencionReportes_Registrar
         transaction = connection.BeginTransaction()
         command.Connection = connection
         command.Transaction = transaction
+        Dim tipoReporte As String = ""
+        If cboTipoReporte.SelectedIndex = 1 Then
+            tipoReporte = "D"
+        ElseIf cboTipoReporte.SelectedIndex = 2 Then
+            tipoReporte = "I"
+        End If
         Try
-            command.CommandText = "INSERT INTO `ATENCIONFALLAS` (IdReporte, IdRecurso, Tipo, FechaSeguimiento, QuienAtiende, 
-                Observacion, Estado) VALUES (" & txtIdReporte.Text & "," & txtidRecurso.Text & ",'" & cboTipo.Text & "','" &
-                DTP.Value.ToString("yyyy-MM-dd") & "','" & txtAtiende.Text & "','" & txtObservacion.Text & "','" & txtEstado.Text & "')"
+            command.CommandText = "INSERT INTO `ATENCIONFALLAS`(`IdReporte`, `TipoReporte`, `FechaSeguimiento`, `QuienAtiende`, `Estado`) VALUES (" &
+                txtIdReporte.Text & ",'" & tipoReporte & "','" & DTP.Value.ToString("yyyy-MM-dd") & "','" & txtAtiende.Text & "','" & txtEstado.Text & "')"
             command.ExecuteNonQuery()
+            '********************************************************************************************************************
+            'OBTENER EL ULTIMO REGISTRO DE LA ATENCION QUE SE ACABA DE INSERTAR
+            Dim idc As Integer
+            If txtId.Text = "" Then 'PRIMER REGISTRO DESPUES DEL TRASPASO, SIN PRESENCIA DE REGISTROS EN LA TABLA
+                command.CommandText = "SELECT IdAtencion FROM ATENCIONFALLAS ORDER BY IdAtencion DESC LIMIT 1"
+                lector = command.ExecuteReader
+                lector.Read()
+                idc = lector.GetInt32(0)
+                lector.Close()
+            Else
+                idc = txtId.Text
+            End If
+            '********************************************************************************************************************
+            For i = 0 To LV.Items.Count - 1
+                Dim r As String = "INSERT INTO `DETALLEATENCIONFALLAS`(`IdAtencion`, `IdRecurso`, `TipoAtencion`, `Observaciones`) 
+                    VALUES (" & idc & "," & LV.Items.Item(i).SubItems.Item(0).Text & ",'" & LV.Items.Item(i).SubItems.Item(3).Text & "','" &
+                    LV.Items.Item(i).SubItems.Item(4).Text & "')"
+                command.CommandText = r
+                command.ExecuteNonQuery()
+            Next
+            '**************************************************************************************************************
             If cboTipoReporte.SelectedItem.Equals("DOCENTE") Then
                 command.CommandText = "UPDATE `REPORTEDOCENTES` SET `Estado`= 'Atendido' WHERE IdReporte=" & txtIdReporte.Text
 
@@ -22,18 +48,20 @@ Public Class AtencionReportes_Registrar
                 command.CommandText = "UPDATE `REPORTESRECURSOSINDIVIDUALES` SET `Estado`= 'Atendido' WHERE IdReporteRecursos=" & txtIdReporte.Text
             End If
             command.ExecuteNonQuery()
-            If (MP.busquedaIdRecurso("CAÑONES", txtidRecurso.Text) = 1) Then
-                If RBSI.Checked = True Then
-                    command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion', `HorasLampara` = 0 WHERE IdRecurso= " & txtidRecurso.Text
-                Else
-                    command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtidRecurso.Text
+            For i = 0 To LV.Items.Count - 1
+                If (MP.busquedaIdRecurso("CAÑONES", LV.Items.Item(i).SubItems.Item(0).Text) = 1) Then
+                    If LV.Items.Item(i).SubItems.Item(5).Text.Equals("True") Then
+                        command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion', `HorasLampara` = 0 WHERE IdRecurso= " & LV.Items.Item(i).SubItems.Item(0).Text
+                    Else
+                        command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & LV.Items.Item(i).SubItems.Item(0).Text
+                    End If
+                ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", LV.Items.Item(i).SubItems.Item(0).Text) = 1) Then
+                    command.CommandText = "UPDATE `COMPUTADORAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & LV.Items.Item(i).SubItems.Item(0).Text
+                ElseIf (MP.busquedaIdRecurso("PANTALLAS", LV.Items.Item(i).SubItems.Item(0).Text) = 1) Then
+                    command.CommandText = "UPDATE `PANTALLAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & LV.Items.Item(i).SubItems.Item(0).Text
                 End If
-            ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", txtidRecurso.Text) = 1) Then
-                command.CommandText = "UPDATE `COMPUTADORAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtidRecurso.Text
-            ElseIf (MP.busquedaIdRecurso("PANTALLAS", txtidRecurso.Text) = 1) Then
-                command.CommandText = "UPDATE `PANTALLAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtidRecurso.Text
-            End If
-            command.ExecuteNonQuery()
+                command.ExecuteNonQuery()
+            Next
             transaction.Commit()
         Catch ex As Exception
             MsgBox("Commit Exception Type: {0} no se pudo insertar por error")
@@ -66,7 +94,7 @@ Public Class AtencionReportes_Registrar
         Else
             txtId.Text = ""
         End If
-        GroupBox1.Enabled = True
+        GBTipoReporte.Enabled = True
         cmdNuevo.Enabled = False
     End Sub
 
@@ -89,20 +117,22 @@ Public Class AtencionReportes_Registrar
         txtEdificio.Text = ""
         txtAula.Text = ""
         txtinvcapece.Text = ""
-        txtMarca.Text = ""
-        txtModelo.Text = ""
         txtEstadoRecurso.Text = ""
         cboTipo.SelectedIndex = 0
         DTP.Value = Date.Today
-        txtObservacion.Text = ""
+        txtObservacionRecursos.Text = ""
         txtAtiende.Text = ""
         RBNO.Checked = True
         lblEdificio.Visible = False
         lblAula.Visible = False
         txtEdificio.Visible = False
         txtAula.Visible = False
-        GBRecurso.Enabled = False
+        GBRecursos.Enabled = False
         GBAtencion.Enabled = False
+        GBTipoReporte.Enabled = False
+        cmdAgregaD.Enabled = False
+        cmdBack.Enabled = False
+        LV.Items.Clear()
     End Sub
 
     Private Sub Reportes_Registrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -113,13 +143,14 @@ Public Class AtencionReportes_Registrar
         RBNO.Checked = True
         cboTipoReporte.SelectedIndex = 0
         cboTipo.SelectedIndex = 0
+        cboCategoria.SelectedIndex = 0
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
         command = connection.CreateCommand
         Timer1.Stop()
     End Sub
-    Private Sub RB_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub RB_CheckedChanged(sender As Object, e As EventArgs) Handles RBNO.CheckedChanged
         If RBNO.Checked = True Then
             RBSI.Checked = False
         End If
@@ -136,6 +167,7 @@ Public Class AtencionReportes_Registrar
             pFechaInicio = DTPPeriodoInicio.Value.ToString("yyyy-MM-dd")
             pFechaFin = DTPPeriodoFin.Value.ToString("yyyy-MM-dd")
             If cboTipoReporte.SelectedIndex = 1 Then
+                cboCategoria.Enabled = True
                 command.CommandText = "SELECT count(*) FROM REPORTEDOCENTES WHERE Fecha BETWEEN '" & pFechaInicio &
                 "' AND '" & pFechaFin & "' AND Estado='Pendiente'"
                 lector = command.ExecuteReader
@@ -151,8 +183,8 @@ Public Class AtencionReportes_Registrar
                     Reportes_Buscar.ShowDialog()
                     If obtainedInfoRep = True Then
                         obtainedInfoRep = False
-                        GBRecurso.Enabled = True
-                        GBReporte.Enabled = True
+                        GBRecursos.Enabled = True
+                        cmdBuscarRecurso.Enabled = True
                         txtEdificio.Text = recursoasignadoEdificio
                         txtAula.Text = recursoasignadoAula
                         txtIdReporte.Text = idReporte_1
@@ -160,10 +192,10 @@ Public Class AtencionReportes_Registrar
                         txtObservacionesRep.Text = observaciones_1
                         txtEstadoReporte.Text = estadoreporte_1
                     End If
-
                 End If
                 lector.Close()
             ElseIf cboTipoReporte.SelectedIndex = 2 Then
+                cboCategoria.Enabled = False
                 command.CommandText = "SELECT count(*) FROM REPORTESRECURSOSINDIVIDUALES WHERE Fecha BETWEEN '" & pFechaInicio &
             "' AND '" & pFechaFin & "' AND Estado='Pendiente'"
                 lector = command.ExecuteReader
@@ -177,7 +209,8 @@ Public Class AtencionReportes_Registrar
                     lblAula.Visible = False
                     txtEdificio.Visible = False
                     txtAula.Visible = False
-                    GBRecurso.Enabled = False
+                    GBRecursos.Enabled = True
+                    cmdBuscarRecurso.Enabled = False
                     Reportes_Buscar.ShowDialog()
                     If obtainedInfoRep = True Then
                         obtainedInfoRep = False
@@ -200,14 +233,13 @@ Public Class AtencionReportes_Registrar
                         ElseIf MP.busquedaIdRecurso("PANTALLAS", txtidRecurso.Text) = 1 Then
                             cboCategoria.SelectedIndex = 3
                         End If
-                        command.CommandText = "SELECT INVCAPECE, Modelo, Marca, Estado FROM " & cboCategoria.SelectedItem & " WHERE IdRecurso=" & txtidRecurso.Text
+                        command.CommandText = "SELECT INVCAPECE, Estado FROM " & cboCategoria.SelectedItem & " WHERE IdRecurso=" & txtidRecurso.Text
                         lector = command.ExecuteReader
                         lector.Read()
                         txtinvcapece.Text = lector.GetValue(0)
-                        txtModelo.Text = lector.GetValue(1)
-                        txtMarca.Text = lector.GetValue(2)
-                        txtEstadoRecurso.Text = lector.GetValue(3)
+                        txtEstadoRecurso.Text = lector.GetValue(1)
                         lector.Close()
+                        cmdAgregaD.Enabled = True
                         GBAtencion.Enabled = True
                         cmdGrabar.Enabled = True
                     End If
@@ -219,36 +251,93 @@ Public Class AtencionReportes_Registrar
         If cboCategoria.SelectedIndex = 0 Then
             MsgBox("Debe seleccionar una categoría de Recurso!", MsgBoxStyle.Critical, "ERROR")
         Else
-            command.CommandText = "SELECT count(*) FROM RECURSOSASIGNADOS AS RA INNER JOIN " & cboCategoria.SelectedItem &
+            Dim n As Integer
+            If cboCategoria.SelectedIndex = 1 Or cboCategoria.SelectedIndex = 2 Or cboCategoria.SelectedIndex = 3 Then
+                command.CommandText = "SELECT count(*) FROM RECURSOSASIGNADOS AS RA INNER JOIN " & cboCategoria.SelectedItem &
                     " AS R ON RA.IdRecurso = R.IdRecurso WHERE RA.Estado='Vigente' AND R.Estado='Asignado' AND RA.Edificio='" &
                     txtEdificio.Text & "' AND RA.Aula='" & txtAula.Text & "'"
-            lector = command.ExecuteReader
-            lector.Read()
-            Dim n As Integer = lector.GetValue(0)
-            lector.Close()
+                lector = command.ExecuteReader
+                lector.Read()
+                n = lector.GetValue(0)
+                lector.Close()
+            ElseIf cboCategoria.SelectedIndex = 4 Or cboCategoria.SelectedIndex = 5 Then
+                n = 1
+            End If
             If n = 0 Then
-                MsgBox("NO hay recursos Asignados actualmente en el Edificio y Aula Seleccionados!", MsgBoxStyle.Critical, "ERROR")
-            Else
-                If cboCategoria.SelectedIndex = 1 Then
-                    lblCambioLampara.Visible = True
-                    RBNO.Visible = True
-                    RBSI.Visible = True
-                End If
-                recursoasignadoEdificio = txtEdificio.Text
-                recursoasignadoAula = txtAula.Text
-                recursoCat = cboCategoria.SelectedItem
-                RecursoAsignado_Seleccionar.ShowDialog()
-                If obtainedInfoRec = True Then
-                    obtainedInfoRec = False
-                    txtinvcapece.Text = invcapece_1
-                    txtModelo.Text = modelo_1
-                    txtMarca.Text = marca_1
-                    txtEstadoRecurso.Text = estado_1
-                    txtidRecurso.Text = idRecurso_1
-                    GBAtencion.Enabled = True
-                    cmdGrabar.Enabled = True
+                    MsgBox("NO hay recursos Asignados actualmente en el Edificio y Aula Seleccionados!", MsgBoxStyle.Critical, "ERROR")
+                Else
+                    If cboCategoria.SelectedIndex = 1 Then
+                        lblCambioLampara.Visible = True
+                        RBNO.Visible = True
+                        RBSI.Visible = True
+                    End If
+                    recursoasignadoEdificio = txtEdificio.Text
+                    recursoasignadoAula = txtAula.Text
+                    recursoCat = cboCategoria.SelectedItem
+                    RecursoAsignado_Seleccionar.ShowDialog()
+                    If obtainedInfoRec = True Then
+                        obtainedInfoRec = False
+                        txtinvcapece.Text = invcapece_1
+                        txtEstadoRecurso.Text = estado_1
+                        txtidRecurso.Text = idRecurso_1
+                        GBAtencion.Enabled = True
+                        cmdAgregaD.Enabled = True
+                    End If
                 End If
             End If
+    End Sub
+
+    Private Sub cmdAgregaD_Click(sender As Object, e As EventArgs) Handles cmdAgregaD.Click
+        Dim verificaRejillas As Boolean
+        For x As Integer = 0 To LV.Items.Count - 1
+            If txtidRecurso.Text.Equals(LV.Items.Item(x).SubItems.Item(0).Text) Then
+                verificaRejillas = True
+            End If
+        Next
+        If verificaRejillas = False Then
+            Dim fila As New ListViewItem(txtidRecurso.Text)
+            fila.SubItems.Add(txtinvcapece.Text)
+            fila.SubItems.Add(cboCategoria.SelectedItem)
+            fila.SubItems.Add(cboTipo.SelectedItem)
+            fila.SubItems.Add(txtObservacionRecursos.Text)
+            If cboCategoria.SelectedIndex = 1 Then
+                fila.SubItems.Add(RBSI.Checked)
+            Else
+                fila.SubItems.Add("")
+            End If
+            LV.Items.Add(fila)
+            txtidRecurso.Text = ""
+            txtinvcapece.Text = ""
+            txtEstadoRecurso.Text = ""
+            cboCategoria.SelectedIndex = 0
+            cboTipo.SelectedIndex = 0
+            txtObservacionRecursos.Text = ""
+            If cboTipoReporte.SelectedIndex = 1 Then
+                cmdBack.Enabled = True
+            End If
+            lblCambioLampara.Visible = False
+            RBNO.Checked = True
+            RBNO.Visible = False
+            RBSI.Visible = False
+            cmdGrabar.Enabled = True
+            cmdAgregaD.Enabled = False
+        Else
+            MsgBox("Este registro ya se ha seleccionado previamente!", MsgBoxStyle.Critical)
         End If
+    End Sub
+    Private Sub cmdBack_Click(sender As Object, e As EventArgs) Handles cmdBack.Click
+        If LV.Items.Count > 0 Then
+            Dim ultimo As Integer = LV.Items.Count - 1
+            LV.Items.RemoveAt(ultimo)
+            If ultimo = 0 Then
+                cmdBack.Enabled = False
+                cmdGrabar.Enabled = False
+            End If
+        End If
+
+    End Sub
+
+    Private Sub cboCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCategoria.SelectedIndexChanged
+
     End Sub
 End Class

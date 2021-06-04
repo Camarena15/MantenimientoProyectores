@@ -30,8 +30,11 @@ Public Class Reportes_Buscar
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         conexion.Open()
         txtTipoReporte.Text = tipoReporte
-        txtPInicio.Text = pFechaInicio
-        txtPFin.Text = pFechaFin
+        Dim fechai, fechaf As Date
+        fechai = pFechaInicio
+        fechaf = pFechaFin
+        txtPInicio.Text = fechai.ToString("dd/MM/yyyy")
+        txtPFin.Text = fechaf.ToString("dd/MM/yyyy")
         Dim r As String = ""
         If tipoReporte.Equals("DOCENTE") Then
             DGV.Columns.Item(5).Visible = True
@@ -63,7 +66,7 @@ Public Class Reportes_Buscar
         Timer1.Stop()
     End Sub
 
-    Private Sub DGV_SelectionChanged(sender As Object, e As EventArgs) Handles DGV.CellClick
+    Private Sub DGV_SelectionChanged(sender As Object, e As EventArgs) Handles cmdSeleccionar.Click
         idReporte_1 = DGV(0, DGV.CurrentCell.RowIndex).Value
         fecha_1 = DGV(2, DGV.CurrentCell.RowIndex).Value
         observaciones_1 = DGV(3, DGV.CurrentCell.RowIndex).Value
@@ -103,23 +106,19 @@ Public Class Reportes_Buscar
             End If
         End If
     End Sub
-    Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
-        If txtEdificio.SelectedIndex >= 27 Then
-            txtAula.SelectedIndex = 9
-            txtAula.Enabled = False
-        Else
-            txtAula.Enabled = True
-            txtAula.SelectedIndex = 0
+    Private Sub cmbSiguiente_Click(sender As Object, e As EventArgs) Handles cmdSiguiente.Click
+        If DGV.CurrentCell.RowIndex <> DGV.Rows.Count - 2 Then
+            Dim index As Integer = DGV.CurrentCell.RowIndex
+            DGV.ClearSelection()
+            DGV.CurrentCell = DGV(0, index + 1)
         End If
     End Sub
 
-    Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
-        If txtEdificio.SelectedIndex < 27 Then
-
-            If txtAula.SelectedIndex = 9 Then
-                MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
-                txtAula.SelectedIndex = 0
-            End If
+    Private Sub cmbAnterior_Click(sender As Object, e As EventArgs) Handles cmdAnterior.Click
+        If DGV.CurrentCell.RowIndex <> 0 Then
+            Dim index As Integer = DGV.CurrentCell.RowIndex
+            DGV.ClearSelection()
+            DGV.CurrentCell = DGV(0, index - 1)
         End If
     End Sub
 End Class

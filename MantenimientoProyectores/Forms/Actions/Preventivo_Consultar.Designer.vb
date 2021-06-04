@@ -68,6 +68,8 @@ Partial Class Preventivo_Consultar
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.txtCategoria = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -293,6 +295,8 @@ Partial Class Preventivo_Consultar
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.txtCategoria)
+        Me.Panel1.Controls.Add(Me.Label14)
         Me.Panel1.Controls.Add(Me.txtEdoRecurso)
         Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.txtIdRecurso)
@@ -302,14 +306,13 @@ Partial Class Preventivo_Consultar
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(417, 70)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(262, 122)
+        Me.Panel1.Size = New System.Drawing.Size(262, 143)
         Me.Panel1.TabIndex = 303
         '
         'txtEdoRecurso
         '
-        Me.txtEdoRecurso.Enabled = False
         Me.txtEdoRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEdoRecurso.Location = New System.Drawing.Point(128, 82)
+        Me.txtEdoRecurso.Location = New System.Drawing.Point(128, 101)
         Me.txtEdoRecurso.Name = "txtEdoRecurso"
         Me.txtEdoRecurso.ReadOnly = True
         Me.txtEdoRecurso.Size = New System.Drawing.Size(122, 26)
@@ -327,7 +330,6 @@ Partial Class Preventivo_Consultar
         '
         'txtIdRecurso
         '
-        Me.txtIdRecurso.Enabled = False
         Me.txtIdRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdRecurso.Location = New System.Drawing.Point(128, 11)
         Me.txtIdRecurso.Name = "txtIdRecurso"
@@ -337,9 +339,8 @@ Partial Class Preventivo_Consultar
         '
         'txtidcat
         '
-        Me.txtidcat.Enabled = False
         Me.txtidcat.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidcat.Location = New System.Drawing.Point(128, 46)
+        Me.txtidcat.Location = New System.Drawing.Point(128, 41)
         Me.txtidcat.Name = "txtidcat"
         Me.txtidcat.ReadOnly = True
         Me.txtidcat.Size = New System.Drawing.Size(122, 26)
@@ -349,7 +350,7 @@ Partial Class Preventivo_Consultar
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(5, 49)
+        Me.Label18.Location = New System.Drawing.Point(5, 44)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(117, 19)
         Me.Label18.TabIndex = 226
@@ -358,7 +359,7 @@ Partial Class Preventivo_Consultar
         'Label19
         '
         Me.Label19.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(5, 78)
+        Me.Label19.Location = New System.Drawing.Point(5, 99)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(108, 42)
         Me.Label19.TabIndex = 225
@@ -366,7 +367,6 @@ Partial Class Preventivo_Consultar
         '
         'txtFechaF
         '
-        Me.txtFechaF.Enabled = False
         Me.txtFechaF.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFechaF.ForeColor = System.Drawing.Color.Black
         Me.txtFechaF.Location = New System.Drawing.Point(276, 178)
@@ -377,7 +377,6 @@ Partial Class Preventivo_Consultar
         '
         'txtTipoS
         '
-        Me.txtTipoS.Enabled = False
         Me.txtTipoS.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTipoS.ForeColor = System.Drawing.Color.Black
         Me.txtTipoS.Location = New System.Drawing.Point(92, 104)
@@ -388,7 +387,6 @@ Partial Class Preventivo_Consultar
         '
         'txtFechaI
         '
-        Me.txtFechaI.Enabled = False
         Me.txtFechaI.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFechaI.ForeColor = System.Drawing.Color.Black
         Me.txtFechaI.Location = New System.Drawing.Point(276, 138)
@@ -399,7 +397,6 @@ Partial Class Preventivo_Consultar
         '
         'txtEstado
         '
-        Me.txtEstado.Enabled = False
         Me.txtEstado.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEstado.ForeColor = System.Drawing.Color.Black
         Me.txtEstado.Location = New System.Drawing.Point(293, 104)
@@ -558,6 +555,26 @@ Partial Class Preventivo_Consultar
         '
         Me.Timer1.Interval = 1500
         '
+        'txtCategoria
+        '
+        Me.txtCategoria.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategoria.Location = New System.Drawing.Point(128, 71)
+        Me.txtCategoria.Name = "txtCategoria"
+        Me.txtCategoria.ReadOnly = True
+        Me.txtCategoria.Size = New System.Drawing.Size(122, 26)
+        Me.txtCategoria.TabIndex = 230
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.Black
+        Me.Label14.Location = New System.Drawing.Point(5, 74)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(90, 19)
+        Me.Label14.TabIndex = 229
+        Me.Label14.Text = "Categoría"
+        '
         'Preventivo_Consultar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -636,4 +653,6 @@ Partial Class Preventivo_Consultar
     Friend WithEvents Label19 As Label
     Friend WithEvents txtId As NumericUpDown
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents txtCategoria As TextBox
+    Friend WithEvents Label14 As Label
 End Class

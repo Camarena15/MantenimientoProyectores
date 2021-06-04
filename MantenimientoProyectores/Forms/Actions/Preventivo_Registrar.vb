@@ -90,7 +90,7 @@ Public Class Preventivo_Registrar
         txtConcepto.Text = ""
         cboTipo.SelectedIndex = 0
         DTP.Value = Date.Today
-        DTP2.Text = Date.Today.ToString("yyyy-MM-dd")
+        DTP2.Text = Date.Today.ToString("dd/MM/yyyy")
         txtAtiende.Text = ""
         txtObservaciones.Text = ""
         RBNO.Checked = True
@@ -101,7 +101,7 @@ Public Class Preventivo_Registrar
         cboCategoria.SelectedIndex = 0
         cboTipo.SelectedIndex = 0
         DTP.Value = Date.Today
-        DTP2.Text = Date.Today.ToString("yyyy-MM-dd")
+        DTP2.Text = Date.Today.ToString("dd/MM/yyyy")
         RBNO.Checked = True
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

@@ -29,6 +29,10 @@
     Public modelo_1 As String
     Public marca_1 As String
     Public obtainedInfoRec As Boolean
+    'Variables Usadas para extraer informacion de un Movimiento
+    Public idMov_1 As String
+    Public encargado_1 As String
+    Public obtainedInfoMov As Boolean
     'Variables Usadas para controlar el monitoreo de carga de imagenes por FTP
     Public offset As Single
     Public BufferLength As Single

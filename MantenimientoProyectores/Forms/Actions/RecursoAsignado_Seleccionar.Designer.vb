@@ -40,10 +40,12 @@ Partial Class RecursoAsignado_Seleccionar
         Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edificio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Aula = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblCat = New System.Windows.Forms.Label()
         Me.txtCategoria = New System.Windows.Forms.TextBox()
+        Me.cmdAnterior = New System.Windows.Forms.Button()
+        Me.cmdSiguiente = New System.Windows.Forms.Button()
+        Me.cmdSeleccionar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -143,12 +145,13 @@ Partial Class RecursoAsignado_Seleccionar
         'DGV
         '
         Me.DGV.BackgroundColor = System.Drawing.Color.White
-        Me.DGV.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDRecurso, Me.INVCAPECE, Me.idCategoria, Me.Categoria, Me.Estado, Me.Edificio, Me.Aula})
         Me.DGV.Location = New System.Drawing.Point(75, 169)
         Me.DGV.Name = "DGV"
         Me.DGV.ReadOnly = True
+        Me.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGV.Size = New System.Drawing.Size(765, 174)
         Me.DGV.TabIndex = 15
         '
@@ -194,18 +197,6 @@ Partial Class RecursoAsignado_Seleccionar
         Me.Aula.Name = "Aula"
         Me.Aula.ReadOnly = True
         '
-        'Label3
-        '
-        Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(747, 103)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(150, 43)
-        Me.Label3.TabIndex = 217
-        Me.Label3.Text = "Haga clic sobre el recurso que desee seleccionar"
-        '
         'Timer1
         '
         Me.Timer1.Interval = 1500
@@ -234,15 +225,55 @@ Partial Class RecursoAsignado_Seleccionar
         Me.txtCategoria.TabIndex = 226
         Me.txtCategoria.Visible = False
         '
+        'cmdAnterior
+        '
+        Me.cmdAnterior.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Anterior
+        Me.cmdAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cmdAnterior.Location = New System.Drawing.Point(372, 349)
+        Me.cmdAnterior.Name = "cmdAnterior"
+        Me.cmdAnterior.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAnterior.TabIndex = 277
+        Me.cmdAnterior.Text = " "
+        Me.cmdAnterior.UseVisualStyleBackColor = True
+        '
+        'cmdSiguiente
+        '
+        Me.cmdSiguiente.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Siguiente
+        Me.cmdSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cmdSiguiente.Location = New System.Drawing.Point(468, 349)
+        Me.cmdSiguiente.Name = "cmdSiguiente"
+        Me.cmdSiguiente.Size = New System.Drawing.Size(75, 23)
+        Me.cmdSiguiente.TabIndex = 278
+        Me.cmdSiguiente.Text = " "
+        Me.cmdSiguiente.UseVisualStyleBackColor = True
+        '
+        'cmdSeleccionar
+        '
+        Me.cmdSeleccionar.BackColor = System.Drawing.Color.Navy
+        Me.cmdSeleccionar.FlatAppearance.BorderSize = 0
+        Me.cmdSeleccionar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.cmdSeleccionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue
+        Me.cmdSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdSeleccionar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdSeleccionar.ForeColor = System.Drawing.Color.White
+        Me.cmdSeleccionar.Location = New System.Drawing.Point(398, 378)
+        Me.cmdSeleccionar.Name = "cmdSeleccionar"
+        Me.cmdSeleccionar.Size = New System.Drawing.Size(118, 27)
+        Me.cmdSeleccionar.TabIndex = 279
+        Me.cmdSeleccionar.Text = "Seleccionar"
+        Me.cmdSeleccionar.UseVisualStyleBackColor = False
+        '
         'RecursoAsignado_Seleccionar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(915, 353)
+        Me.ClientSize = New System.Drawing.Size(915, 416)
+        Me.Controls.Add(Me.cmdSeleccionar)
+        Me.Controls.Add(Me.cmdAnterior)
+        Me.Controls.Add(Me.cmdSiguiente)
         Me.Controls.Add(Me.txtCategoria)
         Me.Controls.Add(Me.lblCat)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DGV)
         Me.Controls.Add(Me.lblCartelito)
         Me.Controls.Add(Me.txtAula)
@@ -271,7 +302,6 @@ Partial Class RecursoAsignado_Seleccionar
     Friend WithEvents Label4 As Label
     Friend WithEvents lblCartelito As Label
     Friend WithEvents DGV As DataGridView
-    Friend WithEvents Label3 As Label
     Friend WithEvents btnCerrar As Button
     Friend WithEvents IDRecurso As DataGridViewTextBoxColumn
     Friend WithEvents INVCAPECE As DataGridViewTextBoxColumn
@@ -283,4 +313,7 @@ Partial Class RecursoAsignado_Seleccionar
     Friend WithEvents Timer1 As Timer
     Friend WithEvents lblCat As Label
     Friend WithEvents txtCategoria As TextBox
+    Friend WithEvents cmdAnterior As Button
+    Friend WithEvents cmdSiguiente As Button
+    Friend WithEvents cmdSeleccionar As Button
 End Class

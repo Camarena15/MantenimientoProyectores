@@ -57,9 +57,9 @@ Public Class Supervision_Registrar
             command.CommandText = r
             command.ExecuteNonQuery()
             '********************************************************************************************************************
-            'OBTENER EL ULTIMO REGISTRO DE LA COMPRA QUE SE ACABA DE INSERTAR
+            'OBTENER EL ULTIMO REGISTRO DE LA SUPERVISION QUE SE ACABA DE INSERTAR
             Dim idc As Integer
-            If txtId.Text = "" Then 'PRIMERA COMPRA DESPUES DEL TRASPASO, SIN PRESENCIA DE REGISTROS EN LA TABLA
+            If txtId.Text = "" Then 'PRIMER REGISTRO DESPUES DEL TRASPASO, SIN PRESENCIA DE REGISTROS EN LA TABLA
                 command.CommandText = "SELECT idSupervision FROM SUPERVISION ORDER BY idSupervision DESC LIMIT 1"
                 lector = command.ExecuteReader
                 lector.Read()
@@ -214,6 +214,7 @@ Public Class Supervision_Registrar
         txtObsPintarron.Text = ""
         txtObsVentanas.Text = ""
         txtObsLamparas.Text = ""
+        cmdBack.Enabled = False
     End Sub
 
     Private Sub Reportes_Registrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -233,8 +234,10 @@ Public Class Supervision_Registrar
             GroupBox3.Enabled = True
             cmdGrabar.Enabled = True
         Else
-            GroupBox3.Enabled = False
-            cmdGrabar.Enabled = False
+            If LV.Items.Count - 1 = 0 Then
+                GroupBox3.Enabled = False
+                cmdGrabar.Enabled = False
+            End If
         End If
     End Sub
 
@@ -328,7 +331,9 @@ Public Class Supervision_Registrar
             idsCat.RemoveAt(ultimo)
             If ultimo = 0 Then
                 cmdBack.Enabled = False
-                cmdGrabar.Enabled = False
+                If chkDatosSecundarios.Checked = False Then
+                    cmdGrabar.Enabled = False
+                End If
             End If
         End If
 

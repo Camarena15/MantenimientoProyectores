@@ -35,7 +35,6 @@ Partial Class Reportes_Buscar
         Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.E = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.A = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -49,6 +48,9 @@ Partial Class Reportes_Buscar
         Me.lblAula = New System.Windows.Forms.Label()
         Me.lblEdificio = New System.Windows.Forms.Label()
         Me.cmdFiltrar = New System.Windows.Forms.Button()
+        Me.cmdSeleccionar = New System.Windows.Forms.Button()
+        Me.cmdAnterior = New System.Windows.Forms.Button()
+        Me.cmdSiguiente = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,11 +94,12 @@ Partial Class Reportes_Buscar
         'DGV
         '
         Me.DGV.BackgroundColor = System.Drawing.Color.White
-        Me.DGV.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdReporte, Me.Tipo, Me.Fecha, Me.ObservacionesGrales, Me.Estado, Me.E, Me.A})
         Me.DGV.Location = New System.Drawing.Point(22, 195)
         Me.DGV.Name = "DGV"
+        Me.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGV.Size = New System.Drawing.Size(568, 135)
         Me.DGV.TabIndex = 8
         '
@@ -144,18 +147,6 @@ Partial Class Reportes_Buscar
         Me.A.Name = "A"
         Me.A.Visible = False
         Me.A.Width = 30
-        '
-        'Label3
-        '
-        Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(452, 61)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(150, 43)
-        Me.Label3.TabIndex = 216
-        Me.Label3.Text = "Haga clic sobre el reporte que desee seleccionar"
         '
         'Label2
         '
@@ -308,12 +299,53 @@ Partial Class Reportes_Buscar
         Me.cmdFiltrar.UseVisualStyleBackColor = False
         Me.cmdFiltrar.Visible = False
         '
+        'cmdSeleccionar
+        '
+        Me.cmdSeleccionar.BackColor = System.Drawing.Color.Navy
+        Me.cmdSeleccionar.FlatAppearance.BorderSize = 0
+        Me.cmdSeleccionar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.cmdSeleccionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue
+        Me.cmdSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdSeleccionar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdSeleccionar.ForeColor = System.Drawing.Color.White
+        Me.cmdSeleccionar.Location = New System.Drawing.Point(241, 365)
+        Me.cmdSeleccionar.Name = "cmdSeleccionar"
+        Me.cmdSeleccionar.Size = New System.Drawing.Size(118, 27)
+        Me.cmdSeleccionar.TabIndex = 282
+        Me.cmdSeleccionar.Text = "Seleccionar"
+        Me.cmdSeleccionar.UseVisualStyleBackColor = False
+        '
+        'cmdAnterior
+        '
+        Me.cmdAnterior.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Anterior
+        Me.cmdAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cmdAnterior.Location = New System.Drawing.Point(215, 336)
+        Me.cmdAnterior.Name = "cmdAnterior"
+        Me.cmdAnterior.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAnterior.TabIndex = 280
+        Me.cmdAnterior.Text = " "
+        Me.cmdAnterior.UseVisualStyleBackColor = True
+        '
+        'cmdSiguiente
+        '
+        Me.cmdSiguiente.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Siguiente
+        Me.cmdSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cmdSiguiente.Location = New System.Drawing.Point(311, 336)
+        Me.cmdSiguiente.Name = "cmdSiguiente"
+        Me.cmdSiguiente.Size = New System.Drawing.Size(75, 23)
+        Me.cmdSiguiente.TabIndex = 281
+        Me.cmdSiguiente.Text = " "
+        Me.cmdSiguiente.UseVisualStyleBackColor = True
+        '
         'Reportes_Buscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(601, 343)
+        Me.ClientSize = New System.Drawing.Size(601, 404)
+        Me.Controls.Add(Me.cmdSeleccionar)
+        Me.Controls.Add(Me.cmdAnterior)
+        Me.Controls.Add(Me.cmdSiguiente)
         Me.Controls.Add(Me.cmdFiltrar)
         Me.Controls.Add(Me.txtAula)
         Me.Controls.Add(Me.txtEdificio)
@@ -325,7 +357,6 @@ Partial Class Reportes_Buscar
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DGV)
         Me.Controls.Add(Me.Label1)
@@ -344,7 +375,6 @@ Partial Class Reportes_Buscar
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents DGV As DataGridView
-    Friend WithEvents Label3 As Label
     Friend WithEvents btnCerrar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
@@ -366,4 +396,7 @@ Partial Class Reportes_Buscar
     Friend WithEvents Estado As DataGridViewTextBoxColumn
     Friend WithEvents E As DataGridViewTextBoxColumn
     Friend WithEvents A As DataGridViewTextBoxColumn
+    Friend WithEvents cmdSeleccionar As Button
+    Friend WithEvents cmdAnterior As Button
+    Friend WithEvents cmdSiguiente As Button
 End Class

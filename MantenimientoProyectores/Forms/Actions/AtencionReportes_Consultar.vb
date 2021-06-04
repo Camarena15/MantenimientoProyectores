@@ -38,7 +38,13 @@ Public Class AtencionReportes_Consultar
         command.CommandText = "Select * From " & tabla
         lector = command.ExecuteReader()
         While lector.Read
-            dgv.Rows.Add(lector.GetValue(0), lector.GetValue(1), lector.GetValue(2), lector.GetValue(3), lector.GetValue(4), lector.GetValue(5), lector.GetValue(7), lector.GetValue(6))
+            Dim TipoReporte As String = ""
+            If lector.GetString(2).Equals("D") Then
+                TipoReporte = "DOCENTE"
+            ElseIf lector.GetString(2).Equals("I") Then
+                TipoReporte = "INDIVIDUAL"
+            End If
+            dgv.Rows.Add(lector.GetValue(0), lector.GetValue(1), TipoReporte, lector.GetValue(3), lector.GetValue(4), lector.GetValue(5))
         End While
         lector.Close()
 
@@ -72,53 +78,66 @@ Public Class AtencionReportes_Consultar
         SelectedRowChanged()
     End Sub
     Private Sub SelectedRowChanged()
+        dgvRecursos.Rows.Clear()
         txtId.Value = dgv(0, dgv.CurrentCell.RowIndex).Value
         txtIdReporte.Text = dgv(1, dgv.CurrentCell.RowIndex).Value
-        txtIdRecurso.Text = dgv(2, dgv.CurrentCell.RowIndex).Value
-        txtTipo.Text = dgv(3, dgv.CurrentCell.RowIndex).Value
-        txtFechaS.Text = dgv(4, dgv.CurrentCell.RowIndex).Value
-        txtAtiende.Text = dgv(5, dgv.CurrentCell.RowIndex).Value
-        txtObservacion.Text = dgv(7, dgv.CurrentCell.RowIndex).Value
-        txtEstado.Text = dgv(6, dgv.CurrentCell.RowIndex).Value
-        If (MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1) Then
-            command.CommandText = "SELECT Estado FROM CAÑONES WHERE IdRecurso=" & txtIdRecurso.Text
-        ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", txtIdRecurso.Text) = 1) Then
-            command.CommandText = "SELECT Estado FROM COMPUTADORAS WHERE IdRecurso=" & txtIdRecurso.Text
-        ElseIf (MP.busquedaIdRecurso("PANTALLAS", txtIdRecurso.Text) = 1) Then
-            command.CommandText = "SELECT Estado FROM PANTALLAS WHERE IdRecurso=" & txtIdRecurso.Text
-        End If
-        lector = command.ExecuteReader()
-        lector.Read()
-        txtEdoRecurso.Text = lector.GetValue(0)
-        lector.Close()
-        command.CommandText = "SELECT idCategoria FROM RECURSOS WHERE idRecursos=" & txtIdRecurso.Text
+        txtTipoReporte.Text = dgv(2, dgv.CurrentCell.RowIndex).Value
+        txtFechaS.Text = dgv(3, dgv.CurrentCell.RowIndex).Value
+        txtAtiende.Text = dgv(4, dgv.CurrentCell.RowIndex).Value
+        txtEstado.Text = dgv(5, dgv.CurrentCell.RowIndex).Value
+
+        command.CommandText = "SELECT * FROM DETALLEATENCIONFALLAS WHERE IdAtencion=" & txtId.Value
         lector = command.ExecuteReader
-        lector.Read()
-        txtidcat.Text = lector.GetValue(0)
+        While lector.Read()
+            dgvRecursos.Rows.Add(lector.GetValue(1), "", lector.GetValue(2), lector.GetValue(3), "")
+        End While
         lector.Close()
-        command.CommandText = "SELECT count(*), R.Fecha, R.Estado FROM REPORTEDOCENTES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporte WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Atendido'"
-        lector = command.ExecuteReader
-        lector.Read()
-        Dim nRep As Integer
-        nRep = lector.GetValue(0)
-        If nRep <> 0 Then
-            txtFecha.Text = lector.GetValue(1)
-            txtEstadoReporte.Text = lector.GetValue(2)
-            lector.Close()
-        Else
-            lector.Close()
-            command.CommandText = "SELECT count(*), R.Fecha, R.Estado FROM REPORTESRECURSOSINDIVIDUALES AS R INNER JOIN ATENCIONFALLAS AS A ON A.IdReporte = R.IdReporteRecursos WHERE A.IdAtencion=" & txtId.Value & " AND R.Estado='Atendido'"
-            lector = command.ExecuteReader
-            lector.Read()
-            nRep = lector.GetValue(0)
-            If nRep <> 0 Then
-                txtFecha.Text = lector.GetValue(1)
-                txtEstadoReporte.Text = lector.GetValue(2)
+
+        Dim categoria As String = ""
+        For i = 0 To dgvRecursos.Rows.Count - 2
+            If (MP.busquedaIdRecurso("CAÑONES", dgvRecursos(0, i).Value) = 1) Then
+                categoria = "CAÑONES"
+                command.CommandText = "SELECT Estado FROM CAÑONES WHERE IdRecurso=" & dgvRecursos(0, i).Value
+                lector = command.ExecuteReader
+                lector.Read()
+                dgvRecursos(4, i).Value = lector.GetValue(0)
+                lector.Close()
+            ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", dgvRecursos(0, i).Value) = 1) Then
+                categoria = "COMPUTADORAS"
+                command.CommandText = "SELECT Estado FROM COMPUTADORAS WHERE IdRecurso=" & dgvRecursos(0, i).Value
+                lector = command.ExecuteReader
+                lector.Read()
+                dgvRecursos(4, i).Value = lector.GetValue(0)
+                lector.Close()
+            ElseIf (MP.busquedaIdRecurso("PANTALLAS", dgvRecursos(0, i).Value) = 1) Then
+                categoria = "PANTALLAS"
+                command.CommandText = "SELECT Estado FROM PANTALLAS WHERE IdRecurso=" & dgvRecursos(0, i).Value
+                lector = command.ExecuteReader
+                lector.Read()
+                dgvRecursos(4, i).Value = lector.GetValue(0)
+                lector.Close()
             Else
-                MsgBox("Ocurrio un error durante la carga de Informacion del reporte", MsgBoxStyle.Critical, "ERROR")
+                command.CommandText = "SELECT C.Concepto FROM CATEGORIA AS C INNER JOIN RECURSOS AS R ON C.idCategoria = R.idCategoria WHERE R.idRecursos=" & dgvRecursos(0, i).Value
+                lector = command.ExecuteReader
+                lector.Read()
+                categoria = lector.GetValue(0)
+                lector.Close()
+                dgvRecursos(4, i).Value = "---"
             End If
-            lector.Close()
+            dgvRecursos(1, i).Value = categoria
+        Next
+        Dim r As String = ""
+        If txtTipoReporte.Text.Equals("DOCENTE") Then
+            r = "SELECT Fecha, Estado FROM REPORTEDOCENTES WHERE IdReporte=" & txtIdReporte.Text
+        Else
+            r = "SELECT Fecha, Estado FROM REPORTESRECURSOSINDIVIDUALES WHERE IdReporteRecursos=" & txtIdReporte.Text
         End If
+        command.CommandText = r
+        lector = command.ExecuteReader
+        lector.Read()
+        txtFecha.Text = lector.GetValue(0)
+        txtEstadoReporte.Text = lector.GetValue(1)
+        lector.Close()
     End Sub
     Private Sub cmdSalir_Click(sender As Object, e As EventArgs) Handles cmdSalir.Click
         connection.Close()

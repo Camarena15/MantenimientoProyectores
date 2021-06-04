@@ -18,6 +18,7 @@ Public Class RecursoAsignado_Seleccionar
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        conexion.Close()
         Me.Close()
     End Sub
 
@@ -53,17 +54,27 @@ Public Class RecursoAsignado_Seleccionar
         Timer1.Stop()
     End Sub
     Private Sub obtieneRecursosAsignados(ByVal cat As String)
-        comando.CommandText = "SELECT R.IdRecurso, R.INVCAPECE, C.idCategoria, C.Concepto, R.Estado, R.Modelo, R.Marca FROM RECURSOSASIGNADOS AS RA INNER JOIN " & cat &
+        If cat.Equals("CAÑONES") Or cat.Equals("COMPUTADORAS") Or cat.Equals("PANTALLAS") Then
+            comando.CommandText = "SELECT R.IdRecurso, R.INVCAPECE, C.idCategoria, C.Concepto, R.Estado, R.Modelo, R.Marca FROM RECURSOSASIGNADOS AS RA INNER JOIN " & cat &
                     " AS R ON RA.IdRecurso = R.IdRecurso INNER JOIN RECURSOS AS RE ON RE.idRecursos = R.IdRecurso INNER JOIN CATEGORIA AS C ON 
                     RE.idCategoria = C.idCategoria WHERE RA.Estado='Vigente' AND R.Estado='Asignado' AND RA.Edificio='" &
                     txtEdificio.Text & "' AND RA.Aula='" & txtAula.Text & "'"
-        lector = comando.ExecuteReader
-        While lector.Read
-            DGV.Rows.Add(lector.GetValue(0), lector.GetValue(1), lector.GetValue(2), lector.GetValue(3), lector.GetValue(4), lector.GetValue(5), lector.GetValue(6))
-        End While
-        lector.Close()
+            lector = comando.ExecuteReader
+            While lector.Read
+                DGV.Rows.Add(lector.GetValue(0), lector.GetValue(1), lector.GetValue(2), lector.GetValue(3), lector.GetValue(4), lector.GetValue(5), lector.GetValue(6))
+            End While
+            lector.Close()
+        ElseIf cat.Equals("CONTACTOS") Or cat.Equals("LAMPARAS") Then
+            comando.CommandText = "SELECT R.idRecursos, R.descripcion, R.idCategoria, C.Concepto FROM RECURSOS AS R INNER JOIN CATEGORIA AS C ON R.idCategoria = C.idCategoria WHERE C.Concepto='" & cat & "'"
+            lector = comando.ExecuteReader
+            While lector.Read()
+                DGV.Rows.Add(lector.GetValue(0), "---", lector.GetValue(2), lector.GetValue(3), "---", lector.GetValue(1), "---")
+            End While
+            lector.Close()
+        End If
+
     End Sub
-    Private Sub DGV_SelectionChanged(sender As Object, e As EventArgs) Handles DGV.CellClick
+    Private Sub DGV_SelectionChanged(sender As Object, e As EventArgs) Handles cmdSeleccionar.Click
         If formSelected.Equals("AtencionReportes") Then
             idRecurso_1 = DGV(0, DGV.CurrentCell.RowIndex).Value
             estado_1 = DGV(4, DGV.CurrentCell.RowIndex).Value
@@ -78,5 +89,20 @@ Public Class RecursoAsignado_Seleccionar
         obtainedInfoRec = True
         conexion.Close()
         Me.Close()
+    End Sub
+    Private Sub cmbSiguiente_Click(sender As Object, e As EventArgs) Handles cmdSiguiente.Click
+        If DGV.CurrentCell.RowIndex <> DGV.Rows.Count - 2 Then
+            Dim index As Integer = DGV.CurrentCell.RowIndex
+            DGV.ClearSelection()
+            DGV.CurrentCell = DGV(0, index + 1)
+        End If
+    End Sub
+
+    Private Sub cmbAnterior_Click(sender As Object, e As EventArgs) Handles cmdAnterior.Click
+        If DGV.CurrentCell.RowIndex <> 0 Then
+            Dim index As Integer = DGV.CurrentCell.RowIndex
+            DGV.ClearSelection()
+            DGV.CurrentCell = DGV(0, index - 1)
+        End If
     End Sub
 End Class

@@ -33,49 +33,47 @@ Partial Class AtencionReportes_Consultar
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgv = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtId = New System.Windows.Forms.NumericUpDown()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtFecha = New System.Windows.Forms.TextBox()
         Me.txtIdReporte = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.txtEstadoReporte = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.txtEdoRecurso = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.txtIdRecurso = New System.Windows.Forms.TextBox()
-        Me.txtidcat = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.txtEstado = New System.Windows.Forms.TextBox()
-        Me.txtTipo = New System.Windows.Forms.TextBox()
         Me.txtFechaS = New System.Windows.Forms.TextBox()
-        Me.txtObservacion = New System.Windows.Forms.TextBox()
         Me.txtAtiende = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.cmdBuscar = New System.Windows.Forms.Button()
         Me.idAtencion = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.txtFecha = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtTipoReporte = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dgvRecursos = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Categoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoAtencion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Observaciones = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoRecurso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoR = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtId, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.dgvRecursos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label25
@@ -163,11 +161,11 @@ Partial Class AtencionReportes_Consultar
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.dgv)
         Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 8.25!)
-        Me.GroupBox2.Location = New System.Drawing.Point(57, 384)
+        Me.GroupBox2.Location = New System.Drawing.Point(57, 426)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(750, 232)
+        Me.GroupBox2.Size = New System.Drawing.Size(750, 190)
         Me.GroupBox2.TabIndex = 272
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "CONSULTA INDIVIDUAL"
@@ -187,93 +185,24 @@ Partial Class AtencionReportes_Consultar
         '
         Me.dgv.BackgroundColor = System.Drawing.Color.White
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column6, Me.Column3, Me.Column4, Me.Column5, Me.Column8, Me.Column7})
-        Me.dgv.Location = New System.Drawing.Point(9, 29)
+        Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.TipoR, Me.Column4, Me.Column5, Me.Column8})
+        Me.dgv.Location = New System.Drawing.Point(80, 22)
         Me.dgv.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv.Name = "dgv"
         Me.dgv.ReadOnly = True
         Me.dgv.RowHeadersWidth = 51
         Me.dgv.RowTemplate.Height = 24
-        Me.dgv.Size = New System.Drawing.Size(731, 188)
+        Me.dgv.Size = New System.Drawing.Size(591, 154)
         Me.dgv.TabIndex = 202
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID Atencion"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 65
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "ID Reporte"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 65
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "ID Recurso"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.Width = 65
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Tipo"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 50
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Fecha"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 80
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Encargado"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 125
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Estado"
-        Me.Column8.MinimumWidth = 6
-        Me.Column8.Name = "Column8"
-        Me.Column8.ReadOnly = True
-        Me.Column8.Width = 85
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Observaciones"
-        Me.Column7.MinimumWidth = 6
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        Me.Column7.Width = 125
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtId)
         Me.GroupBox1.Controls.Add(Me.Panel2)
-        Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.Controls.Add(Me.txtEstado)
-        Me.GroupBox1.Controls.Add(Me.txtTipo)
         Me.GroupBox1.Controls.Add(Me.txtFechaS)
-        Me.GroupBox1.Controls.Add(Me.txtObservacion)
         Me.GroupBox1.Controls.Add(Me.txtAtiende)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.cmdBuscar)
@@ -284,7 +213,7 @@ Partial Class AtencionReportes_Consultar
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(750, 289)
+        Me.GroupBox1.Size = New System.Drawing.Size(750, 168)
         Me.GroupBox1.TabIndex = 271
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "CONSULTA INDIVIDUAL"
@@ -299,15 +228,18 @@ Partial Class AtencionReportes_Consultar
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.Label15)
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.txtTipoReporte)
+        Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.txtFecha)
+        Me.Panel2.Controls.Add(Me.Label10)
+        Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.txtIdReporte)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.txtEstadoReporte)
-        Me.Panel2.Location = New System.Drawing.Point(478, 160)
+        Me.Panel2.Location = New System.Drawing.Point(478, 23)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(262, 118)
+        Me.Panel2.Size = New System.Drawing.Size(262, 137)
         Me.Panel2.TabIndex = 307
         '
         'Label15
@@ -316,29 +248,18 @@ Partial Class AtencionReportes_Consultar
         Me.Label15.BackColor = System.Drawing.Color.White
         Me.Label15.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(5, 11)
+        Me.Label15.Location = New System.Drawing.Point(5, 8)
         Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(99, 19)
         Me.Label15.TabIndex = 297
         Me.Label15.Text = "ID Reporte"
         '
-        'txtFecha
-        '
-        Me.txtFecha.Enabled = False
-        Me.txtFecha.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFecha.Location = New System.Drawing.Point(128, 81)
-        Me.txtFecha.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtFecha.Name = "txtFecha"
-        Me.txtFecha.ReadOnly = True
-        Me.txtFecha.Size = New System.Drawing.Size(122, 26)
-        Me.txtFecha.TabIndex = 306
-        '
         'txtIdReporte
         '
         Me.txtIdReporte.Enabled = False
         Me.txtIdReporte.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdReporte.Location = New System.Drawing.Point(128, 8)
+        Me.txtIdReporte.Location = New System.Drawing.Point(128, 5)
         Me.txtIdReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIdReporte.Name = "txtIdReporte"
         Me.txtIdReporte.ReadOnly = True
@@ -350,111 +271,23 @@ Partial Class AtencionReportes_Consultar
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(6, 39)
+        Me.Label4.Location = New System.Drawing.Point(6, 93)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(99, 45)
         Me.Label4.TabIndex = 301
         Me.Label4.Text = "Estado de Reporte"
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.White
-        Me.Label10.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(5, 84)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(54, 19)
-        Me.Label10.TabIndex = 299
-        Me.Label10.Text = "Fecha"
-        '
         'txtEstadoReporte
         '
         Me.txtEstadoReporte.Enabled = False
         Me.txtEstadoReporte.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEstadoReporte.Location = New System.Drawing.Point(128, 44)
+        Me.txtEstadoReporte.Location = New System.Drawing.Point(128, 98)
         Me.txtEstadoReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEstadoReporte.Name = "txtEstadoReporte"
         Me.txtEstadoReporte.ReadOnly = True
         Me.txtEstadoReporte.Size = New System.Drawing.Size(122, 26)
         Me.txtEstadoReporte.TabIndex = 303
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.txtEdoRecurso)
-        Me.Panel1.Controls.Add(Me.Label20)
-        Me.Panel1.Controls.Add(Me.txtIdRecurso)
-        Me.Panel1.Controls.Add(Me.txtidcat)
-        Me.Panel1.Controls.Add(Me.Label18)
-        Me.Panel1.Controls.Add(Me.Label19)
-        Me.Panel1.Location = New System.Drawing.Point(478, 32)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(262, 122)
-        Me.Panel1.TabIndex = 296
-        '
-        'txtEdoRecurso
-        '
-        Me.txtEdoRecurso.Enabled = False
-        Me.txtEdoRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEdoRecurso.Location = New System.Drawing.Point(128, 82)
-        Me.txtEdoRecurso.Name = "txtEdoRecurso"
-        Me.txtEdoRecurso.ReadOnly = True
-        Me.txtEdoRecurso.Size = New System.Drawing.Size(122, 26)
-        Me.txtEdoRecurso.TabIndex = 228
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(5, 14)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(99, 19)
-        Me.Label20.TabIndex = 223
-        Me.Label20.Text = "ID Recurso"
-        '
-        'txtIdRecurso
-        '
-        Me.txtIdRecurso.Enabled = False
-        Me.txtIdRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdRecurso.Location = New System.Drawing.Point(128, 11)
-        Me.txtIdRecurso.Name = "txtIdRecurso"
-        Me.txtIdRecurso.ReadOnly = True
-        Me.txtIdRecurso.Size = New System.Drawing.Size(122, 26)
-        Me.txtIdRecurso.TabIndex = 224
-        '
-        'txtidcat
-        '
-        Me.txtidcat.Enabled = False
-        Me.txtidcat.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidcat.Location = New System.Drawing.Point(128, 46)
-        Me.txtidcat.Name = "txtidcat"
-        Me.txtidcat.ReadOnly = True
-        Me.txtidcat.Size = New System.Drawing.Size(122, 26)
-        Me.txtidcat.TabIndex = 227
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.Black
-        Me.Label18.Location = New System.Drawing.Point(5, 49)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(117, 19)
-        Me.Label18.TabIndex = 226
-        Me.Label18.Text = "ID Categoría"
-        '
-        'Label19
-        '
-        Me.Label19.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(5, 78)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(108, 42)
-        Me.Label19.TabIndex = 225
-        Me.Label19.Text = "Estado de Recurso"
         '
         'txtEstado
         '
@@ -466,17 +299,6 @@ Partial Class AtencionReportes_Consultar
         Me.txtEstado.Size = New System.Drawing.Size(134, 26)
         Me.txtEstado.TabIndex = 295
         '
-        'txtTipo
-        '
-        Me.txtTipo.Enabled = False
-        Me.txtTipo.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTipo.Location = New System.Drawing.Point(366, 32)
-        Me.txtTipo.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtTipo.Name = "txtTipo"
-        Me.txtTipo.ReadOnly = True
-        Me.txtTipo.Size = New System.Drawing.Size(97, 26)
-        Me.txtTipo.TabIndex = 294
-        '
         'txtFechaS
         '
         Me.txtFechaS.Enabled = False
@@ -487,18 +309,6 @@ Partial Class AtencionReportes_Consultar
         Me.txtFechaS.ReadOnly = True
         Me.txtFechaS.Size = New System.Drawing.Size(107, 26)
         Me.txtFechaS.TabIndex = 293
-        '
-        'txtObservacion
-        '
-        Me.txtObservacion.Enabled = False
-        Me.txtObservacion.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObservacion.Location = New System.Drawing.Point(133, 160)
-        Me.txtObservacion.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtObservacion.Multiline = True
-        Me.txtObservacion.Name = "txtObservacion"
-        Me.txtObservacion.ReadOnly = True
-        Me.txtObservacion.Size = New System.Drawing.Size(330, 118)
-        Me.txtObservacion.TabIndex = 292
         '
         'txtAtiende
         '
@@ -523,32 +333,6 @@ Partial Class AtencionReportes_Consultar
         Me.Label5.Size = New System.Drawing.Size(63, 19)
         Me.Label5.TabIndex = 286
         Me.Label5.Text = "Estado"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.White
-        Me.Label11.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(320, 35)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(45, 19)
-        Me.Label11.TabIndex = 290
-        Me.Label11.Text = "Tipo"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.White
-        Me.Label6.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(10, 154)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(126, 19)
-        Me.Label6.TabIndex = 287
-        Me.Label6.Text = "Observaciones"
         '
         'Label9
         '
@@ -584,7 +368,7 @@ Partial Class AtencionReportes_Consultar
         Me.cmdBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdBuscar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdBuscar.ForeColor = System.Drawing.Color.White
-        Me.cmdBuscar.Location = New System.Drawing.Point(203, 31)
+        Me.cmdBuscar.Location = New System.Drawing.Point(231, 31)
         Me.cmdBuscar.Name = "cmdBuscar"
         Me.cmdBuscar.Size = New System.Drawing.Size(107, 27)
         Me.cmdBuscar.TabIndex = 285
@@ -607,6 +391,175 @@ Partial Class AtencionReportes_Consultar
         '
         Me.Timer1.Interval = 1500
         '
+        'txtFecha
+        '
+        Me.txtFecha.Enabled = False
+        Me.txtFecha.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFecha.Location = New System.Drawing.Point(128, 67)
+        Me.txtFecha.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFecha.Name = "txtFecha"
+        Me.txtFecha.ReadOnly = True
+        Me.txtFecha.Size = New System.Drawing.Size(122, 26)
+        Me.txtFecha.TabIndex = 308
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.White
+        Me.Label10.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(5, 39)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(45, 19)
+        Me.Label10.TabIndex = 307
+        Me.Label10.Text = "Tipo"
+        '
+        'txtTipoReporte
+        '
+        Me.txtTipoReporte.Enabled = False
+        Me.txtTipoReporte.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTipoReporte.Location = New System.Drawing.Point(128, 36)
+        Me.txtTipoReporte.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTipoReporte.Name = "txtTipoReporte"
+        Me.txtTipoReporte.ReadOnly = True
+        Me.txtTipoReporte.Size = New System.Drawing.Size(122, 26)
+        Me.txtTipoReporte.TabIndex = 310
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(5, 70)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(54, 19)
+        Me.Label3.TabIndex = 309
+        Me.Label3.Text = "Fecha"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.dgvRecursos)
+        Me.GroupBox3.Font = New System.Drawing.Font("Consolas", 8.25!)
+        Me.GroupBox3.Location = New System.Drawing.Point(57, 255)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Size = New System.Drawing.Size(750, 165)
+        Me.GroupBox3.TabIndex = 280
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "DETALLES ATENCIÓN A REPORTE"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(9, -1)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(290, 22)
+        Me.Label6.TabIndex = 260
+        Me.Label6.Text = "DETALLES ATENCIÓN A REPORTES"
+        '
+        'dgvRecursos
+        '
+        Me.dgvRecursos.BackgroundColor = System.Drawing.Color.White
+        Me.dgvRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRecursos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.Categoria, Me.TipoAtencion, Me.Observaciones, Me.EstadoRecurso})
+        Me.dgvRecursos.Location = New System.Drawing.Point(72, 28)
+        Me.dgvRecursos.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvRecursos.Name = "dgvRecursos"
+        Me.dgvRecursos.ReadOnly = True
+        Me.dgvRecursos.RowHeadersWidth = 51
+        Me.dgvRecursos.RowTemplate.Height = 24
+        Me.dgvRecursos.Size = New System.Drawing.Size(606, 122)
+        Me.dgvRecursos.TabIndex = 202
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID Recurso"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 65
+        '
+        'Categoria
+        '
+        Me.Categoria.HeaderText = "Categoría"
+        Me.Categoria.Name = "Categoria"
+        Me.Categoria.ReadOnly = True
+        Me.Categoria.Width = 90
+        '
+        'TipoAtencion
+        '
+        Me.TipoAtencion.HeaderText = "Tipo de Atención"
+        Me.TipoAtencion.Name = "TipoAtencion"
+        Me.TipoAtencion.ReadOnly = True
+        Me.TipoAtencion.Width = 90
+        '
+        'Observaciones
+        '
+        Me.Observaciones.HeaderText = "Observaciones"
+        Me.Observaciones.Name = "Observaciones"
+        Me.Observaciones.ReadOnly = True
+        Me.Observaciones.Width = 200
+        '
+        'EstadoRecurso
+        '
+        Me.EstadoRecurso.HeaderText = "Estado Recurso"
+        Me.EstadoRecurso.Name = "EstadoRecurso"
+        Me.EstadoRecurso.ReadOnly = True
+        Me.EstadoRecurso.Width = 90
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID Atencion"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 65
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "ID Reporte"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 65
+        '
+        'TipoR
+        '
+        Me.TipoR.HeaderText = "Tipo Reporte"
+        Me.TipoR.Name = "TipoR"
+        Me.TipoR.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Fecha"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 80
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Encargado"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        Me.Column5.Width = 125
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Estado"
+        Me.Column8.MinimumWidth = 6
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        Me.Column8.Width = 85
+        '
         'AtencionReportes_Consultar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -615,6 +568,7 @@ Partial Class AtencionReportes_Consultar
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1060, 680)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.cmdSalir)
         Me.Controls.Add(Me.cmdInicio)
@@ -635,8 +589,9 @@ Partial Class AtencionReportes_Consultar
         CType(Me.txtId, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        CType(Me.dgvRecursos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -655,38 +610,35 @@ Partial Class AtencionReportes_Consultar
     Friend WithEvents cmdBuscar As Button
     Friend WithEvents idAtencion As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents txtEstado As TextBox
-    Friend WithEvents txtTipo As TextBox
     Friend WithEvents txtFechaS As TextBox
-    Friend WithEvents txtObservacion As TextBox
     Friend WithEvents txtAtiende As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents txtEdoRecurso As TextBox
-    Friend WithEvents Label20 As Label
-    Friend WithEvents txtIdRecurso As TextBox
-    Friend WithEvents txtidcat As TextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label15 As Label
-    Friend WithEvents txtFecha As TextBox
     Friend WithEvents txtIdReporte As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label10 As Label
     Friend WithEvents txtEstadoReporte As TextBox
     Friend WithEvents txtId As NumericUpDown
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents txtTipoReporte As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtFecha As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents dgvRecursos As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents Categoria As DataGridViewTextBoxColumn
+    Friend WithEvents TipoAtencion As DataGridViewTextBoxColumn
+    Friend WithEvents Observaciones As DataGridViewTextBoxColumn
+    Friend WithEvents EstadoRecurso As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents TipoR As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
 End Class

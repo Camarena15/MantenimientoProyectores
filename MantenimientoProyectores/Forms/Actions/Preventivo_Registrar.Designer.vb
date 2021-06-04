@@ -51,6 +51,7 @@ Partial Class Preventivo_Registrar
         Me.cmdNuevo = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.GBRecurso = New System.Windows.Forms.GroupBox()
+        Me.txtIdRecurso = New System.Windows.Forms.TextBox()
         Me.txtMarca = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtModelo = New System.Windows.Forms.TextBox()
@@ -64,7 +65,6 @@ Partial Class Preventivo_Registrar
         Me.cmdBuscarRecurso = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.txtIdRecurso = New System.Windows.Forms.TextBox()
         Me.GBPreventivo.SuspendLayout()
         Me.GBRecurso.SuspendLayout()
         Me.SuspendLayout()
@@ -195,7 +195,7 @@ Partial Class Preventivo_Registrar
         '
         'DTP
         '
-        Me.DTP.CustomFormat = "yyyy-MM-dd"
+        Me.DTP.CustomFormat = "dd/MM/yyyy"
         Me.DTP.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DTP.Location = New System.Drawing.Point(278, 97)
@@ -227,7 +227,6 @@ Partial Class Preventivo_Registrar
         Me.txtObservaciones.Name = "txtObservaciones"
         Me.txtObservaciones.Size = New System.Drawing.Size(334, 69)
         Me.txtObservaciones.TabIndex = 68
-        Me.txtObservaciones.Visible = False
         '
         'Label10
         '
@@ -294,7 +293,6 @@ Partial Class Preventivo_Registrar
         Me.Label5.Size = New System.Drawing.Size(126, 19)
         Me.Label5.TabIndex = 61
         Me.Label5.Text = "Observaciones"
-        Me.Label5.Visible = False
         '
         'Label4
         '
@@ -404,6 +402,14 @@ Partial Class Preventivo_Registrar
         Me.GBRecurso.TabIndex = 226
         Me.GBRecurso.TabStop = False
         Me.GBRecurso.Text = "INFORMACIÓN DEL RECURSO:"
+        '
+        'txtIdRecurso
+        '
+        Me.txtIdRecurso.Location = New System.Drawing.Point(103, 29)
+        Me.txtIdRecurso.Name = "txtIdRecurso"
+        Me.txtIdRecurso.ReadOnly = True
+        Me.txtIdRecurso.Size = New System.Drawing.Size(100, 26)
+        Me.txtIdRecurso.TabIndex = 229
         '
         'txtMarca
         '
@@ -535,14 +541,6 @@ Partial Class Preventivo_Registrar
         'Timer1
         '
         Me.Timer1.Interval = 1500
-        '
-        'txtIdRecurso
-        '
-        Me.txtIdRecurso.Location = New System.Drawing.Point(103, 29)
-        Me.txtIdRecurso.Name = "txtIdRecurso"
-        Me.txtIdRecurso.ReadOnly = True
-        Me.txtIdRecurso.Size = New System.Drawing.Size(100, 26)
-        Me.txtIdRecurso.TabIndex = 229
         '
         'Preventivo_Registrar
         '

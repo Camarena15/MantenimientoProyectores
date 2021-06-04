@@ -61,9 +61,16 @@ Partial Class Preventivo_Terminar
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.NumericUpDown()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.idAtencion = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.DTPPeriodoInicio = New System.Windows.Forms.DateTimePicker()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.DTPPeriodoFin = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtId, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label12
@@ -143,7 +150,7 @@ Partial Class Preventivo_Terminar
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Enabled = False
-        Me.GroupBox2.Location = New System.Drawing.Point(69, 253)
+        Me.GroupBox2.Location = New System.Drawing.Point(69, 279)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(763, 261)
         Me.GroupBox2.TabIndex = 223
@@ -308,7 +315,7 @@ Partial Class Preventivo_Terminar
         Me.GroupBox1.Enabled = False
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(69, 138)
+        Me.GroupBox1.Location = New System.Drawing.Point(69, 164)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(763, 109)
         Me.GroupBox1.TabIndex = 222
@@ -445,7 +452,7 @@ Partial Class Preventivo_Terminar
         Me.cmdBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdBuscar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdBuscar.ForeColor = System.Drawing.Color.White
-        Me.cmdBuscar.Location = New System.Drawing.Point(292, 68)
+        Me.cmdBuscar.Location = New System.Drawing.Point(587, 19)
         Me.cmdBuscar.Name = "cmdBuscar"
         Me.cmdBuscar.Size = New System.Drawing.Size(107, 27)
         Me.cmdBuscar.TabIndex = 217
@@ -454,13 +461,14 @@ Partial Class Preventivo_Terminar
         '
         'Label3
         '
+        Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(69, 55)
+        Me.Label3.Location = New System.Drawing.Point(69, 72)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(135, 64)
+        Me.Label3.Size = New System.Drawing.Size(135, 19)
         Me.Label3.TabIndex = 220
-        Me.Label3.Text = "Escriba el ID del Registro de Preventivo"
+        Me.Label3.Text = "ID PREVENTIVO:"
         '
         'Label2
         '
@@ -476,6 +484,7 @@ Partial Class Preventivo_Terminar
         '
         'txtId
         '
+        Me.txtId.Enabled = False
         Me.txtId.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtId.Location = New System.Drawing.Point(210, 70)
         Me.txtId.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
@@ -487,6 +496,78 @@ Partial Class Preventivo_Terminar
         '
         Me.Timer1.Interval = 1500
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.idAtencion)
+        Me.GroupBox3.Controls.Add(Me.Label16)
+        Me.GroupBox3.Controls.Add(Me.DTPPeriodoInicio)
+        Me.GroupBox3.Controls.Add(Me.Label15)
+        Me.GroupBox3.Controls.Add(Me.DTPPeriodoFin)
+        Me.GroupBox3.Controls.Add(Me.cmdBuscar)
+        Me.GroupBox3.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(69, 101)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(763, 62)
+        Me.GroupBox3.TabIndex = 245
+        Me.GroupBox3.TabStop = False
+        '
+        'idAtencion
+        '
+        Me.idAtencion.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.idAtencion.ForeColor = System.Drawing.Color.Black
+        Me.idAtencion.Location = New System.Drawing.Point(4, 16)
+        Me.idAtencion.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.idAtencion.Name = "idAtencion"
+        Me.idAtencion.Size = New System.Drawing.Size(198, 43)
+        Me.idAtencion.TabIndex = 171
+        Me.idAtencion.Text = "Ingrese el periodo del Mnto. Preventivo:"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.White
+        Me.Label16.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.Black
+        Me.Label16.Location = New System.Drawing.Point(409, 23)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(18, 19)
+        Me.Label16.TabIndex = 242
+        Me.Label16.Text = "a"
+        '
+        'DTPPeriodoInicio
+        '
+        Me.DTPPeriodoInicio.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DTPPeriodoInicio.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DTPPeriodoInicio.Location = New System.Drawing.Point(276, 21)
+        Me.DTPPeriodoInicio.Margin = New System.Windows.Forms.Padding(2)
+        Me.DTPPeriodoInicio.Name = "DTPPeriodoInicio"
+        Me.DTPPeriodoInicio.Size = New System.Drawing.Size(129, 26)
+        Me.DTPPeriodoInicio.TabIndex = 239
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.White
+        Me.Label15.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(218, 24)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(54, 19)
+        Me.Label15.TabIndex = 241
+        Me.Label15.Text = "Fecha"
+        '
+        'DTPPeriodoFin
+        '
+        Me.DTPPeriodoFin.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DTPPeriodoFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DTPPeriodoFin.Location = New System.Drawing.Point(431, 20)
+        Me.DTPPeriodoFin.Margin = New System.Windows.Forms.Padding(2)
+        Me.DTPPeriodoFin.Name = "DTPPeriodoFin"
+        Me.DTPPeriodoFin.Size = New System.Drawing.Size(129, 26)
+        Me.DTPPeriodoFin.TabIndex = 240
+        '
         'Preventivo_Terminar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -495,6 +576,7 @@ Partial Class Preventivo_Terminar
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1060, 680)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.cmdSalir)
         Me.Controls.Add(Me.Label24)
@@ -502,7 +584,6 @@ Partial Class Preventivo_Terminar
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.cmdBuscar)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label12)
@@ -516,6 +597,8 @@ Partial Class Preventivo_Terminar
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.txtId, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -558,4 +641,10 @@ Partial Class Preventivo_Terminar
     Friend WithEvents Label17 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents idAtencion As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents DTPPeriodoInicio As DateTimePicker
+    Friend WithEvents Label15 As Label
+    Friend WithEvents DTPPeriodoFin As DateTimePicker
 End Class

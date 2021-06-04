@@ -68,6 +68,8 @@ Public Class Preventivo_Terminar
     Private Sub Reportes_Registrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
         cboEstadoRecurso.SelectedIndex = 0
+        DTPPeriodoInicio.Value = Date.Today
+        DTPPeriodoFin.Value = Date.Today
         txtFechaFinal.Value = Date.Today
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -77,55 +79,64 @@ Public Class Preventivo_Terminar
     End Sub
 
     Private Sub cmdBuscar_Click(sender As Object, e As EventArgs) Handles cmdBuscar.Click
-        command.CommandText = "SELECT count(*) FROM `PREVENTIVO` WHERE `IdPreventivo`=" & txtId.Value
+        pFechaInicio = DTPPeriodoInicio.Value.ToString("yyyy-MM-dd")
+        pFechaFin = DTPPeriodoFin.Value.ToString("yyyy-MM-dd")
+        command.CommandText = "SELECT count(*) FROM `PREVENTIVO` WHERE Estado='Pendiente' AND FechaInicio Between '" & pFechaInicio & "' AND '" & pFechaFin & "'"
         lector = command.ExecuteReader
         lector.Read()
         Dim n As Integer = lector.GetInt32(0)
         lector.Close()
         If n <> 0 Then
-            command.CommandText = "SELECT * FROM `PREVENTIVO` WHERE `IdPreventivo`=" & txtId.Value
-            lector = command.ExecuteReader
-            lector.Read()
-            txtTipoServicio.Text = lector.GetValue(1)
-            txtFechaInicial.Text = lector.GetValue(2)
-            txtFechaFinal.Text = lector.GetValue(3)
-            txtIdRecurso.Text = lector.GetValue(4)
-            txtConcepto.Text = lector.GetValue(5)
-            txtAtiende.Text = lector.GetValue(6)
-            txtObservaciones.Text = lector.GetValue(7)
-            lector.Close()
-            If MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1 Then
-                txtCategoria.Text = "CAÑONES"
-            ElseIf MP.busquedaIdRecurso("COMPUTADORAS", txtIdRecurso.Text) = 1 Then
-                txtCategoria.Text = "COMPUTADORAS"
-            ElseIf MP.busquedaIdRecurso("PANTALLAS", txtIdRecurso.Text) = 1 Then
-                txtCategoria.Text = "PANTALLAS"
+            AtencionPreventivo_Seleccionar.ShowDialog()
+            If obtainedInfoMov = True Then
+                obtainedInfoMov = False
+                txtId.Value = idMov_1
+                txtFechaInicial.Text = fecha_1
+                txtAtiende.Text = encargado_1
+                command.CommandText = "SELECT * FROM `PREVENTIVO` WHERE `IdPreventivo`=" & txtId.Value
+                lector = command.ExecuteReader
+                lector.Read()
+                txtTipoServicio.Text = lector.GetValue(1)
+                txtFechaFinal.Text = lector.GetValue(3)
+                txtIdRecurso.Text = lector.GetValue(4)
+                txtConcepto.Text = lector.GetValue(5)
+                txtObservaciones.Text = lector.GetValue(7)
+                lector.Close()
+                If MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1 Then
+                    txtCategoria.Text = "CAÑONES"
+                ElseIf MP.busquedaIdRecurso("COMPUTADORAS", txtIdRecurso.Text) = 1 Then
+                    txtCategoria.Text = "COMPUTADORAS"
+                ElseIf MP.busquedaIdRecurso("PANTALLAS", txtIdRecurso.Text) = 1 Then
+                    txtCategoria.Text = "PANTALLAS"
+                End If
+                command.CommandText = "SELECT INVCAPECE, Modelo, Marca FROM " & txtCategoria.Text & " WHERE IdRecurso=" & txtIdRecurso.Text
+                lector = command.ExecuteReader
+                lector.Read()
+                txtinvcapece.Text = lector.GetValue(0)
+                txtModelo.Text = lector.GetValue(1)
+                txtMarca.Text = lector.GetValue(2)
+                lector.Close()
+                cmdGrabar.Enabled = True
+                txtObservaciones.Enabled = True
+                cboEstadoRecurso.Items.Clear()
+                cboEstadoRecurso.Items.Add("---")
+                command.CommandText = "SELECT count(*) FROM RECURSOSASIGNADOS WHERE Estado = 'Vigente' AND IdRecurso=" & txtIdRecurso.Text
+                lector = command.ExecuteReader
+                lector.Read()
+                If lector.GetInt32(0) <> 0 Then
+                    cboEstadoRecurso.Items.Add("Asignado")
+                Else
+                    cboEstadoRecurso.Items.Add("Disponible")
+                End If
+                lector.Close()
+                GroupBox1.Enabled = True
+                GroupBox2.Enabled = True
+                cmdGrabar.Enabled = True
             End If
-            command.CommandText = "SELECT INVCAPECE, Modelo, Marca FROM " & txtCategoria.Text & " WHERE IdRecurso=" & txtIdRecurso.Text
-            lector = command.ExecuteReader
-            lector.Read()
-            txtinvcapece.Text = lector.GetValue(0)
-            txtModelo.Text = lector.GetValue(1)
-            txtMarca.Text = lector.GetValue(2)
-            lector.Close()
-            cmdGrabar.Enabled = True
-            txtObservaciones.Enabled = True
-            cboEstadoRecurso.Items.Clear()
-            cboEstadoRecurso.Items.Add("---")
-            command.CommandText = "SELECT count(*) FROM RECURSOSASIGNADOS WHERE Estado = 'Vigente' AND IdRecurso=" & txtIdRecurso.Text
-            lector = command.ExecuteReader
-            lector.Read()
-            If lector.GetInt32(0) <> 0 Then
-                cboEstadoRecurso.Items.Add("Asignado")
-            Else
-                cboEstadoRecurso.Items.Add("Disponible")
-            End If
-            lector.Close()
-            GroupBox1.Enabled = True
-            GroupBox2.Enabled = True
-            cmdGrabar.Enabled = True
         Else
             MsgBox("No hay un registro de Preventivo con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
         End If
     End Sub
+
+
 End Class

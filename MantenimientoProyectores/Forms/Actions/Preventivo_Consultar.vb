@@ -38,7 +38,7 @@ Public Class Preventivo_Consultar
         command.CommandText = "Select * From " & tabla
         lector = command.ExecuteReader()
         While lector.Read
-            DGV.Rows.Add(lector.GetString(0), lector.GetString(1), lector.GetString(2), lector.GetString(3), lector.GetString(4), lector.GetString(5),
+            DGV.Rows.Add(lector.GetString(0), lector.GetString(4), lector.GetString(1), lector.GetString(2), lector.GetString(3), lector.GetString(5),
                 lector.GetString(6), lector.GetString(7), lector.GetString(8))
         End While
         lector.Close()
@@ -75,14 +75,21 @@ Public Class Preventivo_Consultar
     End Sub
     Private Sub SelectedRowChanged()
         txtId.Value = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(0).Value
-        txtTipoS.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(1).Value
-        txtFechaI.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(2).Value
-        txtFechaF.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(3).Value
-        txtIdRecurso.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(4).Value
+        txtTipoS.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(2).Value
+        Dim fechai, fechaf As Date
+        fechai = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(3).Value
+        fechaf = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(4).Value
+        txtFechaI.Text = fechai.ToString("dd/MM/yyyy")
+        txtIdRecurso.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(1).Value
         txtConcepto.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(5).Value
         txtAtiende.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(6).Value
         txtObservaciones.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(7).Value
         txtEstado.Text = DGV.Rows(DGV.CurrentCell.RowIndex).Cells(8).Value
+        If txtEstado.Text.Equals("Terminado") Then
+            txtFechaF.Text = fechaf.ToString("dd/MM/yyyy")
+        Else
+            txtFechaF.Text = ""
+        End If
         If (MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1) Then
             command.CommandText = "SELECT Estado FROM CAÑONES WHERE IdRecurso=" & txtIdRecurso.Text
         ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", txtIdRecurso.Text) = 1) Then
@@ -94,10 +101,11 @@ Public Class Preventivo_Consultar
         lector.Read()
         txtEdoRecurso.Text = lector.GetValue(0)
         lector.Close()
-        command.CommandText = "SELECT idCategoria FROM RECURSOS WHERE idRecursos=" & txtIdRecurso.Text
+        command.CommandText = "SELECT R.idCategoria, C.Concepto FROM RECURSOS AS R INNER JOIN CATEGORIA AS C ON R.idCategoria=C.idCategoria WHERE idRecursos=" & txtIdRecurso.Text
         lector = command.ExecuteReader
         lector.Read()
         txtidcat.Text = lector.GetValue(0)
+        txtCategoria.Text = lector.GetValue(1)
         lector.Close()
     End Sub
     Private Sub cmdSalir_Click(sender As Object, e As EventArgs) Handles cmdSalir.Click
