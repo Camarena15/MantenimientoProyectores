@@ -5,7 +5,10 @@ Public Class AtencionReportes_Registrar
     Dim command As New MySqlCommand
     Dim lector As MySqlDataReader
     Dim MP As New MPTools
+     Dim Fecha As String
+
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
+        Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
         Dim transaction As MySqlTransaction
         transaction = connection.BeginTransaction()
         command.Connection = connection
@@ -17,6 +20,7 @@ Public Class AtencionReportes_Registrar
             tipoReporte = "I"
         End If
         Try
+
             command.CommandText = "INSERT INTO `ATENCIONFALLAS`(`IdReporte`, `TipoReporte`, `FechaSeguimiento`, `QuienAtiende`, `Estado`) VALUES (" &
                 txtIdReporte.Text & ",'" & tipoReporte & "','" & DTP.Value.ToString("yyyy-MM-dd") & "','" & txtAtiende.Text & "','" & txtEstado.Text & "')"
             command.ExecuteNonQuery()
@@ -64,6 +68,7 @@ Public Class AtencionReportes_Registrar
             Next
             transaction.Commit()
         Catch ex As Exception
+            bitacora.InsertarError("GUARDAR ATENCIÓN REPORTES", ex.Message, ex.HResult, Fecha)
             MsgBox("Commit Exception Type: {0} no se pudo insertar por error")
             Try
                 transaction.Rollback()
@@ -144,6 +149,8 @@ Public Class AtencionReportes_Registrar
         cboTipoReporte.SelectedIndex = 0
         cboTipo.SelectedIndex = 0
         cboCategoria.SelectedIndex = 0
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
@@ -339,5 +346,10 @@ Public Class AtencionReportes_Registrar
 
     Private Sub cboCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCategoria.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Atencion"
+        Ayuda.ShowDialog()
     End Sub
 End Class

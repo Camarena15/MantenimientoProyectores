@@ -180,7 +180,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Fólio</Value>
+                                <Value>Folio</Value>
                                 <Style>
                                   <FontSize>11pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -971,8 +971,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>9.00149cm</Top>
             <Left>0.41607cm</Left>
-            <Height>3.80157cm</Height>
-            <Width>27.6223cm</Width>
+            <Height>3.80158cm</Height>
+            <Width>27.62226cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -987,7 +987,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!FF.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1017,7 +1020,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!FI.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1047,7 +1053,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!EDO.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />

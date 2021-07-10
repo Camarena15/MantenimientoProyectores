@@ -6,6 +6,7 @@ Public Class Preventivo_Terminar
     Dim lector As MySqlDataReader
     Dim RecAsigTrue As Integer
     Dim MP As New MPTools
+    Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If cboEstadoRecurso.SelectedIndex = 0 Then
             MsgBox("Debe seleccionar un Estado para el Recurso!", MsgBoxStyle.Critical, "ERROR")
@@ -15,6 +16,7 @@ Public Class Preventivo_Terminar
             command.Connection = connection
             command.Transaction = transaction
             Try
+                Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
                 command.CommandText = "UPDATE `PREVENTIVO` SET `Estado`= 'Terminado', `FechaFin`='" & txtFechaFinal.Value.ToString("yyyy-MM-dd") & "',`Observacion`='" & txtObservaciones.Text & "'  WHERE IdPreventivo= " & txtId.Value
                 command.ExecuteNonQuery()
                 If (MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1) Then
@@ -27,6 +29,7 @@ Public Class Preventivo_Terminar
                 command.ExecuteNonQuery()
                 transaction.Commit()
             Catch ex As Exception
+                bitacora.InsertarError("GUARDAR PREVENTIVO TERMINAR", ex.Message, ex.HResult, Fecha)
                 MsgBox("Commit Exception Type: {0} no se pudo insertar por error")
                 Try
                     transaction.Rollback()
@@ -71,6 +74,8 @@ Public Class Preventivo_Terminar
         DTPPeriodoInicio.Value = Date.Today
         DTPPeriodoFin.Value = Date.Today
         txtFechaFinal.Value = Date.Today
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
@@ -138,5 +143,8 @@ Public Class Preventivo_Terminar
         End If
     End Sub
 
-
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "PreventivoTerminar"
+        Ayuda.ShowDialog()
+    End Sub
 End Class

@@ -8,7 +8,7 @@ Public Class Respaldo_Restauracion
         Try
             Dim guardar As New SaveFileDialog
             Dim cadena As String
-            guardar.FileName = " "
+            guardar.FileName = ""
             guardar.ShowDialog()
             cadena = guardar.FileName
             Dim mb As MySqlBackup = New MySqlBackup(command)
@@ -20,8 +20,12 @@ Public Class Respaldo_Restauracion
     End Sub
 
     Private Sub Respaldo_Restauracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        connection.Open()
-        command = connection.CreateCommand
+        Try
+            connection.Open()
+            command = connection.CreateCommand
+        Catch
+            MsgBox("¡REVISA LA CONEXIÓN A INTERNET!")
+        End Try
     End Sub
 
     Private Sub btnRestauracion_Click(sender As Object, e As EventArgs) Handles btnRestauracion.Click
@@ -40,7 +44,11 @@ Public Class Respaldo_Restauracion
         End Try
     End Sub
 
-    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs)
         Me.Close()
+    End Sub
+
+    Private Sub btnCerrar_Click_1(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Me.Dispose()
     End Sub
 End Class

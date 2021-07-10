@@ -117,11 +117,18 @@ Public Class Fechas_Estado_Reporte2
         Close()
     End Sub
 
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Reporte"
+        Ayuda.ShowDialog()
+    End Sub
+
     Dim Adaptador As New MySqlDataAdapter
     ' Dim cbo As String
     Private Sub Fechas_Estado_Reporte2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cboEstado.Items.Add("Terminado")
         'cboEstado.Items.Add("Pendiente")
         cboEstado.Items.Add("Reparacion")
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
 End Class

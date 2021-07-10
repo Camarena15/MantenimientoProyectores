@@ -7,6 +7,7 @@ Public Class AtencionReportes_Terminar
     Dim lector2 As MySqlDataReader
     Dim RecAsigTrue As Integer
     Dim MP As New MPTools
+    Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If verificaRejilla() = False Then
             MsgBox("Debe seleccionar un Estado para los Recursos que sean CAÑONES, COMPUTADORAS O PANTALLAS", MsgBoxStyle.Critical, "ERROR")
@@ -16,6 +17,7 @@ Public Class AtencionReportes_Terminar
             command.Connection = connection
             command.Transaction = transaction
             Try
+                Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
                 command.CommandText = "UPDATE ATENCIONFALLAS SET Estado='Terminado' WHERE IdAtencion=" & txtId.Value
                 command.ExecuteNonQuery()
 
@@ -36,6 +38,7 @@ Public Class AtencionReportes_Terminar
                 Next
                 transaction.Commit()
             Catch ex As Exception
+                bitacora.InsertarError("GUARDAR ATENCIÓN REPORTES TERMINAR", ex.Message, ex.HResult, Fecha)
                 MsgBox("Commit Exception Type: {0} no se pudo insertar por error")
                 Try
                     transaction.Rollback()
@@ -192,6 +195,8 @@ Public Class AtencionReportes_Terminar
         DTPPeriodoInicio.Value = Date.Today
         DTPPeriodoFin.Value = Date.Today
         Timer1.Start()
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
@@ -199,5 +204,8 @@ Public Class AtencionReportes_Terminar
         Timer1.Stop()
     End Sub
 
-
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Termina"
+        Ayuda.ShowDialog()
+    End Sub
 End Class

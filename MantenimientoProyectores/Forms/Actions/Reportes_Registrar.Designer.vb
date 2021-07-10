@@ -54,17 +54,20 @@ Partial Class Reportes_Registrar
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnAyuda = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Venus Rising", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(302, 22)
+        Me.Label1.Location = New System.Drawing.Point(403, 27)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(466, 21)
+        Me.Label1.Size = New System.Drawing.Size(400, 24)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "REGISTRO DE REPORTES POR DOCENTES"
         '
@@ -72,10 +75,10 @@ Partial Class Reportes_Registrar
         '
         Me.txtId.Enabled = False
         Me.txtId.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(197, 82)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtId.Location = New System.Drawing.Point(263, 101)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(76, 26)
+        Me.txtId.Size = New System.Drawing.Size(100, 31)
         Me.txtId.TabIndex = 37
         '
         'GroupBox1
@@ -102,9 +105,11 @@ Partial Class Reportes_Registrar
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Enabled = False
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(62, 142)
+        Me.GroupBox1.Location = New System.Drawing.Point(83, 175)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(763, 176)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1017, 217)
         Me.GroupBox1.TabIndex = 185
         Me.GroupBox1.TabStop = False
         '
@@ -113,9 +118,10 @@ Partial Class Reportes_Registrar
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
         Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08"})
-        Me.txtAula.Location = New System.Drawing.Point(195, 132)
+        Me.txtAula.Location = New System.Drawing.Point(260, 162)
+        Me.txtAula.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAula.Name = "txtAula"
-        Me.txtAula.Size = New System.Drawing.Size(62, 27)
+        Me.txtAula.Size = New System.Drawing.Size(81, 31)
         Me.txtAula.TabIndex = 228
         '
         'txtEdificio
@@ -123,18 +129,20 @@ Partial Class Reportes_Registrar
         Me.txtEdificio.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtEdificio.FormattingEnabled = True
         Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"})
-        Me.txtEdificio.Location = New System.Drawing.Point(86, 132)
+        Me.txtEdificio.Location = New System.Drawing.Point(115, 162)
+        Me.txtEdificio.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEdificio.Name = "txtEdificio"
-        Me.txtEdificio.Size = New System.Drawing.Size(62, 27)
+        Me.txtEdificio.Size = New System.Drawing.Size(81, 31)
         Me.txtEdificio.TabIndex = 227
         '
         'txtEstado
         '
         Me.txtEstado.Enabled = False
         Me.txtEstado.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEstado.Location = New System.Drawing.Point(328, 131)
+        Me.txtEstado.Location = New System.Drawing.Point(437, 161)
+        Me.txtEstado.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEstado.Name = "txtEstado"
-        Me.txtEstado.Size = New System.Drawing.Size(100, 26)
+        Me.txtEstado.Size = New System.Drawing.Size(132, 31)
         Me.txtEstado.TabIndex = 226
         Me.txtEstado.Text = "Pendiente"
         '
@@ -142,17 +150,19 @@ Partial Class Reportes_Registrar
         '
         Me.cboMMF.FormattingEnabled = True
         Me.cboMMF.Items.AddRange(New Object() {"--", "00", "30"})
-        Me.cboMMF.Location = New System.Drawing.Point(410, 91)
+        Me.cboMMF.Location = New System.Drawing.Point(547, 112)
+        Me.cboMMF.Margin = New System.Windows.Forms.Padding(4)
         Me.cboMMF.Name = "cboMMF"
-        Me.cboMMF.Size = New System.Drawing.Size(44, 27)
+        Me.cboMMF.Size = New System.Drawing.Size(57, 31)
         Me.cboMMF.TabIndex = 225
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(393, 94)
+        Me.Label13.Location = New System.Drawing.Point(524, 116)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(18, 19)
+        Me.Label13.Size = New System.Drawing.Size(21, 23)
         Me.Label13.TabIndex = 224
         Me.Label13.Text = ":"
         '
@@ -160,17 +170,19 @@ Partial Class Reportes_Registrar
         '
         Me.cboMMI.FormattingEnabled = True
         Me.cboMMI.Items.AddRange(New Object() {"--", "00", "30"})
-        Me.cboMMI.Location = New System.Drawing.Point(188, 91)
+        Me.cboMMI.Location = New System.Drawing.Point(251, 112)
+        Me.cboMMI.Margin = New System.Windows.Forms.Padding(4)
         Me.cboMMI.Name = "cboMMI"
-        Me.cboMMI.Size = New System.Drawing.Size(44, 27)
+        Me.cboMMI.Size = New System.Drawing.Size(57, 31)
         Me.cboMMI.TabIndex = 223
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(171, 94)
+        Me.Label10.Location = New System.Drawing.Point(228, 116)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(18, 19)
+        Me.Label10.Size = New System.Drawing.Size(21, 23)
         Me.Label10.TabIndex = 222
         Me.Label10.Text = ":"
         '
@@ -178,28 +190,30 @@ Partial Class Reportes_Registrar
         '
         Me.cboHHF.FormattingEnabled = True
         Me.cboHHF.Items.AddRange(New Object() {"--", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.cboHHF.Location = New System.Drawing.Point(349, 91)
+        Me.cboHHF.Location = New System.Drawing.Point(465, 112)
+        Me.cboHHF.Margin = New System.Windows.Forms.Padding(4)
         Me.cboHHF.Name = "cboHHF"
-        Me.cboHHF.Size = New System.Drawing.Size(44, 27)
+        Me.cboHHF.Size = New System.Drawing.Size(57, 31)
         Me.cboHHF.TabIndex = 221
         '
         'cboHHI
         '
         Me.cboHHI.FormattingEnabled = True
         Me.cboHHI.Items.AddRange(New Object() {"--", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.cboHHI.Location = New System.Drawing.Point(127, 91)
+        Me.cboHHI.Location = New System.Drawing.Point(169, 112)
+        Me.cboHHI.Margin = New System.Windows.Forms.Padding(4)
         Me.cboHHI.Name = "cboHHI"
-        Me.cboHHI.Size = New System.Drawing.Size(44, 27)
+        Me.cboHHI.Size = New System.Drawing.Size(57, 31)
         Me.cboHHI.TabIndex = 220
         '
         'txtObservaciones
         '
         Me.txtObservaciones.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObservaciones.Location = New System.Drawing.Point(485, 53)
-        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtObservaciones.Location = New System.Drawing.Point(647, 65)
+        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtObservaciones.Multiline = True
         Me.txtObservaciones.Name = "txtObservaciones"
-        Me.txtObservaciones.Size = New System.Drawing.Size(273, 109)
+        Me.txtObservaciones.Size = New System.Drawing.Size(363, 133)
         Me.txtObservaciones.TabIndex = 193
         '
         'Label11
@@ -207,10 +221,9 @@ Partial Class Reportes_Registrar
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(260, 134)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Location = New System.Drawing.Point(347, 165)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(63, 19)
+        Me.Label11.Size = New System.Drawing.Size(76, 23)
         Me.Label11.TabIndex = 192
         Me.Label11.Text = "Estado"
         '
@@ -219,10 +232,9 @@ Partial Class Reportes_Registrar
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(485, 22)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Location = New System.Drawing.Point(647, 27)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(216, 19)
+        Me.Label12.Size = New System.Drawing.Size(263, 23)
         Me.Label12.TabIndex = 191
         Me.Label12.Text = "Observaciones generales"
         '
@@ -230,19 +242,19 @@ Partial Class Reportes_Registrar
         '
         Me.DTP.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DTP.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DTP.Location = New System.Drawing.Point(201, 52)
-        Me.DTP.Margin = New System.Windows.Forms.Padding(2)
+        Me.DTP.Location = New System.Drawing.Point(268, 64)
+        Me.DTP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DTP.Name = "DTP"
-        Me.DTP.Size = New System.Drawing.Size(112, 26)
+        Me.DTP.Size = New System.Drawing.Size(148, 31)
         Me.DTP.TabIndex = 188
         '
         'txtDocente
         '
         Me.txtDocente.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocente.Location = New System.Drawing.Point(201, 19)
-        Me.txtDocente.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDocente.Location = New System.Drawing.Point(268, 23)
+        Me.txtDocente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtDocente.Name = "txtDocente"
-        Me.txtDocente.Size = New System.Drawing.Size(266, 26)
+        Me.txtDocente.Size = New System.Drawing.Size(353, 31)
         Me.txtDocente.TabIndex = 187
         '
         'Label9
@@ -250,10 +262,9 @@ Partial Class Reportes_Registrar
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(5, 94)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(7, 116)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(117, 19)
+        Me.Label9.Size = New System.Drawing.Size(142, 23)
         Me.Label9.TabIndex = 184
         Me.Label9.Text = "Hora inicial"
         '
@@ -262,10 +273,9 @@ Partial Class Reportes_Registrar
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(150, 135)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(200, 166)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 19)
+        Me.Label8.Size = New System.Drawing.Size(54, 23)
         Me.Label8.TabIndex = 183
         Me.Label8.Text = "Aula"
         '
@@ -274,10 +284,9 @@ Partial Class Reportes_Registrar
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(245, 94)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(327, 116)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(99, 19)
+        Me.Label7.Size = New System.Drawing.Size(120, 23)
         Me.Label7.TabIndex = 182
         Me.Label7.Text = "Hora final"
         '
@@ -286,10 +295,9 @@ Partial Class Reportes_Registrar
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(5, 135)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(7, 166)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(81, 19)
+        Me.Label6.Size = New System.Drawing.Size(98, 23)
         Me.Label6.TabIndex = 181
         Me.Label6.Text = "Edificio"
         '
@@ -298,10 +306,9 @@ Partial Class Reportes_Registrar
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(5, 59)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(7, 73)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(162, 19)
+        Me.Label5.Size = New System.Drawing.Size(197, 23)
         Me.Label5.TabIndex = 180
         Me.Label5.Text = "Fecha que reporta"
         '
@@ -310,10 +317,9 @@ Partial Class Reportes_Registrar
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(5, 22)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(7, 27)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(180, 19)
+        Me.Label4.Size = New System.Drawing.Size(219, 23)
         Me.Label4.TabIndex = 179
         Me.Label4.Text = "Docente que reporta"
         '
@@ -323,9 +329,10 @@ Partial Class Reportes_Registrar
         Me.cmdSalir.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Salir
         Me.cmdSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdSalir.Location = New System.Drawing.Point(921, 499)
+        Me.cmdSalir.Location = New System.Drawing.Point(1228, 614)
+        Me.cmdSalir.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdSalir.Name = "cmdSalir"
-        Me.cmdSalir.Size = New System.Drawing.Size(49, 54)
+        Me.cmdSalir.Size = New System.Drawing.Size(65, 66)
         Me.cmdSalir.TabIndex = 218
         Me.cmdSalir.UseVisualStyleBackColor = False
         '
@@ -335,9 +342,10 @@ Partial Class Reportes_Registrar
         Me.Label24.BackColor = System.Drawing.Color.White
         Me.Label24.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(918, 461)
+        Me.Label24.Location = New System.Drawing.Point(1224, 567)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(63, 19)
+        Me.Label24.Size = New System.Drawing.Size(76, 23)
         Me.Label24.TabIndex = 217
         Me.Label24.Text = "Grabar"
         '
@@ -347,9 +355,10 @@ Partial Class Reportes_Registrar
         Me.Label23.BackColor = System.Drawing.Color.White
         Me.Label23.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(918, 369)
+        Me.Label23.Location = New System.Drawing.Point(1224, 454)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(54, 19)
+        Me.Label23.Size = New System.Drawing.Size(65, 23)
         Me.Label23.TabIndex = 216
         Me.Label23.Text = "Nuevo"
         '
@@ -360,9 +369,10 @@ Partial Class Reportes_Registrar
         Me.cmdGrabar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdGrabar.Enabled = False
         Me.cmdGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdGrabar.Location = New System.Drawing.Point(921, 404)
+        Me.cmdGrabar.Location = New System.Drawing.Point(1228, 497)
+        Me.cmdGrabar.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdGrabar.Name = "cmdGrabar"
-        Me.cmdGrabar.Size = New System.Drawing.Size(49, 54)
+        Me.cmdGrabar.Size = New System.Drawing.Size(65, 66)
         Me.cmdGrabar.TabIndex = 215
         Me.cmdGrabar.UseVisualStyleBackColor = False
         '
@@ -372,9 +382,10 @@ Partial Class Reportes_Registrar
         Me.cmdNuevo.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Nuevo
         Me.cmdNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdNuevo.Location = New System.Drawing.Point(921, 317)
+        Me.cmdNuevo.Location = New System.Drawing.Point(1228, 390)
+        Me.cmdNuevo.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdNuevo.Name = "cmdNuevo"
-        Me.cmdNuevo.Size = New System.Drawing.Size(49, 50)
+        Me.cmdNuevo.Size = New System.Drawing.Size(65, 62)
         Me.cmdNuevo.TabIndex = 214
         Me.cmdNuevo.UseVisualStyleBackColor = False
         '
@@ -384,9 +395,10 @@ Partial Class Reportes_Registrar
         Me.Label25.BackColor = System.Drawing.Color.White
         Me.Label25.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.Black
-        Me.Label25.Location = New System.Drawing.Point(917, 554)
+        Me.Label25.Location = New System.Drawing.Point(1223, 682)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(54, 19)
+        Me.Label25.Size = New System.Drawing.Size(65, 23)
         Me.Label25.TabIndex = 213
         Me.Label25.Text = "Salir"
         '
@@ -395,9 +407,10 @@ Partial Class Reportes_Registrar
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(62, 81)
+        Me.Label3.Location = New System.Drawing.Point(83, 100)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(130, 24)
+        Me.Label3.Size = New System.Drawing.Size(165, 32)
         Me.Label3.TabIndex = 219
         Me.Label3.Text = "ID Reporte"
         '
@@ -405,14 +418,26 @@ Partial Class Reportes_Registrar
         '
         Me.Timer1.Interval = 1500
         '
+        'btnAyuda
+        '
+        Me.btnAyuda.BackColor = System.Drawing.Color.White
+        Me.btnAyuda.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.AYUDA
+        Me.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAyuda.Location = New System.Drawing.Point(35, 27)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(52, 44)
+        Me.btnAyuda.TabIndex = 228
+        Me.btnAyuda.UseVisualStyleBackColor = False
+        '
         'Reportes_Registrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1060, 680)
+        Me.ClientSize = New System.Drawing.Size(1413, 837)
+        Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cmdSalir)
         Me.Controls.Add(Me.Label24)
@@ -424,6 +449,7 @@ Partial Class Reportes_Registrar
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Reportes_Registrar"
         Me.Text = "Reportes_Registrar"
         Me.GroupBox1.ResumeLayout(False)
@@ -463,4 +489,6 @@ Partial Class Reportes_Registrar
     Friend WithEvents txtAula As ComboBox
     Friend WithEvents txtEdificio As ComboBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnAyuda As Button
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

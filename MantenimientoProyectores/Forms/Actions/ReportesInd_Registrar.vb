@@ -4,17 +4,20 @@ Public Class ReportesInd_Registrar
     Dim connection As New MySqlConnection(s)
     Dim command As New MySqlCommand
     Dim lector As MySqlDataReader
+    Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         Dim transaction As MySqlTransaction
         transaction = connection.BeginTransaction()
         command.Connection = connection
         command.Transaction = transaction
         Try
-            command.CommandText = "INSERT INTO `REPORTESRECURSOSINDIVIDUALES`(`IdRecurso`, `Fecha`, `Concepto`, `Estado`) VALUES  (" & txtidRecurso.Text & ",'" & DTP.Value.ToString("yyyy-MM-dd") & "','" &
+            Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
+            command.CommandText = "INSERT INTO `REPORTESRECURSOSINDIVIDUALES`(`IdRecurso`, `Fecha`, `Concepto`, `Estado`) VALUES  (" & txtIdRecurso.Text & ",'" & DTP.Value.ToString("yyyy-MM-dd") & "','" &
                 txtObservaciones.Text & "','Pendiente')"
             command.ExecuteNonQuery()
             transaction.Commit()
         Catch ex As Exception
+            bitacora.InsertarError("GUARDAR REPORTE INDIVIDUAL", ex.Message, ex.HResult, Fecha)
             MsgBox("Commit Exception Type: {0} no se pudo insertar por error " & ex.ToString)
             Try
                 transaction.Rollback()
@@ -78,6 +81,8 @@ Public Class ReportesInd_Registrar
         connection.Open()
         command = connection.CreateCommand
         Timer1.Stop()
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub cmdBuscarRecurso_Click(sender As Object, e As EventArgs) Handles cmdBuscarRecurso.Click
         If cboCategoria.SelectedIndex = 0 Then
@@ -106,5 +111,10 @@ Public Class ReportesInd_Registrar
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Individual"
+        Ayuda.ShowDialog()
     End Sub
 End Class

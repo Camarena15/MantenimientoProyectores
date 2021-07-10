@@ -23,6 +23,8 @@ Public Class AtencionReportes_Consultar
     End Sub
     Private Sub Consultar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
@@ -142,5 +144,10 @@ Public Class AtencionReportes_Consultar
     Private Sub cmdSalir_Click(sender As Object, e As EventArgs) Handles cmdSalir.Click
         connection.Close()
         Close()
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "AtencionRConsulta"
+        Ayuda.ShowDialog()
     End Sub
 End Class

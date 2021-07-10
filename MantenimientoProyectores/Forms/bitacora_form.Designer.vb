@@ -85,7 +85,7 @@ Partial Class bitacora_form
         '
         'PanelCabecera
         '
-        Me.PanelCabecera.BackColor = System.Drawing.Color.Navy
+        Me.PanelCabecera.BackColor = System.Drawing.Color.MidnightBlue
         Me.PanelCabecera.Controls.Add(Me.btnCerrar)
         Me.PanelCabecera.Controls.Add(Me.Label15)
         Me.PanelCabecera.Dock = System.Windows.Forms.DockStyle.Top
@@ -93,34 +93,36 @@ Partial Class bitacora_form
         Me.PanelCabecera.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelCabecera.Name = "PanelCabecera"
         Me.PanelCabecera.Size = New System.Drawing.Size(1225, 57)
-        Me.PanelCabecera.TabIndex = 257
+        Me.PanelCabecera.TabIndex = 285
         '
         'btnCerrar
         '
         Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCerrar.BackColor = System.Drawing.Color.Red
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCerrar.FlatAppearance.BorderSize = 0
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrar.Location = New System.Drawing.Point(1166, 10)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnCerrar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Icono_cerrar_FN
+        Me.btnCerrar.Location = New System.Drawing.Point(1171, 4)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(47, 39)
-        Me.btnCerrar.TabIndex = 146
-        Me.btnCerrar.UseVisualStyleBackColor = False
+        Me.btnCerrar.Size = New System.Drawing.Size(53, 49)
+        Me.btnCerrar.TabIndex = 115
+        Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Navy
-        Me.Label15.Font = New System.Drawing.Font("Consolas", 15.0!, System.Drawing.FontStyle.Bold)
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(432, 9)
+        Me.Label15.Location = New System.Drawing.Point(473, 17)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(125, 29)
+        Me.Label15.Size = New System.Drawing.Size(230, 20)
         Me.Label15.TabIndex = 114
-        Me.Label15.Text = "BITACORA"
+        Me.Label15.Text = "BITACORA DEL SISTEMA"
         '
         'bitacora_form
         '

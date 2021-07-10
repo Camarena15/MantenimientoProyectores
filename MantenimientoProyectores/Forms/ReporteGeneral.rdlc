@@ -971,8 +971,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>9.23704cm</Top>
             <Left>0.89695cm</Left>
-            <Height>2.49309cm</Height>
-            <Width>23.34666cm</Width>
+            <Height>2.4931cm</Height>
+            <Width>23.34663cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -987,7 +987,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!FF.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1017,7 +1020,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!FI.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />

@@ -5,6 +5,7 @@ Public Class Preventivo_Registrar
     Dim command As New MySqlCommand
     Dim lector As MySqlDataReader
     Dim MP As New MPTools
+    Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If cboTipo.SelectedIndex = 0 Then
             MsgBox("Debe seleccionar el Tipo de Servicio!", MsgBoxStyle.Critical, "ERROR")
@@ -14,28 +15,30 @@ Public Class Preventivo_Registrar
             command.Connection = connection
             command.Transaction = transaction
             Try
+                Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
                 command.CommandText = "INSERT INTO `PREVENTIVO` (`Tipo`, `FechaInicio`, `FechaFin`, `IdRecurso`, `Concepto`, 
             `QuienAtiende`, `Observacion`, `Estado`) VALUES ('" & cboTipo.Text & "','" & DTP.Value.ToString("yyyy-MM-dd") & "','" &
-                Date.Today.ToString("yyyy-MM-dd") & "'," & txtidRecurso.Text & ",'" & txtConcepto.Text & "','" & txtAtiende.Text & "','" &
+                Date.Today.ToString("yyyy-MM-dd") & "'," & txtIdRecurso.Text & ",'" & txtConcepto.Text & "','" & txtAtiende.Text & "','" &
                 txtObservaciones.Text & "','" & txtEstado.Text & "')"
                 command.ExecuteNonQuery()
-                If (MP.busquedaIdRecurso("CAÑONES", txtidRecurso.Text) = 1) Then
+                If (MP.busquedaIdRecurso("CAÑONES", txtIdRecurso.Text) = 1) Then
                     If RBSI.Checked = True Then
-                        command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion', `HorasLampara` = 0 WHERE IdRecurso= " & txtidRecurso.Text
+                        command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion', `HorasLampara` = 0 WHERE IdRecurso= " & txtIdRecurso.Text
                     Else
-                        command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtidRecurso.Text
+                        command.CommandText = "UPDATE `CAÑONES` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtIdRecurso.Text
                     End If
                     lblCambioLampara.Visible = False
                     RBSI.Visible = False
                     RBNO.Visible = False
-                ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", txtidRecurso.Text) = 1) Then
-                    command.CommandText = "UPDATE `COMPUTADORAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtidRecurso.Text
-                ElseIf (MP.busquedaIdRecurso("PANTALLAS", txtidRecurso.Text) = 1) Then
-                    command.CommandText = "UPDATE `PANTALLAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtidRecurso.Text
+                ElseIf (MP.busquedaIdRecurso("COMPUTADORAS", txtIdRecurso.Text) = 1) Then
+                    command.CommandText = "UPDATE `COMPUTADORAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtIdRecurso.Text
+                ElseIf (MP.busquedaIdRecurso("PANTALLAS", txtIdRecurso.Text) = 1) Then
+                    command.CommandText = "UPDATE `PANTALLAS` SET `Estado`= 'Reparacion' WHERE IdRecurso= " & txtIdRecurso.Text
                 End If
                 command.ExecuteNonQuery()
                 transaction.Commit()
             Catch ex As Exception
+                bitacora.InsertarError("GUARDAR PREVENTIVO REGISTRAR", ex.Message, ex.HResult, Fecha)
                 MsgBox("Commit Exception Type: {0} no se pudo insertar por error" & ex.ToString)
                 Try
                     transaction.Rollback()
@@ -103,6 +106,8 @@ Public Class Preventivo_Registrar
         DTP.Value = Date.Today
         DTP2.Text = Date.Today.ToString("dd/MM/yyyy")
         RBNO.Checked = True
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
@@ -149,5 +154,10 @@ Public Class Preventivo_Registrar
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "PreventivoRegistrar"
+        Ayuda.ShowDialog()
     End Sub
 End Class

@@ -11,8 +11,14 @@ Public Class Fechas_Reporte
         Close()
     End Sub
 
-    Private Sub Fechas_Reporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Reporte"
+        Ayuda.ShowDialog()
+    End Sub
 
+    Private Sub Fechas_Reporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
 
     Private Sub cmdBuscar_Click(sender As Object, e As EventArgs) Handles cmdBuscar.Click
@@ -33,7 +39,7 @@ Public Class Fechas_Reporte
             ' f11 = String.Format(f1, "yyyy-M-d")
             f22 = String.Format(f2, "yyyy-M-d")
             f11 = DTP1.Value
-            MsgBox(f11)
+            ' MsgBox(f11)
             Adaptador.SelectCommand = New MySqlCommand
             Adaptador.SelectCommand.Connection = con
             Adaptador.SelectCommand.CommandText = "SupervicionReporte"
@@ -59,7 +65,7 @@ Public Class Fechas_Reporte
 
             Reporte_Form.ReportViewer1.LocalReport.DataSources.Clear()
             Reporte_Form.ReportViewer1.LocalReport.DataSources.Add(Datasource)
-            MsgBox(defAppPath.Replace("\bin\Debug", "\Forms\SupervisionReporte.rdlc"))
+            ' MsgBox(defAppPath.Replace("\bin\Debug", "\Forms\SupervisionReporte.rdlc"))
             Reporte_Form.ReportViewer1.LocalReport.ReportPath = defAppPath.Replace("\bin\Debug\", "\Forms\SupervisionReporte.rdlc")
             Reporte_Form.ReportViewer1.LocalReport.SetParameters(New ReportParameter() {p1, p2})
             Reporte_Form.ReportViewer1.RefreshReport()
@@ -70,7 +76,7 @@ Public Class Fechas_Reporte
             ' f11 = String.Format(f1, "yyyy-M-d")
             f22 = String.Format(f2, "yyyy-M-d")
             f11 = DTP1.Value
-            MsgBox(f11)
+            ' MsgBox(f11)
             Adaptador.SelectCommand = New MySqlCommand
             Adaptador.SelectCommand.Connection = con
             Adaptador.SelectCommand.CommandText = "ReportePeriodoGnral"

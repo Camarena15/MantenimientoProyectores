@@ -95,7 +95,8 @@ Public Class Menu
 
     End Sub
     Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
-
+        opcion = "Menu"
+        Ayuda.ShowDialog()
     End Sub
     Private Sub panelmenu_mousemove(sender As Object, e As MouseEventArgs) Handles PanelMenu.MouseMove
         PanelCatalogos.Visible = False
@@ -291,29 +292,6 @@ Public Class Menu
 
     End Sub
 
-    Private Sub btnSupervision_Click(sender As Object, e As EventArgs) Handles btnSupervision.Click
-        opcion = 1
-        Fechas_Reporte.Show()
-    End Sub
-
-    Private Sub btnActReportes_Click(sender As Object, e As EventArgs) Handles btnActReportes.Click
-        opcion = 2
-        Fechas_Estado_Reporte.Show()
-    End Sub
-
-    Private Sub btnReportesIndividuales_Click(sender As Object, e As EventArgs) Handles btnReportesIndividuales.Click
-        opcion = 3
-        Fechas_Reporte.Show()
-    End Sub
-
-    Private Sub pctCargando_Click(sender As Object, e As EventArgs) Handles pctCargando.Click
-
-    End Sub
-
-    Public Sub btnPreventivo_Click(sender As Object, e As EventArgs) Handles btnPreventivo.Click
-        opcion = 4
-        Fechas_Estado_Reporte2.Show()
-    End Sub
 
     Private Sub btnAcercaDe_Click(sender As Object, e As EventArgs) Handles btnAcercaDe.Click
         AcercaDe.ShowDialog()

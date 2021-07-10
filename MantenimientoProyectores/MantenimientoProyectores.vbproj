@@ -251,6 +251,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Actions\MPTools.vb" />
+    <Compile Include="Forms\Ayuda.Designer.vb">
+      <DependentUpon>Ayuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ayuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\bitacora.vb" />
     <Compile Include="Forms\bitacora_form.Designer.vb">
       <DependentUpon>bitacora_form.vb</DependentUpon>
@@ -395,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Actions\RecursoIndividual_Seleccionar.resx">
       <DependentUpon>RecursoIndividual_Seleccionar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ayuda.resx">
+      <DependentUpon>Ayuda.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\bitacora_form.resx">
       <DependentUpon>bitacora_form.vb</DependentUpon>
@@ -682,6 +691,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Restauracion-de-windows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.JPG" />
+    <None Include="Resources\TerminacionAtencion3.JPG" />
+    <None Include="Resources\TerminacionAtencion2.JPG" />
+    <None Include="Resources\TerminacionAtencion1.JPG" />
+    <None Include="Resources\supervision5.JPG" />
+    <None Include="Resources\supervision4.JPG" />
+    <None Include="Resources\supervision3.JPG" />
+    <None Include="Resources\supervision2.JPG" />
+    <None Include="Resources\supervision1.JPG" />
+    <None Include="Resources\TerminoPreventivo3.JPG" />
+    <None Include="Resources\TerminoPreventivo2.JPG" />
+    <None Include="Resources\TerminoPreventivo1.JPG" />
+    <None Include="Resources\ReporteDocente.JPG" />
+    <None Include="Resources\preventivo4.JPG" />
+    <None Include="Resources\preventivo3.JPG" />
+    <None Include="Resources\Preventivo21.jpg" />
+    <Resource Include="gui-res\Diapositiva.png" />
+    <Resource Include="Resources\Diapositiva.png" />
+    <None Include="Resources\Diapositiva1.PNG" />
+    <None Include="Resources\Diapositiva2.PNG" />
+    <None Include="Resources\Preventivo1.jpg" />
+    <None Include="Resources\Individual1.JPG" />
+    <None Include="Resources\individual2.JPG" />
+    <None Include="Resources\individual3.JPG" />
+    <None Include="Resources\AYUDA.png" />
+    <None Include="Resources\Atencion1.JPG" />
+    <None Include="Resources\Atencion2.JPG" />
+    <None Include="Resources\Atencion3.JPG" />
+    <None Include="Resources\Atencion4.JPG" />
+    <None Include="Resources\Atencion5.JPG" />
+    <None Include="Resources\Atencion6.JPG" />
+    <None Include="Resources\Diapositiva3.JPG" />
+    <None Include="Resources\Diapositiva4.JPG" />
+    <None Include="Resources\docente.JPG" />
+    <None Include="Resources\Diapositiva5.JPG" />
+    <None Include="Resources\menu.JPG" />
+    <Content Include="Resources\Preventivo2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

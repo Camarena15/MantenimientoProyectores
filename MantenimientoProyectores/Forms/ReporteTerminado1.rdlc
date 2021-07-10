@@ -972,7 +972,7 @@
             <Top>9.017cm</Top>
             <Left>0.762cm</Left>
             <Height>3.42828cm</Height>
-            <Width>25.80433cm</Width>
+            <Width>25.80435cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -987,7 +987,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!FF.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1017,7 +1020,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!FI.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1047,7 +1053,10 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!EDO.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Consolas</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -1190,7 +1199,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>REPORTE DE PREVENTIDO</Value>
+                    <Value>REPORTE DE PREVENTIVO</Value>
                     <Style>
                       <FontFamily>CONSOLAS</FontFamily>
                       <FontSize>20pt</FontSize>

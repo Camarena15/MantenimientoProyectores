@@ -4,6 +4,7 @@ Public Class Reportes_Registrar
     Dim connection As New MySqlConnection(s)
     Dim command As New MySqlCommand
     Dim lector As MySqlDataReader
+    Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If txtEdificio.SelectedIndex = 0 Or txtAula.SelectedIndex = 0 Or cboHHF.SelectedIndex = 0 Or cboHHI.SelectedIndex = 0 Or
             cboMMF.SelectedIndex = 0 Or cboMMI.SelectedIndex = 0 Then
@@ -14,6 +15,7 @@ Public Class Reportes_Registrar
             command.Connection = connection
             command.Transaction = transaction
             Try
+                Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
                 command.CommandText = "INSERT INTO `REPORTEDOCENTES` (`Docente`, `Fecha`, `Edificio`, `Aula`,
             `HoraIC`, `HoraFC`, `ObservacionesGrales`, `Estado`) VALUES ('" & txtDocente.Text & "','" & DTP.Value.ToString("yyyy-MM-dd") & "','" & txtEdificio.Text &
                 "','" & txtAula.Text & "','" & cboHHI.Text & ":" & cboMMI.Text & "','" & cboHHF.Text & ":" & cboMMF.Text & "','" &
@@ -23,6 +25,7 @@ Public Class Reportes_Registrar
                 transaction.Commit()
             Catch ex As Exception
                 MsgBox("Commit Exception Type: {0} no se pudo insertar por error")
+                bitacora.InsertarError("GUARDAR REPORTE DOCENTE", ex.Message, ex.HResult, Fecha)
                 Try
                     transaction.Rollback()
                 Catch ex2 As Exception
@@ -87,11 +90,18 @@ Public Class Reportes_Registrar
         txtAula.SelectedIndex = 0
         txtEdificio.SelectedIndex = 0
         DTP.Value = Date.Today
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         connection.Open()
         command = connection.CreateCommand
         Timer1.Stop()
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "ReporteDocente"
+        Ayuda.ShowDialog()
     End Sub
 
     'Private Sub cboHHI_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboHHI.SelectedIndexChanged

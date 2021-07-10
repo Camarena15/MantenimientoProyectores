@@ -96,7 +96,6 @@ C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProy
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.SpeedFtp.resources
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Consultar.resources
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.ReportesInd_Registrar.resources
-C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbprojAssemblyReference.cache
 C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Consultar.resources
 C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Registrar.resources
 C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionReportes_Terminar.resources
@@ -325,3 +324,9 @@ C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\Manten
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AcercaDe.resources
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.RecursoIndividual_Seleccionar.resources
 C:\Users\Theki\OneDrive\TEC\8\Servicio Social\SISTEMA\PRODUCTO\GitVersion\MantenimientoProyectores\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionPreventivo_Seleccionar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.vbproj.AssemblyReference.cache
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AcercaDe.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.AtencionPreventivo_Seleccionar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.RecursoIndividual_Seleccionar.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.Ayuda.resources
+C:\MantenimientoProyectores\obj\Debug\MantenimientoProyectores.g.resources

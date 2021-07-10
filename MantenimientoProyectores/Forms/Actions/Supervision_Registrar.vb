@@ -9,6 +9,7 @@ Public Class Supervision_Registrar
     Dim ftppath As String = "ftp://ftp-sistemamediosav.alwaysdata.net:21"
     Dim imageNames As New ArrayList
     Dim xtraImageNames As New ArrayList
+    Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If chkDatosSecundarios.Checked = False Then
             grabarTodo()
@@ -33,6 +34,7 @@ Public Class Supervision_Registrar
         command.Transaction = transaction
         Dim r As String
         Try
+            Fecha = DTP.Value.Year & "/" & DTP.Value.Month & "/" & DTP.Value.Day
             r = "INSERT INTO `SUPERVISION`( `Fecha`, `Responsable`, `Edificio`, `Aula`"
             If chkDatosSecundarios.Checked = True Then
                 r += ", `ObservaCajaConex`, `ImagenCajaConex`, `ObservaConectorElect`, `ImagenConectorElect`, `ObservaPintarrón`, 
@@ -95,6 +97,7 @@ Public Class Supervision_Registrar
             transaction.Commit()
             '*********************************************************************************************************************
         Catch ex As Exception
+            bitacora.InsertarError("GUARDAR SUPERVISIÓN", ex.Message, ex.HResult, Fecha)
             MsgBox("Commit Exception Type: {0} no se pudo insertar por error" & ex.ToString)
             Try
                 transaction.Rollback()
@@ -222,6 +225,8 @@ Public Class Supervision_Registrar
         txtEdificio.SelectedIndex = 0
         txtAula.SelectedIndex = 0
         DTP.Value = Date.Today
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         connection.Open()
@@ -370,5 +375,10 @@ Public Class Supervision_Registrar
     Private Sub txtImgVentanas_Click(sender As Object, e As EventArgs) Handles txtImgVentanas.Click
         Dim name As String = OpenFile()
         txtImgVentanas.Text = name
+    End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Supervision"
+        Ayuda.ShowDialog()
     End Sub
 End Class

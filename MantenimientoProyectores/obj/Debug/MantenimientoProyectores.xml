@@ -57,6 +57,41 @@ MantenimientoProyectores
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Atencion1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Atencion2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Atencion3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Atencion4">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Atencion5">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Atencion6">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.AYUDA">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.backup_35790124_XS">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -127,6 +162,36 @@ MantenimientoProyectores
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Diapositiva1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Diapositiva2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Diapositiva3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Diapositiva4">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Diapositiva5">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.docente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.empleados">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -177,12 +242,32 @@ MantenimientoProyectores
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Individual1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.individual2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.individual3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.Inicio">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.LOGO">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.menu">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -198,6 +283,26 @@ MantenimientoProyectores
 </summary>
 </member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.pagos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Preventivo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.Preventivo2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.preventivo3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.preventivo4">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -222,7 +327,17 @@ MantenimientoProyectores
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.ReporteDocente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.reportes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.reportes1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -262,7 +377,62 @@ MantenimientoProyectores
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.supervision1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.supervision2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.supervision3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.supervision4">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.supervision5">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.TerminacionAtencion1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.TerminacionAtencion2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.TerminacionAtencion3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:MantenimientoProyectores.My.Resources.Resources.Terminar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.TerminoPreventivo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.TerminoPreventivo2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MantenimientoProyectores.My.Resources.Resources.TerminoPreventivo3">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

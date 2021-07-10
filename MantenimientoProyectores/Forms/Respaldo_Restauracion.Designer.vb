@@ -24,17 +24,18 @@ Partial Class Respaldo_Restauracion
     Private Sub InitializeComponent()
         Me.btnRestauracion = New System.Windows.Forms.Button()
         Me.btnRespaldo = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelCabecera = New System.Windows.Forms.Panel()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelCabecera.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnRestauracion
         '
         Me.btnRestauracion.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Restauracion_de_windows
+        Me.btnRestauracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnRestauracion.Location = New System.Drawing.Point(440, 96)
         Me.btnRestauracion.Name = "btnRestauracion"
         Me.btnRestauracion.Size = New System.Drawing.Size(252, 248)
@@ -51,45 +52,6 @@ Partial Class Respaldo_Restauracion
         Me.btnRespaldo.Size = New System.Drawing.Size(252, 248)
         Me.btnRespaldo.TabIndex = 0
         Me.btnRespaldo.UseVisualStyleBackColor = False
-        '
-        'PanelCabecera
-        '
-        Me.PanelCabecera.BackColor = System.Drawing.Color.Navy
-        Me.PanelCabecera.Controls.Add(Me.btnCerrar)
-        Me.PanelCabecera.Controls.Add(Me.Label15)
-        Me.PanelCabecera.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelCabecera.Location = New System.Drawing.Point(0, 0)
-        Me.PanelCabecera.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PanelCabecera.Name = "PanelCabecera"
-        Me.PanelCabecera.Size = New System.Drawing.Size(800, 57)
-        Me.PanelCabecera.TabIndex = 255
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCerrar.BackColor = System.Drawing.Color.Red
-        Me.btnCerrar.FlatAppearance.BorderSize = 0
-        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrar.Location = New System.Drawing.Point(741, 10)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(47, 39)
-        Me.btnCerrar.TabIndex = 146
-        Me.btnCerrar.UseVisualStyleBackColor = False
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.Navy
-        Me.Label15.Font = New System.Drawing.Font("Consolas", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(206, 11)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(349, 29)
-        Me.Label15.TabIndex = 114
-        Me.Label15.Text = "RESPALDO Y RESTAURACIÓN."
         '
         'Label1
         '
@@ -111,15 +73,56 @@ Partial Class Respaldo_Restauracion
         Me.Label2.TabIndex = 257
         Me.Label2.Text = "RESTAURAR"
         '
+        'PanelCabecera
+        '
+        Me.PanelCabecera.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PanelCabecera.Controls.Add(Me.btnCerrar)
+        Me.PanelCabecera.Controls.Add(Me.Label15)
+        Me.PanelCabecera.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelCabecera.Location = New System.Drawing.Point(0, 0)
+        Me.PanelCabecera.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PanelCabecera.Name = "PanelCabecera"
+        Me.PanelCabecera.Size = New System.Drawing.Size(800, 57)
+        Me.PanelCabecera.TabIndex = 286
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrar.FlatAppearance.BorderSize = 0
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Icono_cerrar_FN
+        Me.btnCerrar.Location = New System.Drawing.Point(746, 4)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(53, 49)
+        Me.btnCerrar.TabIndex = 115
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Navy
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(273, 17)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(275, 20)
+        Me.Label15.TabIndex = 114
+        Me.Label15.Text = "RESPALDO Y RESTAURACIÓN"
+        '
         'Respaldo_Restauracion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PanelCabecera)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PanelCabecera)
         Me.Controls.Add(Me.btnRestauracion)
         Me.Controls.Add(Me.btnRespaldo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -134,9 +137,9 @@ Partial Class Respaldo_Restauracion
 
     Friend WithEvents btnRespaldo As Button
     Friend WithEvents btnRestauracion As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents PanelCabecera As Panel
     Friend WithEvents btnCerrar As Button
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
 End Class

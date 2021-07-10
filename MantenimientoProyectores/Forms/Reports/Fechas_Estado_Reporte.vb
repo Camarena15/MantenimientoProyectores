@@ -10,11 +10,18 @@ Public Class Fechas_Estado_Reporte
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Close()
     End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        opcion = "Reporte"
+        Ayuda.ShowDialog()
+    End Sub
     ' Dim cbo As String
     Private Sub Fechas_Estado_Reporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cboEstado.Items.Add("Atendido")
         cboEstado.Items.Add("Pendiente")
         cboEstado.Items.Add("Reparacion")
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(btnAyuda, "¿Necesitas ayuda?")
     End Sub
 
     Private Sub cmdBuscar_Click(sender As Object, e As EventArgs) Handles cmdBuscar.Click

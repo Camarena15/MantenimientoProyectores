@@ -39,6 +39,7 @@
     Public trigger As Boolean
     Public filecount As Integer
     'Variables usadas para controlar los Reportes
-    Public opcion As Integer
+    Public opcion As String
     Public defAppPath As String = AppDomain.CurrentDomain.BaseDirectory
+
 End Module

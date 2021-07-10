@@ -67,6 +67,9 @@ Partial Class Preventivo_Terminar
         Me.DTPPeriodoInicio = New System.Windows.Forms.DateTimePicker()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.DTPPeriodoFin = New System.Windows.Forms.DateTimePicker()
+        Me.btnAyuda = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.DTP = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtId, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +83,7 @@ Partial Class Preventivo_Terminar
         Me.Label12.Location = New System.Drawing.Point(236, -21)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(333, 19)
+        Me.Label12.Size = New System.Drawing.Size(406, 23)
         Me.Label12.TabIndex = 187
         Me.Label12.Text = "TERMINACION DE SERVICIOS PREVENTIVOS"
         '
@@ -104,7 +107,7 @@ Partial Class Preventivo_Terminar
         Me.Label24.ForeColor = System.Drawing.Color.Black
         Me.Label24.Location = New System.Drawing.Point(925, 457)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(63, 19)
+        Me.Label24.Size = New System.Drawing.Size(76, 23)
         Me.Label24.TabIndex = 226
         Me.Label24.Text = "Grabar"
         '
@@ -129,7 +132,7 @@ Partial Class Preventivo_Terminar
         Me.Label25.ForeColor = System.Drawing.Color.Black
         Me.Label25.Location = New System.Drawing.Point(924, 550)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(54, 19)
+        Me.Label25.Size = New System.Drawing.Size(65, 23)
         Me.Label25.TabIndex = 224
         Me.Label25.Text = "Salir"
         '
@@ -162,7 +165,7 @@ Partial Class Preventivo_Terminar
         Me.txtFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.txtFechaFinal.Location = New System.Drawing.Point(264, 134)
         Me.txtFechaFinal.Name = "txtFechaFinal"
-        Me.txtFechaFinal.Size = New System.Drawing.Size(130, 26)
+        Me.txtFechaFinal.Size = New System.Drawing.Size(130, 31)
         Me.txtFechaFinal.TabIndex = 236
         '
         'txtEstado
@@ -171,7 +174,7 @@ Partial Class Preventivo_Terminar
         Me.txtEstado.Location = New System.Drawing.Point(476, 29)
         Me.txtEstado.Name = "txtEstado"
         Me.txtEstado.ReadOnly = True
-        Me.txtEstado.Size = New System.Drawing.Size(100, 26)
+        Me.txtEstado.Size = New System.Drawing.Size(100, 31)
         Me.txtEstado.TabIndex = 234
         Me.txtEstado.Text = "Terminado"
         '
@@ -181,7 +184,7 @@ Partial Class Preventivo_Terminar
         Me.txtTipoServicio.Location = New System.Drawing.Point(165, 63)
         Me.txtTipoServicio.Name = "txtTipoServicio"
         Me.txtTipoServicio.ReadOnly = True
-        Me.txtTipoServicio.Size = New System.Drawing.Size(130, 26)
+        Me.txtTipoServicio.Size = New System.Drawing.Size(130, 31)
         Me.txtTipoServicio.TabIndex = 233
         '
         'txtFechaInicial
@@ -190,7 +193,7 @@ Partial Class Preventivo_Terminar
         Me.txtFechaInicial.Location = New System.Drawing.Point(264, 100)
         Me.txtFechaInicial.Name = "txtFechaInicial"
         Me.txtFechaInicial.ReadOnly = True
-        Me.txtFechaInicial.Size = New System.Drawing.Size(130, 26)
+        Me.txtFechaInicial.Size = New System.Drawing.Size(130, 31)
         Me.txtFechaInicial.TabIndex = 231
         '
         'txtConcepto
@@ -199,7 +202,7 @@ Partial Class Preventivo_Terminar
         Me.txtConcepto.Location = New System.Drawing.Point(93, 29)
         Me.txtConcepto.Name = "txtConcepto"
         Me.txtConcepto.ReadOnly = True
-        Me.txtConcepto.Size = New System.Drawing.Size(301, 26)
+        Me.txtConcepto.Size = New System.Drawing.Size(301, 31)
         Me.txtConcepto.TabIndex = 70
         '
         'txtAtiende
@@ -208,7 +211,7 @@ Partial Class Preventivo_Terminar
         Me.txtAtiende.Location = New System.Drawing.Point(10, 204)
         Me.txtAtiende.Name = "txtAtiende"
         Me.txtAtiende.ReadOnly = True
-        Me.txtAtiende.Size = New System.Drawing.Size(290, 26)
+        Me.txtAtiende.Size = New System.Drawing.Size(290, 31)
         Me.txtAtiende.TabIndex = 69
         '
         'txtObservaciones
@@ -228,7 +231,7 @@ Partial Class Preventivo_Terminar
         Me.Label10.ForeColor = System.Drawing.Color.Black
         Me.Label10.Location = New System.Drawing.Point(6, 32)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(81, 19)
+        Me.Label10.Size = New System.Drawing.Size(98, 23)
         Me.Label10.TabIndex = 66
         Me.Label10.Text = "Concepto"
         '
@@ -239,7 +242,7 @@ Partial Class Preventivo_Terminar
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(6, 66)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(153, 19)
+        Me.Label9.Size = New System.Drawing.Size(186, 23)
         Me.Label9.TabIndex = 65
         Me.Label9.Text = "Tipo de Servicio"
         '
@@ -250,7 +253,7 @@ Partial Class Preventivo_Terminar
         Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(6, 140)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(234, 19)
+        Me.Label8.Size = New System.Drawing.Size(285, 23)
         Me.Label8.TabIndex = 64
         Me.Label8.Text = "Fecha Final de Preventivo"
         '
@@ -261,7 +264,7 @@ Partial Class Preventivo_Terminar
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.Location = New System.Drawing.Point(6, 103)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(252, 19)
+        Me.Label7.Size = New System.Drawing.Size(307, 23)
         Me.Label7.TabIndex = 63
         Me.Label7.Text = "Fecha Inicial de Preventivo"
         '
@@ -272,7 +275,7 @@ Partial Class Preventivo_Terminar
         Me.Label6.ForeColor = System.Drawing.Color.Black
         Me.Label6.Location = New System.Drawing.Point(6, 175)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(342, 19)
+        Me.Label6.Size = New System.Drawing.Size(417, 23)
         Me.Label6.TabIndex = 62
         Me.Label6.Text = "Encargado de Mantenimiento Preventivo"
         '
@@ -283,7 +286,7 @@ Partial Class Preventivo_Terminar
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(409, 66)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(126, 19)
+        Me.Label5.Size = New System.Drawing.Size(153, 23)
         Me.Label5.TabIndex = 61
         Me.Label5.Text = "Observaciones"
         '
@@ -294,7 +297,7 @@ Partial Class Preventivo_Terminar
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Location = New System.Drawing.Point(409, 32)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 19)
+        Me.Label4.Size = New System.Drawing.Size(87, 23)
         Me.Label4.TabIndex = 60
         Me.Label4.Text = "Estado "
         '
@@ -328,7 +331,7 @@ Partial Class Preventivo_Terminar
         Me.txtMarca.Location = New System.Drawing.Point(541, 67)
         Me.txtMarca.Name = "txtMarca"
         Me.txtMarca.ReadOnly = True
-        Me.txtMarca.Size = New System.Drawing.Size(101, 26)
+        Me.txtMarca.Size = New System.Drawing.Size(101, 31)
         Me.txtMarca.TabIndex = 236
         '
         'Label1
@@ -338,7 +341,7 @@ Partial Class Preventivo_Terminar
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(476, 71)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 19)
+        Me.Label1.Size = New System.Drawing.Size(65, 23)
         Me.Label1.TabIndex = 235
         Me.Label1.Text = "Marca"
         '
@@ -348,7 +351,7 @@ Partial Class Preventivo_Terminar
         Me.txtModelo.Location = New System.Drawing.Point(540, 35)
         Me.txtModelo.Name = "txtModelo"
         Me.txtModelo.ReadOnly = True
-        Me.txtModelo.Size = New System.Drawing.Size(101, 26)
+        Me.txtModelo.Size = New System.Drawing.Size(101, 31)
         Me.txtModelo.TabIndex = 234
         '
         'Label13
@@ -358,7 +361,7 @@ Partial Class Preventivo_Terminar
         Me.Label13.ForeColor = System.Drawing.Color.Black
         Me.Label13.Location = New System.Drawing.Point(475, 39)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(63, 19)
+        Me.Label13.Size = New System.Drawing.Size(76, 23)
         Me.Label13.TabIndex = 233
         Me.Label13.Text = "Modelo"
         '
@@ -368,7 +371,7 @@ Partial Class Preventivo_Terminar
         Me.txtinvcapece.Location = New System.Drawing.Point(354, 35)
         Me.txtinvcapece.Name = "txtinvcapece"
         Me.txtinvcapece.ReadOnly = True
-        Me.txtinvcapece.Size = New System.Drawing.Size(101, 26)
+        Me.txtinvcapece.Size = New System.Drawing.Size(101, 31)
         Me.txtinvcapece.TabIndex = 232
         '
         'Label17
@@ -378,7 +381,7 @@ Partial Class Preventivo_Terminar
         Me.Label17.ForeColor = System.Drawing.Color.Black
         Me.Label17.Location = New System.Drawing.Point(258, 39)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(90, 19)
+        Me.Label17.Size = New System.Drawing.Size(109, 23)
         Me.Label17.TabIndex = 230
         Me.Label17.Text = "INVCAPECE"
         '
@@ -389,7 +392,7 @@ Partial Class Preventivo_Terminar
         Me.Label19.ForeColor = System.Drawing.Color.Black
         Me.Label19.Location = New System.Drawing.Point(258, 74)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(63, 19)
+        Me.Label19.Size = New System.Drawing.Size(76, 23)
         Me.Label19.TabIndex = 229
         Me.Label19.Text = "Estado"
         '
@@ -400,7 +403,7 @@ Partial Class Preventivo_Terminar
         Me.cboEstadoRecurso.Items.AddRange(New Object() {"---", "Disponible"})
         Me.cboEstadoRecurso.Location = New System.Drawing.Point(331, 71)
         Me.cboEstadoRecurso.Name = "cboEstadoRecurso"
-        Me.cboEstadoRecurso.Size = New System.Drawing.Size(121, 27)
+        Me.cboEstadoRecurso.Size = New System.Drawing.Size(121, 31)
         Me.cboEstadoRecurso.TabIndex = 226
         '
         'txtCategoria
@@ -409,7 +412,7 @@ Partial Class Preventivo_Terminar
         Me.txtCategoria.Location = New System.Drawing.Point(111, 71)
         Me.txtCategoria.Name = "txtCategoria"
         Me.txtCategoria.ReadOnly = True
-        Me.txtCategoria.Size = New System.Drawing.Size(113, 26)
+        Me.txtCategoria.Size = New System.Drawing.Size(113, 31)
         Me.txtCategoria.TabIndex = 223
         '
         'Label14
@@ -419,7 +422,7 @@ Partial Class Preventivo_Terminar
         Me.Label14.ForeColor = System.Drawing.Color.Black
         Me.Label14.Location = New System.Drawing.Point(6, 74)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(90, 19)
+        Me.Label14.Size = New System.Drawing.Size(109, 23)
         Me.Label14.TabIndex = 220
         Me.Label14.Text = "Categoría"
         '
@@ -430,7 +433,7 @@ Partial Class Preventivo_Terminar
         Me.Label11.ForeColor = System.Drawing.Color.Black
         Me.Label11.Location = New System.Drawing.Point(6, 39)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(99, 19)
+        Me.Label11.Size = New System.Drawing.Size(120, 23)
         Me.Label11.TabIndex = 35
         Me.Label11.Text = "ID Recurso"
         '
@@ -440,7 +443,7 @@ Partial Class Preventivo_Terminar
         Me.txtIdRecurso.Location = New System.Drawing.Point(111, 36)
         Me.txtIdRecurso.Name = "txtIdRecurso"
         Me.txtIdRecurso.ReadOnly = True
-        Me.txtIdRecurso.Size = New System.Drawing.Size(113, 26)
+        Me.txtIdRecurso.Size = New System.Drawing.Size(113, 31)
         Me.txtIdRecurso.TabIndex = 41
         '
         'cmdBuscar
@@ -466,19 +469,19 @@ Partial Class Preventivo_Terminar
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(69, 72)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(135, 19)
+        Me.Label3.Size = New System.Drawing.Size(164, 23)
         Me.Label3.TabIndex = 220
         Me.Label3.Text = "ID PREVENTIVO:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Venus Rising", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Navy
         Me.Label2.Location = New System.Drawing.Point(321, 18)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(487, 21)
+        Me.Label2.Size = New System.Drawing.Size(415, 24)
         Me.Label2.TabIndex = 219
         Me.Label2.Text = "TERMINACIÓN DE SERVICIOS PREVENTIVOS"
         '
@@ -489,7 +492,7 @@ Partial Class Preventivo_Terminar
         Me.txtId.Location = New System.Drawing.Point(210, 70)
         Me.txtId.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(76, 26)
+        Me.txtId.Size = New System.Drawing.Size(76, 31)
         Me.txtId.TabIndex = 228
         '
         'Timer1
@@ -531,7 +534,7 @@ Partial Class Preventivo_Terminar
         Me.Label16.Location = New System.Drawing.Point(409, 23)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(18, 19)
+        Me.Label16.Size = New System.Drawing.Size(21, 23)
         Me.Label16.TabIndex = 242
         Me.Label16.Text = "a"
         '
@@ -542,7 +545,7 @@ Partial Class Preventivo_Terminar
         Me.DTPPeriodoInicio.Location = New System.Drawing.Point(276, 21)
         Me.DTPPeriodoInicio.Margin = New System.Windows.Forms.Padding(2)
         Me.DTPPeriodoInicio.Name = "DTPPeriodoInicio"
-        Me.DTPPeriodoInicio.Size = New System.Drawing.Size(129, 26)
+        Me.DTPPeriodoInicio.Size = New System.Drawing.Size(129, 31)
         Me.DTPPeriodoInicio.TabIndex = 239
         '
         'Label15
@@ -554,7 +557,7 @@ Partial Class Preventivo_Terminar
         Me.Label15.Location = New System.Drawing.Point(218, 24)
         Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(54, 19)
+        Me.Label15.Size = New System.Drawing.Size(65, 23)
         Me.Label15.TabIndex = 241
         Me.Label15.Text = "Fecha"
         '
@@ -565,17 +568,42 @@ Partial Class Preventivo_Terminar
         Me.DTPPeriodoFin.Location = New System.Drawing.Point(431, 20)
         Me.DTPPeriodoFin.Margin = New System.Windows.Forms.Padding(2)
         Me.DTPPeriodoFin.Name = "DTPPeriodoFin"
-        Me.DTPPeriodoFin.Size = New System.Drawing.Size(129, 26)
+        Me.DTPPeriodoFin.Size = New System.Drawing.Size(129, 31)
         Me.DTPPeriodoFin.TabIndex = 240
+        '
+        'btnAyuda
+        '
+        Me.btnAyuda.BackColor = System.Drawing.Color.White
+        Me.btnAyuda.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.AYUDA
+        Me.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnAyuda.Location = New System.Drawing.Point(38, 18)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(46, 43)
+        Me.btnAyuda.TabIndex = 246
+        Me.btnAyuda.UseVisualStyleBackColor = False
+        '
+        'DTP
+        '
+        Me.DTP.Enabled = False
+        Me.DTP.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DTP.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DTP.Location = New System.Drawing.Point(414, 72)
+        Me.DTP.Margin = New System.Windows.Forms.Padding(2)
+        Me.DTP.Name = "DTP"
+        Me.DTP.Size = New System.Drawing.Size(129, 31)
+        Me.DTP.TabIndex = 243
+        Me.DTP.Visible = False
         '
         'Preventivo_Terminar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1060, 680)
+        Me.Controls.Add(Me.DTP)
+        Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.cmdSalir)
@@ -647,4 +675,7 @@ Partial Class Preventivo_Terminar
     Friend WithEvents DTPPeriodoInicio As DateTimePicker
     Friend WithEvents Label15 As Label
     Friend WithEvents DTPPeriodoFin As DateTimePicker
+    Friend WithEvents btnAyuda As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents DTP As DateTimePicker
 End Class
