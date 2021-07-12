@@ -78,11 +78,11 @@ Partial Class RecursoAsignado_Seleccionar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Venus Rising", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(250, 55)
+        Me.Label1.Location = New System.Drawing.Point(252, 55)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(415, 21)
+        Me.Label1.Size = New System.Drawing.Size(410, 25)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "SELECCIONE EL RECURSO ASIGNADO"
         '

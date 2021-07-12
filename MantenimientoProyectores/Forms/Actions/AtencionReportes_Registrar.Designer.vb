@@ -99,13 +99,13 @@ Partial Class AtencionReportes_Registrar
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(316, 15)
+        Me.Label1.Location = New System.Drawing.Point(337, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(366, 24)
+        Me.Label1.Size = New System.Drawing.Size(387, 25)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "REGISTRO DE ATENCIÓN A REPORTES"
+        Me.Label1.Text = "REGISTRO DE ATENCIÓN A FALLAS"
         '
         'Label25
         '
@@ -115,7 +115,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label25.ForeColor = System.Drawing.Color.Black
         Me.Label25.Location = New System.Drawing.Point(912, 547)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(65, 23)
+        Me.Label25.Size = New System.Drawing.Size(54, 19)
         Me.Label25.TabIndex = 191
         Me.Label25.Text = "Salir"
         '
@@ -127,7 +127,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label24.ForeColor = System.Drawing.Color.Black
         Me.Label24.Location = New System.Drawing.Point(913, 454)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(76, 23)
+        Me.Label24.Size = New System.Drawing.Size(63, 19)
         Me.Label24.TabIndex = 208
         Me.Label24.Text = "Grabar"
         '
@@ -139,7 +139,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label23.ForeColor = System.Drawing.Color.Black
         Me.Label23.Location = New System.Drawing.Point(913, 362)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(65, 23)
+        Me.Label23.Size = New System.Drawing.Size(54, 19)
         Me.Label23.TabIndex = 207
         Me.Label23.Text = "Nuevo"
         '
@@ -201,7 +201,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtEstado.Location = New System.Drawing.Point(376, 20)
         Me.txtEstado.Name = "txtEstado"
         Me.txtEstado.ReadOnly = True
-        Me.txtEstado.Size = New System.Drawing.Size(100, 29)
+        Me.txtEstado.Size = New System.Drawing.Size(100, 25)
         Me.txtEstado.TabIndex = 232
         Me.txtEstado.Text = "Pendiente"
         '
@@ -212,7 +212,7 @@ Partial Class AtencionReportes_Registrar
         Me.DTP.Location = New System.Drawing.Point(134, 22)
         Me.DTP.Margin = New System.Windows.Forms.Padding(2)
         Me.DTP.Name = "DTP"
-        Me.DTP.Size = New System.Drawing.Size(129, 31)
+        Me.DTP.Size = New System.Drawing.Size(129, 26)
         Me.DTP.TabIndex = 230
         '
         'txtAtiende
@@ -221,7 +221,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtAtiende.Location = New System.Drawing.Point(137, 68)
         Me.txtAtiende.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAtiende.Name = "txtAtiende"
-        Me.txtAtiende.Size = New System.Drawing.Size(279, 31)
+        Me.txtAtiende.Size = New System.Drawing.Size(279, 26)
         Me.txtAtiende.TabIndex = 227
         '
         'Label5
@@ -267,7 +267,7 @@ Partial Class AtencionReportes_Registrar
         Me.RBNO.Font = New System.Drawing.Font("Consolas", 8.0!, System.Drawing.FontStyle.Bold)
         Me.RBNO.Location = New System.Drawing.Point(605, 68)
         Me.RBNO.Name = "RBNO"
-        Me.RBNO.Size = New System.Drawing.Size(45, 21)
+        Me.RBNO.Size = New System.Drawing.Size(37, 17)
         Me.RBNO.TabIndex = 235
         Me.RBNO.TabStop = True
         Me.RBNO.Text = "No"
@@ -280,7 +280,7 @@ Partial Class AtencionReportes_Registrar
         Me.RBSI.Font = New System.Drawing.Font("Consolas", 8.0!, System.Drawing.FontStyle.Bold)
         Me.RBSI.Location = New System.Drawing.Point(565, 68)
         Me.RBSI.Name = "RBSI"
-        Me.RBSI.Size = New System.Drawing.Size(45, 21)
+        Me.RBSI.Size = New System.Drawing.Size(37, 17)
         Me.RBSI.TabIndex = 234
         Me.RBSI.TabStop = True
         Me.RBSI.Text = "Si"
@@ -307,7 +307,7 @@ Partial Class AtencionReportes_Registrar
         Me.cboTipo.Items.AddRange(New Object() {"INTERNO", "EXTERNO"})
         Me.cboTipo.Location = New System.Drawing.Point(61, 95)
         Me.cboTipo.Name = "cboTipo"
-        Me.cboTipo.Size = New System.Drawing.Size(90, 31)
+        Me.cboTipo.Size = New System.Drawing.Size(90, 27)
         Me.cboTipo.TabIndex = 231
         '
         'txtObservacionRecursos
@@ -316,7 +316,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtObservacionRecursos.Location = New System.Drawing.Point(304, 95)
         Me.txtObservacionRecursos.Margin = New System.Windows.Forms.Padding(2)
         Me.txtObservacionRecursos.Name = "txtObservacionRecursos"
-        Me.txtObservacionRecursos.Size = New System.Drawing.Size(265, 31)
+        Me.txtObservacionRecursos.Size = New System.Drawing.Size(265, 26)
         Me.txtObservacionRecursos.TabIndex = 228
         '
         'Label11
@@ -328,7 +328,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label11.Location = New System.Drawing.Point(11, 98)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(54, 23)
+        Me.Label11.Size = New System.Drawing.Size(45, 19)
         Me.Label11.TabIndex = 226
         Me.Label11.Text = "Tipo"
         '
@@ -341,7 +341,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label6.Location = New System.Drawing.Point(174, 98)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(153, 23)
+        Me.Label6.Size = New System.Drawing.Size(126, 19)
         Me.Label6.TabIndex = 223
         Me.Label6.Text = "Observaciones"
         '
@@ -372,7 +372,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label16.Location = New System.Drawing.Point(424, 28)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(21, 23)
+        Me.Label16.Size = New System.Drawing.Size(18, 19)
         Me.Label16.TabIndex = 238
         Me.Label16.Text = "a"
         '
@@ -385,7 +385,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label2.Location = New System.Drawing.Point(233, 29)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 23)
+        Me.Label2.Size = New System.Drawing.Size(54, 19)
         Me.Label2.TabIndex = 237
         Me.Label2.Text = "Fecha"
         '
@@ -412,7 +412,7 @@ Partial Class AtencionReportes_Registrar
         Me.DTPPeriodoFin.Location = New System.Drawing.Point(446, 25)
         Me.DTPPeriodoFin.Margin = New System.Windows.Forms.Padding(2)
         Me.DTPPeriodoFin.Name = "DTPPeriodoFin"
-        Me.DTPPeriodoFin.Size = New System.Drawing.Size(129, 31)
+        Me.DTPPeriodoFin.Size = New System.Drawing.Size(129, 26)
         Me.DTPPeriodoFin.TabIndex = 236
         '
         'DTPPeriodoInicio
@@ -422,7 +422,7 @@ Partial Class AtencionReportes_Registrar
         Me.DTPPeriodoInicio.Location = New System.Drawing.Point(291, 26)
         Me.DTPPeriodoInicio.Margin = New System.Windows.Forms.Padding(2)
         Me.DTPPeriodoInicio.Name = "DTPPeriodoInicio"
-        Me.DTPPeriodoInicio.Size = New System.Drawing.Size(129, 31)
+        Me.DTPPeriodoInicio.Size = New System.Drawing.Size(129, 26)
         Me.DTPPeriodoInicio.TabIndex = 235
         '
         'cboTipoReporte
@@ -432,7 +432,7 @@ Partial Class AtencionReportes_Registrar
         Me.cboTipoReporte.Items.AddRange(New Object() {"---", "DOCENTE", "INDIVIDUAL"})
         Me.cboTipoReporte.Location = New System.Drawing.Point(121, 25)
         Me.cboTipoReporte.Name = "cboTipoReporte"
-        Me.cboTipoReporte.Size = New System.Drawing.Size(107, 31)
+        Me.cboTipoReporte.Size = New System.Drawing.Size(107, 27)
         Me.cboTipoReporte.TabIndex = 234
         '
         'Label15
@@ -444,7 +444,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label15.Location = New System.Drawing.Point(5, 29)
         Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(142, 23)
+        Me.Label15.Size = New System.Drawing.Size(117, 19)
         Me.Label15.TabIndex = 233
         Me.Label15.Text = "Tipo Reporte"
         '
@@ -455,7 +455,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtEdificio.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEdificio.Name = "txtEdificio"
         Me.txtEdificio.ReadOnly = True
-        Me.txtEdificio.Size = New System.Drawing.Size(59, 31)
+        Me.txtEdificio.Size = New System.Drawing.Size(59, 26)
         Me.txtEdificio.TabIndex = 304
         Me.txtEdificio.Visible = False
         '
@@ -466,7 +466,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtAula.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAula.Name = "txtAula"
         Me.txtAula.ReadOnly = True
-        Me.txtAula.Size = New System.Drawing.Size(55, 31)
+        Me.txtAula.Size = New System.Drawing.Size(55, 26)
         Me.txtAula.TabIndex = 303
         Me.txtAula.Visible = False
         '
@@ -476,7 +476,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtidRecurso.Location = New System.Drawing.Point(119, 23)
         Me.txtidRecurso.Name = "txtidRecurso"
         Me.txtidRecurso.ReadOnly = True
-        Me.txtidRecurso.Size = New System.Drawing.Size(59, 31)
+        Me.txtidRecurso.Size = New System.Drawing.Size(59, 26)
         Me.txtidRecurso.TabIndex = 237
         '
         'lblAula
@@ -487,7 +487,7 @@ Partial Class AtencionReportes_Registrar
         Me.lblAula.Location = New System.Drawing.Point(190, 63)
         Me.lblAula.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAula.Name = "lblAula"
-        Me.lblAula.Size = New System.Drawing.Size(54, 23)
+        Me.lblAula.Size = New System.Drawing.Size(45, 19)
         Me.lblAula.TabIndex = 234
         Me.lblAula.Text = "Aula"
         Me.lblAula.Visible = False
@@ -500,7 +500,7 @@ Partial Class AtencionReportes_Registrar
         Me.lblEdificio.Location = New System.Drawing.Point(11, 63)
         Me.lblEdificio.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEdificio.Name = "lblEdificio"
-        Me.lblEdificio.Size = New System.Drawing.Size(98, 23)
+        Me.lblEdificio.Size = New System.Drawing.Size(81, 19)
         Me.lblEdificio.TabIndex = 233
         Me.lblEdificio.Text = "Edificio"
         Me.lblEdificio.Visible = False
@@ -511,7 +511,7 @@ Partial Class AtencionReportes_Registrar
         Me.cboCategoria.Items.AddRange(New Object() {"---", "CAÑONES", "COMPUTADORAS", "PANTALLAS", "CONTACTOS", "LAMPARAS"})
         Me.cboCategoria.Location = New System.Drawing.Point(470, 22)
         Me.cboCategoria.Name = "cboCategoria"
-        Me.cboCategoria.Size = New System.Drawing.Size(99, 31)
+        Me.cboCategoria.Size = New System.Drawing.Size(99, 27)
         Me.cboCategoria.TabIndex = 224
         '
         'txtinvcapece
@@ -520,7 +520,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtinvcapece.Location = New System.Drawing.Point(286, 23)
         Me.txtinvcapece.Name = "txtinvcapece"
         Me.txtinvcapece.ReadOnly = True
-        Me.txtinvcapece.Size = New System.Drawing.Size(83, 31)
+        Me.txtinvcapece.Size = New System.Drawing.Size(83, 26)
         Me.txtinvcapece.TabIndex = 223
         '
         'txtEstadoRecurso
@@ -529,7 +529,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtEstadoRecurso.Location = New System.Drawing.Point(386, 60)
         Me.txtEstadoRecurso.Name = "txtEstadoRecurso"
         Me.txtEstadoRecurso.ReadOnly = True
-        Me.txtEstadoRecurso.Size = New System.Drawing.Size(99, 31)
+        Me.txtEstadoRecurso.Size = New System.Drawing.Size(99, 26)
         Me.txtEstadoRecurso.TabIndex = 222
         '
         'Label17
@@ -539,7 +539,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label17.ForeColor = System.Drawing.Color.Black
         Me.Label17.Location = New System.Drawing.Point(190, 26)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(109, 23)
+        Me.Label17.Size = New System.Drawing.Size(90, 19)
         Me.Label17.TabIndex = 220
         Me.Label17.Text = "INVCAPECE"
         '
@@ -550,7 +550,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label18.ForeColor = System.Drawing.Color.Black
         Me.Label18.Location = New System.Drawing.Point(376, 26)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(109, 23)
+        Me.Label18.Size = New System.Drawing.Size(90, 19)
         Me.Label18.TabIndex = 219
         Me.Label18.Text = "Categoría"
         '
@@ -561,7 +561,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label19.ForeColor = System.Drawing.Color.Black
         Me.Label19.Location = New System.Drawing.Point(320, 63)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(76, 23)
+        Me.Label19.Size = New System.Drawing.Size(63, 19)
         Me.Label19.TabIndex = 218
         Me.Label19.Text = "Estado"
         '
@@ -588,7 +588,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label20.ForeColor = System.Drawing.Color.Black
         Me.Label20.Location = New System.Drawing.Point(11, 26)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(120, 23)
+        Me.Label20.Size = New System.Drawing.Size(99, 19)
         Me.Label20.TabIndex = 35
         Me.Label20.Text = "ID Recurso"
         '
@@ -620,7 +620,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtEstadoReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEstadoReporte.Name = "txtEstadoReporte"
         Me.txtEstadoReporte.ReadOnly = True
-        Me.txtEstadoReporte.Size = New System.Drawing.Size(119, 31)
+        Me.txtEstadoReporte.Size = New System.Drawing.Size(119, 26)
         Me.txtEstadoReporte.TabIndex = 214
         '
         'txtFecha
@@ -630,7 +630,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtFecha.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.ReadOnly = True
-        Me.txtFecha.Size = New System.Drawing.Size(119, 31)
+        Me.txtFecha.Size = New System.Drawing.Size(119, 26)
         Me.txtFecha.TabIndex = 213
         '
         'txtObservacionesRep
@@ -653,7 +653,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label14.Location = New System.Drawing.Point(389, 27)
         Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(98, 23)
+        Me.Label14.Size = New System.Drawing.Size(81, 19)
         Me.Label14.TabIndex = 208
         Me.Label14.Text = "Concepto"
         '
@@ -666,7 +666,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label12.Location = New System.Drawing.Point(11, 69)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(164, 23)
+        Me.Label12.Size = New System.Drawing.Size(135, 19)
         Me.Label12.TabIndex = 206
         Me.Label12.Text = "Estado Reporte"
         '
@@ -679,7 +679,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label7.Location = New System.Drawing.Point(192, 26)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(65, 23)
+        Me.Label7.Size = New System.Drawing.Size(54, 19)
         Me.Label7.TabIndex = 202
         Me.Label7.Text = "Fecha"
         '
@@ -692,7 +692,7 @@ Partial Class AtencionReportes_Registrar
         Me.Label10.Location = New System.Drawing.Point(11, 26)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(120, 23)
+        Me.Label10.Size = New System.Drawing.Size(99, 19)
         Me.Label10.TabIndex = 197
         Me.Label10.Text = "ID Reporte"
         '
@@ -703,7 +703,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtIdReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIdReporte.Name = "txtIdReporte"
         Me.txtIdReporte.ReadOnly = True
-        Me.txtIdReporte.Size = New System.Drawing.Size(59, 31)
+        Me.txtIdReporte.Size = New System.Drawing.Size(59, 26)
         Me.txtIdReporte.TabIndex = 201
         '
         'txtId
@@ -713,7 +713,7 @@ Partial Class AtencionReportes_Registrar
         Me.txtId.Location = New System.Drawing.Point(212, 85)
         Me.txtId.Margin = New System.Windows.Forms.Padding(2)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(60, 29)
+        Me.txtId.Size = New System.Drawing.Size(60, 24)
         Me.txtId.TabIndex = 223
         '
         'idAtencion
@@ -725,7 +725,7 @@ Partial Class AtencionReportes_Registrar
         Me.idAtencion.Location = New System.Drawing.Point(51, 85)
         Me.idAtencion.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.idAtencion.Name = "idAtencion"
-        Me.idAtencion.Size = New System.Drawing.Size(180, 32)
+        Me.idAtencion.Size = New System.Drawing.Size(142, 24)
         Me.idAtencion.TabIndex = 222
         Me.idAtencion.Text = "ID Atención"
         '
@@ -860,7 +860,7 @@ Partial Class AtencionReportes_Registrar
         '
         'AtencionReportes_Registrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2

@@ -97,12 +97,11 @@ Partial Class Supervision_Registrar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(501, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(378, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(267, 24)
+        Me.Label1.Size = New System.Drawing.Size(305, 25)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "REGISTRO DE SUPERVISIÓN"
         '
@@ -119,11 +118,11 @@ Partial Class Supervision_Registrar
         Me.GroupBox1.Enabled = False
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(76, 107)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(57, 87)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1000, 137)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(750, 111)
         Me.GroupBox1.TabIndex = 175
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "DATOS GENERALES"
@@ -133,10 +132,9 @@ Partial Class Supervision_Registrar
         Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtAula.FormattingEnabled = True
         Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08"})
-        Me.txtAula.Location = New System.Drawing.Point(291, 92)
-        Me.txtAula.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAula.Location = New System.Drawing.Point(218, 75)
         Me.txtAula.Name = "txtAula"
-        Me.txtAula.Size = New System.Drawing.Size(81, 31)
+        Me.txtAula.Size = New System.Drawing.Size(62, 27)
         Me.txtAula.TabIndex = 11
         '
         'txtEdificio
@@ -144,30 +142,29 @@ Partial Class Supervision_Registrar
         Me.txtEdificio.Font = New System.Drawing.Font("Consolas", 12.0!)
         Me.txtEdificio.FormattingEnabled = True
         Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"})
-        Me.txtEdificio.Location = New System.Drawing.Point(135, 92)
-        Me.txtEdificio.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEdificio.Location = New System.Drawing.Point(101, 75)
         Me.txtEdificio.Name = "txtEdificio"
-        Me.txtEdificio.Size = New System.Drawing.Size(81, 31)
+        Me.txtEdificio.Size = New System.Drawing.Size(62, 27)
         Me.txtEdificio.TabIndex = 10
         '
         'DTP
         '
         Me.DTP.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DTP.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DTP.Location = New System.Drawing.Point(645, 43)
-        Me.DTP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DTP.Location = New System.Drawing.Point(484, 35)
+        Me.DTP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DTP.Name = "DTP"
-        Me.DTP.Size = New System.Drawing.Size(151, 31)
+        Me.DTP.Size = New System.Drawing.Size(114, 26)
         Me.DTP.TabIndex = 9
         '
         'txtResponsable
         '
         Me.txtResponsable.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtResponsable.Location = New System.Drawing.Point(157, 43)
-        Me.txtResponsable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtResponsable.Location = New System.Drawing.Point(118, 35)
+        Me.txtResponsable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtResponsable.MaxLength = 100
         Me.txtResponsable.Name = "txtResponsable"
-        Me.txtResponsable.Size = New System.Drawing.Size(373, 31)
+        Me.txtResponsable.Size = New System.Drawing.Size(281, 26)
         Me.txtResponsable.TabIndex = 7
         '
         'Label7
@@ -175,9 +172,10 @@ Partial Class Supervision_Registrar
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(224, 96)
+        Me.Label7.Location = New System.Drawing.Point(168, 78)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 23)
+        Me.Label7.Size = New System.Drawing.Size(45, 19)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Aula"
         '
@@ -186,9 +184,10 @@ Partial Class Supervision_Registrar
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(556, 47)
+        Me.Label6.Location = New System.Drawing.Point(417, 38)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 23)
+        Me.Label6.Size = New System.Drawing.Size(54, 19)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "Fecha"
         '
@@ -197,9 +196,10 @@ Partial Class Supervision_Registrar
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(8, 47)
+        Me.Label5.Location = New System.Drawing.Point(6, 38)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 23)
+        Me.Label5.Size = New System.Drawing.Size(108, 19)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Responsable"
         '
@@ -208,9 +208,10 @@ Partial Class Supervision_Registrar
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(8, 96)
+        Me.Label4.Location = New System.Drawing.Point(6, 78)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(98, 23)
+        Me.Label4.Size = New System.Drawing.Size(81, 19)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Edificio"
         '
@@ -218,10 +219,10 @@ Partial Class Supervision_Registrar
         '
         Me.txtId.Enabled = False
         Me.txtId.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(319, 60)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtId.Location = New System.Drawing.Point(239, 49)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(100, 31)
+        Me.txtId.Size = New System.Drawing.Size(76, 26)
         Me.txtId.TabIndex = 5
         '
         'GroupBox3
@@ -253,11 +254,9 @@ Partial Class Supervision_Registrar
         Me.GroupBox3.Enabled = False
         Me.GroupBox3.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox3.Location = New System.Drawing.Point(76, 528)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Location = New System.Drawing.Point(57, 429)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox3.Size = New System.Drawing.Size(1000, 294)
+        Me.GroupBox3.Size = New System.Drawing.Size(750, 239)
         Me.GroupBox3.TabIndex = 188
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "DATOS SECUNDARIOS"
@@ -266,12 +265,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgVentanas.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgVentanas.ForeColor = System.Drawing.Color.Black
-        Me.txtImgVentanas.Location = New System.Drawing.Point(767, 258)
-        Me.txtImgVentanas.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgVentanas.Location = New System.Drawing.Point(575, 210)
         Me.txtImgVentanas.MaxLength = 225
         Me.txtImgVentanas.Name = "txtImgVentanas"
         Me.txtImgVentanas.ReadOnly = True
-        Me.txtImgVentanas.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgVentanas.Size = New System.Drawing.Size(158, 20)
         Me.txtImgVentanas.TabIndex = 23
         Me.txtImgVentanas.Text = "Haz clic para Seleccionar"
         '
@@ -279,12 +277,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgLamparas.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgLamparas.ForeColor = System.Drawing.Color.Black
-        Me.txtImgLamparas.Location = New System.Drawing.Point(767, 215)
-        Me.txtImgLamparas.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgLamparas.Location = New System.Drawing.Point(575, 175)
         Me.txtImgLamparas.MaxLength = 225
         Me.txtImgLamparas.Name = "txtImgLamparas"
         Me.txtImgLamparas.ReadOnly = True
-        Me.txtImgLamparas.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgLamparas.Size = New System.Drawing.Size(158, 20)
         Me.txtImgLamparas.TabIndex = 22
         Me.txtImgLamparas.Text = "Haz clic para Seleccionar"
         '
@@ -292,12 +289,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgElectri.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgElectri.ForeColor = System.Drawing.Color.Black
-        Me.txtImgElectri.Location = New System.Drawing.Point(767, 172)
-        Me.txtImgElectri.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgElectri.Location = New System.Drawing.Point(575, 140)
         Me.txtImgElectri.MaxLength = 225
         Me.txtImgElectri.Name = "txtImgElectri"
         Me.txtImgElectri.ReadOnly = True
-        Me.txtImgElectri.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgElectri.Size = New System.Drawing.Size(158, 20)
         Me.txtImgElectri.TabIndex = 21
         Me.txtImgElectri.Text = "Haz clic para Seleccionar"
         '
@@ -305,12 +301,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgPintarron.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgPintarron.ForeColor = System.Drawing.Color.Black
-        Me.txtImgPintarron.Location = New System.Drawing.Point(767, 130)
-        Me.txtImgPintarron.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgPintarron.Location = New System.Drawing.Point(575, 106)
         Me.txtImgPintarron.MaxLength = 225
         Me.txtImgPintarron.Name = "txtImgPintarron"
         Me.txtImgPintarron.ReadOnly = True
-        Me.txtImgPintarron.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgPintarron.Size = New System.Drawing.Size(158, 20)
         Me.txtImgPintarron.TabIndex = 20
         Me.txtImgPintarron.Text = "Haz clic para Seleccionar"
         '
@@ -318,12 +313,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgElect.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgElect.ForeColor = System.Drawing.Color.Black
-        Me.txtImgElect.Location = New System.Drawing.Point(767, 89)
-        Me.txtImgElect.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgElect.Location = New System.Drawing.Point(575, 72)
         Me.txtImgElect.MaxLength = 225
         Me.txtImgElect.Name = "txtImgElect"
         Me.txtImgElect.ReadOnly = True
-        Me.txtImgElect.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgElect.Size = New System.Drawing.Size(158, 20)
         Me.txtImgElect.TabIndex = 19
         Me.txtImgElect.Text = "Haz clic para Seleccionar"
         '
@@ -331,12 +325,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgConexiones.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgConexiones.ForeColor = System.Drawing.Color.Black
-        Me.txtImgConexiones.Location = New System.Drawing.Point(767, 47)
-        Me.txtImgConexiones.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgConexiones.Location = New System.Drawing.Point(575, 38)
         Me.txtImgConexiones.MaxLength = 225
         Me.txtImgConexiones.Name = "txtImgConexiones"
         Me.txtImgConexiones.ReadOnly = True
-        Me.txtImgConexiones.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgConexiones.Size = New System.Drawing.Size(158, 20)
         Me.txtImgConexiones.TabIndex = 18
         Me.txtImgConexiones.Text = "Haz clic para Seleccionar"
         '
@@ -345,10 +338,9 @@ Partial Class Supervision_Registrar
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(675, 256)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Location = New System.Drawing.Point(506, 208)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(76, 23)
+        Me.Label19.Size = New System.Drawing.Size(63, 19)
         Me.Label19.TabIndex = 17
         Me.Label19.Text = "Imagen"
         '
@@ -357,10 +349,9 @@ Partial Class Supervision_Registrar
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.Black
-        Me.Label18.Location = New System.Drawing.Point(675, 213)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Location = New System.Drawing.Point(506, 173)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(76, 23)
+        Me.Label18.Size = New System.Drawing.Size(63, 19)
         Me.Label18.TabIndex = 16
         Me.Label18.Text = "Imagen"
         '
@@ -369,10 +360,9 @@ Partial Class Supervision_Registrar
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.Black
-        Me.Label17.Location = New System.Drawing.Point(675, 170)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Location = New System.Drawing.Point(506, 138)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(76, 23)
+        Me.Label17.Size = New System.Drawing.Size(63, 19)
         Me.Label17.TabIndex = 15
         Me.Label17.Text = "Imagen"
         '
@@ -381,10 +371,9 @@ Partial Class Supervision_Registrar
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.Black
-        Me.Label16.Location = New System.Drawing.Point(675, 128)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Location = New System.Drawing.Point(506, 104)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(76, 23)
+        Me.Label16.Size = New System.Drawing.Size(63, 19)
         Me.Label16.TabIndex = 14
         Me.Label16.Text = "Imagen"
         '
@@ -393,10 +382,9 @@ Partial Class Supervision_Registrar
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(675, 86)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Location = New System.Drawing.Point(506, 70)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(76, 23)
+        Me.Label15.Size = New System.Drawing.Size(63, 19)
         Me.Label15.TabIndex = 13
         Me.Label15.Text = "Imagen"
         '
@@ -405,71 +393,64 @@ Partial Class Supervision_Registrar
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(675, 44)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(506, 36)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(76, 23)
+        Me.Label14.Size = New System.Drawing.Size(63, 19)
         Me.Label14.TabIndex = 12
         Me.Label14.Text = "Imagen"
         '
         'txtObsVentanas
         '
         Me.txtObsVentanas.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObsVentanas.Location = New System.Drawing.Point(344, 252)
-        Me.txtObsVentanas.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObsVentanas.Location = New System.Drawing.Point(258, 205)
         Me.txtObsVentanas.MaxLength = 225
         Me.txtObsVentanas.Name = "txtObsVentanas"
-        Me.txtObsVentanas.Size = New System.Drawing.Size(321, 31)
+        Me.txtObsVentanas.Size = New System.Drawing.Size(242, 26)
         Me.txtObsVentanas.TabIndex = 11
         '
         'txtObsLamparas
         '
         Me.txtObsLamparas.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObsLamparas.Location = New System.Drawing.Point(344, 209)
-        Me.txtObsLamparas.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObsLamparas.Location = New System.Drawing.Point(258, 170)
         Me.txtObsLamparas.MaxLength = 225
         Me.txtObsLamparas.Name = "txtObsLamparas"
-        Me.txtObsLamparas.Size = New System.Drawing.Size(321, 31)
+        Me.txtObsLamparas.Size = New System.Drawing.Size(242, 26)
         Me.txtObsLamparas.TabIndex = 10
         '
         'txtObsElectri
         '
         Me.txtObsElectri.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObsElectri.Location = New System.Drawing.Point(344, 166)
-        Me.txtObsElectri.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObsElectri.Location = New System.Drawing.Point(258, 135)
         Me.txtObsElectri.MaxLength = 225
         Me.txtObsElectri.Name = "txtObsElectri"
-        Me.txtObsElectri.Size = New System.Drawing.Size(321, 31)
+        Me.txtObsElectri.Size = New System.Drawing.Size(242, 26)
         Me.txtObsElectri.TabIndex = 9
         '
         'txtObsPintarron
         '
         Me.txtObsPintarron.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObsPintarron.Location = New System.Drawing.Point(344, 124)
-        Me.txtObsPintarron.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObsPintarron.Location = New System.Drawing.Point(258, 101)
         Me.txtObsPintarron.MaxLength = 225
         Me.txtObsPintarron.Name = "txtObsPintarron"
-        Me.txtObsPintarron.Size = New System.Drawing.Size(321, 31)
+        Me.txtObsPintarron.Size = New System.Drawing.Size(242, 26)
         Me.txtObsPintarron.TabIndex = 8
         '
         'txtObsElect
         '
         Me.txtObsElect.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObsElect.Location = New System.Drawing.Point(344, 82)
-        Me.txtObsElect.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObsElect.Location = New System.Drawing.Point(258, 67)
         Me.txtObsElect.MaxLength = 225
         Me.txtObsElect.Name = "txtObsElect"
-        Me.txtObsElect.Size = New System.Drawing.Size(321, 31)
+        Me.txtObsElect.Size = New System.Drawing.Size(242, 26)
         Me.txtObsElect.TabIndex = 7
         '
         'txtObsconex
         '
         Me.txtObsconex.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObsconex.Location = New System.Drawing.Point(344, 41)
-        Me.txtObsconex.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObsconex.Location = New System.Drawing.Point(258, 33)
         Me.txtObsconex.MaxLength = 225
         Me.txtObsconex.Name = "txtObsconex"
-        Me.txtObsconex.Size = New System.Drawing.Size(321, 31)
+        Me.txtObsconex.Size = New System.Drawing.Size(242, 26)
         Me.txtObsconex.TabIndex = 6
         '
         'Label13
@@ -477,10 +458,9 @@ Partial Class Supervision_Registrar
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(8, 256)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(6, 208)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(252, 23)
+        Me.Label13.Size = New System.Drawing.Size(207, 19)
         Me.Label13.TabIndex = 5
         Me.Label13.Text = "Observaciones Ventanas"
         '
@@ -489,10 +469,9 @@ Partial Class Supervision_Registrar
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(8, 213)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(6, 173)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(252, 23)
+        Me.Label12.Size = New System.Drawing.Size(207, 19)
         Me.Label12.TabIndex = 4
         Me.Label12.Text = "Observaciones Lámparas"
         '
@@ -501,10 +480,9 @@ Partial Class Supervision_Registrar
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(8, 170)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(6, 138)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(296, 23)
+        Me.Label11.Size = New System.Drawing.Size(243, 19)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Observaciones Electricidad"
         '
@@ -513,10 +491,9 @@ Partial Class Supervision_Registrar
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(8, 128)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(6, 104)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(263, 23)
+        Me.Label10.Size = New System.Drawing.Size(216, 19)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Observaciones Pintarrón"
         '
@@ -525,10 +502,9 @@ Partial Class Supervision_Registrar
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(8, 86)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(6, 70)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(285, 23)
+        Me.Label9.Size = New System.Drawing.Size(234, 19)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Observaciones Con. Elect."
         '
@@ -537,10 +513,9 @@ Partial Class Supervision_Registrar
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(8, 44)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(6, 36)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(307, 23)
+        Me.Label8.Size = New System.Drawing.Size(252, 19)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Observaciones Caja Conexión"
         '
@@ -549,10 +524,9 @@ Partial Class Supervision_Registrar
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(76, 59)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(57, 48)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(225, 32)
+        Me.Label3.Size = New System.Drawing.Size(178, 24)
         Me.Label3.TabIndex = 220
         Me.Label3.Text = "ID SUPERVISION"
         '
@@ -573,11 +547,9 @@ Partial Class Supervision_Registrar
         Me.GroupBox2.Enabled = False
         Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox2.Location = New System.Drawing.Point(76, 244)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Location = New System.Drawing.Point(57, 198)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox2.Size = New System.Drawing.Size(999, 277)
+        Me.GroupBox2.Size = New System.Drawing.Size(749, 225)
         Me.GroupBox2.TabIndex = 221
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "DETALLES SUPERVISIÓN"
@@ -586,10 +558,9 @@ Partial Class Supervision_Registrar
         '
         Me.NupHorasT.Enabled = False
         Me.NupHorasT.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NupHorasT.Location = New System.Drawing.Point(617, 49)
-        Me.NupHorasT.Margin = New System.Windows.Forms.Padding(4)
+        Me.NupHorasT.Location = New System.Drawing.Point(463, 40)
         Me.NupHorasT.Name = "NupHorasT"
-        Me.NupHorasT.Size = New System.Drawing.Size(65, 24)
+        Me.NupHorasT.Size = New System.Drawing.Size(49, 20)
         Me.NupHorasT.TabIndex = 220
         '
         'cmdBack
@@ -602,10 +573,9 @@ Partial Class Supervision_Registrar
         Me.cmdBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdBack.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdBack.ForeColor = System.Drawing.Color.White
-        Me.cmdBack.Location = New System.Drawing.Point(691, 46)
-        Me.cmdBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmdBack.Location = New System.Drawing.Point(518, 37)
         Me.cmdBack.Name = "cmdBack"
-        Me.cmdBack.Size = New System.Drawing.Size(92, 33)
+        Me.cmdBack.Size = New System.Drawing.Size(69, 27)
         Me.cmdBack.TabIndex = 219
         Me.cmdBack.Text = "Atras"
         Me.cmdBack.UseVisualStyleBackColor = False
@@ -619,10 +589,9 @@ Partial Class Supervision_Registrar
         Me.cmdSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdSeleccionar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdSeleccionar.ForeColor = System.Drawing.Color.White
-        Me.cmdSeleccionar.Location = New System.Drawing.Point(312, 46)
-        Me.cmdSeleccionar.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmdSeleccionar.Location = New System.Drawing.Point(234, 37)
         Me.cmdSeleccionar.Name = "cmdSeleccionar"
-        Me.cmdSeleccionar.Size = New System.Drawing.Size(157, 33)
+        Me.cmdSeleccionar.Size = New System.Drawing.Size(118, 27)
         Me.cmdSeleccionar.TabIndex = 218
         Me.cmdSeleccionar.Text = "Seleccionar"
         Me.cmdSeleccionar.UseVisualStyleBackColor = False
@@ -636,10 +605,9 @@ Partial Class Supervision_Registrar
         Me.cmdAgregaD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdAgregaD.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAgregaD.ForeColor = System.Drawing.Color.White
-        Me.cmdAgregaD.Location = New System.Drawing.Point(791, 46)
-        Me.cmdAgregaD.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmdAgregaD.Location = New System.Drawing.Point(593, 37)
         Me.cmdAgregaD.Name = "cmdAgregaD"
-        Me.cmdAgregaD.Size = New System.Drawing.Size(111, 33)
+        Me.cmdAgregaD.Size = New System.Drawing.Size(83, 27)
         Me.cmdAgregaD.TabIndex = 217
         Me.cmdAgregaD.Text = "Agregar"
         Me.cmdAgregaD.UseVisualStyleBackColor = False
@@ -650,10 +618,9 @@ Partial Class Supervision_Registrar
         Me.LV.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LV.GridLines = True
         Me.LV.HideSelection = False
-        Me.LV.Location = New System.Drawing.Point(13, 130)
-        Me.LV.Margin = New System.Windows.Forms.Padding(4)
+        Me.LV.Location = New System.Drawing.Point(10, 106)
         Me.LV.Name = "LV"
-        Me.LV.Size = New System.Drawing.Size(963, 138)
+        Me.LV.Size = New System.Drawing.Size(723, 113)
         Me.LV.TabIndex = 21
         Me.LV.UseCompatibleStateImageBehavior = False
         Me.LV.View = System.Windows.Forms.View.Details
@@ -682,12 +649,11 @@ Partial Class Supervision_Registrar
         '
         Me.txtImgRuta.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgRuta.ForeColor = System.Drawing.Color.Black
-        Me.txtImgRuta.Location = New System.Drawing.Point(691, 98)
-        Me.txtImgRuta.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtImgRuta.Location = New System.Drawing.Point(518, 80)
         Me.txtImgRuta.MaxLength = 225
         Me.txtImgRuta.Name = "txtImgRuta"
         Me.txtImgRuta.ReadOnly = True
-        Me.txtImgRuta.Size = New System.Drawing.Size(209, 24)
+        Me.txtImgRuta.Size = New System.Drawing.Size(158, 20)
         Me.txtImgRuta.TabIndex = 20
         Me.txtImgRuta.Text = "Haz clic para Seleccionar"
         '
@@ -696,21 +662,20 @@ Partial Class Supervision_Registrar
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.Black
-        Me.Label26.Location = New System.Drawing.Point(599, 96)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label26.Location = New System.Drawing.Point(449, 78)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(76, 23)
+        Me.Label26.Size = New System.Drawing.Size(63, 19)
         Me.Label26.TabIndex = 19
         Me.Label26.Text = "Imagen"
         '
         'txtObservaciones
         '
         Me.txtObservaciones.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObservaciones.Location = New System.Drawing.Point(272, 92)
-        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtObservaciones.Location = New System.Drawing.Point(204, 75)
+        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtObservaciones.MaxLength = 225
         Me.txtObservaciones.Name = "txtObservaciones"
-        Me.txtObservaciones.Size = New System.Drawing.Size(319, 31)
+        Me.txtObservaciones.Size = New System.Drawing.Size(240, 26)
         Me.txtObservaciones.TabIndex = 12
         '
         'Label22
@@ -718,9 +683,10 @@ Partial Class Supervision_Registrar
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(97, 96)
+        Me.Label22.Location = New System.Drawing.Point(73, 78)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(153, 23)
+        Me.Label22.Size = New System.Drawing.Size(126, 19)
         Me.Label22.TabIndex = 11
         Me.Label22.Text = "Observaciones"
         '
@@ -728,9 +694,10 @@ Partial Class Supervision_Registrar
         '
         Me.Label21.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.Black
-        Me.Label21.Location = New System.Drawing.Point(481, 36)
+        Me.Label21.Location = New System.Drawing.Point(361, 29)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(137, 60)
+        Me.Label21.Size = New System.Drawing.Size(103, 49)
         Me.Label21.TabIndex = 9
         Me.Label21.Text = "Horas Trabajadas"
         '
@@ -738,20 +705,21 @@ Partial Class Supervision_Registrar
         '
         Me.txtIdRecurso.Enabled = False
         Me.txtIdRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdRecurso.Location = New System.Drawing.Point(236, 47)
-        Me.txtIdRecurso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtIdRecurso.Location = New System.Drawing.Point(177, 38)
+        Me.txtIdRecurso.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtIdRecurso.Name = "txtIdRecurso"
         Me.txtIdRecurso.ReadOnly = True
-        Me.txtIdRecurso.Size = New System.Drawing.Size(55, 31)
+        Me.txtIdRecurso.Size = New System.Drawing.Size(42, 26)
         Me.txtIdRecurso.TabIndex = 8
         '
         'Label20
         '
         Me.Label20.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(97, 49)
+        Me.Label20.Location = New System.Drawing.Point(73, 40)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(141, 47)
+        Me.Label20.Size = New System.Drawing.Size(106, 38)
         Me.Label20.TabIndex = 7
         Me.Label20.Text = "ID Recurso "
         '
@@ -761,10 +729,9 @@ Partial Class Supervision_Registrar
         Me.cmdSalir.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Salir
         Me.cmdSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdSalir.Location = New System.Drawing.Point(1221, 606)
-        Me.cmdSalir.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmdSalir.Location = New System.Drawing.Point(916, 492)
         Me.cmdSalir.Name = "cmdSalir"
-        Me.cmdSalir.Size = New System.Drawing.Size(65, 66)
+        Me.cmdSalir.Size = New System.Drawing.Size(49, 54)
         Me.cmdSalir.TabIndex = 227
         Me.cmdSalir.UseVisualStyleBackColor = False
         '
@@ -774,10 +741,9 @@ Partial Class Supervision_Registrar
         Me.Label24.BackColor = System.Drawing.Color.White
         Me.Label24.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(1217, 559)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label24.Location = New System.Drawing.Point(913, 454)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(76, 23)
+        Me.Label24.Size = New System.Drawing.Size(63, 19)
         Me.Label24.TabIndex = 226
         Me.Label24.Text = "Grabar"
         '
@@ -787,10 +753,9 @@ Partial Class Supervision_Registrar
         Me.Label23.BackColor = System.Drawing.Color.White
         Me.Label23.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(1217, 446)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Location = New System.Drawing.Point(913, 362)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(65, 23)
+        Me.Label23.Size = New System.Drawing.Size(54, 19)
         Me.Label23.TabIndex = 225
         Me.Label23.Text = "Nuevo"
         '
@@ -801,10 +766,9 @@ Partial Class Supervision_Registrar
         Me.cmdGrabar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdGrabar.Enabled = False
         Me.cmdGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdGrabar.Location = New System.Drawing.Point(1221, 489)
-        Me.cmdGrabar.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmdGrabar.Location = New System.Drawing.Point(916, 397)
         Me.cmdGrabar.Name = "cmdGrabar"
-        Me.cmdGrabar.Size = New System.Drawing.Size(65, 66)
+        Me.cmdGrabar.Size = New System.Drawing.Size(49, 54)
         Me.cmdGrabar.TabIndex = 224
         Me.cmdGrabar.UseVisualStyleBackColor = False
         '
@@ -814,10 +778,9 @@ Partial Class Supervision_Registrar
         Me.cmdNuevo.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Nuevo
         Me.cmdNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdNuevo.Location = New System.Drawing.Point(1221, 382)
-        Me.cmdNuevo.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmdNuevo.Location = New System.Drawing.Point(916, 310)
         Me.cmdNuevo.Name = "cmdNuevo"
-        Me.cmdNuevo.Size = New System.Drawing.Size(65, 62)
+        Me.cmdNuevo.Size = New System.Drawing.Size(49, 50)
         Me.cmdNuevo.TabIndex = 223
         Me.cmdNuevo.UseVisualStyleBackColor = False
         '
@@ -827,10 +790,9 @@ Partial Class Supervision_Registrar
         Me.Label25.BackColor = System.Drawing.Color.White
         Me.Label25.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.Black
-        Me.Label25.Location = New System.Drawing.Point(1216, 673)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label25.Location = New System.Drawing.Point(912, 547)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(65, 23)
+        Me.Label25.Size = New System.Drawing.Size(54, 19)
         Me.Label25.TabIndex = 222
         Me.Label25.Text = "Salir"
         '
@@ -838,10 +800,9 @@ Partial Class Supervision_Registrar
         '
         Me.chkDatosSecundarios.AutoSize = True
         Me.chkDatosSecundarios.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkDatosSecundarios.Location = New System.Drawing.Point(372, 535)
-        Me.chkDatosSecundarios.Margin = New System.Windows.Forms.Padding(4)
+        Me.chkDatosSecundarios.Location = New System.Drawing.Point(279, 435)
         Me.chkDatosSecundarios.Name = "chkDatosSecundarios"
-        Me.chkDatosSecundarios.Size = New System.Drawing.Size(18, 17)
+        Me.chkDatosSecundarios.Size = New System.Drawing.Size(15, 14)
         Me.chkDatosSecundarios.TabIndex = 228
         Me.chkDatosSecundarios.UseVisualStyleBackColor = True
         '
@@ -858,20 +819,21 @@ Partial Class Supervision_Registrar
         Me.btnAyuda.BackColor = System.Drawing.Color.White
         Me.btnAyuda.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.AYUDA
         Me.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnAyuda.Location = New System.Drawing.Point(12, 10)
+        Me.btnAyuda.Location = New System.Drawing.Point(9, 8)
+        Me.btnAyuda.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(45, 44)
+        Me.btnAyuda.Size = New System.Drawing.Size(34, 36)
         Me.btnAyuda.TabIndex = 247
         Me.btnAyuda.UseVisualStyleBackColor = False
         '
         'Supervision_Registrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1413, 837)
+        Me.ClientSize = New System.Drawing.Size(1060, 680)
         Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.chkDatosSecundarios)
         Me.Controls.Add(Me.cmdSalir)
@@ -887,7 +849,6 @@ Partial Class Supervision_Registrar
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Supervision_Registrar"
         Me.Text = "Supervision_Registrar"
         Me.GroupBox1.ResumeLayout(False)

@@ -8,7 +8,7 @@ Public Class Reportes_Registrar
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If txtEdificio.SelectedIndex = 0 Or txtAula.SelectedIndex = 0 Or cboHHF.SelectedIndex = 0 Or cboHHI.SelectedIndex = 0 Or
             cboMMF.SelectedIndex = 0 Or cboMMI.SelectedIndex = 0 Then
-            MsgBox("Asegurese de haber seleccionado parametros correctos!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡Asegurese de haber seleccionado parámetros correctos!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim transaction As MySqlTransaction
             transaction = connection.BeginTransaction()
@@ -103,32 +103,4 @@ Public Class Reportes_Registrar
         opcion = "ReporteDocente"
         Ayuda.ShowDialog()
     End Sub
-
-    'Private Sub cboHHI_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboHHI.SelectedIndexChanged
-    '    cboHHF.Items.Clear()
-    '    For i = 0 To cboHHF.Items.Count - 1
-    '        cboHHF.Items.Add(cboHHI.Items.Item(i))
-    '    Next
-    '    For i = cboHHI.SelectedIndex To 0 Step -1
-    '        cboHHF.Items.Remove(0)
-    '    Next
-    'End Sub
-    'Private Sub txtEdificio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtEdificio.SelectedIndexChanged
-    '    If txtEdificio.SelectedIndex >= 27 Then
-    '        txtAula.SelectedIndex = 9
-    '        txtAula.Enabled = False
-    '    Else
-    '        txtAula.Enabled = True
-    '        txtAula.SelectedIndex = 0
-    '    End If
-    'End Sub
-
-    'Private Sub txtAula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtAula.SelectedIndexChanged
-    '    If txtEdificio.SelectedIndex < 27 Then
-    '        If txtAula.SelectedIndex = 9 Then
-    '            MsgBox("Un Edificio con A-Z no puede llevar un '*' como Aula!", MsgBoxStyle.Information, "ATENCIÓN")
-    '            txtAula.SelectedIndex = 0
-    '        End If
-    '    End If
-    'End Sub
 End Class

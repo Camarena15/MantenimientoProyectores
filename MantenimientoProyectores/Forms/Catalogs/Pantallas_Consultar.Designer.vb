@@ -24,6 +24,13 @@ Partial Class Pantallas_Consultar
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.IdRecurso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Invcapece = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dimension = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.cmdSalir = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -51,13 +58,6 @@ Partial Class Pantallas_Consultar
         Me.cmdSiguiente = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pctCargando = New System.Windows.Forms.PictureBox()
-        Me.IdRecurso = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Invcapece = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dimension = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -79,15 +79,64 @@ Partial Class Pantallas_Consultar
         Me.dgv.Size = New System.Drawing.Size(722, 194)
         Me.dgv.TabIndex = 256
         '
+        'IdRecurso
+        '
+        Me.IdRecurso.HeaderText = "ID Recurso"
+        Me.IdRecurso.Name = "IdRecurso"
+        Me.IdRecurso.ReadOnly = True
+        Me.IdRecurso.Width = 80
+        '
+        'Tipo
+        '
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        Me.Tipo.ReadOnly = True
+        Me.Tipo.Width = 80
+        '
+        'Invcapece
+        '
+        Me.Invcapece.HeaderText = "INVCAPECE"
+        Me.Invcapece.Name = "Invcapece"
+        Me.Invcapece.ReadOnly = True
+        Me.Invcapece.Width = 75
+        '
+        'Marca
+        '
+        Me.Marca.HeaderText = "Marca"
+        Me.Marca.Name = "Marca"
+        Me.Marca.ReadOnly = True
+        Me.Marca.Width = 110
+        '
+        'Modelo
+        '
+        Me.Modelo.HeaderText = "Modelo"
+        Me.Modelo.Name = "Modelo"
+        Me.Modelo.ReadOnly = True
+        Me.Modelo.Width = 110
+        '
+        'Dimension
+        '
+        Me.Dimension.HeaderText = "Dimensión"
+        Me.Dimension.Name = "Dimension"
+        Me.Dimension.ReadOnly = True
+        Me.Dimension.Width = 75
+        '
+        'Estado
+        '
+        Me.Estado.HeaderText = "Estado"
+        Me.Estado.Name = "Estado"
+        Me.Estado.ReadOnly = True
+        Me.Estado.Width = 120
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Venus Rising", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label8.ForeColor = System.Drawing.Color.Navy
-        Me.Label8.Location = New System.Drawing.Point(371, 15)
+        Me.Label8.Location = New System.Drawing.Point(380, 15)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(319, 22)
+        Me.Label8.Size = New System.Drawing.Size(301, 25)
         Me.Label8.TabIndex = 255
         Me.Label8.Text = "CONSULTA DE PANTALLAS"
         '
@@ -399,55 +448,6 @@ Partial Class Pantallas_Consultar
         Me.pctCargando.TabIndex = 303
         Me.pctCargando.TabStop = False
         Me.pctCargando.Visible = False
-        '
-        'IdRecurso
-        '
-        Me.IdRecurso.HeaderText = "ID Recurso"
-        Me.IdRecurso.Name = "IdRecurso"
-        Me.IdRecurso.ReadOnly = True
-        Me.IdRecurso.Width = 80
-        '
-        'Tipo
-        '
-        Me.Tipo.HeaderText = "Tipo"
-        Me.Tipo.Name = "Tipo"
-        Me.Tipo.ReadOnly = True
-        Me.Tipo.Width = 80
-        '
-        'Invcapece
-        '
-        Me.Invcapece.HeaderText = "INVCAPECE"
-        Me.Invcapece.Name = "Invcapece"
-        Me.Invcapece.ReadOnly = True
-        Me.Invcapece.Width = 75
-        '
-        'Marca
-        '
-        Me.Marca.HeaderText = "Marca"
-        Me.Marca.Name = "Marca"
-        Me.Marca.ReadOnly = True
-        Me.Marca.Width = 110
-        '
-        'Modelo
-        '
-        Me.Modelo.HeaderText = "Modelo"
-        Me.Modelo.Name = "Modelo"
-        Me.Modelo.ReadOnly = True
-        Me.Modelo.Width = 110
-        '
-        'Dimension
-        '
-        Me.Dimension.HeaderText = "Dimensión"
-        Me.Dimension.Name = "Dimension"
-        Me.Dimension.ReadOnly = True
-        Me.Dimension.Width = 75
-        '
-        'Estado
-        '
-        Me.Estado.HeaderText = "Estado"
-        Me.Estado.Name = "Estado"
-        Me.Estado.ReadOnly = True
-        Me.Estado.Width = 120
         '
         'Pantallas_Consultar
         '

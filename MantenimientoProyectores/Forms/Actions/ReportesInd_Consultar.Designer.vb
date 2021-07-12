@@ -76,10 +76,9 @@ Partial Class ReportesInd_Consultar
         Me.Label25.AutoSize = True
         Me.Label25.BackColor = System.Drawing.Color.White
         Me.Label25.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(1253, 455)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label25.Location = New System.Drawing.Point(940, 370)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(65, 23)
+        Me.Label25.Size = New System.Drawing.Size(54, 19)
         Me.Label25.TabIndex = 288
         Me.Label25.Text = "Salir"
         '
@@ -89,10 +88,9 @@ Partial Class ReportesInd_Consultar
         Me.cmdSalir.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Salir
         Me.cmdSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdSalir.Location = New System.Drawing.Point(1255, 391)
-        Me.cmdSalir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdSalir.Location = New System.Drawing.Point(941, 318)
         Me.cmdSalir.Name = "cmdSalir"
-        Me.cmdSalir.Size = New System.Drawing.Size(65, 62)
+        Me.cmdSalir.Size = New System.Drawing.Size(49, 50)
         Me.cmdSalir.TabIndex = 287
         Me.cmdSalir.UseVisualStyleBackColor = False
         '
@@ -100,10 +98,9 @@ Partial Class ReportesInd_Consultar
         '
         Me.cmdInicio.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Inicio
         Me.cmdInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdInicio.Location = New System.Drawing.Point(341, 737)
-        Me.cmdInicio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdInicio.Location = New System.Drawing.Point(256, 599)
         Me.cmdInicio.Name = "cmdInicio"
-        Me.cmdInicio.Size = New System.Drawing.Size(100, 28)
+        Me.cmdInicio.Size = New System.Drawing.Size(75, 23)
         Me.cmdInicio.TabIndex = 283
         Me.cmdInicio.Text = " "
         Me.cmdInicio.UseVisualStyleBackColor = True
@@ -112,10 +109,9 @@ Partial Class ReportesInd_Consultar
         '
         Me.cmdAnterior.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Anterior
         Me.cmdAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdAnterior.Location = New System.Drawing.Point(471, 737)
-        Me.cmdAnterior.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdAnterior.Location = New System.Drawing.Point(353, 599)
         Me.cmdAnterior.Name = "cmdAnterior"
-        Me.cmdAnterior.Size = New System.Drawing.Size(100, 28)
+        Me.cmdAnterior.Size = New System.Drawing.Size(75, 23)
         Me.cmdAnterior.TabIndex = 284
         Me.cmdAnterior.Text = " "
         Me.cmdAnterior.UseVisualStyleBackColor = True
@@ -124,10 +120,9 @@ Partial Class ReportesInd_Consultar
         '
         Me.cmdUltimo.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Ultimo
         Me.cmdUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdUltimo.Location = New System.Drawing.Point(733, 737)
-        Me.cmdUltimo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdUltimo.Location = New System.Drawing.Point(550, 599)
         Me.cmdUltimo.Name = "cmdUltimo"
-        Me.cmdUltimo.Size = New System.Drawing.Size(100, 28)
+        Me.cmdUltimo.Size = New System.Drawing.Size(75, 23)
         Me.cmdUltimo.TabIndex = 286
         Me.cmdUltimo.Text = " "
         Me.cmdUltimo.UseVisualStyleBackColor = True
@@ -136,10 +131,9 @@ Partial Class ReportesInd_Consultar
         '
         Me.cmdSiguiente.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Siguiente
         Me.cmdSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdSiguiente.Location = New System.Drawing.Point(600, 737)
-        Me.cmdSiguiente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdSiguiente.Location = New System.Drawing.Point(450, 599)
         Me.cmdSiguiente.Name = "cmdSiguiente"
-        Me.cmdSiguiente.Size = New System.Drawing.Size(100, 28)
+        Me.cmdSiguiente.Size = New System.Drawing.Size(75, 23)
         Me.cmdSiguiente.TabIndex = 285
         Me.cmdSiguiente.Text = " "
         Me.cmdSiguiente.UseVisualStyleBackColor = True
@@ -149,11 +143,11 @@ Partial Class ReportesInd_Consultar
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.DGV)
         Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 8.0!)
-        Me.GroupBox2.Location = New System.Drawing.Point(88, 522)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Location = New System.Drawing.Point(66, 424)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(1000, 220)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(750, 179)
         Me.GroupBox2.TabIndex = 282
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "CONSULTA GENERAL"
@@ -163,10 +157,9 @@ Partial Class ReportesInd_Consultar
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(7, -5)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(5, -4)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(220, 28)
+        Me.Label13.Size = New System.Drawing.Size(170, 22)
         Me.Label13.TabIndex = 266
         Me.Label13.Text = "CONSULTA GENERAL"
         '
@@ -175,13 +168,13 @@ Partial Class ReportesInd_Consultar
         Me.DGV.BackgroundColor = System.Drawing.Color.White
         Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column8, Me.Column9})
-        Me.DGV.Location = New System.Drawing.Point(121, 41)
-        Me.DGV.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DGV.Location = New System.Drawing.Point(91, 33)
+        Me.DGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DGV.Name = "DGV"
         Me.DGV.ReadOnly = True
         Me.DGV.RowHeadersWidth = 51
         Me.DGV.RowTemplate.Height = 24
-        Me.DGV.Size = New System.Drawing.Size(752, 164)
+        Me.DGV.Size = New System.Drawing.Size(564, 133)
         Me.DGV.TabIndex = 207
         '
         'Column1
@@ -237,11 +230,11 @@ Partial Class ReportesInd_Consultar
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(88, 139)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(66, 113)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1000, 236)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(750, 192)
         Me.GroupBox1.TabIndex = 281
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "CONSULTA INDIVIDUAL"
@@ -249,22 +242,21 @@ Partial Class ReportesInd_Consultar
         'txtEstado
         '
         Me.txtEstado.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEstado.Location = New System.Drawing.Point(677, 94)
-        Me.txtEstado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEstado.Location = New System.Drawing.Point(508, 76)
         Me.txtEstado.Name = "txtEstado"
         Me.txtEstado.ReadOnly = True
-        Me.txtEstado.Size = New System.Drawing.Size(132, 31)
+        Me.txtEstado.Size = New System.Drawing.Size(100, 26)
         Me.txtEstado.TabIndex = 323
         '
         'txtObservaciones
         '
         Me.txtObservaciones.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtObservaciones.Location = New System.Drawing.Point(147, 135)
-        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtObservaciones.Location = New System.Drawing.Point(110, 110)
+        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtObservaciones.Multiline = True
         Me.txtObservaciones.Name = "txtObservaciones"
         Me.txtObservaciones.ReadOnly = True
-        Me.txtObservaciones.Size = New System.Drawing.Size(411, 86)
+        Me.txtObservaciones.Size = New System.Drawing.Size(309, 71)
         Me.txtObservaciones.TabIndex = 322
         '
         'Label11
@@ -272,9 +264,10 @@ Partial Class ReportesInd_Consultar
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(587, 97)
+        Me.Label11.Location = New System.Drawing.Point(440, 79)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(76, 23)
+        Me.Label11.Size = New System.Drawing.Size(63, 19)
         Me.Label11.TabIndex = 321
         Me.Label11.Text = "Estado"
         '
@@ -283,9 +276,10 @@ Partial Class ReportesInd_Consultar
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(7, 135)
+        Me.Label12.Location = New System.Drawing.Point(5, 110)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(98, 23)
+        Me.Label12.Size = New System.Drawing.Size(81, 19)
         Me.Label12.TabIndex = 320
         Me.Label12.Text = "Concepto"
         '
@@ -294,29 +288,29 @@ Partial Class ReportesInd_Consultar
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(5, 97)
+        Me.Label5.Location = New System.Drawing.Point(4, 79)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(186, 23)
+        Me.Label5.Size = New System.Drawing.Size(153, 19)
         Me.Label5.TabIndex = 318
         Me.Label5.Text = "Fecha de Reporte"
         '
         'txtFecha
         '
         Me.txtFecha.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFecha.Location = New System.Drawing.Point(216, 94)
-        Me.txtFecha.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtFecha.Location = New System.Drawing.Point(162, 76)
+        Me.txtFecha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.ReadOnly = True
-        Me.txtFecha.Size = New System.Drawing.Size(160, 31)
+        Me.txtFecha.Size = New System.Drawing.Size(121, 26)
         Me.txtFecha.TabIndex = 317
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(384, 41)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtId.Location = New System.Drawing.Point(288, 33)
         Me.txtId.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(101, 35)
+        Me.txtId.Size = New System.Drawing.Size(76, 30)
         Me.txtId.TabIndex = 294
         '
         'cmdBuscar
@@ -328,10 +322,9 @@ Partial Class ReportesInd_Consultar
         Me.cmdBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdBuscar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdBuscar.ForeColor = System.Drawing.Color.White
-        Me.cmdBuscar.Location = New System.Drawing.Point(500, 41)
-        Me.cmdBuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdBuscar.Location = New System.Drawing.Point(375, 33)
         Me.cmdBuscar.Name = "cmdBuscar"
-        Me.cmdBuscar.Size = New System.Drawing.Size(143, 33)
+        Me.cmdBuscar.Size = New System.Drawing.Size(107, 27)
         Me.cmdBuscar.TabIndex = 285
         Me.cmdBuscar.Text = "Buscar"
         Me.cmdBuscar.UseVisualStyleBackColor = False
@@ -341,20 +334,22 @@ Partial Class ReportesInd_Consultar
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(5, 47)
+        Me.Label3.Location = New System.Drawing.Point(4, 38)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(340, 23)
+        Me.Label3.Size = New System.Drawing.Size(279, 19)
         Me.Label3.TabIndex = 208
         Me.Label3.Text = "INGRESE EL ID QUE DESEE BUSCAR"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(392, 11)
+        Me.Label1.Location = New System.Drawing.Point(307, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(410, 25)
+        Me.Label1.Size = New System.Drawing.Size(446, 25)
         Me.Label1.TabIndex = 289
         Me.Label1.Text = "CONSULTA DE REPORTES INDIVIDUALES"
         '
@@ -374,11 +369,9 @@ Partial Class ReportesInd_Consultar
         Me.GBRecurso.Controls.Add(Me.Label20)
         Me.GBRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold)
         Me.GBRecurso.ForeColor = System.Drawing.Color.Black
-        Me.GBRecurso.Location = New System.Drawing.Point(88, 382)
-        Me.GBRecurso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GBRecurso.Location = New System.Drawing.Point(66, 310)
         Me.GBRecurso.Name = "GBRecurso"
-        Me.GBRecurso.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GBRecurso.Size = New System.Drawing.Size(1000, 135)
+        Me.GBRecurso.Size = New System.Drawing.Size(750, 110)
         Me.GBRecurso.TabIndex = 290
         Me.GBRecurso.TabStop = False
         Me.GBRecurso.Text = "INFORMACIÓN DEL RECURSO:"
@@ -386,31 +379,28 @@ Partial Class ReportesInd_Consultar
         'txtidRecurso
         '
         Me.txtidRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidRecurso.Location = New System.Drawing.Point(148, 36)
-        Me.txtidRecurso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtidRecurso.Location = New System.Drawing.Point(111, 29)
         Me.txtidRecurso.Name = "txtidRecurso"
         Me.txtidRecurso.ReadOnly = True
-        Me.txtidRecurso.Size = New System.Drawing.Size(133, 31)
+        Me.txtidRecurso.Size = New System.Drawing.Size(101, 26)
         Me.txtidRecurso.TabIndex = 230
         '
         'txtCategoria
         '
         Me.txtCategoria.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategoria.Location = New System.Drawing.Point(148, 80)
-        Me.txtCategoria.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCategoria.Location = New System.Drawing.Point(111, 65)
         Me.txtCategoria.Name = "txtCategoria"
         Me.txtCategoria.ReadOnly = True
-        Me.txtCategoria.Size = New System.Drawing.Size(133, 31)
+        Me.txtCategoria.Size = New System.Drawing.Size(101, 26)
         Me.txtCategoria.TabIndex = 229
         '
         'txtMarca
         '
         Me.txtMarca.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMarca.Location = New System.Drawing.Point(675, 75)
-        Me.txtMarca.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMarca.Location = New System.Drawing.Point(506, 61)
         Me.txtMarca.Name = "txtMarca"
         Me.txtMarca.ReadOnly = True
-        Me.txtMarca.Size = New System.Drawing.Size(133, 31)
+        Me.txtMarca.Size = New System.Drawing.Size(101, 26)
         Me.txtMarca.TabIndex = 228
         '
         'Label2
@@ -418,21 +408,19 @@ Partial Class ReportesInd_Consultar
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(588, 80)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(441, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 23)
+        Me.Label2.Size = New System.Drawing.Size(54, 19)
         Me.Label2.TabIndex = 227
         Me.Label2.Text = "Marca"
         '
         'txtModelo
         '
         Me.txtModelo.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtModelo.Location = New System.Drawing.Point(673, 36)
-        Me.txtModelo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtModelo.Location = New System.Drawing.Point(505, 29)
         Me.txtModelo.Name = "txtModelo"
         Me.txtModelo.ReadOnly = True
-        Me.txtModelo.Size = New System.Drawing.Size(133, 31)
+        Me.txtModelo.Size = New System.Drawing.Size(101, 26)
         Me.txtModelo.TabIndex = 226
         '
         'Label14
@@ -440,31 +428,28 @@ Partial Class ReportesInd_Consultar
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(587, 41)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(440, 33)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(76, 23)
+        Me.Label14.Size = New System.Drawing.Size(63, 19)
         Me.Label14.TabIndex = 225
         Me.Label14.Text = "Modelo"
         '
         'txtinvcapece
         '
         Me.txtinvcapece.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtinvcapece.Location = New System.Drawing.Point(425, 36)
-        Me.txtinvcapece.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtinvcapece.Location = New System.Drawing.Point(319, 29)
         Me.txtinvcapece.Name = "txtinvcapece"
         Me.txtinvcapece.ReadOnly = True
-        Me.txtinvcapece.Size = New System.Drawing.Size(133, 31)
+        Me.txtinvcapece.Size = New System.Drawing.Size(101, 26)
         Me.txtinvcapece.TabIndex = 223
         '
         'txtEstadoRecurso
         '
         Me.txtEstadoRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEstadoRecurso.Location = New System.Drawing.Point(425, 80)
-        Me.txtEstadoRecurso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEstadoRecurso.Location = New System.Drawing.Point(319, 65)
         Me.txtEstadoRecurso.Name = "txtEstadoRecurso"
         Me.txtEstadoRecurso.ReadOnly = True
-        Me.txtEstadoRecurso.Size = New System.Drawing.Size(133, 31)
+        Me.txtEstadoRecurso.Size = New System.Drawing.Size(101, 26)
         Me.txtEstadoRecurso.TabIndex = 222
         '
         'Label17
@@ -472,10 +457,9 @@ Partial Class ReportesInd_Consultar
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.Black
-        Me.Label17.Location = New System.Drawing.Point(297, 41)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Location = New System.Drawing.Point(223, 33)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(109, 23)
+        Me.Label17.Size = New System.Drawing.Size(90, 19)
         Me.Label17.TabIndex = 220
         Me.Label17.Text = "INVCAPECE"
         '
@@ -484,10 +468,9 @@ Partial Class ReportesInd_Consultar
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.Black
-        Me.Label18.Location = New System.Drawing.Point(8, 84)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Location = New System.Drawing.Point(6, 68)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(109, 23)
+        Me.Label18.Size = New System.Drawing.Size(90, 19)
         Me.Label18.TabIndex = 219
         Me.Label18.Text = "Categoría"
         '
@@ -496,10 +479,9 @@ Partial Class ReportesInd_Consultar
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(297, 84)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Location = New System.Drawing.Point(223, 68)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(76, 23)
+        Me.Label19.Size = New System.Drawing.Size(63, 19)
         Me.Label19.TabIndex = 218
         Me.Label19.Text = "Estado"
         '
@@ -508,10 +490,9 @@ Partial Class ReportesInd_Consultar
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(8, 41)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Location = New System.Drawing.Point(6, 33)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(120, 23)
+        Me.Label20.Size = New System.Drawing.Size(99, 19)
         Me.Label20.TabIndex = 35
         Me.Label20.Text = "ID Recurso"
         '
@@ -524,20 +505,21 @@ Partial Class ReportesInd_Consultar
         Me.btnAyuda.BackColor = System.Drawing.Color.White
         Me.btnAyuda.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.AYUDA
         Me.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnAyuda.Location = New System.Drawing.Point(74, 33)
+        Me.btnAyuda.Location = New System.Drawing.Point(56, 27)
+        Me.btnAyuda.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(48, 45)
+        Me.btnAyuda.Size = New System.Drawing.Size(36, 37)
         Me.btnAyuda.TabIndex = 291
         Me.btnAyuda.UseVisualStyleBackColor = False
         '
         'ReportesInd_Consultar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1413, 837)
+        Me.ClientSize = New System.Drawing.Size(1060, 680)
         Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.GBRecurso)
         Me.Controls.Add(Me.Label1)
@@ -550,7 +532,6 @@ Partial Class ReportesInd_Consultar
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ReportesInd_Consultar"
         Me.Text = "ReportesInd_Consultar"
         Me.GroupBox2.ResumeLayout(False)

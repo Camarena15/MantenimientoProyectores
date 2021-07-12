@@ -43,11 +43,6 @@ Partial Class Reportes_Buscar
         Me.txtPInicio = New System.Windows.Forms.TextBox()
         Me.txtPFin = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.txtAula = New System.Windows.Forms.ComboBox()
-        Me.txtEdificio = New System.Windows.Forms.ComboBox()
-        Me.lblAula = New System.Windows.Forms.Label()
-        Me.lblEdificio = New System.Windows.Forms.Label()
-        Me.cmdFiltrar = New System.Windows.Forms.Button()
         Me.cmdSeleccionar = New System.Windows.Forms.Button()
         Me.cmdAnterior = New System.Windows.Forms.Button()
         Me.cmdSiguiente = New System.Windows.Forms.Button()
@@ -234,71 +229,6 @@ Partial Class Reportes_Buscar
         '
         Me.Timer1.Interval = 1500
         '
-        'txtAula
-        '
-        Me.txtAula.Font = New System.Drawing.Font("Consolas", 12.0!)
-        Me.txtAula.FormattingEnabled = True
-        Me.txtAula.Items.AddRange(New Object() {"---", "01", "02", "03", "04", "05", "06", "07", "08", "*"})
-        Me.txtAula.Location = New System.Drawing.Point(253, 153)
-        Me.txtAula.Name = "txtAula"
-        Me.txtAula.Size = New System.Drawing.Size(62, 27)
-        Me.txtAula.TabIndex = 226
-        Me.txtAula.Visible = False
-        '
-        'txtEdificio
-        '
-        Me.txtEdificio.Font = New System.Drawing.Font("Consolas", 12.0!)
-        Me.txtEdificio.FormattingEnabled = True
-        Me.txtEdificio.Items.AddRange(New Object() {"---", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "M.V.O.", "INGLES", "LAB"})
-        Me.txtEdificio.Location = New System.Drawing.Point(136, 153)
-        Me.txtEdificio.Name = "txtEdificio"
-        Me.txtEdificio.Size = New System.Drawing.Size(62, 27)
-        Me.txtEdificio.TabIndex = 225
-        Me.txtEdificio.Visible = False
-        '
-        'lblAula
-        '
-        Me.lblAula.AutoSize = True
-        Me.lblAula.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAula.ForeColor = System.Drawing.Color.Black
-        Me.lblAula.Location = New System.Drawing.Point(203, 156)
-        Me.lblAula.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblAula.Name = "lblAula"
-        Me.lblAula.Size = New System.Drawing.Size(45, 19)
-        Me.lblAula.TabIndex = 224
-        Me.lblAula.Text = "Aula"
-        Me.lblAula.Visible = False
-        '
-        'lblEdificio
-        '
-        Me.lblEdificio.AutoSize = True
-        Me.lblEdificio.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEdificio.ForeColor = System.Drawing.Color.Black
-        Me.lblEdificio.Location = New System.Drawing.Point(41, 156)
-        Me.lblEdificio.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblEdificio.Name = "lblEdificio"
-        Me.lblEdificio.Size = New System.Drawing.Size(81, 19)
-        Me.lblEdificio.TabIndex = 223
-        Me.lblEdificio.Text = "Edificio"
-        Me.lblEdificio.Visible = False
-        '
-        'cmdFiltrar
-        '
-        Me.cmdFiltrar.BackColor = System.Drawing.Color.Navy
-        Me.cmdFiltrar.FlatAppearance.BorderSize = 0
-        Me.cmdFiltrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
-        Me.cmdFiltrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue
-        Me.cmdFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdFiltrar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFiltrar.ForeColor = System.Drawing.Color.White
-        Me.cmdFiltrar.Location = New System.Drawing.Point(340, 152)
-        Me.cmdFiltrar.Name = "cmdFiltrar"
-        Me.cmdFiltrar.Size = New System.Drawing.Size(107, 27)
-        Me.cmdFiltrar.TabIndex = 227
-        Me.cmdFiltrar.Text = "Filtrar"
-        Me.cmdFiltrar.UseVisualStyleBackColor = False
-        Me.cmdFiltrar.Visible = False
-        '
         'cmdSeleccionar
         '
         Me.cmdSeleccionar.BackColor = System.Drawing.Color.Navy
@@ -346,11 +276,6 @@ Partial Class Reportes_Buscar
         Me.Controls.Add(Me.cmdSeleccionar)
         Me.Controls.Add(Me.cmdAnterior)
         Me.Controls.Add(Me.cmdSiguiente)
-        Me.Controls.Add(Me.cmdFiltrar)
-        Me.Controls.Add(Me.txtAula)
-        Me.Controls.Add(Me.txtEdificio)
-        Me.Controls.Add(Me.lblAula)
-        Me.Controls.Add(Me.lblEdificio)
         Me.Controls.Add(Me.txtPFin)
         Me.Controls.Add(Me.txtPInicio)
         Me.Controls.Add(Me.txtTipoReporte)
@@ -384,11 +309,6 @@ Partial Class Reportes_Buscar
     Friend WithEvents txtPInicio As TextBox
     Friend WithEvents txtPFin As TextBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents txtAula As ComboBox
-    Friend WithEvents txtEdificio As ComboBox
-    Friend WithEvents lblAula As Label
-    Friend WithEvents lblEdificio As Label
-    Friend WithEvents cmdFiltrar As Button
     Friend WithEvents IdReporte As DataGridViewTextBoxColumn
     Friend WithEvents Tipo As DataGridViewTextBoxColumn
     Friend WithEvents Fecha As DataGridViewTextBoxColumn

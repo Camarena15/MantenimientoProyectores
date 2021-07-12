@@ -18,10 +18,10 @@ Public Class Supervision_Registrar
                 If validaImagenes() = True Then
                     grabarTodo()
                 Else
-                    MsgBox("No se encontro una ruta en una de las imagenes secundarias!", MsgBoxStyle.Critical, "ERROR")
+                    MsgBox("¡No se encontró una ruta en una de las imagenes secundarias!", MsgBoxStyle.Critical, "ERROR")
                 End If
             Else
-                MsgBox("Asegurese de seleccionar un Edificio y un Aula!", MsgBoxStyle.Critical, "ERROR")
+                MsgBox("¡Asegurese de seleccionar un Edificio y un Aula!", MsgBoxStyle.Critical, "ERROR")
             End If
         End If
 
@@ -248,7 +248,7 @@ Public Class Supervision_Registrar
 
     Private Sub cmdSeleccionar_Click(sender As Object, e As EventArgs) Handles cmdSeleccionar.Click
         If txtEdificio.SelectedIndex = 0 Or txtAula.SelectedIndex = 0 Then
-            MsgBox("Debe seleccionar el Edificio y el Aula!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡Debe seleccionar el Edificio y el Aula!", MsgBoxStyle.Critical, "ERROR")
         Else
             RecursoAsignadoAula = txtAula.Text
             recursoasignadoEdificio = txtEdificio.Text
@@ -279,7 +279,7 @@ Public Class Supervision_Registrar
                     GroupBox2.Enabled = True
                 End If
             Else
-                MsgBox("No Existen Recursos Asignados al Edificio y Aula seleccionadas!", MsgBoxStyle.Critical)
+                MsgBox("¡No Existen Recursos Asignados al Edificio y Aula seleccionadas!", MsgBoxStyle.Critical)
             End If
 
         End If
@@ -300,7 +300,7 @@ Public Class Supervision_Registrar
     End Function
     Private Sub cmdAgregaD_Click(sender As Object, e As EventArgs) Handles cmdAgregaD.Click
         If txtImgRuta.Text.Equals("Haz clic para Seleccionar") Then
-            MsgBox("No se ha seleccionado ninguna imagen!", MsgBoxStyle.Critical)
+            MsgBox("¡No se ha seleccionado ninguna imagen!", MsgBoxStyle.Critical)
         Else
             Dim verificaRejillas As Boolean
             For x As Integer = 0 To LV.Items.Count - 1
@@ -324,7 +324,7 @@ Public Class Supervision_Registrar
                 cmdBack.Enabled = True
                 cmdGrabar.Enabled = True
             Else
-                MsgBox("Este registro ya se ha seleccionado previamente!", MsgBoxStyle.Critical)
+                MsgBox("¡Este registro ya se ha seleccionado previamente!", MsgBoxStyle.Critical)
             End If
         End If
     End Sub

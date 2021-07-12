@@ -8,7 +8,7 @@ Public Class Preventivo_Registrar
     Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If cboTipo.SelectedIndex = 0 Then
-            MsgBox("Debe seleccionar el Tipo de Servicio!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡Debe seleccionar el Tipo de Servicio!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim transaction As MySqlTransaction
             transaction = connection.BeginTransaction()
@@ -124,7 +124,7 @@ Public Class Preventivo_Registrar
     End Sub
     Private Sub cmdBuscarRecurso_Click(sender As Object, e As EventArgs) Handles cmdBuscarRecurso.Click
         If cboCategoria.SelectedIndex = 0 Then
-            MsgBox("No se ha seleccionado la categoría del recurso!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No se ha seleccionado la categoría del recurso!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim n As Integer
             command.CommandText = "SELECT count(*) FROM " & cboCategoria.SelectedItem & " WHERE Estado='Disponible' OR Estado='Asignado'"
@@ -133,7 +133,7 @@ Public Class Preventivo_Registrar
             n = lector.GetInt32(0)
             lector.Close()
             If n = 0 Then
-                MsgBox("No se encontro un Registro DISPONIBLE o ASIGNADO en la categoría " & cboCategoria.SelectedItem, MsgBoxStyle.Critical, "ERROR")
+                MsgBox("¡No se encontro un Registro DISPONIBLE o ASIGNADO en la categoría " & cboCategoria.SelectedItem, MsgBoxStyle.Critical, "ERROR")
             Else
                 recursoCat = cboCategoria.SelectedItem
                 RecursoIndividual_Seleccionar.ShowDialog()

@@ -155,10 +155,10 @@ Partial Class Menu
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.PanelMenuReportes)
+        Me.PanelMenu.Controls.Add(Me.PanelCatalogos)
         Me.PanelMenu.Controls.Add(Me.PanelMovimientos)
         Me.PanelMenu.Controls.Add(Me.PanelUtilerias)
-        Me.PanelMenu.Controls.Add(Me.PanelCatalogos)
+        Me.PanelMenu.Controls.Add(Me.PanelMenuReportes)
         Me.PanelMenu.Controls.Add(Me.Panel6)
         Me.PanelMenu.Controls.Add(Me.btnAyuda)
         Me.PanelMenu.Controls.Add(Me.Panel5)
@@ -190,6 +190,7 @@ Partial Class Menu
         Me.PanelMenuReportes.Controls.Add(Me.btnRelRep)
         Me.PanelMenuReportes.Controls.Add(Me.Panel21)
         Me.PanelMenuReportes.Controls.Add(Me.btnRepSup)
+        Me.PanelMenuReportes.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.PanelMenuReportes.Location = New System.Drawing.Point(60, 340)
         Me.PanelMenuReportes.Name = "PanelMenuReportes"
         Me.PanelMenuReportes.Size = New System.Drawing.Size(160, 227)
@@ -211,7 +212,7 @@ Partial Class Menu
         Me.btnRelPrev.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRelPrev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRelPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRelPrev.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnRelPrev.Font = New System.Drawing.Font("Lucida Sans Unicode", 7.0!)
         Me.btnRelPrev.ForeColor = System.Drawing.Color.White
         Me.btnRelPrev.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnRelPrev.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -238,7 +239,7 @@ Partial Class Menu
         Me.btnRelAteRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRelAteRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRelAteRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRelAteRep.Font = New System.Drawing.Font("Venus Rising", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRelAteRep.Font = New System.Drawing.Font("Lucida Sans Unicode", 7.0!)
         Me.btnRelAteRep.ForeColor = System.Drawing.Color.White
         Me.btnRelAteRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnRelAteRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -265,7 +266,7 @@ Partial Class Menu
         Me.btnRelRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRelRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRelRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRelRep.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnRelRep.Font = New System.Drawing.Font("Lucida Sans Unicode", 7.0!)
         Me.btnRelRep.ForeColor = System.Drawing.Color.White
         Me.btnRelRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnRelRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -292,7 +293,7 @@ Partial Class Menu
         Me.btnRepSup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRepSup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRepSup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRepSup.Font = New System.Drawing.Font("Venus Rising", 6.0!)
+        Me.btnRepSup.Font = New System.Drawing.Font("Lucida Sans Unicode", 7.0!)
         Me.btnRepSup.ForeColor = System.Drawing.Color.White
         Me.btnRepSup.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnRepSup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -338,7 +339,7 @@ Partial Class Menu
         Me.btnReportesIndividuales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnReportesIndividuales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnReportesIndividuales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReportesIndividuales.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnReportesIndividuales.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnReportesIndividuales.ForeColor = System.Drawing.Color.White
         Me.btnReportesIndividuales.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnReportesIndividuales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -365,7 +366,7 @@ Partial Class Menu
         Me.btnPreventivo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnPreventivo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnPreventivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPreventivo.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnPreventivo.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnPreventivo.ForeColor = System.Drawing.Color.White
         Me.btnPreventivo.Image = Global.MantenimientoProyectores.My.Resources.Resources.Act_Preventivo
         Me.btnPreventivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -392,7 +393,7 @@ Partial Class Menu
         Me.btnAtencionRep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnAtencionRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnAtencionRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAtencionRep.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAtencionRep.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnAtencionRep.ForeColor = System.Drawing.Color.White
         Me.btnAtencionRep.Image = Global.MantenimientoProyectores.My.Resources.Resources.Act_AtencionRep
         Me.btnAtencionRep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -419,7 +420,7 @@ Partial Class Menu
         Me.btnActReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnActReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnActReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnActReportes.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActReportes.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnActReportes.ForeColor = System.Drawing.Color.White
         Me.btnActReportes.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnActReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -427,7 +428,7 @@ Partial Class Menu
         Me.btnActReportes.Name = "btnActReportes"
         Me.btnActReportes.Size = New System.Drawing.Size(160, 50)
         Me.btnActReportes.TabIndex = 4
-        Me.btnActReportes.Text = "+ Reportes Docentes"
+        Me.btnActReportes.Text = "+ REPORTES DOCENTES"
         Me.btnActReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnActReportes.UseVisualStyleBackColor = True
         '
@@ -446,7 +447,7 @@ Partial Class Menu
         Me.btnSupervision.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnSupervision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnSupervision.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSupervision.Font = New System.Drawing.Font("Venus Rising", 7.5!)
+        Me.btnSupervision.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnSupervision.ForeColor = System.Drawing.Color.White
         Me.btnSupervision.Image = Global.MantenimientoProyectores.My.Resources.Resources.Act_Supervision
         Me.btnSupervision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -467,6 +468,7 @@ Partial Class Menu
         Me.PanelUtilerias.Controls.Add(Me.btnInformeErrores)
         Me.PanelUtilerias.Controls.Add(Me.Panel25)
         Me.PanelUtilerias.Controls.Add(Me.btnRecovery)
+        Me.PanelUtilerias.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.PanelUtilerias.Location = New System.Drawing.Point(60, 396)
         Me.PanelUtilerias.Name = "PanelUtilerias"
         Me.PanelUtilerias.Size = New System.Drawing.Size(160, 171)
@@ -488,7 +490,7 @@ Partial Class Menu
         Me.btnHistoricos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnHistoricos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnHistoricos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHistoricos.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHistoricos.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.0!)
         Me.btnHistoricos.ForeColor = System.Drawing.Color.White
         Me.btnHistoricos.Image = Global.MantenimientoProyectores.My.Resources.Resources.Uti_Historicos
         Me.btnHistoricos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -515,7 +517,7 @@ Partial Class Menu
         Me.btnInformeErrores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnInformeErrores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnInformeErrores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInformeErrores.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInformeErrores.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.0!)
         Me.btnInformeErrores.ForeColor = System.Drawing.Color.White
         Me.btnInformeErrores.Image = Global.MantenimientoProyectores.My.Resources.Resources.Uti_Errores
         Me.btnInformeErrores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -542,7 +544,7 @@ Partial Class Menu
         Me.btnRecovery.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRecovery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecovery.Font = New System.Drawing.Font("Venus Rising", 8.0!)
+        Me.btnRecovery.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.0!)
         Me.btnRecovery.ForeColor = System.Drawing.Color.White
         Me.btnRecovery.Image = Global.MantenimientoProyectores.My.Resources.Resources.Uti_BackRec
         Me.btnRecovery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -569,6 +571,7 @@ Partial Class Menu
         Me.PanelCatalogos.Controls.Add(Me.btnCategorias)
         Me.PanelCatalogos.Controls.Add(Me.Panel13)
         Me.PanelCatalogos.Controls.Add(Me.btnRecursos)
+        Me.PanelCatalogos.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.PanelCatalogos.Location = New System.Drawing.Point(60, 228)
         Me.PanelCatalogos.Name = "PanelCatalogos"
         Me.PanelCatalogos.Size = New System.Drawing.Size(160, 335)
@@ -590,7 +593,7 @@ Partial Class Menu
         Me.btnLugar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnLugar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnLugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLugar.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLugar.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnLugar.ForeColor = System.Drawing.Color.White
         Me.btnLugar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat_Lugares
         Me.btnLugar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -617,7 +620,7 @@ Partial Class Menu
         Me.btnCanones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnCanones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnCanones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCanones.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCanones.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnCanones.ForeColor = System.Drawing.Color.White
         Me.btnCanones.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat_Proyector
         Me.btnCanones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -644,7 +647,7 @@ Partial Class Menu
         Me.btnComputadoras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnComputadoras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnComputadoras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnComputadoras.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnComputadoras.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnComputadoras.ForeColor = System.Drawing.Color.White
         Me.btnComputadoras.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat_Equipos
         Me.btnComputadoras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -671,7 +674,7 @@ Partial Class Menu
         Me.btnPantallas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnPantallas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnPantallas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPantallas.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPantallas.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnPantallas.ForeColor = System.Drawing.Color.White
         Me.btnPantallas.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat_Pantalla
         Me.btnPantallas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -698,7 +701,7 @@ Partial Class Menu
         Me.btnCategorias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCategorias.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCategorias.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnCategorias.ForeColor = System.Drawing.Color.White
         Me.btnCategorias.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat_Categoria
         Me.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -725,7 +728,7 @@ Partial Class Menu
         Me.btnRecursos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRecursos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRecursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecursos.Font = New System.Drawing.Font("Venus Rising", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRecursos.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!)
         Me.btnRecursos.ForeColor = System.Drawing.Color.White
         Me.btnRecursos.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat_Recursos
         Me.btnRecursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -761,7 +764,7 @@ Partial Class Menu
         Me.btnAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAyuda.Font = New System.Drawing.Font("Venus Rising", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAyuda.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAyuda.ForeColor = System.Drawing.Color.White
         Me.btnAyuda.Image = Global.MantenimientoProyectores.My.Resources.Resources.Help
         Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -788,7 +791,7 @@ Partial Class Menu
         Me.btnUtilerias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnUtilerias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnUtilerias.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUtilerias.Font = New System.Drawing.Font("Venus Rising", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUtilerias.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUtilerias.ForeColor = System.Drawing.Color.White
         Me.btnUtilerias.Image = Global.MantenimientoProyectores.My.Resources.Resources.Uti
         Me.btnUtilerias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -815,7 +818,7 @@ Partial Class Menu
         Me.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReportes.Font = New System.Drawing.Font("Venus Rising", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReportes.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReportes.ForeColor = System.Drawing.Color.White
         Me.btnReportes.Image = Global.MantenimientoProyectores.My.Resources.Resources.Rep
         Me.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -842,7 +845,7 @@ Partial Class Menu
         Me.btnMovimientos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnMovimientos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMovimientos.Font = New System.Drawing.Font("Venus Rising", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMovimientos.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMovimientos.ForeColor = System.Drawing.Color.White
         Me.btnMovimientos.Image = Global.MantenimientoProyectores.My.Resources.Resources.Act
         Me.btnMovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -869,7 +872,7 @@ Partial Class Menu
         Me.btnCatalogos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnCatalogos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnCatalogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCatalogos.Font = New System.Drawing.Font("Venus Rising", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCatalogos.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCatalogos.ForeColor = System.Drawing.Color.White
         Me.btnCatalogos.Image = Global.MantenimientoProyectores.My.Resources.Resources.Cat
         Me.btnCatalogos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -896,7 +899,7 @@ Partial Class Menu
         Me.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Venus Rising", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHome.ForeColor = System.Drawing.Color.White
         Me.btnHome.Image = Global.MantenimientoProyectores.My.Resources.Resources.Home
         Me.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -977,6 +980,7 @@ Partial Class Menu
         Me.LineaRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.LineaRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.LineaRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LineaRegistrar.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.LineaRegistrar.Location = New System.Drawing.Point(5, 5)
         Me.LineaRegistrar.Name = "LineaRegistrar"
         Me.LineaRegistrar.Size = New System.Drawing.Size(151, 40)
@@ -995,6 +999,7 @@ Partial Class Menu
         Me.LineaTerminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.LineaTerminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.LineaTerminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LineaTerminar.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.LineaTerminar.Location = New System.Drawing.Point(6, 120)
         Me.LineaTerminar.Name = "LineaTerminar"
         Me.LineaTerminar.Size = New System.Drawing.Size(151, 40)
@@ -1017,7 +1022,7 @@ Partial Class Menu
         Me.btnTerminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnTerminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnTerminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTerminar.Font = New System.Drawing.Font("Venus Rising", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTerminar.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.btnTerminar.ForeColor = System.Drawing.Color.White
         Me.btnTerminar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Terminar
         Me.btnTerminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1044,7 +1049,7 @@ Partial Class Menu
         Me.btnConsultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConsultar.Font = New System.Drawing.Font("Venus Rising", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultar.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.btnConsultar.ForeColor = System.Drawing.Color.White
         Me.btnConsultar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Consultar
         Me.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1071,7 +1076,7 @@ Partial Class Menu
         Me.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy
         Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegistrar.Font = New System.Drawing.Font("Venus Rising", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!)
         Me.btnRegistrar.ForeColor = System.Drawing.Color.White
         Me.btnRegistrar.Image = Global.MantenimientoProyectores.My.Resources.Resources.Registrar
         Me.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft

@@ -86,7 +86,7 @@ Public Class ReportesInd_Registrar
     End Sub
     Private Sub cmdBuscarRecurso_Click(sender As Object, e As EventArgs) Handles cmdBuscarRecurso.Click
         If cboCategoria.SelectedIndex = 0 Then
-            MsgBox("No se ha seleccionado la categoría del recurso!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No se ha seleccionado la categoría del recurso!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim n As Integer
             command.CommandText = "SELECT count(*) FROM " & cboCategoria.SelectedItem & " WHERE Estado='Disponible'"
@@ -95,7 +95,7 @@ Public Class ReportesInd_Registrar
             n = lector.GetInt32(0)
             lector.Close()
             If n = 0 Then
-                MsgBox("No se encontro un Registro DISPONIBLE en la categoría " & cboCategoria.SelectedItem, MsgBoxStyle.Critical, "ERROR")
+                MsgBox("¡No se encontró un Registro DISPONIBLE en la categoría " & cboCategoria.SelectedItem, MsgBoxStyle.Critical, "ERROR")
             Else
                 recursoCat = cboCategoria.SelectedItem
                 RecursoIndividual_Seleccionar.ShowDialog()

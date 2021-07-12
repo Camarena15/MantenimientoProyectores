@@ -85,10 +85,9 @@ Partial Class Preventivo_Consultar
         Me.Label25.BackColor = System.Drawing.Color.White
         Me.Label25.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.Black
-        Me.Label25.Location = New System.Drawing.Point(1267, 537)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label25.Location = New System.Drawing.Point(950, 436)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(65, 23)
+        Me.Label25.Size = New System.Drawing.Size(54, 19)
         Me.Label25.TabIndex = 279
         Me.Label25.Text = "Salir"
         '
@@ -98,10 +97,9 @@ Partial Class Preventivo_Consultar
         Me.cmdSalir.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Salir
         Me.cmdSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.cmdSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdSalir.Location = New System.Drawing.Point(1268, 473)
-        Me.cmdSalir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdSalir.Location = New System.Drawing.Point(951, 384)
         Me.cmdSalir.Name = "cmdSalir"
-        Me.cmdSalir.Size = New System.Drawing.Size(65, 62)
+        Me.cmdSalir.Size = New System.Drawing.Size(49, 50)
         Me.cmdSalir.TabIndex = 278
         Me.cmdSalir.UseVisualStyleBackColor = False
         '
@@ -109,10 +107,9 @@ Partial Class Preventivo_Consultar
         '
         Me.cmdInicio.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Inicio
         Me.cmdInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdInicio.Location = New System.Drawing.Point(349, 747)
-        Me.cmdInicio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdInicio.Location = New System.Drawing.Point(262, 607)
         Me.cmdInicio.Name = "cmdInicio"
-        Me.cmdInicio.Size = New System.Drawing.Size(100, 32)
+        Me.cmdInicio.Size = New System.Drawing.Size(75, 26)
         Me.cmdInicio.TabIndex = 274
         Me.cmdInicio.Text = " "
         Me.cmdInicio.UseVisualStyleBackColor = True
@@ -121,10 +118,9 @@ Partial Class Preventivo_Consultar
         '
         Me.cmdAnterior.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Anterior
         Me.cmdAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdAnterior.Location = New System.Drawing.Point(480, 747)
-        Me.cmdAnterior.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdAnterior.Location = New System.Drawing.Point(360, 607)
         Me.cmdAnterior.Name = "cmdAnterior"
-        Me.cmdAnterior.Size = New System.Drawing.Size(100, 32)
+        Me.cmdAnterior.Size = New System.Drawing.Size(75, 26)
         Me.cmdAnterior.TabIndex = 275
         Me.cmdAnterior.Text = " "
         Me.cmdAnterior.UseVisualStyleBackColor = True
@@ -133,10 +129,9 @@ Partial Class Preventivo_Consultar
         '
         Me.cmdUltimo.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Ultimo
         Me.cmdUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdUltimo.Location = New System.Drawing.Point(741, 747)
-        Me.cmdUltimo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdUltimo.Location = New System.Drawing.Point(556, 607)
         Me.cmdUltimo.Name = "cmdUltimo"
-        Me.cmdUltimo.Size = New System.Drawing.Size(100, 32)
+        Me.cmdUltimo.Size = New System.Drawing.Size(75, 26)
         Me.cmdUltimo.TabIndex = 277
         Me.cmdUltimo.Text = " "
         Me.cmdUltimo.UseVisualStyleBackColor = True
@@ -145,10 +140,9 @@ Partial Class Preventivo_Consultar
         '
         Me.cmdSiguiente.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Siguiente
         Me.cmdSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cmdSiguiente.Location = New System.Drawing.Point(609, 747)
-        Me.cmdSiguiente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdSiguiente.Location = New System.Drawing.Point(457, 607)
         Me.cmdSiguiente.Name = "cmdSiguiente"
-        Me.cmdSiguiente.Size = New System.Drawing.Size(100, 32)
+        Me.cmdSiguiente.Size = New System.Drawing.Size(75, 26)
         Me.cmdSiguiente.TabIndex = 276
         Me.cmdSiguiente.Text = " "
         Me.cmdSiguiente.UseVisualStyleBackColor = True
@@ -158,11 +152,11 @@ Partial Class Preventivo_Consultar
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.DGV)
         Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 8.0!)
-        Me.GroupBox2.Location = New System.Drawing.Point(29, 545)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Location = New System.Drawing.Point(22, 443)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(1128, 196)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(846, 159)
         Me.GroupBox2.TabIndex = 273
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "CONSULTA GENERAL"
@@ -172,10 +166,9 @@ Partial Class Preventivo_Consultar
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(7, -5)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(5, -4)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(220, 28)
+        Me.Label13.Size = New System.Drawing.Size(170, 22)
         Me.Label13.TabIndex = 267
         Me.Label13.Text = "CONSULTA GENERAL"
         '
@@ -184,13 +177,13 @@ Partial Class Preventivo_Consultar
         Me.DGV.BackgroundColor = System.Drawing.Color.White
         Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
-        Me.DGV.Location = New System.Drawing.Point(12, 25)
-        Me.DGV.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DGV.Location = New System.Drawing.Point(9, 20)
+        Me.DGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DGV.Name = "DGV"
         Me.DGV.ReadOnly = True
         Me.DGV.RowHeadersWidth = 51
         Me.DGV.RowTemplate.Height = 24
-        Me.DGV.Size = New System.Drawing.Size(1107, 151)
+        Me.DGV.Size = New System.Drawing.Size(830, 123)
         Me.DGV.TabIndex = 211
         '
         'Column1
@@ -287,11 +280,11 @@ Partial Class Preventivo_Consultar
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(93, 121)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(70, 98)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1000, 418)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(750, 340)
         Me.GroupBox1.TabIndex = 272
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "CONSULTA INDIVIDUAL"
@@ -299,11 +292,10 @@ Partial Class Preventivo_Consultar
         'txtId
         '
         Me.txtId.ForeColor = System.Drawing.Color.Black
-        Me.txtId.Location = New System.Drawing.Point(217, 30)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtId.Location = New System.Drawing.Point(163, 24)
         Me.txtId.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(101, 35)
+        Me.txtId.Size = New System.Drawing.Size(76, 30)
         Me.txtId.TabIndex = 288
         '
         'Panel1
@@ -317,20 +309,18 @@ Partial Class Preventivo_Consultar
         Me.Panel1.Controls.Add(Me.Label18)
         Me.Panel1.Controls.Add(Me.Label19)
         Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(556, 86)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Location = New System.Drawing.Point(417, 70)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(349, 176)
+        Me.Panel1.Size = New System.Drawing.Size(262, 143)
         Me.Panel1.TabIndex = 303
         '
         'txtCategoria
         '
         Me.txtCategoria.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategoria.Location = New System.Drawing.Point(171, 87)
-        Me.txtCategoria.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCategoria.Location = New System.Drawing.Point(128, 71)
         Me.txtCategoria.Name = "txtCategoria"
         Me.txtCategoria.ReadOnly = True
-        Me.txtCategoria.Size = New System.Drawing.Size(161, 31)
+        Me.txtCategoria.Size = New System.Drawing.Size(122, 26)
         Me.txtCategoria.TabIndex = 230
         '
         'Label14
@@ -338,72 +328,65 @@ Partial Class Preventivo_Consultar
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(7, 91)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(5, 74)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(109, 23)
+        Me.Label14.Size = New System.Drawing.Size(90, 19)
         Me.Label14.TabIndex = 229
         Me.Label14.Text = "Categoría"
         '
         'txtEdoRecurso
         '
         Me.txtEdoRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEdoRecurso.Location = New System.Drawing.Point(171, 124)
-        Me.txtEdoRecurso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEdoRecurso.Location = New System.Drawing.Point(128, 101)
         Me.txtEdoRecurso.Name = "txtEdoRecurso"
         Me.txtEdoRecurso.ReadOnly = True
-        Me.txtEdoRecurso.Size = New System.Drawing.Size(161, 31)
+        Me.txtEdoRecurso.Size = New System.Drawing.Size(122, 26)
         Me.txtEdoRecurso.TabIndex = 228
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(7, 17)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Location = New System.Drawing.Point(5, 14)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(120, 23)
+        Me.Label20.Size = New System.Drawing.Size(99, 19)
         Me.Label20.TabIndex = 223
         Me.Label20.Text = "ID Recurso"
         '
         'txtIdRecurso
         '
         Me.txtIdRecurso.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdRecurso.Location = New System.Drawing.Point(171, 14)
-        Me.txtIdRecurso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtIdRecurso.Location = New System.Drawing.Point(128, 11)
         Me.txtIdRecurso.Name = "txtIdRecurso"
         Me.txtIdRecurso.ReadOnly = True
-        Me.txtIdRecurso.Size = New System.Drawing.Size(161, 31)
+        Me.txtIdRecurso.Size = New System.Drawing.Size(122, 26)
         Me.txtIdRecurso.TabIndex = 224
         '
         'txtidcat
         '
         Me.txtidcat.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidcat.Location = New System.Drawing.Point(171, 50)
-        Me.txtidcat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtidcat.Location = New System.Drawing.Point(128, 41)
         Me.txtidcat.Name = "txtidcat"
         Me.txtidcat.ReadOnly = True
-        Me.txtidcat.Size = New System.Drawing.Size(161, 31)
+        Me.txtidcat.Size = New System.Drawing.Size(122, 26)
         Me.txtidcat.TabIndex = 227
         '
         'Label18
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(7, 54)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Location = New System.Drawing.Point(5, 44)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(142, 23)
+        Me.Label18.Size = New System.Drawing.Size(117, 19)
         Me.Label18.TabIndex = 226
         Me.Label18.Text = "ID Categoría"
         '
         'Label19
         '
         Me.Label19.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(7, 122)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Location = New System.Drawing.Point(5, 99)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(144, 52)
+        Me.Label19.Size = New System.Drawing.Size(108, 42)
         Me.Label19.TabIndex = 225
         Me.Label19.Text = "Estado de Recurso"
         '
@@ -411,78 +394,71 @@ Partial Class Preventivo_Consultar
         '
         Me.txtFechaF.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFechaF.ForeColor = System.Drawing.Color.Black
-        Me.txtFechaF.Location = New System.Drawing.Point(368, 219)
-        Me.txtFechaF.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtFechaF.Location = New System.Drawing.Point(276, 178)
         Me.txtFechaF.Name = "txtFechaF"
         Me.txtFechaF.ReadOnly = True
-        Me.txtFechaF.Size = New System.Drawing.Size(155, 31)
+        Me.txtFechaF.Size = New System.Drawing.Size(117, 26)
         Me.txtFechaF.TabIndex = 302
         '
         'txtTipoS
         '
         Me.txtTipoS.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTipoS.ForeColor = System.Drawing.Color.Black
-        Me.txtTipoS.Location = New System.Drawing.Point(123, 128)
-        Me.txtTipoS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTipoS.Location = New System.Drawing.Point(92, 104)
         Me.txtTipoS.Name = "txtTipoS"
         Me.txtTipoS.ReadOnly = True
-        Me.txtTipoS.Size = New System.Drawing.Size(155, 31)
+        Me.txtTipoS.Size = New System.Drawing.Size(117, 26)
         Me.txtTipoS.TabIndex = 301
         '
         'txtFechaI
         '
         Me.txtFechaI.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFechaI.ForeColor = System.Drawing.Color.Black
-        Me.txtFechaI.Location = New System.Drawing.Point(368, 170)
-        Me.txtFechaI.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtFechaI.Location = New System.Drawing.Point(276, 138)
         Me.txtFechaI.Name = "txtFechaI"
         Me.txtFechaI.ReadOnly = True
-        Me.txtFechaI.Size = New System.Drawing.Size(155, 31)
+        Me.txtFechaI.Size = New System.Drawing.Size(117, 26)
         Me.txtFechaI.TabIndex = 300
         '
         'txtEstado
         '
         Me.txtEstado.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEstado.ForeColor = System.Drawing.Color.Black
-        Me.txtEstado.Location = New System.Drawing.Point(391, 128)
-        Me.txtEstado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEstado.Location = New System.Drawing.Point(293, 104)
         Me.txtEstado.Name = "txtEstado"
         Me.txtEstado.ReadOnly = True
-        Me.txtEstado.Size = New System.Drawing.Size(132, 31)
+        Me.txtEstado.Size = New System.Drawing.Size(100, 26)
         Me.txtEstado.TabIndex = 299
         '
         'txtConcepto
         '
         Me.txtConcepto.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtConcepto.ForeColor = System.Drawing.Color.Black
-        Me.txtConcepto.Location = New System.Drawing.Point(123, 86)
-        Me.txtConcepto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtConcepto.Location = New System.Drawing.Point(92, 70)
         Me.txtConcepto.Name = "txtConcepto"
         Me.txtConcepto.ReadOnly = True
-        Me.txtConcepto.Size = New System.Drawing.Size(400, 31)
+        Me.txtConcepto.Size = New System.Drawing.Size(301, 26)
         Me.txtConcepto.TabIndex = 295
         '
         'txtAtiende
         '
         Me.txtAtiende.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAtiende.ForeColor = System.Drawing.Color.Black
-        Me.txtAtiende.Location = New System.Drawing.Point(12, 302)
-        Me.txtAtiende.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAtiende.Location = New System.Drawing.Point(9, 245)
         Me.txtAtiende.Name = "txtAtiende"
         Me.txtAtiende.ReadOnly = True
-        Me.txtAtiende.Size = New System.Drawing.Size(385, 31)
+        Me.txtAtiende.Size = New System.Drawing.Size(290, 26)
         Me.txtAtiende.TabIndex = 294
         '
         'txtObservaciones
         '
         Me.txtObservaciones.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtObservaciones.ForeColor = System.Drawing.Color.Black
-        Me.txtObservaciones.Location = New System.Drawing.Point(568, 302)
-        Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtObservaciones.Location = New System.Drawing.Point(426, 245)
         Me.txtObservaciones.Multiline = True
         Me.txtObservaciones.Name = "txtObservaciones"
         Me.txtObservaciones.ReadOnly = True
-        Me.txtObservaciones.Size = New System.Drawing.Size(336, 95)
+        Me.txtObservaciones.Size = New System.Drawing.Size(253, 78)
         Me.txtObservaciones.TabIndex = 293
         '
         'Label10
@@ -490,10 +466,9 @@ Partial Class Preventivo_Consultar
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(7, 90)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(5, 73)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(98, 23)
+        Me.Label10.Size = New System.Drawing.Size(81, 19)
         Me.Label10.TabIndex = 292
         Me.Label10.Text = "Concepto"
         '
@@ -501,10 +476,9 @@ Partial Class Preventivo_Consultar
         '
         Me.Label9.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(7, 123)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(5, 100)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(108, 54)
+        Me.Label9.Size = New System.Drawing.Size(81, 44)
         Me.Label9.TabIndex = 291
         Me.Label9.Text = "Tipo de Servicio"
         '
@@ -513,10 +487,9 @@ Partial Class Preventivo_Consultar
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(7, 223)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(5, 181)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(285, 23)
+        Me.Label8.Size = New System.Drawing.Size(234, 19)
         Me.Label8.TabIndex = 290
         Me.Label8.Text = "Fecha Final de Preventivo"
         '
@@ -525,10 +498,9 @@ Partial Class Preventivo_Consultar
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(7, 177)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(5, 144)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(307, 23)
+        Me.Label7.Size = New System.Drawing.Size(252, 19)
         Me.Label7.TabIndex = 289
         Me.Label7.Text = "Fecha Inicial de Preventivo"
         '
@@ -537,10 +509,9 @@ Partial Class Preventivo_Consultar
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(7, 266)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(5, 216)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(417, 23)
+        Me.Label6.Size = New System.Drawing.Size(342, 19)
         Me.Label6.TabIndex = 288
         Me.Label6.Text = "Encargado de Mantenimiento Preventivo"
         '
@@ -549,10 +520,9 @@ Partial Class Preventivo_Consultar
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(551, 266)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(413, 216)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(153, 23)
+        Me.Label5.Size = New System.Drawing.Size(126, 19)
         Me.Label5.TabIndex = 287
         Me.Label5.Text = "Observaciones"
         '
@@ -561,10 +531,9 @@ Partial Class Preventivo_Consultar
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(287, 132)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(215, 107)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(87, 23)
+        Me.Label4.Size = New System.Drawing.Size(72, 19)
         Me.Label4.TabIndex = 286
         Me.Label4.Text = "Estado "
         '
@@ -577,10 +546,9 @@ Partial Class Preventivo_Consultar
         Me.cmdBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdBuscar.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdBuscar.ForeColor = System.Drawing.Color.White
-        Me.cmdBuscar.Location = New System.Drawing.Point(328, 30)
-        Me.cmdBuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdBuscar.Location = New System.Drawing.Point(246, 24)
         Me.cmdBuscar.Name = "cmdBuscar"
-        Me.cmdBuscar.Size = New System.Drawing.Size(143, 33)
+        Me.cmdBuscar.Size = New System.Drawing.Size(107, 27)
         Me.cmdBuscar.TabIndex = 285
         Me.cmdBuscar.Text = "Buscar"
         Me.cmdBuscar.UseVisualStyleBackColor = False
@@ -590,23 +558,23 @@ Partial Class Preventivo_Consultar
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(51, 34)
+        Me.Label3.Location = New System.Drawing.Point(38, 28)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(153, 23)
+        Me.Label3.Size = New System.Drawing.Size(126, 19)
         Me.Label3.TabIndex = 213
         Me.Label3.Text = "ID Preventivo"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label12.ForeColor = System.Drawing.Color.Navy
-        Me.Label12.Location = New System.Drawing.Point(416, 18)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(308, 15)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(384, 25)
+        Me.Label12.Size = New System.Drawing.Size(444, 25)
         Me.Label12.TabIndex = 271
-        Me.Label12.Text = "CONSULTA SERVICIOS PREVENTIVOS"
+        Me.Label12.Text = "CONSULTA DE SERVICIOS PREVENTIVOS"
         '
         'Timer1
         '
@@ -617,20 +585,21 @@ Partial Class Preventivo_Consultar
         Me.btnAyuda.BackColor = System.Drawing.Color.White
         Me.btnAyuda.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.AYUDA
         Me.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnAyuda.Location = New System.Drawing.Point(57, 28)
+        Me.btnAyuda.Location = New System.Drawing.Point(43, 23)
+        Me.btnAyuda.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(48, 45)
+        Me.btnAyuda.Size = New System.Drawing.Size(36, 37)
         Me.btnAyuda.TabIndex = 282
         Me.btnAyuda.UseVisualStyleBackColor = False
         '
         'Preventivo_Consultar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1413, 837)
+        Me.ClientSize = New System.Drawing.Size(1060, 680)
         Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.cmdSalir)
@@ -642,7 +611,6 @@ Partial Class Preventivo_Consultar
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label12)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Preventivo_Consultar"
         Me.Text = "Preventivo_Consultar"
         Me.GroupBox2.ResumeLayout(False)

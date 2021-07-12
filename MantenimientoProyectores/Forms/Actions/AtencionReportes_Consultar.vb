@@ -18,7 +18,7 @@ Public Class AtencionReportes_Consultar
             dgv.CurrentCell = dgv(0, index - 1)
             SelectedRowChanged()
         Else
-            MsgBox("No hay un registro con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No hay un registro con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
         End If
     End Sub
     Private Sub Consultar_Load(sender As Object, e As EventArgs) Handles MyBase.Load

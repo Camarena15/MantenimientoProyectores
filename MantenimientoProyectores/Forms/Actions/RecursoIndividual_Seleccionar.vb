@@ -37,7 +37,7 @@ Public Class RecursoIndividual_Seleccionar
             obtieneRecursosIndividuales(recursoCat, "Asignado")
         End If
         If DGV.Rows.Count - 2 < 0 Then
-            MsgBox("No hay registros Asociados a la busqueda", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No hay registros Asociados a la búsqueda!", MsgBoxStyle.Critical, "ERROR")
             conexion.Close()
             Close()
         End If

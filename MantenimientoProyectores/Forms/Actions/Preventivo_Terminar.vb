@@ -9,7 +9,7 @@ Public Class Preventivo_Terminar
     Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If cboEstadoRecurso.SelectedIndex = 0 Then
-            MsgBox("Debe seleccionar un Estado para el Recurso!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡Debe seleccionar un Estado para el Recurso!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim transaction As MySqlTransaction
             transaction = connection.BeginTransaction()
@@ -139,7 +139,7 @@ Public Class Preventivo_Terminar
                 cmdGrabar.Enabled = True
             End If
         Else
-            MsgBox("No hay un registro de Preventivo con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No hay un registro de Preventivo con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
         End If
     End Sub
 

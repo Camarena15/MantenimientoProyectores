@@ -74,12 +74,12 @@ Partial Class Preventivo_Registrar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(309, 15)
+        Me.Label1.Location = New System.Drawing.Point(315, 15)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(380, 24)
+        Me.Label1.Size = New System.Drawing.Size(431, 25)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "REGISTRO DE SERVICIOS PREVENTIVOS"
         '
@@ -89,7 +89,7 @@ Partial Class Preventivo_Registrar
         Me.txtId.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtId.Location = New System.Drawing.Point(229, 75)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(76, 31)
+        Me.txtId.Size = New System.Drawing.Size(76, 26)
         Me.txtId.TabIndex = 36
         '
         'Label3
@@ -99,7 +99,7 @@ Partial Class Preventivo_Registrar
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(57, 74)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(210, 32)
+        Me.Label3.Size = New System.Drawing.Size(166, 24)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "ID Preventivo"
         '
@@ -135,7 +135,7 @@ Partial Class Preventivo_Registrar
         Me.DTP2.Location = New System.Drawing.Point(278, 137)
         Me.DTP2.Name = "DTP2"
         Me.DTP2.ReadOnly = True
-        Me.DTP2.Size = New System.Drawing.Size(116, 31)
+        Me.DTP2.Size = New System.Drawing.Size(116, 26)
         Me.DTP2.TabIndex = 239
         '
         'RBNO
@@ -143,7 +143,7 @@ Partial Class Preventivo_Registrar
         Me.RBNO.AutoSize = True
         Me.RBNO.Location = New System.Drawing.Point(648, 186)
         Me.RBNO.Name = "RBNO"
-        Me.RBNO.Size = New System.Drawing.Size(53, 27)
+        Me.RBNO.Size = New System.Drawing.Size(45, 23)
         Me.RBNO.TabIndex = 238
         Me.RBNO.TabStop = True
         Me.RBNO.Text = "No"
@@ -155,7 +155,7 @@ Partial Class Preventivo_Registrar
         Me.RBSI.AutoSize = True
         Me.RBSI.Location = New System.Drawing.Point(589, 188)
         Me.RBSI.Name = "RBSI"
-        Me.RBSI.Size = New System.Drawing.Size(53, 27)
+        Me.RBSI.Size = New System.Drawing.Size(45, 23)
         Me.RBSI.TabIndex = 237
         Me.RBSI.TabStop = True
         Me.RBSI.Text = "Si"
@@ -181,7 +181,7 @@ Partial Class Preventivo_Registrar
         Me.txtEstado.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEstado.Location = New System.Drawing.Point(487, 29)
         Me.txtEstado.Name = "txtEstado"
-        Me.txtEstado.Size = New System.Drawing.Size(100, 31)
+        Me.txtEstado.Size = New System.Drawing.Size(100, 26)
         Me.txtEstado.TabIndex = 229
         Me.txtEstado.Text = "Pendiente"
         '
@@ -192,7 +192,7 @@ Partial Class Preventivo_Registrar
         Me.cboTipo.Items.AddRange(New Object() {"---", "INTERNO", "EXTERNO"})
         Me.cboTipo.Location = New System.Drawing.Point(165, 63)
         Me.cboTipo.Name = "cboTipo"
-        Me.cboTipo.Size = New System.Drawing.Size(121, 31)
+        Me.cboTipo.Size = New System.Drawing.Size(121, 27)
         Me.cboTipo.TabIndex = 74
         '
         'DTP
@@ -202,7 +202,7 @@ Partial Class Preventivo_Registrar
         Me.DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DTP.Location = New System.Drawing.Point(278, 97)
         Me.DTP.Name = "DTP"
-        Me.DTP.Size = New System.Drawing.Size(116, 31)
+        Me.DTP.Size = New System.Drawing.Size(116, 26)
         Me.DTP.TabIndex = 72
         '
         'txtConcepto
@@ -210,7 +210,7 @@ Partial Class Preventivo_Registrar
         Me.txtConcepto.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtConcepto.Location = New System.Drawing.Point(93, 29)
         Me.txtConcepto.Name = "txtConcepto"
-        Me.txtConcepto.Size = New System.Drawing.Size(301, 31)
+        Me.txtConcepto.Size = New System.Drawing.Size(301, 26)
         Me.txtConcepto.TabIndex = 70
         '
         'txtAtiende
@@ -218,7 +218,7 @@ Partial Class Preventivo_Registrar
         Me.txtAtiende.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAtiende.Location = New System.Drawing.Point(10, 204)
         Me.txtAtiende.Name = "txtAtiende"
-        Me.txtAtiende.Size = New System.Drawing.Size(290, 31)
+        Me.txtAtiende.Size = New System.Drawing.Size(290, 26)
         Me.txtAtiende.TabIndex = 69
         '
         'txtObservaciones
@@ -237,7 +237,7 @@ Partial Class Preventivo_Registrar
         Me.Label10.ForeColor = System.Drawing.Color.Black
         Me.Label10.Location = New System.Drawing.Point(6, 32)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(98, 23)
+        Me.Label10.Size = New System.Drawing.Size(81, 19)
         Me.Label10.TabIndex = 66
         Me.Label10.Text = "Concepto"
         '
@@ -248,7 +248,7 @@ Partial Class Preventivo_Registrar
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(6, 66)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(186, 23)
+        Me.Label9.Size = New System.Drawing.Size(153, 19)
         Me.Label9.TabIndex = 65
         Me.Label9.Text = "Tipo de Servicio"
         '
@@ -259,7 +259,7 @@ Partial Class Preventivo_Registrar
         Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(6, 140)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(285, 23)
+        Me.Label8.Size = New System.Drawing.Size(234, 19)
         Me.Label8.TabIndex = 64
         Me.Label8.Text = "Fecha Final de Preventivo"
         '
@@ -270,7 +270,7 @@ Partial Class Preventivo_Registrar
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.Location = New System.Drawing.Point(6, 103)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(307, 23)
+        Me.Label7.Size = New System.Drawing.Size(252, 19)
         Me.Label7.TabIndex = 63
         Me.Label7.Text = "Fecha Inicial de Preventivo"
         '
@@ -281,7 +281,7 @@ Partial Class Preventivo_Registrar
         Me.Label6.ForeColor = System.Drawing.Color.Black
         Me.Label6.Location = New System.Drawing.Point(6, 175)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(417, 23)
+        Me.Label6.Size = New System.Drawing.Size(342, 19)
         Me.Label6.TabIndex = 62
         Me.Label6.Text = "Encargado de Mantenimiento Preventivo"
         '
@@ -292,7 +292,7 @@ Partial Class Preventivo_Registrar
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(409, 66)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(153, 23)
+        Me.Label5.Size = New System.Drawing.Size(126, 19)
         Me.Label5.TabIndex = 61
         Me.Label5.Text = "Observaciones"
         '
@@ -303,7 +303,7 @@ Partial Class Preventivo_Registrar
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Location = New System.Drawing.Point(409, 32)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(87, 23)
+        Me.Label4.Size = New System.Drawing.Size(72, 19)
         Me.Label4.TabIndex = 60
         Me.Label4.Text = "Estado "
         '
@@ -327,7 +327,7 @@ Partial Class Preventivo_Registrar
         Me.Label24.ForeColor = System.Drawing.Color.Black
         Me.Label24.Location = New System.Drawing.Point(913, 454)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(76, 23)
+        Me.Label24.Size = New System.Drawing.Size(63, 19)
         Me.Label24.TabIndex = 217
         Me.Label24.Text = "Grabar"
         '
@@ -339,7 +339,7 @@ Partial Class Preventivo_Registrar
         Me.Label23.ForeColor = System.Drawing.Color.Black
         Me.Label23.Location = New System.Drawing.Point(913, 362)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(65, 23)
+        Me.Label23.Size = New System.Drawing.Size(54, 19)
         Me.Label23.TabIndex = 216
         Me.Label23.Text = "Nuevo"
         '
@@ -376,7 +376,7 @@ Partial Class Preventivo_Registrar
         Me.Label25.ForeColor = System.Drawing.Color.Black
         Me.Label25.Location = New System.Drawing.Point(912, 547)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(65, 23)
+        Me.Label25.Size = New System.Drawing.Size(54, 19)
         Me.Label25.TabIndex = 213
         Me.Label25.Text = "Salir"
         '
@@ -410,7 +410,7 @@ Partial Class Preventivo_Registrar
         Me.txtIdRecurso.Location = New System.Drawing.Point(103, 29)
         Me.txtIdRecurso.Name = "txtIdRecurso"
         Me.txtIdRecurso.ReadOnly = True
-        Me.txtIdRecurso.Size = New System.Drawing.Size(100, 31)
+        Me.txtIdRecurso.Size = New System.Drawing.Size(100, 26)
         Me.txtIdRecurso.TabIndex = 229
         '
         'txtMarca
@@ -419,7 +419,7 @@ Partial Class Preventivo_Registrar
         Me.txtMarca.Location = New System.Drawing.Point(506, 61)
         Me.txtMarca.Name = "txtMarca"
         Me.txtMarca.ReadOnly = True
-        Me.txtMarca.Size = New System.Drawing.Size(101, 31)
+        Me.txtMarca.Size = New System.Drawing.Size(101, 26)
         Me.txtMarca.TabIndex = 228
         '
         'Label2
@@ -429,7 +429,7 @@ Partial Class Preventivo_Registrar
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(441, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 23)
+        Me.Label2.Size = New System.Drawing.Size(54, 19)
         Me.Label2.TabIndex = 227
         Me.Label2.Text = "Marca"
         '
@@ -439,7 +439,7 @@ Partial Class Preventivo_Registrar
         Me.txtModelo.Location = New System.Drawing.Point(505, 29)
         Me.txtModelo.Name = "txtModelo"
         Me.txtModelo.ReadOnly = True
-        Me.txtModelo.Size = New System.Drawing.Size(101, 31)
+        Me.txtModelo.Size = New System.Drawing.Size(101, 26)
         Me.txtModelo.TabIndex = 226
         '
         'Label11
@@ -449,7 +449,7 @@ Partial Class Preventivo_Registrar
         Me.Label11.ForeColor = System.Drawing.Color.Black
         Me.Label11.Location = New System.Drawing.Point(440, 33)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(76, 23)
+        Me.Label11.Size = New System.Drawing.Size(63, 19)
         Me.Label11.TabIndex = 225
         Me.Label11.Text = "Modelo"
         '
@@ -459,7 +459,7 @@ Partial Class Preventivo_Registrar
         Me.cboCategoria.Items.AddRange(New Object() {"---", "CAÑONES", "COMPUTADORAS", "PANTALLAS"})
         Me.cboCategoria.Location = New System.Drawing.Point(102, 62)
         Me.cboCategoria.Name = "cboCategoria"
-        Me.cboCategoria.Size = New System.Drawing.Size(101, 31)
+        Me.cboCategoria.Size = New System.Drawing.Size(101, 27)
         Me.cboCategoria.TabIndex = 224
         '
         'txtinvcapece
@@ -468,7 +468,7 @@ Partial Class Preventivo_Registrar
         Me.txtinvcapece.Location = New System.Drawing.Point(319, 29)
         Me.txtinvcapece.Name = "txtinvcapece"
         Me.txtinvcapece.ReadOnly = True
-        Me.txtinvcapece.Size = New System.Drawing.Size(101, 31)
+        Me.txtinvcapece.Size = New System.Drawing.Size(101, 26)
         Me.txtinvcapece.TabIndex = 223
         '
         'txtEstadoRecurso
@@ -477,7 +477,7 @@ Partial Class Preventivo_Registrar
         Me.txtEstadoRecurso.Location = New System.Drawing.Point(319, 65)
         Me.txtEstadoRecurso.Name = "txtEstadoRecurso"
         Me.txtEstadoRecurso.ReadOnly = True
-        Me.txtEstadoRecurso.Size = New System.Drawing.Size(101, 31)
+        Me.txtEstadoRecurso.Size = New System.Drawing.Size(101, 26)
         Me.txtEstadoRecurso.TabIndex = 222
         '
         'Label17
@@ -487,7 +487,7 @@ Partial Class Preventivo_Registrar
         Me.Label17.ForeColor = System.Drawing.Color.Black
         Me.Label17.Location = New System.Drawing.Point(223, 33)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(109, 23)
+        Me.Label17.Size = New System.Drawing.Size(90, 19)
         Me.Label17.TabIndex = 220
         Me.Label17.Text = "INVCAPECE"
         '
@@ -498,7 +498,7 @@ Partial Class Preventivo_Registrar
         Me.Label18.ForeColor = System.Drawing.Color.Black
         Me.Label18.Location = New System.Drawing.Point(6, 68)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(109, 23)
+        Me.Label18.Size = New System.Drawing.Size(90, 19)
         Me.Label18.TabIndex = 219
         Me.Label18.Text = "Categoría"
         '
@@ -509,7 +509,7 @@ Partial Class Preventivo_Registrar
         Me.Label19.ForeColor = System.Drawing.Color.Black
         Me.Label19.Location = New System.Drawing.Point(223, 68)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(76, 23)
+        Me.Label19.Size = New System.Drawing.Size(63, 19)
         Me.Label19.TabIndex = 218
         Me.Label19.Text = "Estado"
         '
@@ -536,7 +536,7 @@ Partial Class Preventivo_Registrar
         Me.Label20.ForeColor = System.Drawing.Color.Black
         Me.Label20.Location = New System.Drawing.Point(6, 33)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(120, 23)
+        Me.Label20.Size = New System.Drawing.Size(99, 19)
         Me.Label20.TabIndex = 35
         Me.Label20.Text = "ID Recurso"
         '
@@ -557,7 +557,7 @@ Partial Class Preventivo_Registrar
         '
         'Preventivo_Registrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.MantenimientoProyectores.My.Resources.Resources.Bckgnd2

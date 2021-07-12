@@ -24,8 +24,6 @@ Public Class Reportes_Buscar
     Private Sub Reportes_Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DGV.Rows.Clear()
         Timer1.Start()
-        txtEdificio.SelectedIndex = 0
-        txtAula.SelectedIndex = 0
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         conexion.Open()
@@ -39,14 +37,11 @@ Public Class Reportes_Buscar
         If tipoReporte.Equals("DOCENTE") Then
             DGV.Columns.Item(5).Visible = True
             DGV.Columns.Item(6).Visible = True
-            lblAula.Visible = True
-            lblEdificio.Visible = True
-            txtAula.Visible = True
-            txtEdificio.Visible = True
-            cmdFiltrar.Visible = True
             r = "SELECT IdReporte, Fecha, ObservacionesGrales, Estado, Edificio, Aula FROM REPORTEDOCENTES WHERE Fecha BETWEEN '" & pFechaInicio &
             "' AND '" & pFechaFin & "' AND Estado='Pendiente'"
         ElseIf tipoReporte.Equals("INDIVIDUAL") Then
+            DGV.Columns.Item(5).Visible = False
+            DGV.Columns.Item(6).Visible = False
             r = "SELECT IdReporteRecursos, Fecha, Concepto, Estado FROM REPORTESRECURSOSINDIVIDUALES WHERE Fecha BETWEEN '" & pFechaInicio &
             "' AND '" & pFechaFin & "' AND Estado='Pendiente'"
         End If
@@ -78,33 +73,6 @@ Public Class Reportes_Buscar
         obtainedInfoRep = True
         conexion.Close()
         Me.Close()
-    End Sub
-
-    Private Sub cmdFiltrar_Click(sender As Object, e As EventArgs) Handles cmdFiltrar.Click
-        If txtEdificio.SelectedIndex = 0 Or txtAula.SelectedIndex = 0 Then
-            MsgBox("Debe seleccionar un Edificio y un Aula!", MsgBoxStyle.Critical, "Error")
-        Else
-            DGV.Rows.Clear()
-            Dim r As String = "SELECT count(*) FROM REPORTEDOCENTES WHERE Fecha BETWEEN '" & pFechaInicio &
-            "' AND '" & pFechaFin & "' AND Estado='Pendiente' AND Edificio='" & txtEdificio.SelectedItem & "' AND Aula= '" & txtAula.SelectedItem & "'"
-            comando.CommandText = r
-            lector = comando.ExecuteReader
-            lector.Read()
-            Dim nRes As Integer = lector.GetValue(0)
-            lector.Close()
-            If nRes <> 0 Then
-                r = "SELECT IdReporte, Fecha, ObservacionesGrales, Estado, Edificio, Aula FROM REPORTEDOCENTES WHERE Fecha BETWEEN '" & pFechaInicio &
-            "' AND '" & pFechaFin & "' AND Estado='Pendiente'"
-                comando.CommandText = r
-                lector = comando.ExecuteReader
-                While lector.Read
-                    DGV.Rows.Add(lector.GetString(0), tipoReporte, lector.GetString(1), lector.GetString(2), lector.GetString(3), lector.GetValue(4), lector.GetValue(5))
-                End While
-                lector.Close()
-            Else
-                MsgBox("No hay Reportes de Docentes del Edificio y Aula Seleccionados!", MsgBoxStyle.Critical, "Error")
-            End If
-        End If
     End Sub
     Private Sub cmbSiguiente_Click(sender As Object, e As EventArgs) Handles cmdSiguiente.Click
         If DGV.CurrentCell.RowIndex <> DGV.Rows.Count - 2 Then

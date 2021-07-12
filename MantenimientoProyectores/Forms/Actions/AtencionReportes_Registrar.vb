@@ -92,8 +92,7 @@ Public Class AtencionReportes_Registrar
             command.CommandText = "SELECT IdAtencion FROM ATENCIONFALLAS ORDER BY IdAtencion DESC LIMIT 1"
             lector = command.ExecuteReader
             lector.Read()
-            n = lector(0) + 1 'OBTENGO ULTIMA ID Y LA INCREMENTO
-            ' SI LA ULTIMA FUE ID = 5, SERA 5+1 = 6
+            n = lector(0) + 1
             txtId.Text = n
             lector.Close()
         Else
@@ -167,8 +166,17 @@ Public Class AtencionReportes_Registrar
     End Sub
 
     Private Sub cmdBuscarReporte_Click(sender As Object, e As EventArgs) Handles cmdBuscarReporte.Click
+        Dim itemsSaver As New ArrayList
+        itemsSaver.Add(cboTipoReporte.SelectedIndex)
+        itemsSaver.Add(DTPPeriodoInicio.Value)
+        itemsSaver.Add(DTPPeriodoFin.Value)
+        Limpiartxt()
+        GBTipoReporte.Enabled = True
+        cboTipoReporte.SelectedIndex = itemsSaver(0)
+        DTPPeriodoInicio.Value = itemsSaver(1)
+        DTPPeriodoFin.Value = itemsSaver(2)
         If cboTipoReporte.SelectedIndex = 0 Then
-            MsgBox("No se ha seleccionado el tipo de Reporte!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No se ha seleccionado el tipo de Reporte!", MsgBoxStyle.Critical, "ERROR")
         Else
             tipoReporte = cboTipoReporte.SelectedItem
             pFechaInicio = DTPPeriodoInicio.Value.ToString("yyyy-MM-dd")
@@ -181,7 +189,7 @@ Public Class AtencionReportes_Registrar
                 lector.Read()
                 Dim n As Integer = lector.GetInt32(0)
                 If n = 0 Then
-                    MsgBox("No hay un Reporte Docente Pendiente registrado en ese periodo!", MsgBoxStyle.Critical, "ERROR")
+                    MsgBox("¡No hay un Reporte Docente Pendiente registrado en ese periodo!", MsgBoxStyle.Critical, "ERROR")
                 Else
                     lblEdificio.Visible = True
                     lblAula.Visible = True
@@ -210,7 +218,7 @@ Public Class AtencionReportes_Registrar
                 Dim n As Integer = lector.GetInt32(0)
                 lector.Close()
                 If n = 0 Then
-                    MsgBox("No hay un Reporte Individual Pendiente registrado en ese periodo!", MsgBoxStyle.Critical, "ERROR")
+                    MsgBox("¡No hay un Reporte Individual Pendiente registrado en ese periodo!", MsgBoxStyle.Critical, "ERROR")
                 Else
                     lblEdificio.Visible = False
                     lblAula.Visible = False
@@ -256,7 +264,7 @@ Public Class AtencionReportes_Registrar
     End Sub
     Private Sub cmdBuscarRecurso_Click(sender As Object, e As EventArgs) Handles cmdBuscarRecurso.Click
         If cboCategoria.SelectedIndex = 0 Then
-            MsgBox("Debe seleccionar una categoría de Recurso!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡Debe seleccionar una categoría de Recurso!", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim n As Integer
             If cboCategoria.SelectedIndex = 1 Or cboCategoria.SelectedIndex = 2 Or cboCategoria.SelectedIndex = 3 Then
@@ -271,8 +279,8 @@ Public Class AtencionReportes_Registrar
                 n = 1
             End If
             If n = 0 Then
-                    MsgBox("NO hay recursos Asignados actualmente en el Edificio y Aula Seleccionados!", MsgBoxStyle.Critical, "ERROR")
-                Else
+                MsgBox("¡NO hay recursos Asignados actualmente en el Edificio y Aula Seleccionados!", MsgBoxStyle.Critical, "ERROR")
+            Else
                     If cboCategoria.SelectedIndex = 1 Then
                         lblCambioLampara.Visible = True
                         RBNO.Visible = True
@@ -329,7 +337,7 @@ Public Class AtencionReportes_Registrar
             cmdGrabar.Enabled = True
             cmdAgregaD.Enabled = False
         Else
-            MsgBox("Este registro ya se ha seleccionado previamente!", MsgBoxStyle.Critical)
+            MsgBox("¡Este registro ya se ha seleccionado previamente!", MsgBoxStyle.Critical)
         End If
     End Sub
     Private Sub cmdBack_Click(sender As Object, e As EventArgs) Handles cmdBack.Click

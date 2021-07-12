@@ -10,7 +10,7 @@ Public Class AtencionReportes_Terminar
     Dim Fecha As String
     Protected Sub GRABAR(sender As Object, e As EventArgs) Handles cmdGrabar.Click
         If verificaRejilla() = False Then
-            MsgBox("Debe seleccionar un Estado para los Recursos que sean CAÑONES, COMPUTADORAS O PANTALLAS", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡Debe seleccionar un Estado para los Recursos que sean CAÑONES, COMPUTADORAS O PANTALLAS", MsgBoxStyle.Critical, "ERROR")
         Else
             Dim transaction As MySqlTransaction
             transaction = connection.BeginTransaction()
@@ -188,7 +188,7 @@ Public Class AtencionReportes_Terminar
                 cmdGrabar.Enabled = True
             End If
         Else
-            MsgBox("No hay un registro de Atencion a Fallas Pendiente con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
+            MsgBox("¡No hay un registro de Atención a Fallas Pendiente con la ID ingresada!", MsgBoxStyle.Critical, "ERROR")
         End If
     End Sub
     Private Sub AtencionReportes_Terminar_Load(sender As Object, e As EventArgs) Handles MyBase.Load

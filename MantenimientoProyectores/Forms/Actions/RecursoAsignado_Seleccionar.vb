@@ -37,7 +37,7 @@ Public Class RecursoAsignado_Seleccionar
             txtCategoria.Text = recursoCat
             obtieneRecursosAsignados(recursoCat)
             If DGV.Rows.Count - 2 < 0 Then
-                MsgBox("No hay registros Asociados a la busqueda", MsgBoxStyle.Critical, "ERROR")
+                MsgBox("¡No hay registros Asociados a la búsqueda!", MsgBoxStyle.Critical, "ERROR")
                 conexion.Close()
                 Me.Close()
             End If
@@ -46,7 +46,7 @@ Public Class RecursoAsignado_Seleccionar
             obtieneRecursosAsignados("COMPUTADORAS")
             obtieneRecursosAsignados("PANTALLAS")
             If DGV.Rows.Count - 2 < 0 Then
-                MsgBox("No hay registros Asociados a la busqueda", MsgBoxStyle.Critical, "ERROR")
+                MsgBox("¡No hay registros Asociados a la búsqueda!", MsgBoxStyle.Critical, "ERROR")
                 conexion.Close()
                 Me.Close()
             End If
